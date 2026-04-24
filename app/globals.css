@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* PAPER THEME — light mode
+     Names preserved for backwards compatibility.
+     "ink-*" now means paper surfaces (was dark bg).
+     "fog-*" now means ink/text (was light fg). */
+  --color-ink: #FCFAF4;              /* primary page bg — subtle warm off-white */
+  --color-ink-soft: #F1E9D7;         /* warm cream cards / elevated surfaces */
+  --color-ink-raised: #FFFFFF;       /* pure white for max contrast elements */
+  --color-fog: #0F0F0F;              /* primary text — near-black */
+  --color-fog-muted: #2E2A26;        /* secondary text — deeper for readability */
+  --color-fog-dim: #6A6056;          /* tertiary text — deeper gray (was too faint) */
+  --color-line: rgba(15, 15, 15, 0.18);
+  --color-line-strong: rgba(15, 15, 15, 0.32);
+
+  /* Brand — orange stays */
+  --color-orange: #FF6B35;
+  --color-orange-soft: #FF8D5E;
+  --color-orange-dim: #6B2F15;
+
+  /* Fonts */
+  --font-display: var(--font-unbounded), "Unbounded", "Helvetica Neue", sans-serif;
+  --font-accent: var(--font-instrument), "Instrument Serif", Georgia, serif;
+  --font-price: var(--font-price), "DM Serif Display", Georgia, serif;
+  --font-body: var(--font-geist), "Geist", sans-serif;
+  --font-mono: var(--font-geist-mono), "Geist Mono", monospace;
+
+  /* Display sizes */
+  --text-display-xl: clamp(3.25rem, 13vw, 13rem);
+  --text-display-lg: clamp(2.75rem, 9vw, 9rem);
+  --text-display-md: clamp(2.25rem, 6vw, 6rem);
+  --text-display-sm: clamp(1.75rem, 4vw, 4rem);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background: var(--color-ink);
+    color: var(--color-fog);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--color-orange);
+    color: #FAFAF5;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 4px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Subtle paper grain — multiply blend for warm paper feel */
+  .grain::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.04;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  /* Marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 35s linear infinite;
+  }
+
+  /* Hide scrollbar for mobile carousels */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
