@@ -1,0 +1,1891 @@
+{
+  "payouts/my": {
+    "url": "https://finozacapital.com/manage-dsa/payouts/my",
+    "heading": "",
+    "breadcrumb": "Dashboard My Payouts",
+    "cards": [
+      {
+        "text": "Total Payout Amount All Advisors ₹ 0.00 Total Records All Payouts 0 Paid records ₹ 0.00 Unpaid records ₹ 0.00",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Show 10 25 50 100 entries Search: ID Advisor ID Amount Bank ID Mode Reference Employee ID Type Status Date No data available in table Showing 0 to 0 of 0 entries Previous Next",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "ID",
+          "Advisor ID",
+          "Amount",
+          "Bank ID",
+          "Mode",
+          "Reference",
+          "Employee ID",
+          "Type",
+          "Status",
+          "Date"
+        ],
+        "rows": [
+          [
+            "No data available in table"
+          ]
+        ],
+        "rowCount": 1
+      }
+    ],
+    "selects": [
+      {
+        "name": "datatable-1_length",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "100"
+        ]
+      }
+    ],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #",
+      ""
+    ],
+    "showEntries": [
+      [
+        "10",
+        "25",
+        "50",
+        "100"
+      ]
+    ],
+    "pagination": [
+      "Previous Next"
+    ]
+  },
+  "payouts/advisor": {
+    "url": "https://finozacapital.com/manage-dsa/payouts/advisor",
+    "heading": "",
+    "breadcrumb": "Dashboard Advisor Payouts",
+    "cards": [
+      {
+        "text": "Total Payout Amount All Advisors ₹ 0.00 Total Records All Payouts 0 Paid records ₹ 0.00 Unpaid records ₹ 0.00",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Show 10 25 50 100 entries Search: ID Advisor ID Amount Bank ID Mode Reference Employee ID Type Status Date No data available in table Showing 0 to 0 of 0 entries Previous Next",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "ID",
+          "Advisor ID",
+          "Amount",
+          "Bank ID",
+          "Mode",
+          "Reference",
+          "Employee ID",
+          "Type",
+          "Status",
+          "Date"
+        ],
+        "rows": [
+          [
+            "No data available in table"
+          ]
+        ],
+        "rowCount": 1
+      }
+    ],
+    "selects": [
+      {
+        "name": "datatable-1_length",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "100"
+        ]
+      }
+    ],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #",
+      ""
+    ],
+    "showEntries": [
+      [
+        "10",
+        "25",
+        "50",
+        "100"
+      ]
+    ],
+    "pagination": [
+      "Previous Next"
+    ]
+  },
+  "reports": {
+    "url": "https://finozacapital.com/manage-dsa/reports",
+    "heading": "",
+    "breadcrumb": "Dashboard Report Overview",
+    "cards": [
+      {
+        "text": "Lead Status",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Lead Analytics Total Leads Including Sun Advisors 362 Sub Advisors Total Registered Sub Advisors 95 Loan Disbursed Total Loan Approved and Disbursed Total Payout Total Lead Commission Paid",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "reports/lead-wise": {
+    "url": "https://finozacapital.com/manage-dsa/reports/lead-wise",
+    "heading": "",
+    "breadcrumb": "Dashboard Report Lead Analytics",
+    "cards": [
+      {
+        "text": "Lead Count By Status 0 / PENDING Lead started and waiting for details 105 29.01% 1 / SUBMITTED Lead submitted for Internal Verification 4 1.10% 2 / ALLOCATED Lead Allocated to Employee 1 0.28% 3 / UND",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Lead Status Distribution (%)",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      },
+      {
+        "text": "0 / PENDING",
+        "bg": "rgb(108, 117, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-secondary"
+      },
+      {
+        "text": "1 / SUBMITTED",
+        "bg": "rgb(203, 113, 10)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-primary"
+      },
+      {
+        "text": "2 / ALLOCATED",
+        "bg": "rgb(63, 202, 216)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-mint"
+      },
+      {
+        "text": "3 / UNDER-PROCESS",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-info"
+      },
+      {
+        "text": "4 / APPROVED",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-success"
+      },
+      {
+        "text": "5 / ARCHIVED",
+        "bg": "rgb(121, 76, 138)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-alternate"
+      },
+      {
+        "text": "6 / REJECTED",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-danger"
+      },
+      {
+        "text": "7 / DOCS QUERY - EA",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "pointer mb-2 me-2 badge bg-warning"
+      },
+      {
+        "text": "8 / QUERY RESOLVED - AE",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "pointer mb-2 me-2 badge bg-warning"
+      },
+      {
+        "text": "9 / DOCS QUERY - LA",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "pointer mb-2 me-2 badge bg-warning"
+      },
+      {
+        "text": "10 / QUERY RESOLVED - AL",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "pointer mb-2 me-2 badge bg-warning"
+      },
+      {
+        "text": "11 / BLOCKED",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-danger"
+      },
+      {
+        "text": "12 / DISBURSED",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-success"
+      },
+      {
+        "text": "13 / FAKE",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "pointer mb-2 me-2 badge bg-danger"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "reports/product-wise": {
+    "url": "https://finozacapital.com/manage-dsa/reports/product-wise",
+    "heading": "",
+    "breadcrumb": "Dashboard Report Lead Analytics",
+    "cards": [
+      {
+        "text": "Lead Count By Status Personal Loan 25 6.91% Business Loan 13 3.59% Home Loan 4 1.10% Credit Card 21 5.80% Instant Loan 117 32.32% Demat Account 2 0.55% Bank Account 12 3.31% Loan Against Shares 1 0.28",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Lead Status Distribution (%)",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "product": {
+    "url": "https://finozacapital.com/manage-dsa/product",
+    "heading": "",
+    "breadcrumb": "Dashboard Product",
+    "cards": [
+      {
+        "text": "#1 - Instant Loan IPL - Loan ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#2 - Personal Loan PRL - Loan ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#3 - Business Loan BNL - Loan ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#5 - Home Loan HML - Loan ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#10 - Credit Card CRD - Credit Card ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#12 - Demat Account DMT - Demat Account ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#14 - Bank Account BNK - Bank Account ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#17 - Loan Against Shares LAS - Loan ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "#18 - Kyc Loans KYC - Loan ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "badge rounded-pill bg-success"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "employee": {
+    "url": "https://finozacapital.com/manage-dsa/employee",
+    "heading": "",
+    "breadcrumb": "Dashboard Employee Management Data",
+    "cards": [
+      {
+        "text": "View Employee Data ID Status Product Info First Name Last Name Email Phone Action ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "ID",
+          "Status",
+          "Product Info",
+          "First Name",
+          "Last Name",
+          "Email",
+          "Phone",
+          "Action"
+        ],
+        "rows": [
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ]
+        ],
+        "rowCount": 10
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Edit",
+      "Save",
+      "Cancel"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "notifications": {
+    "url": "https://finozacapital.com/manage-dsa/notifications",
+    "heading": "",
+    "breadcrumb": "Dashboard Notifications All",
+    "cards": [
+      {
+        "text": "Leads Notifications (172) 0 UNREAD # From Date & Time Notification Action 364 avdhesh jain (#FC08207540) 29-Jul-2026 01:42 PM New Lead Assigned #364 View Lead 358 avdhesh jain (#FC08207540) 27-Jul-202",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Account Notifications",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "System Notifications",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "From",
+          "Date & Time",
+          "Notification",
+          "Action",
+          "364",
+          "29-Jul-2026 01:42 PM",
+          "View Lead"
+        ],
+        "rows": [
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #364"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #358"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #355"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #355"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #338"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #338"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #335"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #335"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #334"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #326"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #321"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #321"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #315"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #315"
+          ],
+          [
+            "avdhesh jain (#FC08207540)",
+            "New Lead Assigned #313"
+          ]
+        ],
+        "rowCount": 172
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      },
+      {
+        "text": "0 UNREAD",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "mb-2 me-2 badge bg-success p-2 fs-6"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "View Lead"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #",
+      "Search..."
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "setting/payout-chart": {
+    "url": "https://finozacapital.com/manage-dsa/setting/payout-chart",
+    "heading": "",
+    "breadcrumb": "Dashboard Setting Application",
+    "cards": [
+      {
+        "text": "Advisor - Payout Chart Please download the DSA-Payout.docs file and edit the advisor commission and convert it to PDF and reupload it. This will be visible to all the advisor under. My Payout -> Payou",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Download Document",
+      "View PDF in Browser",
+      "Download PDF",
+      "Delete"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "setting/contact-details": {
+    "url": "https://finozacapital.com/manage-dsa/setting/contact-details",
+    "heading": "",
+    "breadcrumb": "Dashboard Setting Contact Details",
+    "cards": [
+      {
+        "text": "CRM - Contact Details & Social Media This contact details are used throughout the CRM as a primary contacts. Please use the core settings to update the contact details. Primary Contact IMPORTANT ! Pri",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Primary Contact IMPORTANT ! Primary contact are used as admin contacts, All CRM admin email notifications, CRM Plan, and all other information will be sent to primary contacts. Admin Full Name : Finoz",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "CRM Contacts IMPORTANT ! CRM contacts are used throughout the crm in all email templates notifications to all advisors, Support Section on advisor panel and default RM in lead assignments. Support Ema",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Support Email support@finozacapital.com Edit Email",
+        "bg": "rgb(203, 113, 10)"
+      },
+      {
+        "text": "Support Numbers 7618268130 / 7618268130 Edit Numbers",
+        "bg": "rgb(203, 113, 10)"
+      },
+      {
+        "text": "Office Address Faridabad, Haryana Delhi NCR - India Edit Office Address",
+        "bg": "rgb(203, 113, 10)"
+      },
+      {
+        "text": "Project Name & Details Project Name : Finoza Capital Slogan : Finoza Capital Description : Finoza Capital offers a powerful White-Label Loan CRM, DSA Management System, and Loan Service Solutions for ",
+        "bg": "rgb(203, 113, 10)"
+      },
+      {
+        "text": "WhatsApp Group Link 404",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Telegram Group Link 404",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Facebook https://www.facebook.com/finoza-capital /",
+        "bg": "rgb(0, 123, 255)"
+      },
+      {
+        "text": "Instagram https://www.instagram.com/finoza-capital_official/",
+        "bg": "rgb(193, 53, 132)"
+      },
+      {
+        "text": "Twitter 404",
+        "bg": "rgb(29, 161, 242)"
+      },
+      {
+        "text": "YouTube https://www.youtube.com",
+        "bg": "rgb(255, 0, 0)"
+      },
+      {
+        "text": "Telegram 404",
+        "bg": "rgb(0, 136, 204)"
+      },
+      {
+        "text": "WhatsApp 0",
+        "bg": "rgb(37, 211, 102)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Edit Primary Contact",
+      "Edit Email",
+      "Edit Numbers",
+      "Edit Office Address",
+      "Edit Project Details",
+      "Edit WhatsApp Link",
+      "Edit Telegram Link",
+      "Edit Social Media Links",
+      "Close",
+      "Save changes"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "setting/branding": {
+    "url": "https://finozacapital.com/manage-dsa/setting/branding",
+    "heading": "",
+    "breadcrumb": "Dashboard Setting Branding",
+    "cards": [
+      {
+        "text": "CRM - Logo Branding Manage your branding logos here. Upload Logo Only upload PNG, JPG or JPEG file. Max File Size 2MB and image resolution must be 300px / 150px # Logo-Image Logo-Size Action Main Logo",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "Logo-Image",
+          "Logo-Size",
+          "Action"
+        ],
+        "rows": [
+          [],
+          [
+            "Main Logo",
+            "",
+            "300px * 150px",
+            "Download"
+          ]
+        ],
+        "rowCount": 2
+      },
+      {
+        "headers": [
+          "#",
+          "Icon-Image",
+          "Icon-Size",
+          "Action"
+        ],
+        "rows": [
+          [],
+          [
+            "Icons",
+            "",
+            "192px * 192px",
+            "Download"
+          ]
+        ],
+        "rowCount": 2
+      },
+      {
+        "headers": [
+          "Preview",
+          "Filename",
+          "Size (WxH)",
+          "File Size",
+          "Full Path",
+          "Action"
+        ],
+        "rows": [
+          [
+            "",
+            "android-icon-144x144.png",
+            "144x144",
+            "7.71 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "android-icon-192x192.png",
+            "192x192",
+            "8.92 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "android-icon-36x36.png",
+            "36x36",
+            "1.29 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "android-icon-48x48.png",
+            "48x48",
+            "1.82 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "android-icon-72x72.png",
+            "72x72",
+            "3.12 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "android-icon-96x96.png",
+            "96x96",
+            "3.93 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-114x114.png",
+            "114x114",
+            "5.82 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-120x120.png",
+            "120x120",
+            "6.17 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-144x144.png",
+            "144x144",
+            "7.71 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-152x152.png",
+            "152x152",
+            "8.62 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-180x180.png",
+            "180x180",
+            "11.28 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-57x57.png",
+            "57x57",
+            "2.35 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-60x60.png",
+            "60x60",
+            "2.6 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-72x72.png",
+            "72x72",
+            "3.12 KB",
+            "",
+            "Download"
+          ],
+          [
+            "",
+            "apple-icon-76x76.png",
+            "76x76",
+            "3.49 KB",
+            "",
+            "Download"
+          ]
+        ],
+        "rowCount": 24
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Download",
+      "Close",
+      "Save changes"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "setting/theme-colors": {
+    "url": "https://finozacapital.com/manage-dsa/setting/theme-colors",
+    "heading": "",
+    "breadcrumb": "Dashboard Setting Theme Colors",
+    "cards": [
+      {
+        "text": "Theme Colors - Customize Your Colors Update your theme's primary and secondary colors below. Primary Color: Primary Color Hex: Secondary Color: Secondary Color Hex: Theme Type: Dark Light Save Changes",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [
+      {
+        "name": "theme_type",
+        "options": [
+          "Dark",
+          "Light"
+        ]
+      }
+    ],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Changes"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "setting/mobile-application": {
+    "url": "https://finozacapital.com/manage-dsa/setting/mobile-application",
+    "heading": "",
+    "breadcrumb": "Dashboard Setting Application",
+    "cards": [
+      {
+        "text": "Mobile - Application Loan CRM is a powerful application that offers a range of features for both Android and iOS platforms. The application is designed to help loan officers and mortgage brokers manag",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Download Android App",
+      "Download iOS App",
+      "Download APK"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "changelog": {
+    "url": "https://finozacapital.com/manage-dsa/changelog",
+    "heading": "",
+    "breadcrumb": "Dashboard Notifications All",
+    "cards": [
+      {
+        "text": "2024-07-15 VERSION 2.0.3 [Update] Dashboard Lead view update. [Update] Lead Overview Updated and bug fixed. [Fixed] View All leads issue fixed. [Add] Notification added - notifications [Add] Advisor v",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2024-07-11 VERSION 2.0.2 [ADD] - Update Password Added to CRM Admin - setting/change-password",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2024-05-20 VERSION 2.0.1 [Add] - Advisor View added - advisor/adv [Add] - Advisor Express view added",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2024-03-31 VERSION 2.0.0 [FIX] - Lead filter improved - lead/report [FIX] - My disburse calculation updated - lead/my-disburse [FIX] - Advisor disburse calculation updated - lead/disburse [FIX] - Repo",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2024-03-21 VERSION 1.0.4 [FIX] - All advisor list view added - advisor/all-list [FIX] - My Disburse Counting bug fixed. [FIX] - Advisor Disburse Counting bug fixed.",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2024-03-16 VERSION 1.0.3 [FIXED] My Disburse page updated - lead/my-disburse [FIXED] Advisor Disbursement page updated - lead/disburse [PATCH] Admin disburse table highlight added",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2024-03-15 VERSION 1.0.2 [FIX] Remark add issue fixed. [FIX] All lead view issue fixed.",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2024-03-04 VERSION 1.0.1 CRM Settings -> Contact Details Update option added. CRM Settings -> Social Media Links option added. CRM Settings -> WhatsApp & Telegram Group Links option added. Other Proje",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "02 March 2026 VERSION 1.0.0 Initial CRM release.",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "2.0.3",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "2.0.2",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "2.0.1",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "2.0.0",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "1.0.4",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "1.0.3",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "1.0.2",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-0 badge bg-dark"
+      },
+      {
+        "text": "1.0.1",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-1 me-2 badge bg-info"
+      },
+      {
+        "text": "VERSION 1.0.0",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "fw-600 ms-3 me-2 badge bg-dark"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "support": {
+    "url": "https://finozacapital.com/manage-dsa/support",
+    "heading": "",
+    "breadcrumb": "Dashboard CRM Support",
+    "cards": [
+      {
+        "text": "Tickets Statistics Total Tickets 0 Open Tickets Closed Tickets",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Total Tickets 0",
+        "bg": "rgb(203, 113, 10)"
+      },
+      {
+        "text": "Open Tickets",
+        "bg": "rgb(58, 196, 125)"
+      },
+      {
+        "text": "Closed Tickets",
+        "bg": "rgb(217, 37, 80)"
+      },
+      {
+        "text": "View Tickets Ticket ID Issue Type Title Status Created At",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "Ticket ID",
+          "Issue Type",
+          "Title",
+          "Status",
+          "Created At"
+        ],
+        "rows": [],
+        "rowCount": 0
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Add Ticket"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  },
+  "data-sync": {
+    "url": "https://finozacapital.com/manage-dsa/data-sync",
+    "heading": "",
+    "breadcrumb": "",
+    "cards": [],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "buttons": [],
+    "searchBoxes": [],
+    "showEntries": [],
+    "pagination": []
+  },
+  "_product_detail_links_count": 0,
+  "employee_edit_row": {
+    "heading": "",
+    "breadcrumb": "Dashboard Employee Management Data",
+    "cards": [
+      {
+        "text": "View Employee Data ID Status Product Info First Name Last Name Email Phone Action ACTIVE N/A Save Cancel ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit ACTIVE N/A Edit",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "ID",
+          "Status",
+          "Product Info",
+          "First Name",
+          "Last Name",
+          "Email",
+          "Phone",
+          "Action"
+        ],
+        "rows": [
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Save Cancel"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ],
+          [
+            "",
+            "ACTIVE",
+            "N/A",
+            "",
+            "",
+            "",
+            "",
+            "Edit"
+          ]
+        ],
+        "rowCount": 10
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "8",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge rounded-pill bg-info"
+      },
+      {
+        "text": "New",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)",
+        "cls": "ms-auto badge bg-success"
+      },
+      {
+        "text": "512",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)",
+        "cls": "ms-auto badge bg-warning"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      },
+      {
+        "text": "ACTIVE",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(40, 167, 69)",
+        "cls": "badge"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Edit",
+      "Save",
+      "Cancel"
+    ],
+    "searchBoxes": [
+      "Search Lead #",
+      "Search Advisor #"
+    ],
+    "showEntries": [],
+    "pagination": []
+  }
+}

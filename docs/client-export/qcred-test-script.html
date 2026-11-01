@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred CRM — Manual test script (internal)</title>
+<style>
+  @page { size: A4; margin: 12mm 11mm 13mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --green:#068a3e; --green-50:#e8f6ee;
+    --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80; --line:#dbe3ee;
+    --amber:#b45309; --amber-50:#fef6e7; --red:#b91c1c; --red-50:#fef2f2;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:8.6pt;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3{margin:0;line-height:1.25} p{margin:0 0 4px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,thead,.rule{page-break-after:avoid}
+  tr,.card{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .hero{background:linear-gradient(150deg,#111827,#0b3b78 70%,#082c5c);color:#fff;
+        margin:-12mm -11mm 4mm;padding:8mm 11mm 6mm}
+  .hero .k{font-size:7.8pt;letter-spacing:.2em;text-transform:uppercase;color:#93c5fd}
+  .hero h1{margin-top:2mm;font-size:18pt;letter-spacing:-.4px}
+  .hero p{margin-top:2.4mm;color:#cbd5e1;font-size:8.4pt;max-width:160mm}
+
+  .rule{border-bottom:2px solid var(--navy);padding-bottom:1.6mm;margin:3.6mm 0 2.2mm}
+  .rule h2{font-size:12.5pt;color:var(--navy)}
+  .rule .n{font-size:7.2pt;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:700}
+
+  table{width:100%;border-collapse:collapse;margin:1.5mm 0 2.2mm;font-size:8pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:1.8mm 2.2mm;font-size:7.6pt;font-weight:600;
+     border-right:1px solid rgba(255,255,255,.15)}
+  th:last-child{border-right:none}
+  td{padding:1.3mm 2mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  .mono{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8.4pt;font-weight:700;color:var(--navy-dark)}
+  code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:7.8pt;background:var(--navy-50);
+       padding:.4mm 1mm;border-radius:2px;color:var(--navy-dark)}
+  .box{width:4mm;height:4mm;border:1.5px solid #94a3b8;border-radius:1mm;display:inline-block;vertical-align:-0.7mm}
+  .exp{color:var(--green);font-weight:600}
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2mm 2.8mm;margin:1.8mm 0;border-radius:2px;font-size:8.2pt}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card.r{border-left-color:var(--red);background:var(--red-50)}
+  .card b.t{display:block;margin-bottom:1mm}
+  .step{width:5mm;color:var(--mute)}
+  .foot{border-top:1px solid var(--line);margin-top:4mm;padding-top:2mm;font-size:7.2pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<!-- P1 -->
+<div class="page">
+  <div class="hero">
+    <div class="k">Internal — your testing copy. Not for the client.</div>
+    <h1>Test everything before he does — v2.</h1>
+    <p>Fresh A-to-Z sweep completed tonight: 49 platform checks, 21 + 6 feedback, 19 lender funnel,
+    11 framework, a crawl of every screen under five logins, plus a new action sweep — announcements,
+    escalations, reviews, follow-ups, KYC certification, the payout approve-and-pay loop, CSV
+    exports, notifications, profile saves and a password change. All passing. Every submit control
+    in the system now shows a spinner and confirms — including Sign in. What machines can&rsquo;t
+    judge is wording, feel, and business-fit. That&rsquo;s this script.</p>
+  </div>
+
+  <div class="rule"><div class="n">Setup</div><h2>Logins — all passwords <span class="mono">qcred@123</span></h2></div>
+  <table>
+    <thead><tr><th style="width:26mm">Login</th><th style="width:34mm">Role</th><th>Use it to test</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">9999900001</td><td>Super Admin</td><td>Everything — approvals, settings, lenders, employees</td></tr>
+      <tr><td class="mono">9999900002</td><td>Maker (staff)</td><td>Limited staff view · own-scope data · no-access page</td></tr>
+      <tr><td class="mono">9999900003</td><td>Checker</td><td>Payout approval · employee approval (corporate route)</td></tr>
+      <tr><td class="mono">9999900004</td><td><b>Demo RM</b> <i>(new)</i></td><td>The role the client complained about — partner page now works</td></tr>
+      <tr><td class="mono">9820011001</td><td>Partner (Sub-DSA)</td><td>Partner portal · team · invites · lender catalogue</td></tr>
+      <tr><td class="mono">9820011013</td><td>Connector (Girish)</td><td>Approved-but-untrained account — the §4 gate</td></tr>
+    </tbody>
+  </table>
+  <div class="card a"><b class="t">⚠ Two rules while testing</b>
+  1 · The client has real accounts now (Wahid, Krishna) and is using the system — <b>don&rsquo;t touch users you don&rsquo;t recognise</b>, don&rsquo;t change role permissions in Settings.
+  2 · Tests marked <b>[creates data]</b> leave rows behind. That&rsquo;s fine — tell me after and I&rsquo;ll clean, or leave them as extra demo content.</div>
+
+  <div class="rule"><div class="n">Suite 1 · 5 min</div><h2>The two pages he reported broken — as the RM</h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>Log in as <span class="mono">9999900004</span> (RM)</td><td class="exp">Dashboard loads; "Active partners" card IS visible</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Click the Active partners card</td><td class="exp">Partner list opens — no error page. Access-levels grid on top</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Look at the dashboard again</td><td class="exp">NO "Payouts pending" card (RM has no payout permission — card hidden, not broken)</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">4</td><td>Type <code>/payouts</code> into the address bar directly</td><td class="exp">Friendly "You don't have access to payouts" page naming <code>payouts.view</code> — NOT an application error</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">5</td><td>Same trick as Maker (<span class="mono">9999900002</span>): visit <code>/settings</code></td><td class="exp">Same polite no-access page</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"><div class="n">Suite 2 · 5 min</div><h2>&ldquo;Saving… / Updated&rdquo; feedback</h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>As Admin, open any lead → type a remark → click <b>Add remark</b></td><td class="exp">Button turns "Saving…" with spinner → flashes "Updated ✓" → remark appears. It's fast — watch the button as you click</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Double-click a save button rapidly</td><td class="exp">Second click does nothing (button locks while saving) — no duplicate remark</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Try buttons everywhere — approvals, stage reorder, escalations, password change, invite withdraw, even Sign in</td><td class="exp">EVERY submit button shows the spinner. If you find one that stays silent, that's a report</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>QCred manual test script — internal</span><span>1 / 3</span></div>
+</div>
+
+<!-- P2 -->
+<div class="page">
+  <div class="rule"><div class="n">Suite 3 · 10 min</div><h2>Employee approval — the full loop <i>[creates data]</i></h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>As Admin → Employees → "Or invite by link" → name <i>Test Person</i>, any unused 10-digit mobile starting 6–9, role RM → <b>Create invite</b></td><td class="exp">Invite appears under "Open invitations" with a copyable link</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Open that link in a <b>private/incognito window</b> → set a password → Activate</td><td class="exp">Lands on login with "awaiting approval from your supervisor" message — NOT signed in</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Try logging in as that new person</td><td class="exp">Blocked with the same awaiting-approval message</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">4</td><td>Log in as <b>Checker</b> (<span class="mono">9999900003</span>) → look at the dashboard</td><td class="exp">"New employees awaiting approval — 1" in the to-do queue</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">5</td><td>Employees → find <i>Test Person</i> → <b>Approve</b></td><td class="exp">"awaiting approval" badge becomes active status</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">6</td><td>Log in as the new person again</td><td class="exp">Works now — lands on dashboard</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"><div class="n">Suite 4 · 10 min</div><h2>Reports-to and team-only data <i>[creates data]</i></h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>As Admin → Employees → on <i>Demo RM</i>, set "Reports to" = <i>Test Person</i> (from Suite 3) → <b>Set</b></td><td class="exp">Saves with the Updated flash</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Leads → open any lead → <b>Reassign</b> it to <i>Demo RM</i></td><td class="exp">Lead now assigned to Demo RM</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Settings → Roles → set the <b>RM role's data access to Team</b> <i>(remember to put it back to Own after — note current value first)</i></td><td class="exp">Saves</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">4</td><td>Log in as <i>Test Person</i> → Leads</td><td class="exp">Sees the lead assigned to Demo RM (their team member) — but NOT every lead in the system</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">5</td><td>Log in as Demo RM → Leads</td><td class="exp">Sees own assigned lead only (nobody reports to them)</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">6</td><td>Put RM data access back to <b>Own</b></td><td class="exp">—</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"><div class="n">Suite 5 · 5 min</div><h2>The §4 training gate — live</h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>As Admin → Partners → open <b>Girish Hegde</b> (<span class="mono">QC-KA-BLR-CON-0001</span>)</td><td class="exp">Governance panel: "Training · Mandatory before code activation (§4) · Pending". <b>No Activate button exists</b></td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Click <b>Mark training complete</b></td><td class="exp">Training flips to Complete and the <b>Activate button appears</b> — the gate opening on screen</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Partners list → check the access-levels grid at top</td><td class="exp">Partner roles with permission counts + four tiers with live counts (the client's requested screen)</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>QCred manual test script — internal</span><span>2 / 3</span></div>
+</div>
+
+<!-- P3 -->
+<div class="page">
+  <div class="rule"><div class="n">Suite 6 · 10 min</div><h2>Partner portal + lender catalogue</h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>Log in as partner <span class="mono">9820011001</span> → <b>Lenders</b> in the menu</td><td class="exp">Region → Lender → Product funnel with counts on every chip</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Click <b>Poonawalla Fincorp</b>, inspect the table</td><td class="exp">LTV grid per property (Industrial 55%…), tier-wise max (Metro ₹25 Cr / Tier 3&amp;4 ₹3 Cr), FOIR, rates — but <b>NO Payout column</b></td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Same page as Admin (<code>/lenders</code>)</td><td class="exp">Same funnel WITH the green payout % column, and a "Manage lenders" toggle</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">4</td><td>As partner → My team → invite a connector (name + unused mobile) <i>[creates data]</i></td><td class="exp">Real link appears under Open invitations; opening it in incognito shows the accept form</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">5</td><td>Submit a lead with PAN <code>BADPAN</code>, then mobile starting with 1</td><td class="exp">Each rejected with a specific message naming the field</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">6</td><td>Aadhaar <code>1234 5678 9012</code> on a lead</td><td class="exp">Rejected — fails the official checksum, not just a length check</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"><div class="n">Suite 7 · 10 min</div><h2>Money flow end to end <i>[creates data]</i></h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>As Admin → Disbursements → on a sanctioned case, pick lender + <b>programme (Poonawalla — Standard Income)</b>, enter disbursed ₹22,00,000, property value ₹40,00,000, rate, tenure → <b>Record</b></td><td class="exp">Records; LTV computed automatically (55% here)</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Payouts → open the auto-raised payout</td><td class="exp">Calculated from the programme % — remark shows the rate and source; gross / TDS / net split visible; two-leg money trail on the page</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Still as Admin (who raised it indirectly): try approving your own raise? Use Maker (<span class="mono">9999900002</span>) to raise one manually, then try to approve it as the same Maker</td><td class="exp">Maker cannot approve at all; and a raiser can never approve their own — the segregation holds</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">4</td><td>As Checker → approve it → mark paid with a made-up UTR</td><td class="exp">Approve then Paid; UTR stored; partner gets a notification</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"><div class="n">Suite 8 · 5 min</div><h2>Mobile — what he complained about first</h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>Open the CRM on your phone, log in as Admin</td><td class="exp">Menu hidden behind ☰; opens as a drawer; closes on backdrop tap, ✕, and after picking a menu item</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Dashboard, Leads, Payouts on the phone</td><td class="exp">No sideways page scroll; wide tables scroll inside their own box</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Partner portal on the phone (<span class="mono">9820011001</span>)</td><td class="exp">Same drawer behaviour, all screens readable</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"><div class="n">Suite 9 · 5 min</div><h2>Odds that bite in demos</h2></div>
+  <table>
+    <thead><tr><th class="step">#</th><th>Do</th><th style="width:62mm">Expect</th><th style="width:7mm">OK</th></tr></thead>
+    <tbody>
+      <tr><td class="step">1</td><td>Check a few timestamps (lead activity, last login)</td><td class="exp">Indian time, not 5½ hours behind</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">2</td><td>Marketing (Admin): upload a small JPG → publish → download it as the partner</td><td class="exp">Uploads as a tile with preview; partner's download lands in the history table with their code</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">3</td><td>Settings → rename a pipeline stage, add a sub-stage, then rename both back</td><td class="exp">Edits apply instantly; stage list shows new names on the leads screen</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">4</td><td>Reports → export a CSV</td><td class="exp">Downloads and opens in Numbers/Excel with sensible columns</td><td><span class="box"></span></td></tr>
+      <tr><td class="step">5</td><td>Partner dashboard → "Reporting line" panel</td><td class="exp">Shows who they report to with a tappable phone number</td><td><span class="box"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"><div class="n">Reference</div><h2>The database — your question answered</h2></div>
+  <table>
+    <thead><tr><th style="width:34mm">What</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td><b>Engine</b></td><td><b>PostgreSQL 17</b> on Neon — serverless Postgres, cloud-hosted (AWS US-East)</td></tr>
+      <tr><td><b>What&rsquo;s stored</b></td><td>38 tables. Right now: 16 users, 9 partners, 13 leads, 11 lenders, 3 disbursements, 3 payouts, 52 audit entries — every account, permission change and click-trail persisted</td></tr>
+      <tr><td><b>Are accounts saved?</b></td><td>Yes — everything survives restarts and deploys. The app servers hold nothing; all state lives in Postgres. Passwords stored only as bcrypt hashes</td></tr>
+      <tr><td><b>Documents</b></td><td>KYC/marketing files in a <b>private</b> Vercel Blob store, served only through the permission-checked route</td></tr>
+      <tr><td><b>Backups</b></td><td>Neon keeps short-term restore history on this tier. Proper scheduled backups come with go-live, when the production database is created <b>under QCred&rsquo;s own account</b> — demo data never migrates</td></tr>
+      <tr><td><b>Ownership today</b></td><td>Dev/demo DB under our account with fake data only. Real customer data starts life in QCred&rsquo;s own database — pending his go-ahead</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card r"><b class="t">If you find a problem, report it like this</b>
+  <b>Which login</b> + <b>which screen</b> + <b>what you clicked</b> + <b>what happened vs what you expected</b>, and a screenshot.
+  That's enough for me to reproduce and fix same-day. "Payouts looks weird on mobile as 9999900003" beats "something's broken".</div>
+
+  <div class="card"><b class="t">Known limits — don't report these, they're by design or pending decisions</b>
+  · Bank transfers happen outside the system (UTR recorded after) — by design.
+  · Partner share 60% / TDS 5% are placeholders awaiting his real numbers.
+  · Bonus slabs are best-slab-wins pending his confirmation.
+  · Lender regions = states, pending his states-vs-zones answer.
+  · No mobile <i>apps</i> yet — the web works on phones; the apps are Milestones 3–4.
+  · Girish may show "approved" already — the client has been clicking around too.
+  · All 3 demo payouts are currently "paid" (from testing) — Suite 7 creates a fresh one to test the approve loop.</div>
+
+  <div class="foot"><span>~55 minutes total · report anything, however small</span><span>3 / 3</span></div>
+</div>
+
+</body>
+</html>

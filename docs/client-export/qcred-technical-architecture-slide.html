@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>QCred.in — Technology Architecture</title>
+<style>
+  @page { size: 1920px 1080px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #12304a;
+    background:
+      radial-gradient(1200px 500px at 50% -100px, #eaf2fc 0%, rgba(234,242,252,0) 70%),
+      #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .slide { width: 1920px; height: 1080px; padding: 26px 44px 30px; position: relative; }
+
+  header { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+  h1 { font-size: 34px; font-weight: 800; color: #0B3B78; letter-spacing: -0.02em; }
+  h1 em { font-style: normal; color: #068A3E; }
+  .brand img { height: 42px; display: block; margin-left: auto; }
+  .brand small { display: block; text-align: right; font-size: 11.5px; color: #63748a; margin-top: 3px; letter-spacing: .04em; }
+
+  /* lozenge band labels, like the reference */
+  .band { position: absolute; left: 44px; right: 44px; }
+  .band-box {
+    border: 1.6px solid #b9cfe8; border-radius: 14px; background: #ffffff;
+    box-shadow: 0 8px 24px rgba(11,59,120,.07);
+    height: 100%; position: relative;
+  }
+  .lozenge {
+    position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+    background: #0B3B78; color: #fff; border-radius: 999px;
+    font-size: 11px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase;
+    padding: 6px 22px; white-space: nowrap; z-index: 3;
+  }
+  .lozenge.green { background: #068A3E; }
+
+  /* ---------- user channels ---------- */
+  .channels { top: 106px; height: 190px; }
+  .ch-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; height: 100%; padding: 20px 10px 12px; }
+  .ch { display: flex; align-items: center; gap: 18px; padding: 0 18px; min-width: 0; }
+  .ch + .ch { border-left: 1px dashed #d3e1f1; }
+  .ch h2 { font-size: 16.5px; font-weight: 800; color: #0B3B78; letter-spacing: .02em; }
+  .ch .sub { font-size: 11.5px; color: #63748a; font-weight: 600; margin: 2px 0 10px; }
+  .icorow { display: flex; gap: 14px; }
+  .icx { text-align: center; width: 62px; }
+  .icx .c {
+    width: 40px; height: 40px; margin: 0 auto 5px; border-radius: 50%;
+    background: #eef4fc; border: 1px solid #d8e5f4; color: #0B3B78;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .icx .c.g { background: #e6f6ec; border-color: #bfe4cd; color: #068A3E; }
+  .icx .c svg { width: 19px; height: 19px; }
+  .icx span { font-size: 10.5px; font-weight: 700; color: #33475e; display: block; line-height: 1.2; }
+
+  .phone {
+    width: 64px; height: 116px; flex-shrink: 0; position: relative;
+    background: #0B3B78; border-radius: 12px; padding: 6px 5px 8px;
+    box-shadow: 0 10px 20px rgba(11,59,120,.22);
+  }
+  .phone .nub { width: 20px; height: 3px; border-radius: 2px; background: #08294f; margin: 0 auto 5px; }
+  .phone .scr { height: 94px; border-radius: 7px; background: #fff; overflow: hidden; }
+  .scr .bar { height: 17px; background: #0B3B78; }
+  .ring {
+    width: 40px; height: 40px; margin: 9px auto 0; border-radius: 50%;
+    background: conic-gradient(#068A3E 0 268deg, #dcebe0 268deg 360deg);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .ring i {
+    width: 29px; height: 29px; border-radius: 50%; background: #fff; font-style: normal;
+    color: #068A3E; font-size: 10.5px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .scr .rows { padding: 6px 6px 0; display: grid; gap: 4px; }
+  .scr .rows i { display: block; height: 5px; border-radius: 2px; background: #e2ecf7; }
+  .scr .rows i:nth-child(2) { width: 68%; background: #9fd4b4; }
+  .shk { height: 94px; display: flex; align-items: center; justify-content: center; background: linear-gradient(#f0f7ff, #e8f6ee); border-radius: 7px; }
+  .shk b { width: 42px; height: 42px; border-radius: 50%; background: #068A3E; color: #fff; display: flex; align-items: center; justify-content: center; }
+  .shk svg { width: 24px; height: 24px; }
+
+  .laptop { width: 96px; flex-shrink: 0; }
+  .laptop .lid {
+    height: 66px; background: #0B3B78; border-radius: 8px 8px 2px 2px; padding: 5px;
+    box-shadow: 0 10px 20px rgba(11,59,120,.22);
+  }
+  .laptop .lscr { height: 100%; background: #fff; border-radius: 4px; overflow: hidden; }
+  .lscr .bar { height: 12px; background: #0B3B78; }
+  .lscr .rows { padding: 6px 7px 0; display: grid; gap: 4px; }
+  .lscr .rows i { display: block; height: 5px; border-radius: 2px; background: #e2ecf7; }
+  .lscr .rows i:nth-child(2) { width: 62%; background: #9fd4b4; }
+  .laptop .base { height: 7px; background: #12457f; border-radius: 0 0 8px 8px; margin: 0 -7px; }
+
+  /* ---------- middle ---------- */
+  .left  { top: 348px; left: 44px;  width: 306px; height: 512px; position: absolute; }
+  .right { top: 348px; right: 44px; width: 306px; height: 512px; position: absolute; }
+  .center{ top: 348px; left: 404px; right: 404px; height: 512px; position: absolute; }
+  .panel {
+    height: 100%; border: 1.6px solid #b9cfe8; border-radius: 14px; background: #fff;
+    box-shadow: 0 8px 24px rgba(11,59,120,.07); position: relative;
+  }
+  .panel.green { border-color: #9ed7b4; }
+  .stack { padding: 24px 12px 12px; display: grid; grid-template-rows: repeat(4, 1fr); gap: 9px; height: 100%; }
+  .stack.five { grid-template-rows: repeat(5, 1fr); }
+  .cardi {
+    display: flex; align-items: center; gap: 11px; padding: 0 12px;
+    background: #f5f9fe; border: 1px solid #e2ecf7; border-radius: 11px; min-width: 0;
+  }
+  .panel.green .cardi { background: #f2faf5; border-color: #dbeee2; }
+  .cdot {
+    width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+    background: #e7f0fb; color: #0B3B78; display: flex; align-items: center; justify-content: center;
+  }
+  .panel.green .cdot { background: #d9f0e3; color: #068A3E; }
+  .cdot svg { width: 17px; height: 17px; }
+  .cardi b { display: block; font-size: 12.5px; font-weight: 800; color: #0B3B78; letter-spacing: .01em; }
+  .panel.green .cardi b { color: #056b30; }
+  .cardi span { display: block; font-size: 11px; color: #63748a; margin-top: 2px; line-height: 1.25; }
+
+  .plat { display: grid; grid-template-rows: 1fr auto; height: 100%; padding: 24px 16px 14px; gap: 10px; }
+  .modgrid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr;
+    gap: 34px 42px; position: relative; padding: 4px 6px;
+  }
+  .mod {
+    background: #fbfdff; border: 1.4px solid #d3e1f1; border-radius: 12px;
+    padding: 12px 12px 12px; text-align: center; position: relative; z-index: 2;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .mod.cf { background: #f2faf5; border: 2px solid #068A3E; }
+  .mring {
+    width: 38px; height: 38px; border-radius: 50%; margin-bottom: 7px;
+    background: #e7f0fb; color: #0B3B78; display: flex; align-items: center; justify-content: center;
+  }
+  .mod.cf .mring { background: #d9f0e3; color: #068A3E; }
+  .mring svg { width: 19px; height: 19px; }
+  .mod b { font-size: 13.5px; font-weight: 800; color: #0B3B78; line-height: 1.2; letter-spacing: .01em; }
+  .mod.cf b { color: #056b30; }
+  .mod span { font-size: 11px; color: #63748a; margin-top: 4px; line-height: 1.3; }
+  .wires { position: absolute; inset: 0; z-index: 1; }
+
+  .cyber {
+    background: #0B3B78; border-radius: 10px; color: #fff;
+    display: flex; align-items: center; justify-content: center; gap: 9px;
+    font-size: 11.5px; font-weight: 700; letter-spacing: .03em; padding: 10px;
+  }
+  .cyber svg { width: 15px; height: 15px; }
+  .cyber i { font-style: normal; color: #8ee0ad; margin: 0 4px; }
+
+  /* ---------- cloud ---------- */
+  .cloud { top: 902px; height: 128px; }
+  .cl-grid { display: grid; grid-template-columns: repeat(4, 1fr); height: 100%; padding: 22px 10px 12px; }
+  .cl { display: flex; align-items: center; gap: 12px; padding: 0 20px; min-width: 0; }
+  .cl + .cl { border-left: 1px dashed #d3e1f1; }
+  .cl .cdot { width: 42px; height: 42px; }
+  .cl b { display: block; font-size: 14px; font-weight: 800; color: #0B3B78; }
+  .cl span { display: block; font-size: 11.5px; color: #63748a; margin-top: 2px; }
+
+  /* connectors between bands */
+  .vwire { position: absolute; z-index: 0; }
+</style>
+</head>
+<body>
+<div class="slide">
+
+<header>
+  <h1>Technology <em>—</em> Architecture</h1>
+  <div class="brand">
+    <img src="qcred-logo-wordmark.png" alt="QCred.in" />
+    <small>Credit. Credibility. Confidence.</small>
+  </div>
+</header>
+
+<!-- USER CHANNELS -->
+<section class="band channels">
+  <div class="band-box">
+    <div class="lozenge">User Channels</div>
+    <div class="ch-grid">
+      <div class="ch">
+        <div class="phone"><div class="nub"></div><div class="scr"><div class="bar"></div><div class="ring"><i>750</i></div><div class="rows"><i></i><i></i></div></div></div>
+        <div>
+          <h2>CUSTOMER APP</h2>
+          <div class="sub">End customer · qcred.in + app</div>
+          <div class="icorow">
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><span>Apply</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><span>Track</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div><span>Documents</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v7H4v-7M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 0-3-3c0 2 3 3 3 3zM12 7a3 3 0 1 1 3-3c0 2-3 3-3 3z"/></svg></div><span>Offers</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 0 1-4 4H8l-4 3V7a4 4 0 0 1 4-4h9a4 4 0 0 1 4 4z"/></svg></div><span>Support</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="ch">
+        <div class="phone"><div class="nub"></div><div class="shk"><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 13l2-6 2 1 1 5"/><path d="M11 11h6a2 2 0 0 1 2 2v1a3 3 0 0 1-3 3h-4l-3 3H7a2 2 0 0 1-2-2v-2a3 3 0 0 1 3-3h3z"/></svg></b></div></div>
+        <div>
+          <h2>PARTNER APP</h2>
+          <div class="sub">Field partners · Android + iOS</div>
+          <div class="icorow">
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div><span>Lead</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><span>Apply</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><span>Track</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg></div><span>Payouts</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.4"/><path d="M3 20a6 6 0 0 1 12 0M14.5 20a5 5 0 0 1 7-4.4"/></svg></div><span>Team</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="ch">
+        <div class="laptop"><div class="lid"><div class="lscr"><div class="bar"></div><div class="rows"><i></i><i></i><i></i></div></div></div><div class="base"></div></div>
+        <div>
+          <h2>WEB ADMIN CONSOLE</h2>
+          <div class="sub">Staff · crm.qcred.in</div>
+          <div class="icorow">
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="16" r="3"/></svg></div><span>Leads</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><span>Partners</span></div>
+            <div class="icx"><div class="c g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m4 12 4 4L20 6"/><path d="m4 18 4 4"/></svg></div><span>Maker-<br/>Checker</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg></div><span>Payouts</span></div>
+            <div class="icx"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M7 16V8m5 8V5m5 11v-6"/></svg></div><span>P&amp;L</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- connectors channels -> platform -->
+<svg class="vwire" style="left:0;top:296px;width:1920px;height:52px" viewBox="0 0 1920 52">
+  <defs>
+    <marker id="ad" viewBox="0 0 10 10" refX="5" refY="7" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 2l4 7 4-7z" fill="#0B3B78"/></marker>
+  </defs>
+  <g stroke="#0B3B78" stroke-width="2">
+    <line x1="360"  y1="6" x2="360"  y2="44" marker-start="url(#ad)" marker-end="url(#ad)"/>
+    <line x1="960"  y1="6" x2="960"  y2="44" marker-start="url(#ad)" marker-end="url(#ad)"/>
+    <line x1="1560" y1="6" x2="1560" y2="44" marker-start="url(#ad)" marker-end="url(#ad)"/>
+  </g>
+</svg>
+
+<!-- LEFT -->
+<aside class="left">
+  <div class="panel">
+    <div class="lozenge">Data &amp; Control Layer</div>
+    <div class="stack">
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg></div>
+        <div><b>IDENTITY &amp; ACCESS</b><span>JWT sessions · roles · own / team / all</span></div>
+      </div>
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h6M7 13h4"/><circle cx="16.5" cy="13.5" r="2"/></svg></div>
+        <div><b>KYC CAPTURE</b><span>PAN · Aadhaar · camera / PDF upload</span></div>
+      </div>
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v13H4z"/><path d="M8 7V5h8v2"/><path d="M12 11v4M10 13h4"/></svg></div>
+        <div><b>DOCUMENT VAULT</b><span>Auth-gated encrypted file store</span></div>
+      </div>
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 1 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div>
+        <div><b>AUDIT &amp; NOTIFY</b><span>Full trail · push · WhatsApp · SMS</span></div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- CENTER -->
+<section class="center">
+  <div class="panel">
+    <div class="lozenge">QCred Technology Platform</div>
+    <div class="plat">
+      <div class="modgrid">
+        <svg class="wires" viewBox="0 0 1064 340" preserveAspectRatio="none">
+          <defs><marker id="mw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l8 4-8 4z" fill="#7a9cc4"/></marker></defs>
+          <g stroke="#7a9cc4" stroke-width="1.8" fill="none">
+            <line x1="330" y1="82"  x2="376" y2="82"  marker-end="url(#mw)"/>
+            <line x1="688" y1="82"  x2="734" y2="82"  marker-end="url(#mw)"/>
+            <line x1="330" y1="258" x2="376" y2="258" marker-end="url(#mw)"/>
+            <line x1="688" y1="258" x2="734" y2="258" marker-end="url(#mw)"/>
+            <line x1="177" y1="150" x2="177" y2="188" marker-end="url(#mw)"/>
+            <line x1="532" y1="150" x2="532" y2="188" marker-end="url(#mw)"/>
+            <line x1="887" y1="150" x2="887" y2="188" marker-end="url(#mw)"/>
+          </g>
+        </svg>
+        <div class="mod">
+          <div class="mring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="16" r="3"/></svg></div>
+          <b>CRM</b><span>Leads · partners · employees · org tree</span>
+        </div>
+        <div class="mod">
+          <div class="mring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5h4l2 3h10v11z"/></svg></div>
+          <b>ORIGINATION</b><span>18-stage file pipeline · lender hand-off</span>
+        </div>
+        <div class="mod">
+          <div class="mring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg></div>
+          <b>BEST MATCH ENGINE</b><span>Ranks lenders &amp; programmes by rules</span>
+        </div>
+        <div class="mod cf">
+          <div class="mring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
+          <b>CONSTRUCTION FINANCE</b><span>100-pt lender-readiness · GO / HOLD / DECLINE</span>
+        </div>
+        <div class="mod">
+          <div class="mring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></div>
+          <b>MONEY · MAKER-CHECKER</b><span>Disbursements · payouts · GST / TDS</span>
+        </div>
+        <div class="mod">
+          <div class="mring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M7 16V8m5 8V5m5 11v-6"/></svg></div>
+          <b>ANALYTICS &amp; P&amp;L</b><span>Book · commission · org drill-down</span>
+        </div>
+      </div>
+      <div class="cyber">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#8ee0ad" stroke-width="2"><path d="M12 3 4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/></svg>
+        CYBER SECURITY LAYER <i>|</i> End-to-End HTTPS <i>|</i> Encrypted Data <i>|</i> Role-Based Access <i>|</i> Full Audit Trail
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RIGHT -->
+<aside class="right">
+  <div class="panel green">
+    <div class="lozenge green">Lender Integration Layer</div>
+    <div class="stack five">
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <div><b>BANKS</b><span>Programmes · apply IDs</span></div>
+      </div>
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg></div>
+        <div><b>NBFCs / HFCs</b><span>Poonawalla · ABFL · IIFL +</span></div>
+      </div>
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div>
+        <div><b>BEST MATCH OUT</b><span>Ranked lender shortlist</span></div>
+      </div>
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg></div>
+        <div><b>APPLY LINKS</b><span>Straight into lender portals</span></div>
+      </div>
+      <div class="cardi">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14h12V9z"/><path d="M14 3v6h6"/></svg></div>
+        <div><b>CF PACK TO LENDER</b><span>Scored PDF after GO</span></div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- dashed side wires -->
+<svg class="vwire" style="left:350px;top:520px;width:54px;height:200px" viewBox="0 0 54 200">
+  <defs><marker id="dl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1l8 4-8 4z" fill="#7a9cc4"/></marker></defs>
+  <g stroke="#7a9cc4" stroke-width="1.8" stroke-dasharray="5 4">
+    <line x1="6" y1="40"  x2="48" y2="40"  marker-start="url(#dl)" marker-end="url(#dl)"/>
+    <line x1="6" y1="140" x2="48" y2="140" marker-start="url(#dl)" marker-end="url(#dl)"/>
+  </g>
+</svg>
+<svg class="vwire" style="right:350px;top:520px;width:54px;height:200px" viewBox="0 0 54 200">
+  <defs><marker id="dg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1l8 4-8 4z" fill="#3ea468"/></marker></defs>
+  <g stroke="#3ea468" stroke-width="1.8" stroke-dasharray="5 4">
+    <line x1="6" y1="40"  x2="48" y2="40"  marker-start="url(#dg)" marker-end="url(#dg)"/>
+    <line x1="6" y1="140" x2="48" y2="140" marker-start="url(#dg)" marker-end="url(#dg)"/>
+  </g>
+</svg>
+
+<!-- platform -> cloud -->
+<svg class="vwire" style="left:0;top:860px;width:1920px;height:42px" viewBox="0 0 1920 42">
+  <g stroke="#0B3B78" stroke-width="2">
+    <line x1="960" y1="4" x2="960" y2="38" marker-start="url(#ad)" marker-end="url(#ad)"/>
+  </g>
+</svg>
+
+<!-- CLOUD -->
+<section class="band cloud">
+  <div class="band-box">
+    <div class="lozenge">Cloud Infrastructure</div>
+    <div class="cl-grid">
+      <div class="cl">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a5 5 0 1 1 1-9.9A7 7 0 0 1 21 12h-1a4 4 0 0 1 0 6z"/></svg></div>
+        <div><b>Vercel</b><span>Next.js · crm.qcred.in</span></div>
+      </div>
+      <div class="cl">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+        <div><b>Neon Postgres</b><span>Single source of truth</span></div>
+      </div>
+      <div class="cl">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v13H4z"/><path d="M8 7V5h8v2"/><path d="M12 11v4M10 13h4"/></svg></div>
+        <div><b>Vercel Blob</b><span>KYC &amp; lead documents</span></div>
+      </div>
+      <div class="cl">
+        <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <div><b>Expo EAS</b><span>Native Android + iOS builds</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24dev — Proposal: Bridal Makeup Studio Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141414;
+    --mut:#5c5c5c;
+    --faint:#909090;
+    --line:#e3dfd8;
+    --rule:#141414;
+    --paper:#FDFCFA;
+    --wash:#f6f4f0;
+    --orange:#FD4D11;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#e9e7e2;display:flex;flex-direction:column;align-items:center;gap:24px;font-family:Inter,sans-serif}
+
+  .page{
+    width:1080px;height:1350px;overflow:hidden;position:relative;
+    color:var(--ink);background:var(--paper);
+    -webkit-print-color-adjust:exact;
+    padding:52px 76px 38px;
+    display:flex;flex-direction:column;
+  }
+
+  .top{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:2.5px solid var(--rule)}
+  .top img{height:44px;display:block}
+  .doclbl{text-align:right}
+  .doclbl .b{font-weight:800;font-size:17px;letter-spacing:4.5px}
+  .doclbl small{display:block;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:12px;color:var(--mut);letter-spacing:.5px;margin-top:6px}
+
+  .meta{display:flex;padding:14px 0 0;margin-bottom:26px;gap:60px}
+  .meta .col .k{font-size:10.5px;letter-spacing:2.2px;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:5px}
+  .meta .col .v{font-size:14px;font-weight:600;line-height:1.5}
+  .meta .col .v span{color:var(--mut);font-weight:500}
+  .meta .col:last-child{margin-left:auto;text-align:right}
+
+  h1{font-weight:900;font-size:35px;line-height:1.14;letter-spacing:-1.2px;margin-bottom:12px}
+  .sub{font-size:16px;color:var(--mut);line-height:1.55;margin-bottom:24px;max-width:880px}
+
+  .band{display:flex;align-items:stretch;border-top:2.5px solid var(--rule);border-bottom:1px solid var(--line);margin-bottom:24px}
+  .band .cell{padding:18px 32px 20px;border-right:1px solid var(--line)}
+  .band .cell:first-child{padding-left:0}
+  .band .cell:last-child{border-right:none;padding-right:0;margin-left:auto;text-align:right}
+  .band .k{font-size:10.5px;letter-spacing:2.2px;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:9px}
+  .band .amt{font-weight:900;font-size:46px;letter-spacing:-1.8px;line-height:1}
+  .band .v{font-weight:800;font-size:20px;line-height:1.3;letter-spacing:-.3px;padding-top:3px}
+  .band .v small{display:block;font-size:12.5px;color:var(--mut);font-weight:500;margin-top:4px}
+
+  .sect{display:flex;align-items:center;gap:12px;font-size:11.5px;letter-spacing:2.6px;text-transform:uppercase;font-weight:800;margin-bottom:12px}
+  .sect::before{content:"";width:8px;height:8px;background:var(--orange)}
+
+  .incl{display:grid;grid-template-columns:1fr 1fr;gap:8px 30px;margin-bottom:22px}
+  .incl .it{display:flex;gap:11px;font-size:14.5px;color:#2e2e2e;line-height:1.5;font-weight:500}
+  .incl .it b{font-weight:700;color:var(--ink)}
+  .incl .it::before{content:"✓";color:var(--orange);font-weight:800;font-size:13.5px;flex:0 0 auto;margin-top:1px}
+
+  .freebar{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:22px}
+  .freebar .fb{flex:1;padding:12px 18px 13px;border-right:1px solid var(--line)}
+  .freebar .fb:first-child{padding-left:0}
+  .freebar .fb:last-child{border-right:none;padding-right:0}
+  .freebar .fb .t{font-size:13px;font-weight:800}
+  .freebar .fb .t em{font-style:normal;font-family:'JetBrains Mono',monospace;font-size:10.5px;font-weight:600;color:var(--orange);letter-spacing:1.5px;margin-right:8px}
+  .freebar .fb .d{font-size:11.5px;color:var(--mut);line-height:1.45;margin-top:3px}
+  .freebar .fb .w{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;margin-top:6px}
+  .freebar .fb .w s{color:var(--faint)}
+  .freebar .fb .w b{color:var(--orange);font-weight:600;margin-left:6px}
+
+  .steps{margin-bottom:20px}
+  .step{display:flex;gap:18px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+  .step:last-child{border-bottom:none}
+  .step .n{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:12.5px;color:var(--orange);border:1.5px solid var(--orange);width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .step .t{font-size:15.5px;font-weight:700;line-height:1.35}
+  .step .t small{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:2px;line-height:1.5}
+  .step .amt{margin-left:auto;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:18px;white-space:nowrap}
+
+  .care{background:var(--wash);border:1px solid var(--line);border-left:4px solid var(--orange);padding:14px 24px;margin-bottom:16px}
+  .care .carehead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .care .carehead .cn{font-weight:900;font-size:17px;letter-spacing:-.3px}
+  .care .carehead .cn small{display:inline-block;font-weight:800;font-size:9.5px;color:var(--paper);background:var(--ink);padding:3px 9px;letter-spacing:1.8px;margin-left:10px;vertical-align:middle}
+  .care .carehead .cp{font-weight:900;font-size:21px;letter-spacing:-.5px}
+  .care .carehead .cp small{font-weight:600;font-size:12.5px;color:var(--mut)}
+  .care .cd{font-size:13px;color:#3d3d3d;line-height:1.55}
+  .care .cd b{color:var(--ink)}
+
+  .note{border-left:3px solid var(--orange);padding:2px 0 2px 18px;font-size:12.5px;color:#4a4a4a;line-height:1.65;margin-bottom:auto}
+  .note b{color:var(--ink)}
+
+  .foot{border-top:2.5px solid var(--rule);padding-top:14px;display:flex;justify-content:space-between;align-items:center;margin-top:22px}
+  .foot img{height:26px;display:block}
+  .foot .mid{font-size:12.5px;color:var(--mut);font-weight:500}
+  .foot .valid{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--mut);text-align:right;line-height:1.7}
+
+  @page{size:1080px 1350px;margin:0}
+  @media print{
+    body{background:none;gap:0;display:block}
+    .page{page-break-after:always}
+    .page:last-child{page-break-after:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="top">
+    <img src="assets/24dev-logo.png" alt="24dev">
+    <div class="doclbl">
+      <div class="b">QUOTATION</div>
+      <small>Nº 24DEV-2026-015 · 12 JULY 2026</small>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div class="col">
+      <div class="k">Prepared for</div>
+      <div class="v">Andrew<span> · Bridal Makeup Studio</span><br><span>avdocs1@gmail.com</span></div>
+    </div>
+    <div class="col">
+      <div class="k">Prepared by</div>
+      <div class="v">R. Prabhas Raju · 24dev<span> · Bengaluru</span><br><span>prabhasraju1817@gmail.com</span></div>
+    </div>
+    <div class="col">
+      <div class="k">Valid until</div>
+      <div class="v">19 July 2026<br><span>7 days</span></div>
+    </div>
+  </div>
+
+  <h1>A custom-designed bridal studio website —<br>built to rank, easy to update yourself.</h1>
+  <div class="sub">Fully custom design on Next.js (no WordPress, no templates) with all six pages you listed, a booking form that sends enquiries straight to your WhatsApp, and a simple admin panel to update your portfolio and blog yourself — no coding.</div>
+
+  <div class="band">
+    <div class="cell">
+      <div class="k">All-inclusive price</div>
+      <div class="amt">₹19,999</div>
+    </div>
+    <div class="cell">
+      <div class="k">Delivery</div>
+      <div class="v">Live in 5 working days<small>From advance + your content received</small></div>
+    </div>
+    <div class="cell">
+      <div class="k">Risk</div>
+      <div class="v">Preview before balance<small>See the full site live, then pay the rest</small></div>
+    </div>
+  </div>
+
+  <div class="sect">Everything included</div>
+  <div class="incl">
+    <div class="it"><span><b>All 6 pages</b> — Home · About · Services · Portfolio · Contact &amp; Booking · Blog</span></div>
+    <div class="it"><span><b>Custom design</b> — built on Next.js, not a WordPress theme; designed around your inspirations</span></div>
+    <div class="it"><span><b>All 6 services showcased</b> — Bridal, Party, HD &amp; Airbrush, Photoshoot, Facial &amp; Skin Prep, Nails</span></div>
+    <div class="it"><span><b>Booking form</b> — enquiries land instantly on your WhatsApp &amp; email</span></div>
+    <div class="it"><span><b>Portfolio gallery</b> — add new work yourself, monthly or anytime</span></div>
+    <div class="it"><span><b>Blog system</b> — publish weekly posts yourself in minutes</span></div>
+    <div class="it"><span><b>Admin panel (Sanity CMS)</b> — change any photo, text or price without a developer + training call</span></div>
+    <div class="it"><span><b>Mobile-first &amp; fast</b> — most brides will find you on their phone</span></div>
+  </div>
+
+  <div class="sect">Free with your website — ₹18,500+ worth, included</div>
+  <div class="freebar">
+    <div class="fb">
+      <div class="t"><em>FREE</em>Domain + hosting</div>
+      <div class="d">Domain for year 1 &amp; hosting included — no renewals surprise</div>
+      <div class="w"><s>worth ₹3,000</s><b>₹0</b></div>
+    </div>
+    <div class="fb">
+      <div class="t"><em>FREE</em>SEO + AEO + GEO</div>
+      <div class="d">Rank on Google AND get recommended when people ask ChatGPT/Google AI for bridal makeup nearby</div>
+      <div class="w"><s>worth ₹8,000</s><b>₹0</b></div>
+    </div>
+    <div class="fb">
+      <div class="t"><em>FREE</em>Starter branding</div>
+      <div class="d">Logo cleanup, colour palette &amp; fonts — one consistent look</div>
+      <div class="w"><s>worth ₹5,000</s><b>₹0</b></div>
+    </div>
+    <div class="fb">
+      <div class="t"><em>FREE</em>1 month maintenance</div>
+      <div class="d">Edits, updates &amp; support free for your first month live</div>
+      <div class="w"><s>worth ₹2,499</s><b>₹0</b></div>
+    </div>
+  </div>
+
+  <div class="sect">Payment — see it working before the balance</div>
+  <div class="steps">
+    <div class="step">
+      <div class="n">01</div>
+      <div class="t">Advance to start — build begins same day
+        <small>Locks your slot &amp; the 5-day delivery clock.</small>
+      </div>
+      <div class="amt">₹10,000</div>
+    </div>
+    <div class="step">
+      <div class="n">02</div>
+      <div class="t">Balance after you approve the live preview
+        <small>Click through every page working — then we connect your domain &amp; hand over.</small>
+      </div>
+      <div class="amt">₹9,999</div>
+    </div>
+  </div>
+
+  <div class="care">
+    <div class="carehead">
+      <div class="cn">Care Plan<small>OPTIONAL</small></div>
+      <div class="cp">₹2,499<small>/month · after your free month</small></div>
+    </div>
+    <div class="cd">Your requirement is a <b>weekly blog</b> and <b>monthly portfolio updates</b> — we do it all for you: posts written &amp; published weekly, new work uploaded, edits and priority support. Or manage it yourself through the admin panel, free — your choice.</div>
+  </div>
+
+  <div class="note">
+    <b>Good to know:</b> the 5-day clock starts once your brand name, photos and content arrive · 2 rounds of design revisions included · stock photos billed at cost, with your approval · full ownership handed over — code, domain &amp; admin access are yours.
+  </div>
+
+  <div class="foot">
+    <img src="assets/24dev-logo.png" alt="24dev">
+    <div class="mid">Questions? Reply to this email or WhatsApp us — same-day response</div>
+    <div class="valid">QUOTE VALID TILL 19 JULY 2026</div>
+  </div>
+
+</div>
+
+</body>
+</html>

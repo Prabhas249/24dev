@@ -71,7 +71,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <link rel="preconnect" href="https://image.thum.io" />
           <link rel="dns-prefetch" href="https://image.thum.io" />
         </head>
-        <body className="grain min-h-screen bg-ink text-fog">
+        <body className="grain min-h-screen bg-ink text-fog antialiased font-sans">
           <ScrollProgressBar />
           <LenisProvider>{children}</LenisProvider>
           <Toaster position="bottom-right" theme="light" />

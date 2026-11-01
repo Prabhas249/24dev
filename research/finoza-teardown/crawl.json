@@ -1,0 +1,5276 @@
+[
+  {
+    "url": "https://finozacapital.com/manage-dsa/dashboard",
+    "status": 200,
+    "shot": "shots/dashboard.png",
+    "title": "Finoza Capital - CRM Dashboard",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "#",
+        "Lead Status",
+        "Advisor",
+        "Updated / Added",
+        "Customer Info",
+        "Product",
+        "RM",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "View All Leads",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/notifications",
+    "status": 200,
+    "shot": "shots/notifications.png",
+    "title": "Finoza Capital - Employee Notifications",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "#",
+        "From",
+        "Date & Time",
+        "Notification",
+        "Action",
+        "364",
+        "29-Jul-2026 01:42 PM",
+        "View Lead"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/advisor/adv",
+    "status": 200,
+    "shot": "shots/advisor_adv.png",
+    "title": "Finoza Capital - Advisor",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Advisor Code",
+        "Joining Date",
+        "Advisor Name",
+        "Advisor Contact",
+        "Email Verify",
+        "Earning",
+        "Status",
+        "Action"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "View All Advisors",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View",
+      "Login",
+      "View"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/advisor/all",
+    "status": 200,
+    "shot": "shots/advisor_all.png",
+    "title": "Finoza Capital - Advisor",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "ID",
+        "Photo",
+        "Name",
+        "Mobile",
+        "Email",
+        "DOJ",
+        "Total Earning",
+        "Status"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Add Advisor",
+      "View All Advisors"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead",
+    "status": 200,
+    "shot": "shots/lead.png",
+    "title": "Finoza Capital - My Leads",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "#",
+        "Lead Status",
+        "Advisor",
+        "Updated / Added",
+        "Customer Info",
+        "Product",
+        "RM",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "View All Leads",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/report",
+    "status": 200,
+    "shot": "shots/lead_report.png",
+    "title": "Finoza Capital - Lead",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Lead Status"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Lead Status"
+      },
+      {
+        "name": "lead_status",
+        "type": "select",
+        "label": "Lead Status",
+        "options": [
+          "All Status",
+          "0 - Pending",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      },
+      {
+        "name": "lead_type",
+        "type": "select",
+        "label": "Loan Type",
+        "options": [
+          "All Loans",
+          "1 - Instant Loan",
+          "2 - Personal Loan",
+          "3 - Business Loan",
+          "5 - Home Loan",
+          "10 - Credit Card",
+          "12 - Demat Account",
+          "14 - Bank Account",
+          "17 - Loan Against Shares",
+          "18 - Kyc Loans"
+        ]
+      },
+      {
+        "name": "lead_limit",
+        "type": "select",
+        "label": "Show Leads",
+        "options": [
+          "10 Leads",
+          "50 Leads",
+          "100 Leads",
+          "500 Leads"
+        ]
+      },
+      {
+        "name": "start_date",
+        "type": "date",
+        "label": "Start Date"
+      },
+      {
+        "name": "end_date",
+        "type": "date",
+        "label": "End Date"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Apply Filter",
+      "Reset"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/all",
+    "status": 200,
+    "shot": "shots/lead_all.png",
+    "title": "Finoza Capital - Lead List",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "#",
+        "Status",
+        "Last Update",
+        "Advisor",
+        "Product",
+        "Amount",
+        "Customer",
+        "Mobile",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Download CSV",
+      "Download Excel"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/my-disburse",
+    "status": 200,
+    "shot": "shots/lead_my_disburse.png",
+    "title": "Finoza Capital - Lead",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/disburse",
+    "status": 200,
+    "shot": "shots/lead_disburse.png",
+    "title": "Finoza Capital - Lead",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/payout-status",
+    "status": 200,
+    "shot": "shots/lead_payout_status.png",
+    "title": "Finoza Capital - Lead",
+    "h1": [
+      "Payout Status Guide"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Generate Advisor Commission",
+      "Re-Check Brand Payout",
+      "Pay Advisor Commission",
+      "Payout Completed"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/lead-status",
+    "status": 200,
+    "shot": "shots/lead_lead_status.png",
+    "title": "Finoza Capital - Lead",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/payouts/my",
+    "status": 200,
+    "shot": "shots/payouts_my.png",
+    "title": "My Payouts",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "ID",
+        "Advisor ID",
+        "Amount",
+        "Bank ID",
+        "Mode",
+        "Reference",
+        "Employee ID",
+        "Type",
+        "Status",
+        "Date"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/payouts/advisor",
+    "status": 200,
+    "shot": "shots/payouts_advisor.png",
+    "title": "Advisor Payouts",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "ID",
+        "Advisor ID",
+        "Amount",
+        "Bank ID",
+        "Mode",
+        "Reference",
+        "Employee ID",
+        "Type",
+        "Status",
+        "Date"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/reports",
+    "status": 200,
+    "shot": "shots/reports.png",
+    "title": "Finoza Capital - Report",
+    "h1": [
+      "Lead Status",
+      "Lead Analytics"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/reports/lead-wise",
+    "status": 200,
+    "shot": "shots/reports_lead_wise.png",
+    "title": "Finoza Capital - Report",
+    "h1": [
+      "Lead Count By Status",
+      "Lead Status Distribution (%)"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/reports/product-wise",
+    "status": 200,
+    "shot": "shots/reports_product_wise.png",
+    "title": "Finoza Capital - Report",
+    "h1": [
+      "Lead Count By Status",
+      "Lead Status Distribution (%)"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/product",
+    "status": 200,
+    "shot": "shots/product.png",
+    "title": "Finoza Capital - Product",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/email/list",
+    "status": 200,
+    "shot": "shots/email_list.png",
+    "title": "Finoza Capital - Professional Email",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "ID",
+        "First Name",
+        "Last Name",
+        "Email",
+        "Password",
+        "Mailbox",
+        "Login (Link)",
+        "Storage",
+        "Edit",
+        "Save",
+        "Delete"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Create Email"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/email/create-email",
+    "status": 200,
+    "shot": "shots/email_create_email.png",
+    "title": "Finoza Capital - Create Email",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "action",
+        "type": "hidden",
+        "label": "First Name"
+      },
+      {
+        "name": "status",
+        "type": "hidden",
+        "label": "First Name"
+      },
+      {
+        "name": "storage",
+        "type": "hidden",
+        "label": "First Name"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "label": "Last Name"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "label": "Email"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Create Email",
+      "Generate Email"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/employee",
+    "status": 200,
+    "shot": "shots/employee.png",
+    "title": "Finoza Capital - Employee Management",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "ID",
+        "Status",
+        "Product Info",
+        "First Name",
+        "Last Name",
+        "Email",
+        "Phone",
+        "Action"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Edit",
+      "Save",
+      "Cancel",
+      "Edit",
+      "Save",
+      "Cancel",
+      "Edit",
+      "Save",
+      "Cancel",
+      "Edit",
+      "Save",
+      "Cancel",
+      "Edit",
+      "Save",
+      "Cancel",
+      "Edit",
+      "Save",
+      "Cancel",
+      "Edit",
+      "Save"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/data-sync",
+    "status": 200,
+    "shot": "shots/data_sync.png",
+    "title": "Data Sync",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [],
+    "buttons": []
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/support",
+    "status": 200,
+    "shot": "shots/support.png",
+    "title": "Finoza Capital - CRM",
+    "h1": [
+      "0"
+    ],
+    "tableHeaders": [
+      [
+        "Ticket ID",
+        "Issue Type",
+        "Title",
+        "Status",
+        "Created At"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Add Ticket"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/payment",
+    "status": 200,
+    "shot": "shots/payment.png",
+    "title": "Finoza Capital - Add",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Payment ID",
+        "Service Type",
+        "Amount",
+        "Payment Method",
+        "Status"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Add Payment"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/images",
+    "status": 200,
+    "shot": "shots/images.png",
+    "title": "Finoza Capital - Page",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "SR No.",
+        "Thumbnail",
+        "Image Name",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Select Image:"
+      },
+      {
+        "name": "new_image",
+        "type": "file",
+        "label": "Select Image:"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Upload New Image"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/blog",
+    "status": 200,
+    "shot": "shots/blog.png",
+    "title": "Finoza Capital - Blog",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Category ID",
+        "Title",
+        "Author",
+        "Status",
+        "Thumbnail",
+        "Date",
+        "Image",
+        "Edit",
+        "View",
+        "Delete"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Add Blog Post",
+      "Add Category"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/blog/add-blog",
+    "status": 200,
+    "shot": "shots/blog_add_blog.png",
+    "title": "Finoza Capital - Blog",
+    "h1": [
+      "Blog Add Blog"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "author",
+        "type": "hidden",
+        "label": "Blog Category"
+      },
+      {
+        "name": "status",
+        "type": "hidden",
+        "label": "Blog Category"
+      },
+      {
+        "name": "image",
+        "type": "hidden",
+        "label": "Blog Category"
+      },
+      {
+        "name": "thum",
+        "type": "hidden",
+        "label": "Blog Category"
+      },
+      {
+        "name": "cat_id",
+        "type": "select",
+        "label": "Blog Category",
+        "options": []
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Blog Title"
+      },
+      {
+        "name": "content",
+        "type": "textarea",
+        "label": "Blog Content"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "View Categories",
+      "View Blog Posts",
+      "Post Blog"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/blog/add-catagory",
+    "status": 200,
+    "shot": "shots/blog_add_catagory.png",
+    "title": "Finoza Capital - Blog",
+    "h1": [
+      "Blog Add Category"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Blog Category"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "View Category",
+      "Add Category"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/blog/catagory",
+    "status": 200,
+    "shot": "shots/blog_catagory.png",
+    "title": "Finoza Capital - Blog",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Category ID",
+        "Name"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Add Blog Post",
+      "Add Category"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/home-page",
+    "status": 200,
+    "shot": "shots/page_home_page.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Home Page Slider - Content & Links Edit",
+      "Home Page Slider - 1: Personal Loan",
+      "Home Page Slider - 2: Business Loan",
+      "Home Page Slider - 3: Savings Account",
+      "Home Page Slider - 4: Credit Card",
+      "Home Page Slider - 5: Demat Account"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "image",
+        "type": "text",
+        "label": "Image Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "sub-title",
+        "type": "text",
+        "label": "Sub-title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "sub-description",
+        "type": "text",
+        "label": "Sub-description:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "image",
+        "type": "text",
+        "label": "Image Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "sub-title",
+        "type": "text",
+        "label": "Sub-title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "sub-description",
+        "type": "text",
+        "label": "Sub-description:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "image",
+        "type": "text",
+        "label": "Image Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "sub-title",
+        "type": "text",
+        "label": "Sub-title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "sub-description",
+        "type": "text",
+        "label": "Sub-description:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "image",
+        "type": "text",
+        "label": "Image Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "sub-title",
+        "type": "text",
+        "label": "Sub-title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "sub-description",
+        "type": "text",
+        "label": "Sub-description:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Image Path:"
+      },
+      {
+        "name": "image",
+        "type": "text",
+        "label": "Image Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "sub-title",
+        "type": "text",
+        "label": "Sub-title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "sub-description",
+        "type": "text",
+        "label": "Sub-description:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Home Page Slider - 1: Personal Loan",
+      "Save Slider 1",
+      "Home Page Slider - 2: Business Loan",
+      "Save Slider 2",
+      "Home Page Slider - 3: Savings Account",
+      "Save Slider 3",
+      "Home Page Slider - 4: Credit Card",
+      "Save Slider 4",
+      "Home Page Slider - 5: Demat Account",
+      "Save Slider 5",
+      "Restore Default Data"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/loan-rate",
+    "status": 200,
+    "shot": "shots/page_loan_rate.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Loan Rate - Content & Links Edit",
+      "Personal Loan - 10.50% *",
+      "Business Loans - 11.20% *",
+      "Car Loan - 9.25% *",
+      "Credit Card - 12%"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "rate",
+        "type": "text",
+        "label": "Rate:"
+      },
+      {
+        "name": "product",
+        "type": "text",
+        "label": "Product:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "rate",
+        "type": "text",
+        "label": "Rate:"
+      },
+      {
+        "name": "product",
+        "type": "text",
+        "label": "Product:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "rate",
+        "type": "text",
+        "label": "Rate:"
+      },
+      {
+        "name": "product",
+        "type": "text",
+        "label": "Product:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "slider_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "rate",
+        "type": "text",
+        "label": "Rate:"
+      },
+      {
+        "name": "product",
+        "type": "text",
+        "label": "Product:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Personal Loan - 10.50% *",
+      "Save Changes",
+      "Business Loans - 11.20% *",
+      "Save Changes",
+      "Car Loan - 9.25% *",
+      "Save Changes",
+      "Credit Card - 12%",
+      "Save Changes",
+      "Restore Default Data"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/services",
+    "status": 200,
+    "shot": "shots/page_services.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Services - Content & Links Edit",
+      "Instant Loan",
+      "Personal Loan",
+      "Business Loan",
+      "Home Loan"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "subheading",
+        "type": "textarea",
+        "label": "Section Subheading:"
+      },
+      {
+        "name": "product_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "product_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "product_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "product_index",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon Path:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Section Heading",
+      "Instant Loan",
+      "Save Changes",
+      "Personal Loan",
+      "Save Changes",
+      "Business Loan",
+      "Save Changes",
+      "Home Loan",
+      "Save Changes",
+      "Restore Default Data"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/process",
+    "status": 200,
+    "shot": "shots/page_process.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Process - Content & Links Edit",
+      "Step 1: Apply",
+      "Step 2: Review",
+      "Step 3: Approval"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "subheading",
+        "type": "textarea",
+        "label": "Section Subheading:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "button_link",
+        "type": "text",
+        "label": "Button Link:"
+      },
+      {
+        "name": "step_index",
+        "type": "hidden",
+        "label": "Step Number:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Step Number:"
+      },
+      {
+        "name": "step_number",
+        "type": "text",
+        "label": "Step Number:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "step_index",
+        "type": "hidden",
+        "label": "Step Number:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Step Number:"
+      },
+      {
+        "name": "step_number",
+        "type": "text",
+        "label": "Step Number:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "step_index",
+        "type": "hidden",
+        "label": "Step Number:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Step Number:"
+      },
+      {
+        "name": "step_number",
+        "type": "text",
+        "label": "Step Number:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Section Settings",
+      "Step 1: Apply",
+      "Save Changes",
+      "Step 2: Review",
+      "Save Changes",
+      "Step 3: Approval",
+      "Save Changes",
+      "Restore Default Data"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/why-us",
+    "status": 200,
+    "shot": "shots/page_why_us.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Process - Content & Links Edit",
+      "Competitive Offerings",
+      "Responsive Customer Support",
+      "Flexible Repayment Options"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "subheading",
+        "type": "textarea",
+        "label": "Section Subheading:"
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Icon (Font Awesome Class):"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Section Settings",
+      "Competitive Offerings",
+      "Save Changes",
+      "Responsive Customer Support",
+      "Save Changes",
+      "Flexible Repayment Options",
+      "Save Changes",
+      "Restore Default Data"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/testimonials",
+    "status": 200,
+    "shot": "shots/page_testimonials.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Clients Testimonials - Content & Links Edit",
+      "Samarjeet Singh - Business Owner",
+      "Amit Singh - Engineer in MNC",
+      "Nistha Saxena - Web Analyst"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enable Testimonials Section"
+      },
+      {
+        "name": "is_enabled",
+        "type": "checkbox",
+        "label": "Enable Testimonials Section"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "subheading",
+        "type": "textarea",
+        "label": "Section Subheading:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "index",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "quote",
+        "type": "textarea",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name:"
+      },
+      {
+        "name": "position",
+        "type": "text",
+        "label": "Position:"
+      },
+      {
+        "name": "avatar",
+        "type": "file",
+        "label": "Avatar Image:"
+      },
+      {
+        "name": "testimonial_index",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "current_avatar",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "quote",
+        "type": "textarea",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name:"
+      },
+      {
+        "name": "position",
+        "type": "text",
+        "label": "Position:"
+      },
+      {
+        "name": "avatar",
+        "type": "file",
+        "label": "Update Avatar Image (optional):"
+      },
+      {
+        "name": "testimonial_index",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "current_avatar",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "quote",
+        "type": "textarea",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name:"
+      },
+      {
+        "name": "position",
+        "type": "text",
+        "label": "Position:"
+      },
+      {
+        "name": "avatar",
+        "type": "file",
+        "label": "Update Avatar Image\n                                                                    (optional):"
+      },
+      {
+        "name": "testimonial_index",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "current_avatar",
+        "type": "hidden",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "quote",
+        "type": "textarea",
+        "label": "Testimonial Quote:"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name:"
+      },
+      {
+        "name": "position",
+        "type": "text",
+        "label": "Position:"
+      },
+      {
+        "name": "avatar",
+        "type": "file",
+        "label": "Update Avatar Image\n                                                                    (optional):"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "testimonial_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "avatar_path",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "testimonial_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "avatar_path",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "testimonial_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "avatar_path",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Section Settings",
+      "Add Testimonial",
+      "Samarjeet Singh - Business Owner",
+      "Save Changes",
+      "Delete Testimonial",
+      "Amit Singh - Engineer in MNC",
+      "Save Changes",
+      "Delete Testimonial",
+      "Nistha Saxena - Web Analyst",
+      "Save Changes",
+      "Delete Testimonial",
+      "Restore Default Data",
+      "Cancel",
+      "Delete",
+      "Cancel",
+      "Delete",
+      "Cancel",
+      "Delete"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/loans",
+    "status": 200,
+    "shot": "shots/page_loans.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Clients Loans - Content & Links Edit",
+      "Instant Loan - 12.50% *",
+      "Personal Loan - 10.50% *",
+      "Business Loan - 11.20% *"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enable Top Loans Section"
+      },
+      {
+        "name": "is_enabled",
+        "type": "checkbox",
+        "label": "Enable Top Loans Section"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "subheading",
+        "type": "textarea",
+        "label": "Section Subheading:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "index",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "interest_rate",
+        "type": "text",
+        "label": "Interest Rate:"
+      },
+      {
+        "name": "amount",
+        "type": "text",
+        "label": "Loan Amount:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "image",
+        "type": "file",
+        "label": "Loan Image:"
+      },
+      {
+        "name": "loan_index",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "current_image",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "interest_rate",
+        "type": "text",
+        "label": "Interest Rate:"
+      },
+      {
+        "name": "amount",
+        "type": "text",
+        "label": "Loan Amount:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "image",
+        "type": "file",
+        "label": "Update Image (optional):"
+      },
+      {
+        "name": "loan_index",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "current_image",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "interest_rate",
+        "type": "text",
+        "label": "Interest Rate:"
+      },
+      {
+        "name": "amount",
+        "type": "text",
+        "label": "Loan Amount:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "image",
+        "type": "file",
+        "label": "Update Image (optional):"
+      },
+      {
+        "name": "loan_index",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "current_image",
+        "type": "hidden",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Loan Title:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "interest_rate",
+        "type": "text",
+        "label": "Interest Rate:"
+      },
+      {
+        "name": "amount",
+        "type": "text",
+        "label": "Loan Amount:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "image",
+        "type": "file",
+        "label": "Update Image (optional):"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "loan_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "image_path",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "loan_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "image_path",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "loan_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "image_path",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Section Settings",
+      "Add Loan",
+      "Instant Loan - 12.50% *",
+      "Save Changes",
+      "Delete Loan",
+      "Personal Loan - 10.50% *",
+      "Save Changes",
+      "Delete Loan",
+      "Business Loan - 11.20% *",
+      "Save Changes",
+      "Delete Loan",
+      "Restore Default Data",
+      "Cancel",
+      "Delete",
+      "Cancel",
+      "Delete",
+      "Cancel",
+      "Delete"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/help",
+    "status": 200,
+    "shot": "shots/page_help.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Help Section - Content & Links Edit",
+      "Apply For Loan",
+      "Call us at",
+      "Talk to Advisor"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enable Help Section"
+      },
+      {
+        "name": "is_enabled",
+        "type": "checkbox",
+        "label": "Enable Help Section"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Section Heading:"
+      },
+      {
+        "name": "subheading",
+        "type": "textarea",
+        "label": "Section Subheading:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "index",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Font Awesome Icon:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Font Awesome Icon:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Font Awesome Icon:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Feature Title:"
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "label": "Font Awesome Icon:"
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "label": "Link URL:"
+      },
+      {
+        "name": "button_text",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "description",
+        "type": "textarea",
+        "label": "Description:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "feature_index",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Section Settings",
+      "Add Feature",
+      "Apply For Loan",
+      "Save Changes",
+      "Delete Feature",
+      "Call us at",
+      "Save Changes",
+      "Delete Feature",
+      "Talk to Advisor",
+      "Save Changes",
+      "Delete Feature",
+      "Restore Default Data",
+      "Cancel",
+      "Delete",
+      "Cancel",
+      "Delete",
+      "Cancel",
+      "Delete"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/menu",
+    "status": 200,
+    "shot": "shots/page_menu.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . Top Menu Section - Content & Links Edit"
+    ],
+    "tableHeaders": [
+      [
+        "#",
+        "Title",
+        "URL",
+        "ID",
+        "Status",
+        "Actions"
+      ],
+      [
+        "#",
+        "Title",
+        "URL",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "url",
+        "type": "text",
+        "label": "URL:"
+      },
+      {
+        "name": "id",
+        "type": "text",
+        "label": "ID:"
+      },
+      {
+        "name": "is_active",
+        "type": "checkbox",
+        "label": "Active"
+      },
+      {
+        "name": "has_dropdown",
+        "type": "checkbox",
+        "label": "Has Dropdown"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Title:"
+      },
+      {
+        "name": "item_index",
+        "type": "hidden",
+        "label": "Title:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Title:"
+      },
+      {
+        "name": "url",
+        "type": "text",
+        "label": "URL:"
+      },
+      {
+        "name": "id",
+        "type": "text",
+        "label": "ID:"
+      },
+      {
+        "name": "is_active",
+        "type": "checkbox",
+        "label": "Active"
+      },
+      {
+        "name": "has_dropdown",
+        "type": "checkbox",
+        "label": "Has Dropdown"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Button Text:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "url",
+        "type": "text",
+        "label": "URL:"
+      },
+      {
+        "name": "class",
+        "type": "text",
+        "label": "CSS Class:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Button Text:"
+      },
+      {
+        "name": "button_index",
+        "type": "hidden",
+        "label": "Button Text:"
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Button Text:"
+      },
+      {
+        "name": "url",
+        "type": "text",
+        "label": "URL:"
+      },
+      {
+        "name": "class",
+        "type": "text",
+        "label": "CSS Class:"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "item_index",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "button_index",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Add New Item",
+      "Add New Button",
+      "Restore Default Menu",
+      "🤵🏻 DSA Registration",
+      "🔑 DSA Login",
+      "Cancel",
+      "Add Item",
+      "Cancel",
+      "Save Changes",
+      "Cancel",
+      "Add Button",
+      "Cancel",
+      "Save Changes",
+      "Cancel",
+      "Delete",
+      "Cancel",
+      "Delete"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/page/about-us",
+    "status": 200,
+    "shot": "shots/page_about_us.png",
+    "title": "Finoza Capital - Page",
+    "h1": [
+      "1 . About Us Section - Content & Links Edit"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Current Image"
+      },
+      {
+        "name": "top_image_url",
+        "type": "text",
+        "label": "Current Image"
+      },
+      {
+        "name": "top_image_alt",
+        "type": "text",
+        "label": "Image Alt Text"
+      },
+      {
+        "name": "top_image_file",
+        "type": "file",
+        "label": "Upload New Image"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Heading"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Heading"
+      },
+      {
+        "name": "content",
+        "type": "textarea",
+        "label": "Content"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Heading"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Heading"
+      },
+      {
+        "name": "content",
+        "type": "textarea",
+        "label": "Content"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Heading"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Heading"
+      },
+      {
+        "name": "content",
+        "type": "textarea",
+        "label": "Content"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Heading"
+      },
+      {
+        "name": "heading",
+        "type": "text",
+        "label": "Heading"
+      },
+      {
+        "name": "content",
+        "type": "textarea",
+        "label": "Content"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Update Header Image",
+      "Update Section",
+      "Update Section",
+      "Update Section",
+      "Update Section",
+      "Restore Default Content"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/payout-chart",
+    "status": 200,
+    "shot": "shots/setting_payout_chart.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Select Payout Chart (PDF)"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Select Payout Chart (PDF)"
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "file_to_delete",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "file_to_delete",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Download Document",
+      "View PDF in Browser",
+      "Download PDF",
+      "Delete",
+      "View PDF in Browser",
+      "Download PDF",
+      "Delete"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/contact-details",
+    "status": 200,
+    "shot": "shots/setting_contact_details.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "Project Name"
+      },
+      {
+        "name": "p_name",
+        "type": "text",
+        "label": "Project Name"
+      },
+      {
+        "name": "p_name_c",
+        "type": "text",
+        "label": "Slogan"
+      },
+      {
+        "name": "p_meta",
+        "type": "textarea",
+        "label": "Project Details"
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "Office Address"
+      },
+      {
+        "name": "lb_address",
+        "type": "textarea",
+        "label": "Office Address"
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "CRM Support Email"
+      },
+      {
+        "name": "cs_email",
+        "type": "email",
+        "label": "CRM Support Email"
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "Admin Full Name"
+      },
+      {
+        "name": "lb_first_name",
+        "type": "text",
+        "label": "Admin Full Name"
+      },
+      {
+        "name": "lb_last_name",
+        "type": "text",
+        "label": "Admin Full Name"
+      },
+      {
+        "name": "lb_email",
+        "type": "email",
+        "label": "Admin Email"
+      },
+      {
+        "name": "lb_mobile",
+        "type": "text",
+        "label": "Admin Mobile"
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "Facebook Page Link"
+      },
+      {
+        "name": "lb_facebook",
+        "type": "text",
+        "label": "Facebook Page Link"
+      },
+      {
+        "name": "lb_instagram",
+        "type": "text",
+        "label": "Instagram Link"
+      },
+      {
+        "name": "lb_twitter",
+        "type": "text",
+        "label": "Twitter Link"
+      },
+      {
+        "name": "lb_youtube",
+        "type": "text",
+        "label": "YouTube Channel Link"
+      },
+      {
+        "name": "lb_telegram",
+        "type": "text",
+        "label": "Telegram Channel Link"
+      },
+      {
+        "name": "lb_whatsapp",
+        "type": "text",
+        "label": "WhatsApp Number"
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "WhatsApp Group Link"
+      },
+      {
+        "name": "lb_whatsapp_group",
+        "type": "text",
+        "label": "WhatsApp Group Link"
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "Telegram Group Link"
+      },
+      {
+        "name": "lb_telegram_group",
+        "type": "text",
+        "label": "Telegram Group Link"
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "Primary Number"
+      },
+      {
+        "name": "lb_number",
+        "type": "text",
+        "label": "Primary Number"
+      },
+      {
+        "name": "lb_number_2",
+        "type": "text",
+        "label": "Secondary Number"
+      },
+      {
+        "name": "lb_number_time",
+        "type": "text",
+        "label": "Calling Time"
+      },
+      {
+        "name": "lb_number_days",
+        "type": "text",
+        "label": "Calling Days"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Edit Primary Contact",
+      "Edit Email",
+      "Edit Numbers",
+      "Edit Office Address",
+      "Edit Project Details",
+      "Edit WhatsApp Link",
+      "Edit Telegram Link",
+      "Edit Social Media Links",
+      "Close",
+      "Save changes",
+      "Close",
+      "Save changes",
+      "Close",
+      "Save changes",
+      "Close",
+      "Save changes",
+      "Close",
+      "Save changes",
+      "Close",
+      "Save changes"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/social-media",
+    "status": 200,
+    "shot": "shots/setting_social_media.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enter Your Facebook Page Link"
+      },
+      {
+        "name": "lb_facebook",
+        "type": "string",
+        "label": "Enter Your Facebook Page Link"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enter Your Instagram Link"
+      },
+      {
+        "name": "lb_instagram",
+        "type": "string",
+        "label": "Enter Your Instagram Link"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enter Your Twitter Link"
+      },
+      {
+        "name": "lb_twitter",
+        "type": "string",
+        "label": "Enter Your Twitter Link"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enter Your Youtube Channel Link"
+      },
+      {
+        "name": "lb_youtube",
+        "type": "string",
+        "label": "Enter Your Youtube Channel Link"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enter Your Telegram Channel Link"
+      },
+      {
+        "name": "lb_telegram",
+        "type": "string",
+        "label": "Enter Your Telegram Channel Link"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enter Your Whatsapp Number"
+      },
+      {
+        "name": "lb_whatsapp",
+        "type": "string",
+        "label": "Enter Your Whatsapp Number"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Submit",
+      "Submit",
+      "Submit",
+      "Submit",
+      "Submit",
+      "Submit"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/branding-banners",
+    "status": 200,
+    "shot": "shots/setting_branding_banners.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Banner Name",
+        "Banner Image",
+        "Banner Size",
+        "Action"
+      ],
+      [
+        "Banner Name",
+        "Banner Image",
+        "Banner Size",
+        "Action"
+      ],
+      [
+        "Banner Name",
+        "Banner Image",
+        "Banner Size",
+        "Action"
+      ],
+      [
+        "Banner Name",
+        "Banner Image",
+        "Banner Size",
+        "Action"
+      ],
+      [
+        "Banner Name",
+        "Banner Image",
+        "Banner Size",
+        "Action"
+      ],
+      [
+        "Banner Name",
+        "Banner Image",
+        "Banner Size",
+        "Action"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Slider Image 1"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Slider Image 1"
+      },
+      {
+        "name": "logo_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Slider Image 2"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Slider Image 2"
+      },
+      {
+        "name": "logo_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Slider Image 3"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Slider Image 3"
+      },
+      {
+        "name": "logo_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Slider Image 4"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Slider Image 4"
+      },
+      {
+        "name": "logo_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Slider Image 5"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Slider Image 5"
+      },
+      {
+        "name": "logo_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Slider Image 6"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Slider Image 6"
+      },
+      {
+        "name": "logo_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "lb_key",
+        "type": "hidden",
+        "label": "Slider Image -\n                                    1"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Slider Image -\n                                    1"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Slider Image -\n                                    1"
+      },
+      {
+        "name": "slider_1_1",
+        "type": "text",
+        "label": "Slider Image -\n                                    1"
+      },
+      {
+        "name": "slider_1_2",
+        "type": "text",
+        "label": "Slider Image -\n                                    2"
+      },
+      {
+        "name": "slider_1_3",
+        "type": "text",
+        "label": "Slider Image -\n                                    3"
+      },
+      {
+        "name": "slider_2_1",
+        "type": "text",
+        "label": "Slider Image -\n                                    1"
+      },
+      {
+        "name": "slider_2_2",
+        "type": "text",
+        "label": "Slider Image -\n                                    2"
+      },
+      {
+        "name": "slider_2_3",
+        "type": "text",
+        "label": "Slider Image -\n                                    3"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Close",
+      "Save changes"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/theme-colors",
+    "status": 200,
+    "shot": "shots/setting_theme_colors.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "primary_color",
+        "type": "color",
+        "label": "Primary Color:"
+      },
+      {
+        "name": "primary_color_hex",
+        "type": "text",
+        "label": "Primary Color Hex:"
+      },
+      {
+        "name": "secondary_color",
+        "type": "color",
+        "label": "Secondary Color:"
+      },
+      {
+        "name": "secondary_color_hex",
+        "type": "text",
+        "label": "Secondary Color Hex:"
+      },
+      {
+        "name": "theme_type",
+        "type": "select",
+        "label": "Theme Type:",
+        "options": [
+          "Dark",
+          "Light"
+        ]
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Save Changes"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/branding",
+    "status": 200,
+    "shot": "shots/setting_branding.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "#",
+        "Logo-Image",
+        "Logo-Size",
+        "Action"
+      ],
+      [
+        "#",
+        "Icon-Image",
+        "Icon-Size",
+        "Action"
+      ],
+      [
+        "Preview",
+        "Filename",
+        "Size (WxH)",
+        "File Size",
+        "Full Path",
+        "Action"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Logo"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Logo"
+      },
+      {
+        "name": "logo_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Upload Logo"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Upload Logo"
+      },
+      {
+        "name": "icon_file",
+        "type": "file",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "New Logo Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "New Logo Name"
+      },
+      {
+        "name": "logo_name",
+        "type": "text",
+        "label": "New Logo Name"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download",
+      "Download"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/change-password",
+    "status": 200,
+    "shot": "shots/setting_change_password.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Enter New Password"
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": "Enter New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Enter New Password"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Show Password",
+      "Change Password"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/mobile-application",
+    "status": 200,
+    "shot": "shots/setting_mobile_application.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Download Android App",
+      "Download iOS App",
+      "Download APK"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/domain",
+    "status": 200,
+    "shot": "shots/setting_domain.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/website",
+    "status": 200,
+    "shot": "shots/setting_website.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Visit Website"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/setting/google",
+    "status": 200,
+    "shot": "shots/setting_google.png",
+    "title": "Finoza Capital - Setting",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Google Site Code"
+      },
+      {
+        "name": "google_site_code",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Analytics Code"
+      },
+      {
+        "name": "google_analytics_code",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Submit",
+      "Submit"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/changelog",
+    "status": 200,
+    "shot": "shots/changelog.png",
+    "title": "Finoza Capital - Advisor Notifications",
+    "h1": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/advisor/view/4",
+    "status": 200,
+    "shot": "shots/advisor_view_4.png",
+    "title": "Finoza Capital - View Advisor",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "#",
+        "Lead Status",
+        "Added / Updated",
+        "Customer Info",
+        "Product",
+        "RM",
+        "Admin / Advisor",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "Status"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "Status"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "label": "In-Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "label": "Blocked"
+      },
+      {
+        "name": "verify",
+        "type": "radio",
+        "label": "Verified"
+      },
+      {
+        "name": "verify",
+        "type": "radio",
+        "label": "Not Verified"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "label": "New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": "New Password"
+      },
+      {
+        "name": "advisor_id",
+        "type": "hidden",
+        "label": "New Password"
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Delete Advisor",
+      "Advisor Account",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Advisor Password",
+      "Documents",
+      "Advisor Agreement",
+      "Update",
+      "Change Password",
+      "View All Leads",
+      "View Lead",
+      "Delete Lead",
+      "View Lead",
+      "Delete Lead",
+      "View Lead",
+      "Delete Lead",
+      "View Lead",
+      "Delete Lead",
+      "View Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/BF27CA33C40FF807FC914A772F34BE9065414575524553412B563972565678634155396C52673D3D",
+    "status": 200,
+    "shot": "shots/lead_view_BF27CA33C40FF807FC914A772F34BE9065414575524553412B563972565678634155396C52673D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/B6BBD0EF3DE24F377937D0FE02DAADEE5562515A783972483959495A4F30484545634E2B55513D3D",
+    "status": 200,
+    "shot": "shots/lead_view_B6BBD0EF3DE24F377937D0FE02DAADEE5562515A783972483959495A4F30484545634E2B55513D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/3C3DDA5C1503D40ED45D33B7F2056E454A6E5970616C74566B62324A483968442B64543242413D3D",
+    "status": 200,
+    "shot": "shots/lead_view_3C3DDA5C1503D40ED45D33B7F2056E454A6E5970616C74566B62324A483968442B64543242413D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/B0BFAADC5B0F8496CCA2BFDC1F60A4727562485A35465764624A6F2F6D4152553733306D72513D3D",
+    "status": 200,
+    "shot": "shots/lead_view_B0BFAADC5B0F8496CCA2BFDC1F60A4727562485A35465764624A6F2F6D4152553733306D72513D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/0BFEC60D309577E2C1A49D762DC6E3BF305A74716668567035596A6E656C6D79314A5A4E64413D3D",
+    "status": 200,
+    "shot": "shots/lead_view_0BFEC60D309577E2C1A49D762DC6E3BF305A74716668567035596A6E656C6D79314A5A4E64413D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/D0159CA863FA3717061159145293DFA0466B5673796A31797A76705941714258734A684546673D3D",
+    "status": 200,
+    "shot": "shots/lead_view_D0159CA863FA3717061159145293DFA0466B5673796A31797A76705941714258734A684546673D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/07F3A21A4560B0A169105E7BDBF06A0B3643576D6C73566F676C584F7364536C624B734D6E413D3D",
+    "status": 200,
+    "shot": "shots/lead_view_07F3A21A4560B0A169105E7BDBF06A0B3643576D6C73566F676C584F7364536C624B734D6E413D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/8483C45A0BA7ABA01EA6DDA3B837A0D542627233594A2F2B39726445785A5A4778356F6259673D3D",
+    "status": 200,
+    "shot": "shots/lead_view_8483C45A0BA7ABA01EA6DDA3B837A0D542627233594A2F2B39726445785A5A4778356F6259673D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/manage-dsa/lead/view/22D1EBFFF9A13086FD97940D2298AE9254384536663457704253696F4F764844797A6B6B73413D3D",
+    "status": 200,
+    "shot": "shots/lead_view_22D1EBFFF9A13086FD97940D2298AE9254384536663457704253696F4F764844797A6B6B73413D3D.png",
+    "title": "Finoza Capital - Insta Loan",
+    "h1": [],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "--"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "label": ""
+      },
+      {
+        "name": "AdvisorID",
+        "type": "text",
+        "label": ""
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "🌙",
+      "Logout",
+      "Message Inbox",
+      "Support Tickets",
+      "Open Messages",
+      "Copy Lead Details",
+      "Show Plan Text",
+      "Update Status",
+      "Close Lead"
+    ]
+  }
+]

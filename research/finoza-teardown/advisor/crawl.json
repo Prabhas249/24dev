@@ -1,0 +1,4712 @@
+[
+  {
+    "url": "https://finozacapital.com/dsa-panel/dashboard",
+    "status": 200,
+    "title": "Finoza Capital crm - Advisor Dashboard",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Leads",
+      "Team",
+      "Reports"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "#",
+        "Status",
+        "Last Updated",
+        "Customer",
+        "Product",
+        "Amount",
+        "RM",
+        "Lead Date",
+        "Actions"
+      ],
+      [
+        "#",
+        "Name",
+        "Mobile",
+        "Email",
+        "DOJ",
+        "Commission",
+        "Total Earning",
+        "Status"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View All Leads",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/#LeadMessages",
+    "status": 200,
+    "title": "404 - Page Not Found!",
+    "headings": [
+      "404"
+    ],
+    "tabs": [],
+    "tableHeaders": [],
+    "fields": [],
+    "buttons": []
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/#AccountMessages",
+    "title": "404 - Page Not Found!",
+    "headings": [
+      "404"
+    ],
+    "tabs": [],
+    "tableHeaders": [],
+    "fields": [],
+    "buttons": []
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/#SystemMessages",
+    "title": "404 - Page Not Found!",
+    "headings": [
+      "404"
+    ],
+    "tabs": [],
+    "tableHeaders": [],
+    "fields": [],
+    "buttons": []
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/notifications",
+    "status": 200,
+    "title": "Finoza Capital crm - Advisor Notifications",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Search Notification"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "#",
+        "From",
+        "Date & Time",
+        "Notification",
+        "Action",
+        "260",
+        "04-Jun-2026 09:37 PM",
+        "View Lead"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead",
+      "View Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add",
+    "status": 200,
+    "title": "Finoza Capital crm - Select",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      },
+      {
+        "name": "product",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead",
+    "status": 200,
+    "title": "Finoza Capital crm - Leads",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "#",
+        "Status",
+        "Last Updated",
+        "Customer",
+        "Product",
+        "Amount",
+        "RM",
+        "Lead Date",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View All Leads",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More",
+      "View",
+      "Apply More"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/report",
+    "status": 200,
+    "title": "Finoza Capital crm - Lead",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lead_status",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "Lead Status",
+        "options": [
+          "All Status",
+          "0 - Pending",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      },
+      {
+        "name": "lead_type",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "Loan Type",
+        "options": [
+          "All Loans",
+          "18 - Kyc Loans",
+          "1 - Instant Loan",
+          "2 - Personal Loan",
+          "3 - Business Loan",
+          "10 - Credit Card",
+          "14 - Bank Account",
+          "12 - Demat Account",
+          "5 - Home Loan",
+          "17 - Loan Against Shares"
+        ]
+      },
+      {
+        "name": "lead_limit",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "Show Leads",
+        "options": [
+          "10 Leads",
+          "50 Leads",
+          "100 Leads",
+          "500 Leads"
+        ]
+      },
+      {
+        "name": "start_date",
+        "type": "date",
+        "required": false,
+        "placeholder": "",
+        "label": "Start Date"
+      },
+      {
+        "name": "end_date",
+        "type": "date",
+        "required": false,
+        "placeholder": "",
+        "label": "End Date"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply Filter",
+      "Reset"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/team",
+    "status": 200,
+    "title": "Finoza Capital crm - Sub Advisors",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Build Your Team"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "clipboard-source-2",
+        "type": "text",
+        "required": false,
+        "placeholder": "",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/invite.php?ID=FC08524097",
+    "status": 200,
+    "title": "Finoza Capital - Advisor Registration",
+    "headings": [
+      "Advisor Registration"
+    ],
+    "tabs": [],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "email",
+        "type": "email",
+        "required": false,
+        "placeholder": "",
+        "label": "Email"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Mobile"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "State",
+        "options": [
+          "Select State",
+          "Andaman & Nicobar Islands",
+          "Andhra Pradesh",
+          "Arunachal Pradesh",
+          "Assam",
+          "Bihar",
+          "Chandigarh",
+          "Chhattisgarh",
+          "Dadra And Nagar Haveli And Daman And Diu",
+          "Delhi",
+          "Goa",
+          "Gujarat",
+          "Haryana",
+          "Himachal Pradesh",
+          "Jammu & Kashmir",
+          "Jharkhand",
+          "Karnataka",
+          "Kerala",
+          "Ladakh",
+          "Lakshadweep",
+          "Madhya Pradesh",
+          "Maharashtra",
+          "Manipur",
+          "Meghalaya",
+          "Mizoram",
+          "Nagaland",
+          "Odisha",
+          "Puducherry",
+          "Punjab",
+          "Rajasthan"
+        ]
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "District",
+        "options": [
+          "Select District"
+        ]
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pin Code"
+      },
+      {
+        "name": "captcha",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter the captcha",
+        "label": "Enter the Captcha Code:"
+      },
+      {
+        "name": "check",
+        "type": "checkbox",
+        "required": true,
+        "placeholder": "",
+        "label": "I agree with Terms and Conditions & Privacy Policy"
+      }
+    ],
+    "buttons": [
+      "Register Account"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/team/all",
+    "status": 200,
+    "title": "Finoza Capital crm - All Sub Advisors",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "ID",
+        "Name",
+        "Mobile",
+        "Email",
+        "DOJ",
+        "Commission",
+        "Total Earning",
+        "Status"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/payment",
+    "status": 200,
+    "title": "Finoza Capital crm - Payout",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View All Payout"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/payment/chart",
+    "status": 200,
+    "title": "Finoza Capital crm - Marketing",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View PDF in Browser",
+      "Download PDF",
+      "View PDF in Browser",
+      "Download PDF"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/report",
+    "status": 200,
+    "title": "Finoza Capital crm - Report",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Lead Status",
+      "Lead Analytics"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/report/lead-wise",
+    "status": 200,
+    "title": "Finoza Capital crm - Report",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Lead Count By Status",
+      "Lead Status Distribution (%)"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/report/product-wise",
+    "status": 200,
+    "title": "Finoza Capital crm - Report",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Lead Count By Status",
+      "Lead Status Distribution (%)"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/tools",
+    "status": 200,
+    "title": "Finoza Capital crm - Marketing",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ],
+      [
+        "Content",
+        "File Type",
+        "Count",
+        "Action"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/loan-tools/pincode-search",
+    "status": 200,
+    "title": "Finoza Capital crm - Data",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Search Pincode"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/loan-tools/company-search",
+    "status": 200,
+    "title": "Finoza Capital crm - Data",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Company Search"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "company",
+        "type": "text",
+        "required": false,
+        "placeholder": "Start typing company name...",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/policy-docs",
+    "status": 200,
+    "title": "Finoza Capital crm - Lender",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "#Lendingkart Business Loan Policy"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/payments",
+    "status": 200,
+    "title": "Finoza Capital crm - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Payment ID",
+        "Service Type",
+        "Amount",
+        "Payment Method",
+        "Status"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Add Payment"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/product",
+    "status": 200,
+    "title": "Finoza Capital crm - Product",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/my-account",
+    "status": 200,
+    "title": "Finoza Capital crm - My Account",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Document ID",
+        "File Format",
+        "Document Type",
+        "Date",
+        "Status",
+        "View"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "advisor_code",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Email"
+      },
+      {
+        "name": "company_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Company Name"
+      },
+      {
+        "name": "dob",
+        "type": "date",
+        "required": true,
+        "placeholder": "",
+        "label": "Dob"
+      },
+      {
+        "name": "aadhar",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Aadhar"
+      },
+      {
+        "name": "pan",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Pan"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Male"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Female"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Single"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Married"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Divorced"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Widowed"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Mobile"
+      },
+      {
+        "name": "alternate_number",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Alternate Number"
+      },
+      {
+        "name": "address_line_1",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Address Line 1"
+      },
+      {
+        "name": "address_line_2",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Address Line 2"
+      },
+      {
+        "name": "landmark",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Landmark"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "State",
+        "options": [
+          "Andaman & Nicobar Islands",
+          "Andhra Pradesh",
+          "Arunachal Pradesh",
+          "Assam",
+          "Bihar",
+          "Chandigarh",
+          "Chhattisgarh",
+          "Dadra And Nagar Haveli And Daman And Diu",
+          "Delhi",
+          "Goa",
+          "Gujarat",
+          "Haryana",
+          "Himachal Pradesh",
+          "Jammu & Kashmir",
+          "Jharkhand",
+          "Karnataka",
+          "Kerala",
+          "Ladakh",
+          "Lakshadweep",
+          "Madhya Pradesh",
+          "Maharashtra",
+          "Manipur",
+          "Meghalaya",
+          "Mizoram",
+          "Nagaland",
+          "Odisha",
+          "Puducherry",
+          "Punjab",
+          "Rajasthan",
+          "Sikkim"
+        ]
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "District",
+        "options": [
+          "0"
+        ]
+      },
+      {
+        "name": "city",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "City"
+      },
+      {
+        "name": "bank_name",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Bank Name"
+      },
+      {
+        "name": "account_number",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Account Number"
+      },
+      {
+        "name": "account_holder_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Account Holder Name"
+      },
+      {
+        "name": "ifsc_code",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Ifsc Code"
+      },
+      {
+        "name": "upi",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Upi"
+      },
+      {
+        "name": "account_type",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Account Type",
+        "options": [
+          "Savings Account",
+          "Current Account",
+          "Salary Account",
+          "NRI Account"
+        ]
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "In-Active"
+      },
+      {
+        "name": "document_type",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "Document Type",
+        "options": [
+          "Select Document Type",
+          "Pan Card",
+          "Aadhar Card",
+          "Address Proof",
+          "Cancel Cheque / Passbook",
+          "Advisor Agreement"
+        ]
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "required": false,
+        "placeholder": "",
+        "label": "Select\n                                           "
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Upload Documents",
+      "Advisor Agreement",
+      "Update Password",
+      "Next",
+      "Next",
+      "Next",
+      "Change Password",
+      "Upload",
+      "Next"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/changelog",
+    "status": 200,
+    "title": "Finoza Capital crm - Advisor Notifications",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "Finoza Capital - CRM Changelogs"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-kyc-loans",
+    "status": 200,
+    "title": "Add - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Kyc Loans"
+        ]
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Full Name"
+      },
+      {
+        "name": "pan_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Pan Card"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next",
+      "Notifications"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-insta",
+    "status": 200,
+    "title": "Instant Loan - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Instant Loan"
+        ]
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Full Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next",
+      "Notifications"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-personal-loan",
+    "status": 200,
+    "title": "Personal Loan - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Personal Loan"
+        ]
+      },
+      {
+        "name": "required_amount",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Requirement"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "aadhar_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Aadhar Card"
+      },
+      {
+        "name": "pan_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Pan Card"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Email"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-business-loan",
+    "status": 200,
+    "title": "Business Loan - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Business Loan"
+        ]
+      },
+      {
+        "name": "required_amount",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Requirement"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Client First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Client Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Client Mobile"
+      },
+      {
+        "name": "aadhar_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Aadhar Card"
+      },
+      {
+        "name": "pan_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Pan Card"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Client Email"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-credit-card",
+    "status": 200,
+    "title": "Credit Card - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Credit Card"
+        ]
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Full Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Enter Your Email"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next",
+      "Notifications"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-bank-account",
+    "status": 200,
+    "title": "Bank Account - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Bank Account"
+        ]
+      },
+      {
+        "name": "bnk_account_type",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Account Type",
+        "options": [
+          "Saving Account",
+          "Current Account"
+        ]
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Full Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Enter Your Email"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next",
+      "Notifications"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-demat-account",
+    "status": 200,
+    "title": "Demat Account - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Demat Account"
+        ]
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Full Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Enter Your Email"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next",
+      "Notifications"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-home-loan",
+    "status": 200,
+    "title": "Home Loan - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Home Loan"
+        ]
+      },
+      {
+        "name": "process_lead_type",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Type",
+        "options": [
+          "Fresh (New Lead)",
+          "BT (Balance Transfer)"
+        ]
+      },
+      {
+        "name": "required_amount",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Requirement"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "aadhar_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Aadhar Card"
+      },
+      {
+        "name": "pan_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Pan Card"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Email"
+      },
+      {
+        "name": "occupation",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Salaried"
+      },
+      {
+        "name": "occupation",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Self Employed"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/add-loan-against-shares",
+    "status": 200,
+    "title": "Loan Against Shares - Add",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "product_id",
+        "type": "select",
+        "required": true,
+        "placeholder": "",
+        "label": "Select Loan Type",
+        "options": [
+          "Loan Against Shares"
+        ]
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Full Name"
+      },
+      {
+        "name": "pan_card",
+        "type": "text",
+        "required": true,
+        "placeholder": "",
+        "label": "Pan Card"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Customer Mobile"
+      },
+      {
+        "name": "pin_code",
+        "type": "number",
+        "required": true,
+        "placeholder": "",
+        "label": "Pincode"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "placeholder": "",
+        "label": "Email"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "Yes"
+      },
+      {
+        "name": "email_notification",
+        "type": "radio",
+        "required": false,
+        "placeholder": "",
+        "label": "No"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Next",
+      "Notifications"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/all",
+    "status": 200,
+    "title": "Finoza Capital crm - Lead List",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "#",
+        "Status",
+        "Date",
+        "Advisor",
+        "Product",
+        "Amount",
+        "Customer",
+        "Mobile",
+        "Actions"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "New Lead",
+      "View",
+      "Edit",
+      "View",
+      "Edit",
+      "View",
+      "Edit",
+      "View",
+      "Edit",
+      "View",
+      "Edit",
+      "View",
+      "Edit",
+      "View",
+      "Edit",
+      "View",
+      "Edit"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/997C92BC3814A0E2B364680CE716FB66435A6D777170646C4B435139777844464342422F57773D3D",
+    "status": 200,
+    "title": "#364 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "PENDING",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/11DEA625A17CAB277AD6FE30A5096BBA7758645A6D3766775872685A327846566679615943413D3D",
+    "status": 200,
+    "title": "#364 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : 21 to 58 years old        Minimum monthly"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 21 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹5Lac        CIBIL Score "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/C1EB0D0A2734E5988AC346200C5C66D94C784362374B427435444B4D636F31754631416E54413D3D",
+    "status": 200,
+    "title": "#363 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "UNDER-PROCESS",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/EA5FE4202BB8972B65A76514A6D365FC48724A714E4443735443455478336962364271764A413D3D",
+    "status": 200,
+    "title": "#363 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 21 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹5Lac        CIBIL Score "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹10L        CIBIL Score ;"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/F42E9179B96623B02771FD69054DDF1558576177565472654264554333755846617A78394E773D3D",
+    "status": 200,
+    "title": "#362 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/417B2B603C82706BF53E53C9C791F60E33523848486259336A6554587A6651372F2B375A4F773D3D",
+    "status": 200,
+    "title": "#362 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 21 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹5Lac        CIBIL Score "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹10L        CIBIL Score ;"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/5A3F6482875567EC6F7C357A025E3EBC666D6974654D394A51576A39524448486754304934673D3D",
+    "status": 200,
+    "title": "#361 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "PENDING",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/B670C066B1D1E359AEDCD618CF67D51D51467A6E473931426C79324F4A4438793255544F63413D3D",
+    "status": 200,
+    "title": "#361 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : 21 to 58 years old        Minimum monthly"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 21 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹5Lac        CIBIL Score "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹10L        CIBIL Score ;"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/F19BE16DC1D1CF69C7871CCA451740AE394659334842396F446F414171304B4D3332672B5A513D3D",
+    "status": 200,
+    "title": "#360 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "PENDING",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/630EDCBB9D31095EDC62411A6A350D2E66716F384A492F4C5A3058374D333563534A503365413D3D",
+    "status": 200,
+    "title": "#360 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : 21 to 58 years old        Minimum monthly"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 21 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹5Lac        CIBIL Score "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹10L        CIBIL Score ;"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/C82960A6B779140092DC2D5C89847A7D32786D3837564A31384A65712B45636C55652B2F4B773D3D",
+    "status": 200,
+    "title": "#359 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "PENDING",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/A3D38AA797A43CB82002AFE1DAAF8F5D4D7472456768526357647577416D55323362495067413D3D",
+    "status": 200,
+    "title": "#359 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : 21 to 58 years old        Minimum monthly"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹5Lac        CIBIL Score "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹10L        CIBIL Score ;"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/C8EBDB4EAE9DBC02C83401294AB7914578525531596F6C4A3439303344516E62646E375036673D3D",
+    "status": 200,
+    "title": "#358 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "PENDING",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/5AA9E322184B884EC7E18CE9162BED68584F667A73744B746731712B4E6E6F714844466C77673D3D",
+    "status": 200,
+    "title": "#358 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : 21 to 58 years old        Minimum monthly"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 21 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹10L        CIBIL Score ;"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/44D787D9F6D78390B5A4AA14839E92676544394D7A516951793156564A6448466861413561773D3D",
+    "status": 200,
+    "title": "#357 - Kyc Loans",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "UNDER-PROCESS",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/134333730C50404A912CEE23C0D02CE5332B41686D3471322F65684C695534435636305A32513D3D",
+    "status": 200,
+    "title": "#357 / Kyc Loans Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :  : Up to ₹75Lakh,        Age :   :  "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Custo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 21 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL Score  : 720+        Age Between  : 21 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age ;  : 21Y - 55Years        Maximum Income ;  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 50000        Maximum :  : 500000     "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹5Lac        CIBIL Score "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 700+        Age ;   : 21Y- 55Years "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 50000        Maximum :  : 750000+    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount ;  :  ₹50K – ₹10L        CIBIL Score ;"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 60 year s        Tenure Mi"
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Resume Application",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/F27B53881AD0F484C577134B0B29397A2B525162414735345A6B7252346730506364537638413D3D",
+    "status": 200,
+    "title": "#356 - Instant Loan",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/A1EEA1218F40B74D197562CCC313D9FC58334451346B764B4F377844686C57366D65667274513D3D",
+    "status": 200,
+    "title": "#356 / Instant Loan Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : 21 to 58 years old        Minimum monthly"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "PFL BL   \n                                        "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "LOAN OFFERS   :  ₹50K – ₹10L        CIBIL Score ; "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum :  : 5000        Maximum :  : 500000      "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 5000        Maximum :  : 500000      "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "BL - Flexi Loans   \n                              "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Indifi   \n                                        "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Protium   \n                                       "
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/view/CF7959F55D16702C786DDD91CA01AC5B6A69496A6663396947454A2F4838776365384F4942413D3D",
+    "status": 200,
+    "title": "#355 - Instant Loan",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130",
+      "UNDER-PROCESS",
+      "UNDER-PROCESS",
+      "PENDING"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [
+      [
+        "Apply ID",
+        "Lender",
+        "Lender Name",
+        "Applied Date",
+        "Status",
+        "Resume"
+      ]
+    ],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "remark",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "",
+        "label": "Lead Remark"
+      },
+      {
+        "name": "status_code",
+        "type": "select",
+        "required": false,
+        "placeholder": "",
+        "label": "( ONLY CHANGE IF YOU RESOLVED DOCS QUERY 7 or 9 )",
+        "options": [
+          "Current Status ( 3 - Under-Process )",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Apply More",
+      "Add Remark",
+      "Resume Application"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/update/48AED60C664C8360D45B581F8D1A34746939797A775179537365576C6A436F654475426470673D3D",
+    "status": 200,
+    "title": "#355 / Instant Loan Step - 2",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Salary or Self employed  : : Monthly in hand salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : 21 to 58 years old        Minimum monthly"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "PFL BL   \n                                        "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Maximum :  : 30000        Maximum :  : 2500000    "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "CIBIL: 700+  : Costumer Eligibility -        Salar"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount - 10k to 5lacs :  : interest rate and "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Cibil Score  : 720+        Age Between  : 23 and 5"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Age :  : Between 23 and 56 years        Minimum mo"
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Interest "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "LOAN OFFERS   :  ₹50K – ₹10L        CIBIL Score ; "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Loan Amount :   : 1 Lakh to 5Lakh        Age :  : "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Minimum:   : 5000        Maximum :  : 500000      "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "BL - Flexi Loans   \n                              "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Indifi   \n                                        "
+      },
+      {
+        "name": "lender_process",
+        "type": "radio",
+        "required": true,
+        "placeholder": "",
+        "label": "Protium   \n                                       "
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "View Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Resume Application",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead",
+      "Process Lead"
+    ]
+  },
+  {
+    "url": "https://finozacapital.com/dsa-panel/lead/team",
+    "status": 200,
+    "title": "Finoza Capital crm - Lead List",
+    "headings": [
+      "support@finozacapital.com",
+      "+917618268130",
+      "+917618268130"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "tableHeaders": [],
+    "fields": [
+      {
+        "name": "LeadID",
+        "type": "text",
+        "required": true,
+        "placeholder": "Search Lead #",
+        "label": ""
+      }
+    ],
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now"
+    ]
+  }
+]

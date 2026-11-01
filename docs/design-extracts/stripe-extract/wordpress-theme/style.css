@@ -1,0 +1,26 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://stripe.com/ by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #533afd;
+  --action-secondary: #e8e9ff;
+  --surface-default: #ffffff;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 32px;
+  --spacing-s2: 40px;
+  --spacing-s3: 48px;
+  --spacing-s4: 52px;
+  --spacing-s5: 56px;
+  --spacing-s6: 64px;
+  --spacing-s7: 72px;
+  --spacing-s8: 112px;
+  --spacing-s9: 340px;
+}

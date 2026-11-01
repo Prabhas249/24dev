@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred CRM &amp; Channel Partner Portal — Delivery Document</title>
+<style>
+  @page { size: A4; margin: 14mm 13mm 15mm; }
+
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --navy-light:#17529c;
+    --green:#068a3e; --green-50:#e8f6ee;
+    --navy-50:#eef4fb; --navy-100:#d8e6f5;
+    --ink:#0f172a; --mute:#5b6b80; --line:#dbe3ee; --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:var(--ink); font-size:9.4pt; line-height:1.5; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  h1,h2,h3,h4{margin:0; line-height:1.25;}
+  p{margin:0 0 5px;}
+  .page{page-break-after:always;}
+  .page:last-child{page-break-after:auto;}
+  h2,h3,h4,thead,.rule,.no-break{page-break-after:avoid;}
+  /* Long checklists must flow across pages — forcing a 19-row table to stay
+     whole pushes it to the next sheet and strands the heading and footer. */
+  .card,.flow,.chart{page-break-inside:avoid;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  .foot{page-break-before:avoid;}
+
+  /* The two 19-row scope checklists are the densest pages in the document;
+     they get their own scale so each fits a single sheet. */
+  .dense{font-size:8pt;} .dense th{padding:2mm 2.4mm; font-size:7.6pt;}
+  .dense td{padding:1.55mm 2.4mm; line-height:1.42;}
+
+  /* ---------- cover ---------- */
+  .cover{
+    height:263mm; display:flex; flex-direction:column; justify-content:space-between;
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-dark) 62%,#061f42 100%);
+    color:#fff; margin:-14mm -13mm 0; padding:22mm 18mm 16mm;
+  }
+  .cover img{height:17mm; margin-bottom:14mm; filter:brightness(0) invert(1);}
+  .cover .kicker{font-size:8.6pt; letter-spacing:.22em; text-transform:uppercase; color:#9dc0ea; margin-bottom:8mm;}
+  .cover h1{font-size:31pt; font-weight:700; letter-spacing:-.6px;}
+  .cover h1 span{display:block; color:#7fd6a2; font-weight:400; font-size:19pt; margin-top:5mm; letter-spacing:-.2px;}
+  .cover .lede{margin-top:9mm; max-width:118mm; color:#cfe0f5; font-size:10pt; line-height:1.62;}
+  .cover .meta{display:flex; gap:14mm; border-top:1px solid rgba(255,255,255,.22); padding-top:7mm; font-size:8.8pt;}
+  .cover .meta div span{display:block; color:#8fb4e0; font-size:7.6pt; letter-spacing:.13em; text-transform:uppercase; margin-bottom:2.5mm;}
+
+  /* ---------- structure ---------- */
+  .rule{border-bottom:2.5px solid var(--navy); padding-bottom:3mm; margin:0 0 4.5mm;}
+  .rule.cont{border-bottom-width:1.4px; border-bottom-color:var(--line);}
+  .rule.cont h2{font-size:12.5pt; color:var(--navy-light);}
+  .rule .n{font-size:7.6pt; letter-spacing:.2em; text-transform:uppercase; color:var(--green); font-weight:700;}
+  .rule h2{font-size:16pt; color:var(--navy); margin-top:1.5mm; letter-spacing:-.3px;}
+  h3{font-size:11pt; color:var(--navy); margin:5mm 0 2.4mm;}
+  h4{font-size:9.6pt; margin:4mm 0 1.6mm;}
+  .sub{color:var(--mute); font-size:8.8pt; margin:-1mm 0 3.5mm;}
+
+  table{width:100%; border-collapse:collapse; margin:2.4mm 0 3.4mm; font-size:8.6pt;}
+  th{background:var(--navy); color:#fff; text-align:left; padding:2.4mm 2.6mm; font-weight:600; font-size:8pt;
+     letter-spacing:.03em; border-right:1px solid rgba(255,255,255,.16);}
+  th:last-child{border-right:none;}
+  td{padding:2.3mm 2.6mm; border-bottom:1px solid var(--line); vertical-align:top;}
+  tbody tr:nth-child(even){background:#f7fafd;}
+  .tick{color:var(--green); font-weight:700; white-space:nowrap;}
+  .num{color:var(--mute); font-variant-numeric:tabular-nums; width:7mm;}
+  code,.mono{font-family:"SF Mono",Menlo,Consolas,monospace; font-size:8pt; background:var(--navy-50);
+       padding:.6mm 1.2mm; border-radius:2px; color:var(--navy-dark);}
+
+  .card{border:1px solid var(--line); border-left:3px solid var(--navy); background:#fbfcfe;
+        padding:3mm 3.6mm; margin:3mm 0; border-radius:2px;}
+  .card.g{border-left-color:var(--green); background:var(--green-50);}
+  .card.a{border-left-color:var(--amber); background:var(--amber-50);}
+  .card h4{margin:0 0 1.5mm; font-size:9.2pt;}
+  .card p:last-child{margin-bottom:0;}
+
+  .two{display:flex; gap:6mm;} .two>*{flex:1;}
+
+  ul{margin:0 0 6px; padding-left:4.5mm;} li{margin-bottom:1.6mm;}
+
+  /* ---------- flowcharts ---------- */
+  .flow{background:#fbfcfe; border:1px solid var(--line); border-radius:3px; padding:4mm 3.4mm; margin:3mm 0;}
+  .flow .cap{font-size:8pt; color:var(--mute); text-align:center; margin-top:3.5mm; font-style:italic;}
+  .chain{display:flex; align-items:stretch; justify-content:center; flex-wrap:wrap; gap:0;}
+  .node{
+    border:1.4px solid var(--navy); background:#fff; border-radius:3px; padding:2.2mm 2.6mm;
+    font-size:7.6pt; text-align:center; min-width:20mm; max-width:30mm; line-height:1.3;
+  }
+  .node b{display:block; color:var(--navy); font-size:7.8pt;}
+  .node i{display:block; font-style:normal; color:var(--mute); font-size:6.8pt; margin-top:.7mm;}
+  .node.g{border-color:var(--green); background:var(--green-50);} .node.g b{color:var(--green);}
+  .node.a{border-color:var(--amber); background:var(--amber-50);} .node.a b{color:var(--amber);}
+  .node.f{border-color:#b91c1c; background:#fef2f2;} .node.f b{color:#b91c1c;}
+  .arw{display:flex; align-items:center; color:var(--navy-light); font-size:11pt; padding:0 1.6mm; font-weight:700;}
+  .lane{display:flex; align-items:center; gap:0; margin-bottom:3mm; flex-wrap:wrap;}
+  .lane-l{width:26mm; flex-shrink:0; font-size:7.4pt; font-weight:700; color:var(--navy);
+          text-transform:uppercase; letter-spacing:.06em; padding-right:2mm;}
+  .vsplit{display:flex; flex-direction:column; gap:2mm;}
+
+  .pill{display:inline-block; padding:.5mm 1.8mm; border-radius:8px; font-size:7.2pt; font-weight:700;}
+  .pill.y{background:var(--green-50); color:var(--green);} .pill.n{background:#fef2f2; color:#b91c1c;}
+  .pill.p{background:var(--amber-50); color:var(--amber);}
+
+  .matrix{font-size:7.6pt;} .matrix th{padding:2mm 1.2mm; font-size:7.2pt;}
+  .matrix td{padding:1.7mm 1.2mm; text-align:center;}
+  .matrix td:first-child{text-align:left; font-weight:600;}
+  .y{color:var(--green); font-weight:700;} .n{color:#cbd5e1;}
+
+  .steps{counter-reset:s; margin:3mm 0;}
+  .step{counter-increment:s; position:relative; padding-left:8mm; margin-bottom:2.2mm;}
+  .step::before{
+    content:counter(s); position:absolute; left:0; top:0; width:5.4mm; height:5.4mm; border-radius:50%;
+    background:var(--navy); color:#fff; font-size:7.4pt; font-weight:700; display:flex;
+    align-items:center; justify-content:center;
+  }
+  .step b{color:var(--navy);}
+
+  .foot{border-top:1px solid var(--line); margin-top:5mm; padding-top:2.4mm; font-size:7.6pt; color:var(--mute);
+        display:flex; justify-content:space-between;}
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<div class="page">
+  <div class="cover">
+    <div>
+      <img src="assets/logo-full.png" alt="QCred">
+      <div class="kicker">Delivery Document · Milestone 1 &amp; 2</div>
+      <h1>Core CRM &amp;<br>Channel Partner Portal
+        <span>Built, deployed and verified for QCred.in</span>
+      </h1>
+      <p class="lede">
+        This document records exactly what has been delivered against the scope QCred shared,
+        how each part works, who can see and do what, and the step-by-step guides your team
+        needs to start using the platform. Every item marked complete in this document has been
+        tested on the live deployment, not just written in code.
+      </p>
+    </div>
+    <div class="meta">
+      <div><span>Prepared for</span>QCred.in<br>Simply Insights LLP</div>
+      <div><span>Prepared by</span>24dev<br>Prabhas Raju</div>
+      <div><span>Date</span>1 August 2026</div>
+      <div><span>Live at</span>qcred-crm.vercel.app</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 01 STATUS ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 01</div><h2>Where the project stands</h2></div>
+
+  <p>The web platform — the Core CRM and the Channel Partner Portal — is <b>complete, deployed and
+  working</b>. You can log in today and use every screen described in this document. The mobile
+  applications are a separate milestone and have not been started yet; they begin once you sign
+  off on the web platform.</p>
+
+  <table>
+    <thead><tr><th style="width:9mm">#</th><th>Milestone</th><th style="width:34mm">Status</th><th style="width:26mm">Value</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Project kick-off</td><td><span class="pill y">Complete</span></td><td>₹15,000</td></tr>
+      <tr><td class="num">2</td><td>CRM + Advisor/Partner portal live</td><td><span class="pill y">Built &amp; verified</span> — pending your domain</td><td>₹25,000</td></tr>
+      <tr><td class="num">3</td><td>Android application</td><td><span class="pill p">Not started</span></td><td>₹20,000</td></tr>
+      <tr><td class="num">4</td><td>iOS application</td><td><span class="pill p">Not started</span></td><td>₹20,000</td></tr>
+      <tr><td class="num">5</td><td>Source code handover</td><td><span class="pill p">On completion</span></td><td>₹20,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>What "built &amp; verified" means here</h4>
+    <p>The platform is running on a live server with a live database. 49 automated checks covering
+    every screen, every role and every access rule pass against the live deployment, plus 11 further
+    checks confirming your partner coding framework appears correctly on screen. Document uploads
+    were tested end to end, including confirming that a signed-out visitor is refused access to a
+    customer's KYC file.</p>
+  </div>
+
+  <div class="card a">
+    <h4>The one thing still needed from QCred for Milestone 2</h4>
+    <p>Milestone 2 is defined as the CRM being live on <b>your</b> domain with your team using it.
+    Today it runs on our deployment so you can review it. To complete the milestone we need
+    (a) the domain or subdomain you want it on, for example <code>crm.qcred.in</code>, and
+    (b) confirmation to create the production database and document storage under a QCred-owned
+    account. Both are short tasks once you decide — see Section 11.</p>
+  </div>
+
+  <h3>The platform in numbers</h3>
+  <table>
+    <tbody>
+      <tr><td><b>21</b> screens</td><td>12 in the CRM, 9 in the Partner Portal</td></tr>
+      <tr><td><b>38 of 38</b> scope items</td><td>Every item on your Core CRM and Channel Partner lists — Sections 2 and 3</td></tr>
+      <tr><td><b>11</b> roles</td><td>From Super Admin down to Connector, each with its own permissions — Section 6</td></tr>
+      <tr><td><b>52</b> permissions</td><td>Across 14 modules, individually assignable</td></tr>
+      <tr><td><b>18</b> lead stages</td><td>The full pipeline from Pending to Disbursed, including query and rejection states</td></tr>
+      <tr><td><b>10</b> lenders · <b>9</b> products</td><td>Pre-loaded, editable by you without a developer</td></tr>
+      <tr><td><b>7</b> states · <b>24</b> cities</td><td>Seeded exactly from your coding framework document</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>QCred CRM &amp; Channel Partner Portal — Delivery Document</span><span>Section 01</span></div>
+</div>
+
+<!-- ============ 02 CRM CHECKLIST ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 02</div><h2>Your Core CRM list — item by item</h2></div>
+  <p class="sub">The 19 items exactly as you sent them, with where each one lives in the product.</p>
+
+  <table class="dense">
+    <thead><tr><th style="width:7mm">#</th><th style="width:52mm">What you asked for</th><th style="width:16mm">Status</th><th>How it works &amp; where to find it</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Secure Admin and staff login</td><td class="tick">✓ Done</td>
+        <td>Phone + password sign-in. Passwords are hashed, never stored readable. Sessions are signed and held in a secure cookie that JavaScript cannot read.</td></tr>
+      <tr><td class="num">2</td><td>Dashboard with lead and business summaries</td><td class="tick">✓ Done</td>
+        <td><b>Dashboard</b> — live counts by stage, disbursed value, payout position, this month vs last, and a breakdown by product and by partner. Every number is clickable and opens the filtered list behind it.</td></tr>
+      <tr><td class="num">3</td><td>Lead management</td><td class="tick">✓ Done</td>
+        <td><b>Leads</b> — create, edit, search, filter, assign, export. Each lead opens a full file with customer details, documents, lender applications, remarks and history.</td></tr>
+      <tr><td class="num">4</td><td>Product-wise lead management</td><td class="tick">✓ Done</td>
+        <td>Filter leads by product anywhere in the CRM; the dashboard shows a product-wise split, and reports break down volume and conversion per product.</td></tr>
+      <tr><td class="num">5</td><td>Lead assignment and reassignment</td><td class="tick">✓ Done</td>
+        <td>Assign a lead to any staff member, and reassign later. Every handover is written to the lead's history with who moved it, when, and why.</td></tr>
+      <tr><td class="num">6</td><td>Lead status and sub-status management</td><td class="tick">✓ Done</td>
+        <td>18 stages with sub-statuses beneath them. You add, rename or reorder stages yourself in <b>Settings</b> — no developer needed.</td></tr>
+      <tr><td class="num">7</td><td>Follow-up details, remarks and activity history</td><td class="tick">✓ Done</td>
+        <td>Each lead has a running conversation log plus an automatic activity trail. Remarks can be marked internal — those are never shown to the partner.</td></tr>
+      <tr><td class="num">8</td><td>Channel Partner management</td><td class="tick">✓ Done</td>
+        <td><b>Partners</b> — the full network with tier, code, geography, reporting line and performance. Each partner opens a file with 5 tabs.</td></tr>
+      <tr><td class="num">9</td><td>Partner registration approval</td><td class="tick">✓ Done</td>
+        <td>New registrations arrive as <i>Pending</i>. Approval is a deliberate step, and it is blocked until training is recorded — your framework, §4.</td></tr>
+      <tr><td class="num">10</td><td>Partner activation, suspension and management</td><td class="tick">✓ Done</td>
+        <td>Activate, suspend or reject with a reason. A suspended partner cannot sign in or submit leads; their existing leads stay intact and visible to you.</td></tr>
+      <tr><td class="num">11</td><td>Team and sub-partner management</td><td class="tick">✓ Done</td>
+        <td>The four-tier hierarchy from your framework document. Every partner shows who they report to and who reports to them — Section 5.</td></tr>
+      <tr><td class="num">12</td><td>Product and service management</td><td class="tick">✓ Done</td>
+        <td><b>Products</b> — 9 loan products, each with its own application fields, commission rate and lender list. Add or edit products yourself.</td></tr>
+      <tr><td class="num">13</td><td>Document viewing and verification</td><td class="tick">✓ Done</td>
+        <td>Customer and partner documents upload to private storage. Staff view, verify or reject with a remark; a rejected document can be re-uploaded by the partner.</td></tr>
+      <tr><td class="num">14</td><td>Payout and commission management</td><td class="tick">✓ Done</td>
+        <td>Commission is <b>calculated</b> from the disbursed amount and the product rate, then tracked through both legs of the money trail — Section 8.</td></tr>
+      <tr><td class="num">15</td><td>Marketing material management</td><td class="tick">✓ Done</td>
+        <td><b>Marketing</b> — upload creatives, brochures and posters; publish to partners, or archive. Partners see only what is published.</td></tr>
+      <tr><td class="num">16</td><td>Notifications and announcements</td><td class="tick">✓ Done</td>
+        <td><b>Announcements</b> — publish to all partners or a chosen tier. Partners see them on their dashboard and notifications screen.</td></tr>
+      <tr><td class="num">17</td><td>Reports and analytics</td><td class="tick">✓ Done</td>
+        <td><b>Reports</b> — lead, disbursement, partner-performance and payout reports, each filterable by date, product, state, partner and status, and exportable to CSV for Excel.</td></tr>
+      <tr><td class="num">18</td><td>User roles and access permissions</td><td class="tick">✓ Done</td>
+        <td>11 roles and 52 permissions, editable in <b>Settings</b>. Also controls <i>how much data</i> a role sees, not only which buttons — Section 6.</td></tr>
+      <tr><td class="num">19</td><td>Profile and account settings</td><td class="tick">✓ Done</td>
+        <td><b>Profile</b> for personal details and password; <b>Settings</b> for company-wide configuration including stages, numbering, roles and lenders.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>19 of 19 Core CRM items delivered</span><span>Section 02</span></div>
+</div>
+
+<!-- ============ 03 PARTNER CHECKLIST ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 03</div><h2>Your Channel Partner list — item by item</h2></div>
+  <p class="sub">All 19 items are delivered in the partner <b>web</b> portal. The mobile apps are Milestone 3 and 4 and will carry the same features.</p>
+
+  <table class="dense">
+    <thead><tr><th style="width:7mm">#</th><th style="width:52mm">What you asked for</th><th style="width:16mm">Status</th><th>How it works</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Partner registration and login</td><td class="tick">✓ Done</td>
+        <td>Public registration form; the partner then signs in with phone and password.</td></tr>
+      <tr><td class="num">2</td><td>Admin approval before account activation</td><td class="tick">✓ Done</td>
+        <td>A newly registered partner can sign in but cannot submit business until your team approves and activates them. They see exactly what is pending.</td></tr>
+      <tr><td class="num">3</td><td>Partner dashboard</td><td class="tick">✓ Done</td>
+        <td>Their own totals — leads by stage, disbursed value, earnings paid and pending — plus quick-launch tiles for each product.</td></tr>
+      <tr><td class="num">4</td><td>View available financial products</td><td class="tick">✓ Done</td>
+        <td><b>Products</b> — every active product with description, eligibility and commission, and a one-click start.</td></tr>
+      <tr><td class="num">5</td><td>Submit new customer leads</td><td class="tick">✓ Done</td>
+        <td><b>Submit lead</b> — the lead lands in your CRM instantly with the partner's code attached, so attribution is never in doubt.</td></tr>
+      <tr><td class="num">6</td><td>Product-specific application forms</td><td class="tick">✓ Done</td>
+        <td>The form changes with the product — a Home Loan asks about property and balance transfer, a Business Loan asks about turnover and vintage.</td></tr>
+      <tr><td class="num">7</td><td>Upload customer documents</td><td class="tick">✓ Done</td>
+        <td>PAN, Aadhaar, bank statements and more. Files go to private storage; if your team rejects one, the partner sees the reason and can replace it.</td></tr>
+      <tr><td class="num">8</td><td>View all submitted leads</td><td class="tick">✓ Done</td>
+        <td>Their full history — and, for a Sub-DSA, their team's leads too, because their data scope covers their network.</td></tr>
+      <tr><td class="num">9</td><td>Search and filter leads</td><td class="tick">✓ Done</td>
+        <td>Search by name, phone or lead number; filter by product, stage and date.</td></tr>
+      <tr><td class="num">10</td><td>Track lead status and processing progress</td><td class="tick">✓ Done</td>
+        <td>A visual journey showing every stage the file has passed through, with timestamps.</td></tr>
+      <tr><td class="num">11</td><td>View CRM remarks and rejection reasons</td><td class="tick">✓ Done</td>
+        <td>Partner-visible remarks and rejection reasons are shown in full. Remarks your team marks internal stay hidden — this is enforced in the database query, not merely hidden on screen.</td></tr>
+      <tr><td class="num">12</td><td>View lead activity history</td><td class="tick">✓ Done</td>
+        <td>The same timeline your team sees, filtered to what a partner is allowed to see.</td></tr>
+      <tr><td class="num">13</td><td>Team and sub-partner management</td><td class="tick">✓ Done</td>
+        <td><b>My team</b> — invite sub-partners, see their codes, status and production. A Sub-DSA sees their Connectors; a Connector sees only themselves.</td></tr>
+      <tr><td class="num">14</td><td>Payout summary and payout history</td><td class="tick">✓ Done</td>
+        <td><b>Earnings</b> — commission earned per lead, what is paid, what is pending, with reference numbers.</td></tr>
+      <tr><td class="num">15</td><td>Basic performance reports</td><td class="tick">✓ Done</td>
+        <td>Conversion, product mix and month-on-month trend for their own network.</td></tr>
+      <tr><td class="num">16</td><td>Marketing tools and promotional materials</td><td class="tick">✓ Done</td>
+        <td><b>Marketing</b> — download whatever your team has published.</td></tr>
+      <tr><td class="num">17</td><td>Product and offer information</td><td class="tick">✓ Done</td>
+        <td>Rates, eligibility and lender policies, kept current from the CRM.</td></tr>
+      <tr><td class="num">18</td><td>Notifications</td><td class="tick">✓ Done</td>
+        <td>Announcements and status changes on their own leads.</td></tr>
+      <tr><td class="num">19</td><td>Profile, business and bank-detail management</td><td class="tick">✓ Done</td>
+        <td>16 fields across personal, business, address and bank tabs, plus documents and the signed agreement. A completion checklist shows exactly what is still missing.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>19 of 19 Channel Partner items delivered (web)</span><span>Section 03</span></div>
+</div>
+
+<!-- ============ 04 BEYOND SCOPE ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 04</div><h2>Delivered beyond the brief</h2></div>
+  <p class="sub">These were not on your list. They were added because a loan-distribution business needs them, at no additional cost.</p>
+
+  <h3>From studying how you actually work</h3>
+  <table>
+    <thead><tr><th style="width:46mm">Addition</th><th>Why it matters to QCred</th></tr></thead>
+    <tbody>
+      <tr><td><b>One lead → many lenders</b></td>
+        <td>A single customer file can be sent to several lenders, each with its own application ID, status and timeline. Reality is that a file gets shopped around; the CRM now reflects that instead of forcing one lender per lead.</td></tr>
+      <tr><td><b>Apply More, with tracked links</b></td>
+        <td>From an open lead, apply to another lender in two clicks. The link carries your DSA code and the lead reference, so the lender can attribute the business back to QCred.</td></tr>
+      <tr><td><b>Lender policy library</b></td>
+        <td>Each lender's eligibility rules — minimum income, age band, credit score, accepted profiles — stored and visible while working a file, so staff stop guessing which lender fits.</td></tr>
+      <tr><td><b>Calculated commission</b></td>
+        <td>Commission is computed from the disbursed amount and the product rate rather than typed in or uploaded as a PDF. Fewer disputes, and the arithmetic is always auditable.</td></tr>
+      <tr><td><b>Two-leg money trail</b></td>
+        <td>Tracks both what the lender owes QCred and what QCred owes the partner, as separate legs — so you always know whether you are waiting to be paid or waiting to pay.</td></tr>
+      <tr><td><b>Maker–checker on money and activation</b></td>
+        <td>The person who raises a payout cannot approve it, and the person who onboards a partner cannot activate them alone. Standard financial-services control, enforced by the system.</td></tr>
+      <tr><td><b>Click-to-call and WhatsApp</b></td>
+        <td>Every customer and partner number is a tap away from a call or a WhatsApp chat, on desktop and mobile.</td></tr>
+      <tr><td><b>Full audit trail</b></td>
+        <td>Who changed what, when, and from where — across leads, partners, payouts and settings. Critical when a partner disputes a commission months later.</td></tr>
+      <tr><td><b>Escalation matrix</b></td>
+        <td>Your framework's routing built in, including the rule that a suspected compliance or fraud issue goes straight to HQ Compliance, bypassing the normal chain.</td></tr>
+      <tr><td><b>Configurable numbering</b></td>
+        <td>Lead and partner code formats are settings, not code. You can add the state or product segment to customer codes yourself — Section 5.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Built to keep you free of lock-in</h3>
+  <div class="two">
+    <div class="card">
+      <h4>Integration rails, ready to switch on</h4>
+      <p>PAN, Aadhaar, bank-account and credit-bureau checks are wired as a <i>verification</i> step
+      that today runs manually. When you buy an API, we connect it behind that step — no screens
+      change and no re-work is billed. The same pattern is used for document storage and SMS.</p>
+    </div>
+    <div class="card">
+      <h4>No third-party sign-in dependency</h4>
+      <p>Login is built into your own system rather than rented from a vendor. There is no per-user
+      fee as your partner network grows toward 5,000+, and nothing to migrate later.</p>
+    </div>
+  </div>
+
+  <div class="card g">
+    <h4>Where we improved on the reference CRM you shared</h4>
+    <p>Commission is calculated instead of uploaded as a PDF. Reports are filterable and exportable
+    instead of static tables. Every pipeline stage has its own distinct colour rather than five
+    colours recycled across eighteen stages. The current screen is always highlighted in the
+    navigation. Numbers on the dashboard are clickable and drill through to the records behind them.</p>
+  </div>
+
+  <div class="foot"><span>Additions delivered at no extra cost</span><span>Section 04</span></div>
+</div>
+
+<!-- ============ 05 FRAMEWORK ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 05</div><h2>Your partner structure &amp; coding framework</h2></div>
+  <p class="sub">Implemented section by section from “Channel Partner Organization Structure &amp; Coding Framework”, July 2026.</p>
+
+  <h3>The four tiers, live in the system</h3>
+  <div class="flow">
+    <div class="chain">
+      <div class="node"><b>Tier 1</b>National Business Head<i>HQ · all states</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Tier 2</b>Business Head<i>owns state P&amp;L</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Tier 3</b>Cluster / Regional<i>optional · 3–5 cities</i></div>
+      <div class="arw">→</div>
+      <div class="vsplit">
+        <div class="node g"><b>Tier 4a</b>Sub-DSA<i>partner firm</i></div>
+        <div class="node g"><b>Tier 4b</b>Connector<i>individual</i></div>
+      </div>
+    </div>
+    <div class="cap">Origination sits with Tier 4. A Connector may report to a Sub-DSA or directly to the state team.</div>
+  </div>
+
+  <h3>Code format — exactly as specified in §5</h3>
+  <table>
+    <thead><tr><th style="width:32mm">Tier</th><th style="width:52mm">Format</th><th style="width:36mm">Live example</th><th>Rule applied</th></tr></thead>
+    <tbody>
+      <tr><td>Business Head</td><td class="mono">QC-[STATE]-BH-[##]</td><td class="mono">QC-MH-BH-01</td><td>No city segment, 2-digit sequence</td></tr>
+      <tr><td>Cluster / Regional</td><td class="mono">QC-[STATE]-CH-[##]</td><td class="mono">QC-UP-CH-01</td><td>State level, 2-digit</td></tr>
+      <tr><td>Sub-DSA</td><td class="mono">QC-[STATE]-[CITY]-SDA-[####]</td><td class="mono">QC-MH-MUM-SDA-0001</td><td>City segment, 4-digit</td></tr>
+      <tr><td>Connector</td><td class="mono">QC-[STATE]-[CITY]-CON-[####]</td><td class="mono">QC-KA-BLR-CON-0001</td><td>City segment, 4-digit</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Two rules from §5 and §6 that are enforced, not just documented</h4>
+    <p><b>Sequences run per state-city-type combination</b>, not globally. <code>QC-MH-MUM-SDA-0001</code>
+    and <code>QC-MH-PUN-SDA-0001</code> both exist and neither collides.<br>
+    <b>Codes are permanent and never reused</b>, even after a partner exits. The next number is taken
+    from the highest ever issued, so deleting or offboarding a partner can never free their number
+    for someone else — which would otherwise corrupt your commission audit trail.</p>
+  </div>
+
+  <div class="foot"><span>Four tiers and code format</span><span>Section 05 · continues</span></div>
+</div>
+
+<div class="page">
+  <div class="rule cont"><div class="n">Section 05 · continued</div><h2>Governance rules in force</h2></div>
+
+  <h3>Governance rules from §2, §3 and §4</h3>
+  <table>
+    <thead><tr><th style="width:56mm">Your rule</th><th style="width:18mm">Status</th><th>How the system enforces it</th></tr></thead>
+    <tbody>
+      <tr><td>§4 — Training is mandatory before code activation</td><td class="tick">✓ Enforced</td>
+        <td>Activation is refused until training is recorded against the partner. The block is shown on their file with the reason.</td></tr>
+      <tr><td>§3 — Connectors may not collect KYC unless certified</td><td class="tick">✓ Enforced</td>
+        <td>An uncertified Connector is flagged and blocked from KYC handling. Sub-DSAs carry the right inherently.</td></tr>
+      <tr><td>§2 — Cluster layer advised beyond ~250 partners in a state</td><td class="tick">✓ Built in</td>
+        <td>The system watches state partner counts and advises when a state crosses the threshold.</td></tr>
+      <tr><td>§4 — Six review activities on a fixed cadence</td><td class="tick">✓ Built in</td>
+        <td>All six — weekly pipeline through annual re-certification — with owner and frequency, recorded per partner.</td></tr>
+      <tr><td>§4 — Escalation matrix, incl. compliance bypass</td><td class="tick">✓ Enforced</td>
+        <td>Issues route by level; a suspected compliance or fraud issue goes directly to HQ Compliance and is marked as having bypassed the chain.</td></tr>
+      <tr><td>§5.1 / §5.2 — State and city code tables</td><td class="tick">✓ Loaded</td>
+        <td>All 7 states and 24 cities seeded from your document, not invented. New cities are added by you.</td></tr>
+      <tr><td>§6 — Central code register, permanent codes</td><td class="tick">✓ Enforced</td>
+        <td>The partner list is the register; the database physically prevents two partners sharing a code.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card a">
+    <h4>One point in your document needs a decision</h4>
+    <p>§5 describes the partner type letters as <b>SH</b> (State Head), while §5.3 and the format
+    table both say <b>BH</b> (Business Head). We have used <b>BH</b>, matching the majority and your
+    tier naming — and made it a setting, so switching every code to SH is a change you make in
+    Settings, not a development request. Please confirm which you want before the network grows.</p>
+  </div>
+
+  <div class="foot"><span>Framework implemented §1–§6</span><span>Section 05</span></div>
+</div>
+
+<!-- ============ 06 ACCESS ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 06</div><h2>Logins and access levels</h2></div>
+  <p>You asked that access depend on login level. It does — and in four layers, not one.</p>
+
+  <div class="flow">
+    <div class="chain">
+      <div class="node"><b>Layer 1</b>Module<i>can they open Payouts at all?</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Layer 2</b>Action<i>view, or also approve?</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Layer 3</b>Data scope<i>whose records?</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Layer 4</b>Field<i>which fields are masked?</i></div>
+    </div>
+    <div class="cap">Layer 3 is the important one — it filters the database query itself, so restricted data is never sent to the browser.</div>
+  </div>
+
+  <h3>Data scope — the difference between hiding and not sending</h3>
+  <table>
+    <thead><tr><th style="width:22mm">Scope</th><th style="width:38mm">Who has it</th><th>What it means</th></tr></thead>
+    <tbody>
+      <tr><td><b>own</b></td><td>Maker, Relationship Manager, Connector</td><td>Only records they created or are assigned. Another RM's leads do not exist as far as their screen is concerned.</td></tr>
+      <tr><td><b>team</b></td><td>Partner (Sub-DSA)</td><td>Their own records plus every sub-partner beneath them in the hierarchy.</td></tr>
+      <tr><td><b>all</b></td><td>Super Admin, National Head, Manager, Checker, Auditor</td><td>The whole book.</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:8.6pt; color:var(--mute)">This is applied inside the database query. A restricted user cannot reach another user's
+  record even by typing its address directly into the browser — there is nothing to return.</p>
+
+  <div class="foot"><span>Four layers of access control</span><span>Section 06 · continues</span></div>
+</div>
+
+<div class="page">
+  <div class="rule cont"><div class="n">Section 06 · continued</div><h2>Who can do what</h2></div>
+
+  <h3>Role capability matrix</h3>
+  <table class="matrix">
+    <thead><tr>
+      <th style="width:34mm">Role</th><th>Leads</th><th>Partners</th><th>Approve<br>partner</th><th>Payouts</th><th>Approve<br>payout</th>
+      <th>Docs<br>verify</th><th>Products</th><th>Reports</th><th>Employees</th><th>Settings</th><th>Audit</th><th>Scope</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Super Admin</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td>all</td></tr>
+      <tr><td>National Business Head</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td>all</td></tr>
+      <tr><td>Manager</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td>all</td></tr>
+      <tr><td>Divisional Manager</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td><td class="n">view</td><td class="n">—</td><td class="n">—</td><td>all</td></tr>
+      <tr><td>Business Head (State)</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td>all</td></tr>
+      <tr><td>Checker</td><td class="n">view</td><td class="n">view</td><td class="y">✓</td><td class="n">view</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td>all</td></tr>
+      <tr><td>Maker (Staff)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="y">raise</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td><b>own</b></td></tr>
+      <tr><td>Relationship Manager</td><td class="y">✓</td><td class="n">view</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td><b>own</b></td></tr>
+      <tr><td>Viewer / Auditor</td><td class="n">view</td><td class="n">view</td><td class="n">—</td><td class="n">view</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td>all</td></tr>
+      <tr><td>Partner (Sub-DSA)</td><td class="y">own</td><td class="n">—</td><td class="n">—</td><td class="n">view</td><td class="n">—</td><td class="n">upload</td><td class="n">view</td><td class="y">own</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td><b>team</b></td></tr>
+      <tr><td>Connector</td><td class="y">own</td><td class="n">—</td><td class="n">—</td><td class="n">view</td><td class="n">—</td><td class="n">upload</td><td class="n">view</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td><b>own</b></td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:8.4pt;color:var(--mute)">“view” = read only · “raise” = can create but not approve · “own/team” = limited to their own data scope.
+  Every one of these 52 permissions is individually switchable in Settings; the roles above are starting points, not fixed.</p>
+
+  <div class="card">
+    <h4>Segregation of duties — why Maker and Checker exist</h4>
+    <p>A Maker can raise a payout but never approve it. A Checker can approve and mark it paid but
+    cannot raise one, and cannot see leads outside a read-only view. The same split applies to
+    partner activation. This means no single staff member can move money from creation to payment
+    on their own — the control auditors and lenders expect from a distribution business.</p>
+  </div>
+
+  <div class="foot"><span>11 roles · 52 permissions · 4 access layers</span><span>Section 06</span></div>
+</div>
+
+<!-- ============ 07 LEAD FLOW ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 07</div><h2>How a lead moves — deep dive</h2></div>
+
+  <div class="flow">
+    <div class="lane">
+      <div class="lane-l">Partner</div>
+      <div class="node g"><b>Submit lead</b><i>product form + documents</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Code issued</b><i>QC-L-00042</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Tracks status</b><i>read-only journey</i></div>
+    </div>
+    <div class="lane">
+      <div class="lane-l">CRM staff</div>
+      <div class="node"><b>Allocated</b><i>assigned to RM</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Docs verified</b><i>or query raised</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Apply to lender</b><i>tracked link, DSA code</i></div>
+      <div class="arw">→</div>
+      <div class="node a"><b>Under process</b><i>with lender</i></div>
+    </div>
+    <div class="lane">
+      <div class="lane-l">Outcome</div>
+      <div class="node g"><b>Approved</b></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Disbursed</b><i>amount recorded</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Commission</b><i>auto-calculated</i></div>
+      <div class="arw">·</div>
+      <div class="node f"><b>Rejected</b><i>reason shown to partner</i></div>
+    </div>
+    <div class="cap">Every transition is timestamped and written to the lead's history with the user who made it.</div>
+  </div>
+
+  <h3>One lead, many lenders</h3>
+  <p>A file rarely goes to one lender. Each application is tracked separately, so a customer can be
+  rejected by one lender and disbursed by another without losing either record.</p>
+  <div class="flow">
+    <div class="chain">
+      <div class="node"><b>Lead</b>QC-L-00042<i>Ravi Menon · ₹25L</i></div>
+      <div class="arw">→</div>
+      <div class="vsplit">
+        <div class="node a"><b>AP-0001 · HDFC</b><i>Under process</i></div>
+        <div class="node f"><b>AP-0002 · ICICI</b><i>Rejected — low CIBIL</i></div>
+        <div class="node g"><b>AP-0003 · Bajaj</b><i>Disbursed ₹22L</i></div>
+      </div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Commission</b><i>on the disbursed leg only</i></div>
+    </div>
+    <div class="cap">“Apply More” opens the lender with your DSA code and the lead reference embedded in the link.</div>
+  </div>
+
+  <h3>The 18 stages</h3>
+  <p style="font-size:8.6pt">Pending · Allocated · Submitted · Under-Process · Docs Query&nbsp;-&nbsp;EA · Docs Query&nbsp;-&nbsp;LA ·
+  Login · Credit Review · Approved · Sanctioned · Agreement · Disbursed · Part-Disbursed · On Hold ·
+  Issue Raised · Issue Resolved · Rejected · Dropped.</p>
+  <p style="font-size:8.6pt;color:var(--mute)">Each has its own colour so a list can be read at a glance, and each can carry sub-statuses.
+  You can rename, reorder or add stages in Settings without a developer.</p>
+
+  <div class="foot"><span>Lead lifecycle</span><span>Section 07</span></div>
+</div>
+
+<!-- ============ 08 MONEY ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 08</div><h2>Commission and payouts — deep dive</h2></div>
+
+  <p>Money is tracked as <b>two separate legs</b>. Mixing them is the usual reason a distribution
+  business cannot answer “are we waiting to be paid, or waiting to pay?”</p>
+
+  <div class="flow">
+    <div class="lane">
+      <div class="lane-l">Leg 1 — in</div>
+      <div class="node"><b>Disbursed</b><i>₹22,00,000</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Brand commission</b><i>calculated from rate</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Received</b><i>from lender</i></div>
+    </div>
+    <div class="lane">
+      <div class="lane-l">Leg 2 — out</div>
+      <div class="node"><b>Partner commission</b><i>their share</i></div>
+      <div class="arw">→</div>
+      <div class="node a"><b>Raised by Maker</b><i>cannot self-approve</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Approved by Checker</b></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Paid</b><i>UTR recorded</i></div>
+    </div>
+    <div class="cap">Each stage is dated. Any failure is captured as an error state rather than silently disappearing.</div>
+  </div>
+
+  <h3>Worked example</h3>
+  <table>
+    <thead><tr><th style="width:52mm">Step</th><th style="width:34mm">Amount</th><th>Who does it</th></tr></thead>
+    <tbody>
+      <tr><td>Loan disbursed</td><td class="mono">₹22,00,000</td><td>Recorded by staff from the lender confirmation</td></tr>
+      <tr><td>Product commission rate</td><td class="mono">1.20%</td><td>From the product master — not typed per lead</td></tr>
+      <tr><td>QCred earns from lender</td><td class="mono">₹26,400</td><td>Calculated automatically</td></tr>
+      <tr><td>Partner share</td><td class="mono">₹15,840</td><td>Per the partner's agreed share</td></tr>
+      <tr><td>QCred retains</td><td class="mono">₹10,560</td><td>Visible on the payout file</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Why calculated, not uploaded</h4>
+    <p>The reference CRM you shared required a commission PDF to be uploaded per payout. That makes
+    every figure a manual entry and every dispute unresolvable. Here the arithmetic is derived from
+    the disbursed amount and the product rate, shown on screen, and recorded in the audit trail — so
+    when a partner questions a payout six months later, you can show exactly how it was reached.</p>
+  </div>
+
+  <div class="foot"><span>Two-leg money trail with maker–checker control</span><span>Section 08</span></div>
+</div>
+
+<!-- ============ 09 ONBOARDING + DOCS ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 09</div><h2>Partner onboarding and documents</h2></div>
+
+  <div class="flow">
+    <div class="chain">
+      <div class="node"><b>Registers</b><i>self sign-up</i></div>
+      <div class="arw">→</div>
+      <div class="node a"><b>Pending</b><i>cannot submit business</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>KYC collected</b><i>PAN, Aadhaar, bank</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Verified</b><i>by staff</i></div>
+      <div class="arw">→</div>
+      <div class="node a"><b>Training</b><i>mandatory — §4</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Code issued</b></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Active</b><i>can source</i></div>
+    </div>
+    <div class="cap">Activation is refused if training is not recorded. The partner sees precisely which step is outstanding.</div>
+  </div>
+
+  <h3>What a partner must complete</h3>
+  <p>Their profile shows a live checklist. Until it is finished, the agreement stays locked — so no
+  one is activated on half a file.</p>
+  <table>
+    <thead><tr><th style="width:44mm">Requirement</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Personal &amp; business details</td><td>Name, trade name, category, PAN, Aadhaar, GST where applicable</td></tr>
+      <tr><td>Address</td><td>Full address with city, district, state and pincode</td></tr>
+      <tr><td>Bank details</td><td>Account, IFSC and holder name — required before any payout</td></tr>
+      <tr><td>Documents</td><td>PAN card, Aadhaar, cancelled cheque, photo</td></tr>
+      <tr><td>Agreement</td><td>Unlocks only when the above are complete</td></tr>
+    </tbody>
+  </table>
+
+  <h3>How documents are protected</h3>
+  <div class="card">
+    <p>KYC files are identity documents, so they are held in <b>private</b> storage — not on a public
+    web address. A file can only be opened through the application, which checks who is asking and
+    whether that person is allowed to see that specific document. We verified this on the live system:
+    a signed-in authorised user receives the file; a visitor who is not signed in is refused. Only
+    JPG, PNG, WEBP and PDF are accepted, up to 5 MB.</p>
+  </div>
+
+  <h3>Rejection and replacement</h3>
+  <div class="flow">
+    <div class="chain">
+      <div class="node"><b>Partner uploads</b></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Staff reviews</b></div>
+      <div class="arw">→</div>
+      <div class="vsplit">
+        <div class="node g"><b>Verified</b><i>locked</i></div>
+        <div class="node f"><b>Rejected</b><i>reason recorded</i></div>
+      </div>
+      <div class="arw">→</div>
+      <div class="node"><b>Partner re-uploads</b><i>sees the reason</i></div>
+    </div>
+    <div class="cap">A rejected document can always be replaced — the partner is never left stuck without knowing why.</div>
+  </div>
+
+  <div class="foot"><span>Onboarding gates and document handling</span><span>Section 09</span></div>
+</div>
+
+<!-- ============ 10 GUIDES ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 10</div><h2>Guides for your team</h2></div>
+
+  <h3>Signing in</h3>
+  <p>Open <b>qcred-crm.vercel.app</b> and sign in with the phone number and password below. These are
+  demonstration accounts with fake data, for review only — real accounts are created when the system
+  moves to your domain.</p>
+  <table>
+    <thead><tr><th style="width:30mm">Login</th><th style="width:24mm">Password</th><th style="width:36mm">Role</th><th>What to look at</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">9999900001</td><td class="mono">qcred@123</td><td>Super Admin</td><td>Everything — start here</td></tr>
+      <tr><td class="mono">9999900002</td><td class="mono">qcred@123</td><td>Maker (staff)</td><td>Notice the leads list is limited to their own — that is data scope working</td></tr>
+      <tr><td class="mono">9999900003</td><td class="mono">qcred@123</td><td>Checker</td><td>Can approve payouts, cannot raise them</td></tr>
+      <tr><td class="mono">9820011001</td><td class="mono">qcred@123</td><td>Partner — Sub-DSA<br><span class="mono">QC-MH-MUM-SDA-0001</span></td><td>The partner portal, with a team beneath them</td></tr>
+      <tr><td class="mono">9820011010</td><td class="mono">qcred@123</td><td>Business Head<br><span class="mono">QC-MH-BH-01</span></td><td>State-level partner code format</td></tr>
+      <tr><td class="mono">9820011013</td><td class="mono">qcred@123</td><td>Connector, untrained</td><td>See the activation block from §4 in action</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Guide 1 — Approving and activating a partner</h3>
+  <div class="steps">
+    <div class="step"><b>Open Partners</b> and select the partner marked <i>Pending</i>.</div>
+    <div class="step"><b>Check the Documents tab.</b> Verify each document, or reject it with a reason so the partner can replace it.</div>
+    <div class="step"><b>Record training.</b> Until this is done, activation is blocked — this is your framework §4.</div>
+    <div class="step"><b>Approve, then activate.</b> The partner code is issued automatically in the correct format for their tier and city.</div>
+    <div class="step"><b>Tell them.</b> They can now sign in and submit business immediately.</div>
+  </div>
+
+  <h3>Guide 2 — Working a lead to disbursement</h3>
+  <div class="steps">
+    <div class="step"><b>Open the lead</b> from Leads, or from any number on the dashboard.</div>
+    <div class="step"><b>Assign it</b> to the relationship manager who will own it.</div>
+    <div class="step"><b>Verify documents.</b> If something is missing, move the stage to <i>Docs Query</i> — the partner sees it and can respond.</div>
+    <div class="step"><b>Apply to a lender</b> using <i>Apply More</i>. The link carries your DSA code so the lender attributes the business to QCred.</div>
+    <div class="step"><b>Update the stage</b> as the lender progresses. Add remarks; mark them internal if the partner should not see them.</div>
+    <div class="step"><b>Record the disbursement</b> with the final amount. Commission is calculated at this point.</div>
+  </div>
+
+  <div class="foot"><span>Signing in · approving a partner · working a lead</span><span>Section 10 · continues</span></div>
+</div>
+
+<div class="page">
+  <div class="rule cont"><div class="n">Section 10 · continued</div><h2>Guides, continued</h2></div>
+
+  <h3>Guide 3 — Paying a partner</h3>
+  <div class="steps">
+    <div class="step"><b>Maker:</b> open Payouts and raise the payout against the disbursed lead. The amount is pre-calculated.</div>
+    <div class="step"><b>Checker:</b> review and approve. The system will not let the same person do both.</div>
+    <div class="step"><b>Make the transfer</b> in your bank, then mark it paid and record the reference number.</div>
+    <div class="step"><b>The partner sees it</b> in their Earnings screen with the reference — fewer “where is my payout” calls.</div>
+  </div>
+
+  <h3>Guide 4 — Configuration you can do yourself</h3>
+  <table>
+    <thead><tr><th style="width:44mm">To change</th><th>Go to</th></tr></thead>
+    <tbody>
+      <tr><td>Add or rename a pipeline stage</td><td>Settings → Lead stages</td></tr>
+      <tr><td>Change the lead or partner code format</td><td>Settings → Numbering (with a live preview before saving)</td></tr>
+      <tr><td>Add a lender or edit its policy</td><td>Settings → Lenders</td></tr>
+      <tr><td>Change what a role can do</td><td>Settings → Roles &amp; permissions</td></tr>
+      <tr><td>Add a product or change a commission rate</td><td>Products</td></tr>
+      <tr><td>Publish material to partners</td><td>Marketing → Upload → Publish</td></tr>
+      <tr><td>Announce something to the network</td><td>Announcements → New</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Guides</span><span>Section 10</span></div>
+</div>
+
+<!-- ============ 11 NEXT ============ -->
+<div class="page">
+  <div class="rule"><div class="n">Section 11</div><h2>Security, and what happens next</h2></div>
+
+  <h3>How your data is handled</h3>
+  <table>
+    <thead><tr><th style="width:44mm">Area</th><th>Position</th></tr></thead>
+    <tbody>
+      <tr><td>Passwords</td><td>Hashed, never stored or recoverable in readable form. Nobody at 24dev can read a user's password.</td></tr>
+      <tr><td>Sessions</td><td>Signed tokens in a secure cookie that JavaScript cannot access.</td></tr>
+      <tr><td>KYC documents</td><td>Private storage, served only through a permission check. Verified live: unauthenticated access is refused.</td></tr>
+      <tr><td>Access control</td><td>Enforced in the database query, not the browser — restricted records are never sent to the client.</td></tr>
+      <tr><td>Audit trail</td><td>Who did what, when, across leads, partners, payouts and settings.</td></tr>
+      <tr><td>Demonstration data</td><td>Every customer and partner in the current system is fictional. No real customer data has ever been placed on a developer machine or a developer-owned account.</td></tr>
+      <tr><td>Ownership</td><td>The platform runs on your own login system with no third-party per-user fees, and no vendor to migrate away from later.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>To complete Milestone 2, we need two decisions from you</h3>
+  <div class="steps">
+    <div class="step"><b>The address.</b> Which domain should the CRM live on — for example <code>crm.qcred.in</code>? You point the domain at us; the certificate is automatic.</div>
+    <div class="step"><b>The accounts.</b> Confirm we should create the production database and document storage under QCred ownership, so your live customer data sits in your accounts from day one rather than being migrated later.</div>
+  </div>
+
+  <div class="foot"><span>Security and data handling</span><span>Section 11 · continues</span></div>
+</div>
+
+<div class="page">
+  <div class="rule cont"><div class="n">Section 11 · continued</div><h2>Decisions and next steps</h2></div>
+
+  <h3>Open questions from your framework document</h3>
+  <table>
+    <thead><tr><th style="width:52mm">Question</th><th>Our recommendation</th></tr></thead>
+    <tbody>
+      <tr><td><b>BH or SH</b> for the Business Head code letters — your document uses both</td>
+        <td>Keep <b>BH</b>, which matches §5.3 and your tier naming. It is a setting either way, changeable before the network scales.</td></tr>
+      <tr><td><b>Should a Business Head see only their own state?</b> §6 grants "state-wise edit access"</td>
+        <td>Today a Business Head sees the whole book. If you want them restricted to their state, we add a state-level data scope — a small change, best decided before staff accounts are created.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>After your sign-off</h3>
+  <table>
+    <thead><tr><th style="width:30mm">Milestone</th><th style="width:26mm">Value</th><th>What it covers</th></tr></thead>
+    <tbody>
+      <tr><td>3 — Android app</td><td>₹20,000</td><td>The partner portal as a native Android application, same features, built for field use</td></tr>
+      <tr><td>4 — iOS app</td><td>₹20,000</td><td>The same for iPhone</td></tr>
+      <tr><td>5 — Source handover</td><td>₹20,000</td><td>Full source code, database and deployment handed to QCred</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>What we would like from you now</h4>
+    <p>Please review the platform using the logins in Section 10 and tell us anything that does not
+    match how QCred actually works. Changes at this stage are quick; changes after the mobile apps
+    are built have to be made three times. Your feedback on the web platform is the most valuable
+    thing you can give us this week.</p>
+  </div>
+
+  <div class="foot"><span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span><span>Section 11</span></div>
+</div>
+
+</body>
+</html>

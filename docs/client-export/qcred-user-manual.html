@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred CRM &amp; Partner Portal — User Manual</title>
+<style>
+  @page { size: A4; margin: 13mm 12mm 14mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --navy-light:#17529c; --green:#068a3e;
+    --green-50:#e8f6ee; --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80;
+    --line:#dbe3ee; --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3,h4{margin:0;line-height:1.25} p{margin:0 0 4.5px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,h4,thead,.rule{page-break-after:avoid}
+  tr,.card,.how{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .cover{height:264mm;display:flex;flex-direction:column;justify-content:space-between;
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-dark) 62%,#061f42 100%);
+    color:#fff;margin:-13mm -12mm 0;padding:20mm 17mm 15mm}
+  .cover img{height:15mm;margin-bottom:11mm;filter:brightness(0) invert(1)}
+  .cover .k{font-size:8.2pt;letter-spacing:.22em;text-transform:uppercase;color:#9dc0ea;margin-bottom:6mm}
+  .cover h1{font-size:27pt;font-weight:700;letter-spacing:-.6px}
+  .cover h1 span{display:block;color:#7fd6a2;font-weight:400;font-size:15pt;margin-top:4.5mm}
+  .cover .lede{margin-top:8mm;max-width:124mm;color:#cfe0f5;font-size:9.6pt;line-height:1.6}
+  .cover .meta{display:flex;gap:13mm;border-top:1px solid rgba(255,255,255,.22);padding-top:6mm;font-size:8.4pt}
+  .cover .meta div span{display:block;color:#8fb4e0;font-size:7.2pt;letter-spacing:.13em;
+    text-transform:uppercase;margin-bottom:2mm}
+
+  .rule{border-bottom:2.5px solid var(--navy);padding-bottom:2.4mm;margin:0 0 3.6mm}
+  .rule .n{font-size:7.4pt;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:700}
+  .rule h2{font-size:14.5pt;color:var(--navy);margin-top:1.2mm;letter-spacing:-.3px}
+  h3{font-size:10.4pt;color:var(--navy);margin:3mm 0 1.4mm}
+  h4{font-size:9.2pt;margin:2.8mm 0 1.2mm;color:var(--navy-dark)}
+  .who{display:inline-block;margin-left:2mm;rounded:2px;background:var(--navy-50);color:var(--navy);
+       padding:.4mm 2mm;border-radius:8px;font-size:7.2pt;font-weight:700;vertical-align:1px}
+
+  table{width:100%;border-collapse:collapse;margin:1.5mm 0 2.4mm;font-size:8.1pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:1.8mm 2.2mm;font-weight:600;font-size:7.8pt;
+     border-right:1px solid rgba(255,255,255,.15)}
+  th:last-child{border-right:none}
+  td{padding:1.4mm 2mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:7.8pt;background:var(--navy-50);
+       padding:.4mm 1mm;border-radius:2px;color:var(--navy-dark)}
+  .y{color:var(--green);font-weight:700} .n2{color:#cbd5e1}
+
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2mm 2.8mm;margin:1.8mm 0;border-radius:2px;font-size:8.3pt}
+  .card.g{border-left-color:var(--green);background:var(--green-50)}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card b.t{display:block;margin-bottom:.8mm}
+
+  .how{background:#fbfcfe;border:1px solid var(--line);border-radius:3px;padding:2.4mm 3mm 2mm;margin:2mm 0}
+  .how .h{font-size:8.6pt;font-weight:700;color:var(--navy);margin-bottom:1.2mm}
+  .how ol{margin:0;padding-left:4.5mm;font-size:8.4pt}
+  .how li{margin-bottom:.8mm}
+
+  .toc td{padding:1.2mm 2mm}
+  .foot{border-top:1px solid var(--line);margin-top:3.6mm;padding-top:2mm;font-size:7.2pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="page">
+  <div class="cover">
+    <div>
+      <img src="assets/logo-full.png" alt="QCred">
+      <div class="k">User Manual · Version 1 · August 2026</div>
+      <h1>QCred CRM &amp;<br>Partner Portal
+        <span>Every section, every role — how to use it</span>
+      </h1>
+      <p class="lede">
+        This manual covers the complete platform: the office CRM, the channel partner portal,
+        and what every role can see and do. Each section says who it is for, what it does, and
+        walks the common tasks step by step. It is a living document — updated as the platform
+        grows, complete at handover.
+      </p>
+    </div>
+    <div class="meta">
+      <div><span>Prepared for</span>QCred.in<br>Simply Insights LLP</div>
+      <div><span>Maintained by</span>24dev</div>
+      <div><span>Platform</span>qcred-crm.vercel.app</div>
+      <div><span>This version</span>4 August 2026</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOC + GETTING STARTED ==================== -->
+<div class="page">
+  <div class="rule"><div class="n">Contents</div><h2>What&rsquo;s in this manual</h2></div>
+  <table class="toc">
+    <tbody>
+      <tr><td><b>Part 1</b></td><td>Getting started — signing in, invitations, approvals, passwords</td></tr>
+      <tr><td><b>Part 2</b></td><td>The CRM, section by section — Dashboard · Leads · Partners · Disbursements · Payouts · Products · Lenders &amp; Best Match · Marketing · Reports · Employees · Announcements · Settings</td></tr>
+      <tr><td><b>Part 3</b></td><td>The Partner Portal — all nine screens</td></tr>
+      <tr><td><b>Part 4</b></td><td>Roles handbook — the five-role model, what each login can do</td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule" style="margin-top:6mm"><div class="n">Part 1</div><h2>Getting started</h2></div>
+
+  <h3>Signing in</h3>
+  <p>Open the platform address and sign in with your <b>mobile number and password</b>. Staff land
+  on the CRM dashboard; partners land on the partner portal. The same login page serves both.</p>
+
+  <div class="how"><div class="h">If you&rsquo;re new — joining by invitation</div>
+    <ol>
+      <li>You receive a private, single-use link (valid 14 days).</li>
+      <li>Open it, check your details, and <b>set your own password</b> (minimum 8 characters).</li>
+      <li><b>Employees:</b> your account then waits for approval — your supervisor or the corporate
+          office confirms you, and you&rsquo;ll be able to sign in the moment they do.</li>
+      <li><b>Partners:</b> you can sign in straight away and complete your profile, but lead
+          submission unlocks only once QCred approves and activates your partner code.</li>
+    </ol>
+  </div>
+
+  <div class="how"><div class="h">Changing your password</div>
+    <ol><li>Profile (bottom of the menu) → Password → enter current and new → <b>Update password</b>.</li></ol>
+  </div>
+
+  <div class="card g"><b class="t">Every button tells you what&rsquo;s happening</b>
+  When you save anything, the button shows <b>&ldquo;Saving…&rdquo;</b> with a spinner, then flashes
+  <b>&ldquo;Updated ✓&rdquo;</b>. While saving, it locks — so double-clicking can never create a
+  duplicate.</div>
+
+  <div class="card a"><b class="t">If you see &ldquo;You don&rsquo;t have access&rdquo;</b>
+  Nothing is broken. Your role simply doesn&rsquo;t include that permission — the page names the
+  exact permission to ask your administrator for (Settings → Roles &amp; permissions).</div>
+
+  <h3>The to-do queue</h3>
+  <p>The first thing on your dashboard is <b>Needs your attention</b> — built from what <i>your</i>
+  role can actually action: approvals waiting on you, documents to verify, follow-ups due, leads
+  unassigned. Empty queue = genuinely nothing waiting. Every card is clickable.</p>
+
+  <div class="foot"><span>QCred CRM &amp; Partner Portal — User Manual v1</span><span>Part 1 · Getting started</span></div>
+</div>
+
+<!-- ==================== CRM: DASHBOARD / LEADS ==================== -->
+<div class="page">
+  <div class="rule"><div class="n">Part 2</div><h2>The CRM, section by section</h2></div>
+
+  <h3>Dashboard <span class="who">all staff</span></h3>
+  <p>Your day at a glance: the to-do queue, KPI cards (leads, disbursed value, partners, pending
+  payouts), the pipeline by stage, follow-ups due, and product/partner breakdowns.
+  <b>Every number is clickable</b> and opens the filtered list behind it. Cards you don&rsquo;t
+  have permission for simply don&rsquo;t appear.</p>
+
+  <h3>Leads <span class="who">per role scope</span></h3>
+  <p>The heart of the CRM. What you see here follows your data scope — your own leads, your
+  team&rsquo;s, or all (Part 4). Search by name, mobile or lead number; filter by status and
+  product; export to CSV. Phone numbers are click-to-call and WhatsApp everywhere.</p>
+
+  <div class="how"><div class="h">Create a lead</div>
+    <ol>
+      <li>Leads → <b>+ New lead</b>. Pick the product — the form changes with it.</li>
+      <li>Enter customer details. PAN, Aadhaar and mobile are validated as you submit —
+          Aadhaar against its official checksum, so a typo is caught here, not by the lender.</li>
+      <li>Submit. The lead gets its code (e.g. <code>QC-L-00042</code>) and enters the pipeline.</li>
+    </ol>
+  </div>
+  <div class="how"><div class="h">Work a lead to disbursement</div>
+    <ol>
+      <li>Open the lead → <b>Assign</b> it to the RM who&rsquo;ll own it.</li>
+      <li>Verify documents; if something is missing, set stage to <i>Docs Query</i> — the partner
+          sees it with your remark and can respond.</li>
+      <li><b>Log in with lender</b> to apply — the link carries QCred&rsquo;s DSA code and the lead
+          reference, so attribution is automatic. One lead can hold applications to several
+          lenders, each tracked separately.</li>
+      <li>Update the stage as the lender progresses. Remarks marked <i>internal</i> are never
+          shown to the partner — enforced in the database, not just hidden.</li>
+      <li>Schedule follow-ups; overdue ones surface on your dashboard.</li>
+    </ol>
+  </div>
+  <div class="card"><b class="t">The 18 pipeline stages</b>
+  Pending · Allocated · Submitted · Under-Process · Docs Query-EA · Docs Query-LA · Login ·
+  Credit Review · Approved · Sanctioned · Agreement · Disbursed · Part-Disbursed · On Hold ·
+  Issue Raised · Issue Resolved · Rejected · Dropped — each with its own colour, all editable
+  in Settings without a developer.</div>
+
+  <h3>Partners <span class="who">partners.view</span></h3>
+  <p>The channel network. Opens with the <b>Access levels</b> grid (what each partner login can
+  do, plus the four field tiers with live counts), then the list with codes, tiers, lead counts
+  and status filters. Every partner file has seven tabs: Overview, Basic, Contact, Bank,
+  Documents, Leads, Reviews.</p>
+  <div class="how"><div class="h">Approve &amp; activate a new partner</div>
+    <ol>
+      <li>Open the partner (they arrive as <i>Pending</i>).</li>
+      <li>Documents tab → verify each, or reject with a reason (they can re-upload).</li>
+      <li>Overview → <b>Mark training complete</b>. Until this is recorded, the Activate button
+          does not exist — training before activation is mandatory (framework §4).</li>
+      <li><b>Approve</b>, then <b>Activate</b>. Their code is issued automatically in the correct
+          format for their tier and geography (e.g. <code>QC-MH-MUM-SDA-0001</code>) — permanent,
+          never reused.</li>
+    </ol>
+  </div>
+  <div class="card g"><b class="t">Commercial terms — TDS per partner</b>
+  On each partner&rsquo;s Overview: agreement type and TDS. <b>Commission agreement → 2% ·
+  Retainer agreement → 10%</b> (auto-filled, overridable — it follows tax law, so it&rsquo;s
+  editable data, not code). Share % too. The payout calculation uses these.</div>
+
+  <div class="foot"><span>QCred CRM — Dashboard · Leads · Partners</span><span>Part 2</span></div>
+</div>
+
+<!-- ==================== CRM: MONEY ==================== -->
+<div class="page">
+  <div class="rule"><div class="n">Part 2 · continued</div><h2>The money screens</h2></div>
+
+  <h3>Disbursements <span class="who">disbursements.view</span></h3>
+  <p>Where a sanctioned case is recorded as money-out-the-door — and where the payout is born.</p>
+  <div class="how"><div class="h">Record a disbursement</div>
+    <ol>
+      <li>Disbursements → find the sanctioned case.</li>
+      <li>Enter disbursed amount, lender, and the <b>lender programme</b> — the programme decides
+          the commission rate, so pick the one the file was actually booked under.</li>
+      <li>Enter the commercials: fees collected, interest rate, property value, tenure.
+          <b>LTV is calculated automatically</b> from amount ÷ property value.</li>
+      <li><b>Record.</b> The lead moves to Disbursed and the partner&rsquo;s payout is raised
+          automatically — calculated, not typed.</li>
+    </ol>
+  </div>
+
+  <h3>Payouts <span class="who">view: most · release: Checker + Super Admin ONLY</span></h3>
+  <p>Commission tracked as <b>two separate legs</b>: what the lender owes QCred (base rate +
+  any target bonus from the programme), and what QCred owes the partner (their share, minus
+  their TDS). So you always know whether you&rsquo;re waiting to be paid or waiting to pay.</p>
+  <div class="how"><div class="h">The payout lifecycle — maker-checker enforced</div>
+    <ol>
+      <li>Payout is raised (automatically on disbursement, or by a Maker).</li>
+      <li>A <b>Checker</b> reviews and approves — the system physically refuses to let whoever
+          raised it approve it.</li>
+      <li>The transfer is made <b>in your bank</b> — the CRM never moves money itself.</li>
+      <li>Mark paid with the UTR and mode. The partner is notified and sees it in Earnings.</li>
+    </ol>
+  </div>
+  <div class="card a"><b class="t">Who can release money</b>
+  By QCred&rsquo;s own rule: payout approval and payment are held by <b>Checker and Super Admin
+  only</b>. Managers and heads can see and raise, never release.</div>
+
+  <h3>Products <span class="who">products.view / edit</span></h3>
+  <p>The 9 loan products partners submit against. Everything on the card is editable in place —
+  name, short code, kind, category, description — and the list is reorderable (that order is what
+  partners see). Turning a product off hides it from the portal without touching existing leads.
+  Each product drives its own application form.</p>
+
+  <div class="foot"><span>QCred CRM — Disbursements · Payouts · Products</span><span>Part 2</span></div>
+</div>
+
+<!-- ==================== CRM: LENDERS ==================== -->
+<div class="page">
+  <div class="rule"><div class="n">Part 2 · continued</div><h2>Lenders &amp; Best Match</h2></div>
+
+  <h3>The lender catalogue <span class="who">all staff · partners (no payout)</span></h3>
+  <p>Built for 100+ lenders, it narrows in QCred&rsquo;s hierarchy — <b>Zone → Region →
+  Product</b> — with a live count on every chip, ending in a table of matching programmes:
+  eligibility (FOIR, LTV, CIBIL, property and profile types), commercials (rates, ticket sizes,
+  tenure) and QCred&rsquo;s payout %. Partners see the same catalogue <b>without the payout
+  column</b> — it is excluded from the data, not hidden on screen.</p>
+
+  <div class="card g"><b class="t">Grids, where a lender publishes them</b>
+  Most lenders quote one LTV and one maximum — the screen asks for one number. Where a lender
+  publishes a grid (Poonawalla: LTV per property type, maximum per city tier), tick the grid
+  option and fill only the cells they publish; blanks fall back to the single figure.</div>
+
+  <div class="how"><div class="h">Add a lender and its programmes <span style="font-weight:400">(Manage lenders)</span></div>
+    <ol>
+      <li>Lenders → <b>Manage lenders</b> → Add lender (name, sector).</li>
+      <li><b>+ Add programme</b> per programme the lender publishes — one row each, like
+          Poonawalla&rsquo;s eleven.</li>
+      <li>Fill eligibility, commercials, and <b>Payout</b> — the base % QCred earns, plus target
+          bonus slabs (&ldquo;₹1 Cr in the month → +0.25%&rdquo;; the highest slab reached applies).</li>
+      <li>Or fill the Excel template and send it to 24dev — it loads directly, exactly as
+          Poonawalla&rsquo;s sheet was loaded.</li>
+    </ol>
+  </div>
+
+  <h3>Best Match <span class="who">all staff</span></h3>
+  <p>Describe the case — product, amount, property value and type, profile, CIBIL, city tier —
+  and every active programme is scored and ranked. <b>The ranking explains itself:</b> each match
+  lists its reasons (&ldquo;✓ LTV 60% within 80%&rdquo;) and each rejection its blockers
+  (&ldquo;✕ ceiling 55% for industrial property&rdquo;). Ranked by eligibility first, payout
+  second. As real volume flows, per-lender approval and disbursement rates feed the same score —
+  the learning half switches on with data.</p>
+
+  <h3>Sales contacts</h3>
+  <p>Each lender carries its sales directory — NSM, zonal and regional managers with phone and
+  email (Poonawalla&rsquo;s 23 are loaded). When a file is stuck, the person to chase is one tap
+  away, under the lender in Manage view.</p>
+
+  <h3>Marketing <span class="who">marketing.view / upload</span></h3>
+  <p>A tiled gallery with image previews. Upload files directly (JPG/PNG/WEBP/PDF, ≤5 MB) or
+  paste a link; publish, archive, restore. <b>Every download is recorded</b> — who took what,
+  when, with their partner code — so you can see which creatives the network actually uses.</p>
+
+  <h3>Reports <span class="who">reports.view</span></h3>
+  <p>Lead, disbursement, partner-performance and payout reports — filter by date, product, state,
+  partner, status; export any of them to CSV for Excel. Exports respect your data scope.</p>
+
+  <div class="foot"><span>QCred CRM — Lenders · Best Match · Marketing · Reports</span><span>Part 2</span></div>
+</div>
+
+<!-- ==================== CRM: ADMIN ==================== -->
+<div class="page">
+  <div class="rule"><div class="n">Part 2 · continued</div><h2>People and configuration</h2></div>
+
+  <h3>Employees <span class="who">employees.view</span></h3>
+  <p>Opens with the role cards (each role, its permission count, how far it sees), then the staff
+  list with role, <b>Reports to</b>, status and last login.</p>
+  <div class="how"><div class="h">Add an employee — two ways</div>
+    <ol>
+      <li><b>Invite by link</b> (recommended): name, mobile, role → Create invite → send them the
+          link. They set their own password — nothing to share over WhatsApp.</li>
+      <li><b>Add directly</b> with a temporary password, for someone standing next to you.</li>
+      <li>Either way, set <b>Reports to</b> — this is the reporting line that team visibility and
+          approvals walk.</li>
+    </ol>
+  </div>
+  <div class="how"><div class="h">Approve a new employee</div>
+    <ol>
+      <li>New employees show <b>awaiting approval</b> and cannot sign in yet.</li>
+      <li>Anyone in their reporting line above them — however many layers up — sees the Approve
+          button, as does the corporate office (Checker, Super Admin). It also lands in the
+          approver&rsquo;s dashboard to-do.</li>
+      <li>Approve → they can sign in immediately.</li>
+    </ol>
+  </div>
+
+  <h3>Announcements <span class="who">announcements.view / create</span></h3>
+  <p>Publish to the whole network or a chosen tier. Partners see them on their dashboard and
+  notifications screen.</p>
+
+  <h3>Settings <span class="who">settings.view / edit — admin</span></h3>
+  <table>
+    <thead><tr><th style="width:34mm">Panel</th><th>What you control there</th></tr></thead>
+    <tbody>
+      <tr><td><b>Roles &amp; permissions</b></td><td>Every role&rsquo;s permissions (52 switches across 14 modules) and its <b>data access</b> — Own / Team / All. Changes apply immediately and are audit-logged.</td></tr>
+      <tr><td><b>Pipeline stages</b></td><td>Rename, recolour, reorder, mark final, delete stages and sub-stages in place. Deleting a stage that leads sit on is refused — records are never orphaned.</td></tr>
+      <tr><td><b>Numbering</b></td><td>Lead, partner and application code formats, with a live preview. Partner codes follow the coding framework (state, city, tier, per-combination sequence); lead codes can carry state and product segments.</td></tr>
+      <tr><td><b>Company details</b></td><td>Name, support contacts and similar text used across the platform.</td></tr>
+    </tbody>
+  </table>
+  <div class="card a"><b class="t">A caution on Roles</b>
+  Permission changes take effect the moment you save — unticking <i>view</i> on a module removes
+  that screen for everyone holding the role. Every change is recorded in the audit trail with who
+  and when, so anything can be reconstructed and reversed.</div>
+
+  <div class="foot"><span>QCred CRM — Employees · Announcements · Settings</span><span>Part 2</span></div>
+</div>
+
+<!-- ==================== PARTNER PORTAL ==================== -->
+<div class="page">
+  <div class="rule"><div class="n">Part 3</div><h2>The Partner Portal</h2></div>
+  <p class="sub" style="color:var(--mute);font-size:8.6pt;margin:-1mm 0 3mm">What your channel
+  partners see when they sign in. Same platform, scoped hard: a partner sees their own business
+  and their team&rsquo;s — nothing else is ever sent to their browser.</p>
+
+  <table>
+    <thead><tr><th style="width:30mm">Screen</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Dashboard</b></td><td>Their to-do (documents returned, queries to answer), reporting line with a callable supervisor number, lead analytics by stage, earnings summary, product quick-launch tiles.</td></tr>
+      <tr><td><b>My leads</b></td><td>Every lead they (and their team) submitted — search, filters, status journey with timestamps, CRM remarks and rejection reasons. Internal CRM remarks never appear here.</td></tr>
+      <tr><td><b>Submit lead</b></td><td>Product-specific forms — a Home Loan asks about property and balance transfer, a Business Loan about turnover. PAN/Aadhaar/mobile validated on the spot with plain-language messages.</td></tr>
+      <tr><td><b>Apply more</b></td><td>Send an existing customer to another lender — each application tracked separately with its own status.</td></tr>
+      <tr><td><b>My team</b></td><td>Their sub-partners with codes, status and production. <b>Invite someone</b>: the portal generates a private link; the invitee sets their own password and arrives as Pending for QCred to approve. Sub-DSAs invite Connectors; Business/Cluster Heads can invite Sub-DSAs too.</td></tr>
+      <tr><td><b>Payouts</b></td><td>Commission earned per case — gross, TDS, net — what&rsquo;s paid (with UTR) and what&rsquo;s pending.</td></tr>
+      <tr><td><b>Lenders</b></td><td>The same Zone → Region → Product catalogue the office uses, <b>minus the payout column</b>. Answers &ldquo;who will take my customer&rdquo;.</td></tr>
+      <tr><td><b>Marketing</b></td><td>Published creatives as tiles, downloadable; their own download history below.</td></tr>
+      <tr><td><b>Products / Notifications / Profile</b></td><td>Product and offer information · announcements and status alerts (with mark-all-read) · profile across Basic, Bank, Contact, Documents and Password tabs, with a completion checklist — the agreement unlocks only when the profile is complete.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="how"><div class="h">A partner&rsquo;s first week</div>
+    <ol>
+      <li>Register (or accept an invitation) and set a password.</li>
+      <li>Complete the profile — personal, business, address, bank — and upload KYC documents.
+          The checklist shows exactly what&rsquo;s missing.</li>
+      <li>QCred verifies documents, records training, approves and activates — the partner code
+          is issued.</li>
+      <li>Submit the first lead from the dashboard tiles, and track it stage by stage.</li>
+      <li>Rejected document? It shows in their to-do with the reason — replace it in one tap.</li>
+    </ol>
+  </div>
+
+  <div class="card g"><b class="t">Documents are private</b>
+  KYC files live in private storage and are served only through a permission check — a partner
+  can reach their own documents and nobody else&rsquo;s; a signed-out visitor gets nothing.</div>
+
+  <div class="foot"><span>QCred Partner Portal — all screens</span><span>Part 3</span></div>
+</div>
+
+<!-- ==================== ROLES ==================== -->
+<div class="page" style="font-size:8.6pt">
+  <div class="rule"><div class="n">Part 4</div><h2>Roles handbook</h2></div>
+
+  <h3>The five-role model</h3>
+  <table>
+    <thead><tr><th style="width:40mm">Role</th><th style="width:30mm">Sees</th><th>Meant for</th></tr></thead>
+    <tbody>
+      <tr><td><b>Individual Contributor</b></td><td>Own work only</td><td>Field staff working their own leads and payouts</td></tr>
+      <tr><td><b>Supervisor</b></td><td>Own + everyone mapped under them, any depth</td><td>Team leads — sees the whole subtree, approves new joiners in it</td></tr>
+      <tr><td><b>Individual Contributor (Central Office)</b></td><td>Own work only</td><td>Central ops processing staff</td></tr>
+      <tr><td><b>Supervisor (Central Office)</b></td><td>Own + team</td><td>Central ops leads — adds partner approval, document verification, broader tooling</td></tr>
+      <tr><td><b>Leader</b></td><td>Everything</td><td>Leadership — full visibility and configuration, but <b>not</b> payout release</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:8.4pt;color:var(--mute)">The earlier roles (Maker, Checker, RM, Manager, National Head…) remain available; the five above
+  are the simplified taxonomy going forward. Assign either from Employees.</p>
+
+  <h3>Three ideas that make access make sense</h3>
+  <table>
+    <thead><tr><th style="width:34mm">Concept</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><b>Permissions</b></td><td>Which screens and buttons a role gets — 52 switches, editable in Settings.</td></tr>
+      <tr><td><b>Data access</b></td><td>Whose <i>records</i> they see: <b>Own</b> / <b>Team</b> (walks the Reports-to line) / <b>All</b>. Applied inside the database query — out-of-scope records are never sent to the browser.</td></tr>
+      <tr><td><b>Tier vs role</b> (partners)</td><td>The tier (Business Head, Sub-DSA, Connector…) places someone in the network and shapes their code; the role decides what their login can do.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:2.4mm">Hard rules that no role overrides</h3>
+  <table>
+    <tbody>
+      <tr><td><b>Payout release</b></td><td>Approve + mark-paid: <b>Checker and Super Admin only</b>. And whoever raises a payout can never approve it.</td></tr>
+      <tr><td><b>Partner activation</b></td><td>Blocked until training is recorded (§4). Codes are permanent — never reused, even after exit.</td></tr>
+      <tr><td><b>Employee entry</b></td><td>New staff cannot sign in until approved by their chain or the corporate office.</td></tr>
+      <tr><td><b>Self-protection</b></td><td>You cannot change your own role or suspend yourself — an administrator can never lock everyone out.</td></tr>
+      <tr><td><b>Audit</b></td><td>Every approval, permission change, terms change and payment is recorded with who and when.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:2.4mm">Capability snapshot</h3>
+  <table style="font-size:7.0pt;margin-bottom:1.5mm">
+    <thead><tr><th style="width:34mm">Role</th><th>Leads</th><th>Partners</th><th>Approve partner</th><th>Payout raise</th><th>Payout release</th><th>Lenders</th><th>Reports</th><th>Employees</th><th>Settings</th></tr></thead>
+    <tbody>
+      <tr><td>Super Admin</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">edit</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+      <tr><td>Checker</td><td class="n2">view</td><td class="n2">view</td><td class="y">✓</td><td class="n2">—</td><td class="y">✓</td><td class="n2">view</td><td class="y">✓</td><td class="y">approve</td><td class="n2">—</td></tr>
+      <tr><td>Leader</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n2">—</td><td class="y">edit</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+      <tr><td>Supervisor (Central)</td><td class="y">✓ team</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n2">—</td><td class="n2">view</td><td class="y">✓</td><td class="n2">view</td><td class="n2">—</td></tr>
+      <tr><td>Supervisor</td><td class="y">✓ team</td><td class="n2">view</td><td class="n2">—</td><td class="n2">—</td><td class="n2">—</td><td class="n2">view</td><td class="y">✓</td><td class="n2">view + approve own team</td><td class="n2">—</td></tr>
+      <tr><td>Individual Contributor (both)</td><td class="y">✓ own</td><td class="n2">view</td><td class="n2">—</td><td class="n2">C.O. only</td><td class="n2">—</td><td class="n2">view</td><td class="y">✓ own</td><td class="n2">—</td><td class="n2">—</td></tr>
+      <tr><td>Partner (Sub-DSA)</td><td class="y">own+team</td><td class="n2">—</td><td class="n2">—</td><td class="n2">—</td><td class="n2">—</td><td class="n2">view, no payout</td><td class="y">own</td><td class="n2">—</td><td class="n2">—</td></tr>
+      <tr><td>Connector</td><td class="y">own</td><td class="n2">—</td><td class="n2">—</td><td class="n2">—</td><td class="n2">—</td><td class="n2">view, no payout</td><td class="n2">—</td><td class="n2">—</td><td class="n2">—</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:7.8pt;color:var(--mute);margin-bottom:1.5mm">Snapshot of the defaults — every cell is adjustable per role in Settings → Roles &amp; permissions.
+  <b>This manual is a living document</b> — maintained alongside the platform, complete at handover; role-wise training videos are planned once screens are sign-off final, so they are shot once, correctly. <span style="color:var(--mute)">— 24dev · manual v1 · 4 August 2026</span></p>
+
+</div>
+
+</body>
+</html>

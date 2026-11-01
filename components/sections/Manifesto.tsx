@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { Signature } from "@/components/atoms/Flourish";
 
 export function Manifesto() {
   return (
@@ -46,6 +47,7 @@ export function Manifesto() {
               <br />
               <span className="text-fog-dim not-italic text-sm">Bangalore · 2025</span>
             </p>
+            <Signature className="mt-2 h-10 w-40" color="var(--color-fog)" />
           </motion.div>
 
           {/* Right — the story */}

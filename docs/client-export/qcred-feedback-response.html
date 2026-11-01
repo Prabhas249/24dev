@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred — Response to your feedback, 3 August 2026</title>
+<style>
+  @page { size: A4; margin: 14mm 13mm 15mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --navy-light:#17529c; --green:#068a3e;
+    --green-50:#e8f6ee; --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80;
+    --line:#dbe3ee; --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9.4pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3,h4{margin:0;line-height:1.25} p{margin:0 0 4.5px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,h4,thead,.rule{page-break-after:avoid}
+  .card,.flow,tr{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .cover{height:262mm;display:flex;flex-direction:column;justify-content:space-between;
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-dark) 62%,#061f42 100%);
+    color:#fff;margin:-14mm -13mm 0;padding:22mm 18mm 16mm}
+  .cover img{height:16mm;margin-bottom:13mm;filter:brightness(0) invert(1)}
+  .cover .k{font-size:8.4pt;letter-spacing:.22em;text-transform:uppercase;color:#9dc0ea;margin-bottom:7mm}
+  .cover h1{font-size:29pt;font-weight:700;letter-spacing:-.6px}
+  .cover h1 span{display:block;color:#7fd6a2;font-weight:400;font-size:17pt;margin-top:5mm}
+  .cover .lede{margin-top:9mm;max-width:120mm;color:#cfe0f5;font-size:9.8pt;line-height:1.6}
+  .cover .meta{display:flex;gap:14mm;border-top:1px solid rgba(255,255,255,.22);padding-top:7mm;font-size:8.6pt}
+  .cover .meta div span{display:block;color:#8fb4e0;font-size:7.4pt;letter-spacing:.13em;
+    text-transform:uppercase;margin-bottom:2.5mm}
+
+  .rule{border-bottom:2.5px solid var(--navy);padding-bottom:2.6mm;margin:0 0 4mm}
+  .rule .n{font-size:7.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:700}
+  .rule h2{font-size:16pt;color:var(--navy);margin-top:1.5mm;letter-spacing:-.3px}
+  h3{font-size:11pt;color:var(--navy);margin:4mm 0 2mm}
+  h4{font-size:9.6pt;margin:4mm 0 1.6mm}
+  .sub{color:var(--mute);font-size:8.8pt;margin:-1mm 0 3mm}
+
+  table{width:100%;border-collapse:collapse;margin:2mm 0 3mm;font-size:8.4pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:2.2mm 2.6mm;font-weight:600;font-size:8pt;
+     border-right:1px solid rgba(255,255,255,.16)}
+  th:last-child{border-right:none}
+  td{padding:1.7mm 2.4mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  .num{color:var(--mute);width:6mm}
+  .tick{color:var(--green);font-weight:700;white-space:nowrap}
+  code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8pt;background:var(--navy-50);
+       padding:.5mm 1.2mm;border-radius:2px;color:var(--navy-dark)}
+
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2.6mm 3.2mm;margin:2.4mm 0;border-radius:2px}
+  .card.g{border-left-color:var(--green);background:var(--green-50)}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card h4{margin:0 0 1.5mm;font-size:9.2pt} .card p:last-child{margin-bottom:0}
+
+  .flow{background:#fbfcfe;border:1px solid var(--line);border-radius:3px;padding:3.2mm 3mm;margin:2.4mm 0}
+  .chain{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap}
+  .node{border:1.4px solid var(--navy);background:#fff;border-radius:3px;padding:2mm 2.4mm;
+        font-size:7.4pt;text-align:center;min-width:21mm;max-width:31mm;line-height:1.3}
+  .node b{display:block;color:var(--navy);font-size:7.6pt}
+  .node i{display:block;font-style:normal;color:var(--mute);font-size:6.8pt;margin-top:.6mm}
+  .node.g{border-color:var(--green);background:var(--green-50)} .node.g b{color:var(--green)}
+  .node.a{border-color:var(--amber);background:var(--amber-50)} .node.a b{color:var(--amber)}
+  .node.x{border-color:#94a3b8;background:#f1f5f9;border-style:dashed} .node.x b{color:#475569}
+  .arw{display:flex;align-items:center;color:var(--navy-light);font-size:11pt;padding:0 1.4mm;font-weight:700}
+  .lane{display:flex;align-items:center;margin-bottom:2.5mm;flex-wrap:wrap}
+  .lane-l{width:23mm;flex-shrink:0;font-size:7.2pt;font-weight:700;color:var(--navy);
+          text-transform:uppercase;letter-spacing:.05em;padding-right:2mm}
+  .cap{font-size:7.8pt;color:var(--mute);text-align:center;margin-top:3mm;font-style:italic}
+
+  ul{margin:0 0 6px;padding-left:4.5mm} li{margin-bottom:1.5mm}
+  .foot{border-top:1px solid var(--line);margin-top:4mm;padding-top:2.2mm;font-size:7.5pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page">
+  <div class="cover">
+    <div>
+      <img src="assets/logo-full.png" alt="QCred">
+      <div class="k">Response to your feedback · 3 August 2026</div>
+      <h1>Your thirteen points,<br>answered
+        <span>Plus how payouts and the lender module work</span>
+      </h1>
+      <p class="lede">
+        Thank you for going through the platform properly — the two items you flagged as
+        not working were real, and you were right to call them out. Both are fixed and live.
+        This document answers every point you raised, and then explains the payout and lender
+        modules in detail, since those are the ones you asked to discuss.
+      </p>
+    </div>
+    <div class="meta">
+      <div><span>Prepared for</span>QCred.in<br>Simply Insights LLP</div>
+      <div><span>Prepared by</span>24dev<br>Prabhas Raju</div>
+      <div><span>Date</span>3 August 2026</div>
+      <div><span>Live at</span>qcred-crm.vercel.app</div>
+    </div>
+  </div>
+</div>
+
+<!-- 01 -->
+<div class="page">
+  <div class="rule"><div class="n">Section 01</div><h2>Your feedback, point by point</h2></div>
+  <p class="sub">All thirteen items, in the order you sent them.</p>
+
+  <table>
+    <thead><tr><th class="num">#</th><th style="width:52mm">Your point</th><th style="width:17mm">Status</th><th>What was done</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Hierarchy visible in all accounts, one level above</td><td class="tick">✓ Done</td>
+        <td>Every account now shows a <b>Reporting line</b> — who they report to, with that person's contact number, their own position, and how many report in below.</td></tr>
+
+      <tr><td class="num">2</td><td>Queue for approval / To-Do on login, based on role</td><td class="tick">✓ Done</td>
+        <td>A <b>Needs your attention</b> panel is the first thing on the dashboard. It is built from what that person can actually action — a Maker never sees payouts they cannot approve. Overdue items sort to the top.</td></tr>
+
+      <tr><td class="num">3</td><td>Partner and employee activation link not working</td><td class="tick">✓ Fixed</td>
+        <td>You were right. Staff-created accounts had no way to set a password. There is now a proper invitation: the person receives a private link, sets their own password, and their account activates.</td></tr>
+
+      <tr><td class="num">4</td><td>Training verification, with role-wise videos gating approval</td><td>◐ Partly</td>
+        <td>The activation gate already blocks until training is recorded. Attaching video content and tracking completion against it is a small module we would like to scope with you — see Section 4.</td></tr>
+
+      <tr><td class="num">5</td><td>Invite Partner / Sub-partner / employee / Connector link not working</td><td class="tick">✓ Fixed</td>
+        <td>Also correct — that link pointed at a page that did not exist. Partners now generate real single-use invites from <b>My team</b>, and staff can invite from Partners and Employees.</td></tr>
+
+      <tr><td class="num">6</td><td>How does the Payout module work — needs discussion</td><td class="tick">✓ Explained</td>
+        <td>Section 2 of this document walks through it end to end, including exactly what the system does and does not do with money.</td></tr>
+
+      <tr><td class="num">7</td><td>Capture fees, interest rate, property value, LTV — payout auto-calculated from the lender module</td><td class="tick">✓ Done</td>
+        <td>Disbursement now records fees collected, interest rate, property value and tenure. LTV is calculated and stored. The payout is derived from the lender programme — Section 2 and 3.</td></tr>
+
+      <tr><td class="num">8</td><td>Validation for Aadhaar, PAN and mobile on lead submission</td><td class="tick">✓ Done</td>
+        <td>PAN is format-checked, mobile must be a valid Indian number, and Aadhaar is checked against its <b>official checksum</b> — so a mistyped digit or two swapped digits is caught at entry, not by the lender days later.</td></tr>
+
+      <tr><td class="num">9</td><td>Lead status and sub-status to be reviewable and changeable</td><td class="tick">✓ Done</td>
+        <td>In Settings you can now rename, recolour, reorder, mark final and delete stages and sub-stages. Deleting a stage that leads are sitting on is refused, so records are never orphaned.</td></tr>
+
+      <tr><td class="num">10</td><td>Server time zone on timestamps</td><td class="tick">✓ Fixed</td>
+        <td>Correct — the server runs in UTC, so timestamps were around five and a half hours out. Every date and time in the system is now India Standard Time.</td></tr>
+
+      <tr><td class="num">11</td><td>Marketing in tiled format, downloadable with history</td><td class="tick">✓ Done</td>
+        <td>Marketing is now a tiled gallery with image previews, files upload directly, and every download is recorded — who took what and when, visible to you.</td></tr>
+
+      <tr><td class="num">12</td><td>Lender module — product programmes, payout, auto-calculation, target bonuses</td><td class="tick">✓ Done</td>
+        <td>A full module. Each lender carries programmes; each programme carries its own payout rate and target bonus slabs. Section 3.</td></tr>
+
+      <tr><td class="num">13</td><td>Lender product variants — FOIR / LTV / property types / programmes</td><td class="tick">✓ Done</td>
+        <td>Each programme records FOIR and LTV ceilings, accepted property types, borrower profiles, CIBIL, age and income bands, rate range, processing fee, ticket size, tenure, assessment basis and business vintage. Where a lender publishes LTV as a grid or a tier-wise maximum — as Poonawalla does — those are held as published. See Section 3.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>Response to feedback of 3 August 2026</span><span>Section 01</span></div>
+</div>
+
+<!-- 02 PAYOUTS -->
+<div class="page">
+  <div class="rule"><div class="n">Section 02</div><h2>How the payout module works</h2></div>
+
+  <p>You asked to discuss this, so here it is in full — including the part most software is
+  vague about.</p>
+
+  <div class="card a">
+    <h4>First, the important boundary: the CRM does not move money</h4>
+    <p>There is no payment gateway and no bank connection inside the platform. The system
+    calculates what is owed, controls who may approve it, and records that it was paid.
+    <b>The transfer itself is made from your bank, by your team, exactly as it is today.</b></p>
+    <p style="margin-top:2mm">This is deliberate. Moving money inside the software would mean the
+    software holding your funds, which requires a payout licence or a direct bank integration.
+    Nearly every distribution business in India runs commissions this way — the control comes from
+    the approval trail and the audit record, not from the software touching the money.</p>
+  </div>
+
+  <h3>The two legs</h3>
+  <p>Money flows in two directions, and the platform tracks both separately. This is the part
+  that prevents the most common dispute in the business — a partner chasing money that the
+  lender has not yet paid you.</p>
+
+  <div class="flow">
+    <div class="lane">
+      <div class="lane-l">Leg 1 · in</div>
+      <div class="node"><b>Loan disbursed</b><i>recorded by staff</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Your commission</b><i>from the programme rate</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Lender pays QCred</b><i>receipt recorded</i></div>
+    </div>
+    <div class="lane">
+      <div class="lane-l">Leg 2 · out</div>
+      <div class="node"><b>Partner's share</b><i>less TDS</i></div>
+      <div class="arw">→</div>
+      <div class="node a"><b>Raised</b><i>by a Maker</i></div>
+      <div class="arw">→</div>
+      <div class="node a"><b>Approved</b><i>by a Checker</i></div>
+      <div class="arw">→</div>
+      <div class="node x"><b>Bank transfer</b><i>done by your team</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Marked paid</b><i>UTR recorded</i></div>
+    </div>
+    <div class="cap">The dashed step is the only one outside the system. Everything either side of it is recorded and auditable.</div>
+  </div>
+
+  <div class="foot"><span>How payouts work</span><span>Section 02 · continues</span></div>
+</div>
+
+<div class="page">
+  <div class="rule" style="border-bottom:1.4px solid var(--line)">
+    <div class="n">Section 02 · continued</div>
+    <h2 style="font-size:12.5pt;color:var(--navy-light)">The numbers, and the controls</h2>
+  </div>
+
+  <h3 style="margin-top:0">A worked example</h3>
+  <table>
+    <thead><tr><th style="width:46mm">Step</th><th style="width:28mm">Amount</th><th>Where it comes from</th></tr></thead>
+    <tbody>
+      <tr><td>Loan disbursed</td><td><code>₹22,00,000</code></td><td>Entered when the lender confirms</td></tr>
+      <tr><td>Programme payout rate</td><td><code>1.200%</code></td><td>From the lender programme — not typed per case</td></tr>
+      <tr><td>Base commission</td><td><code>₹26,400</code></td><td>Calculated</td></tr>
+      <tr><td>Target bonus at 0.25%</td><td><code>₹5,500</code></td><td>Monthly volume crossed the slab</td></tr>
+      <tr><td><b>QCred earns</b></td><td><code>₹31,900</code></td><td>Base plus bonus</td></tr>
+      <tr><td>Partner share</td><td><code>₹19,140</code></td><td>Their agreed percentage</td></tr>
+      <tr><td>TDS</td><td><code>₹957</code></td><td>Deducted and shown separately</td></tr>
+      <tr><td><b>Partner receives</b></td><td><code>₹18,183</code></td><td>The amount you transfer</td></tr>
+      <tr><td><b>QCred retains</b></td><td><code>₹12,760</code></td><td>Shown on the payout file</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Segregation of duties</h4>
+    <p>Whoever raises a payout cannot approve it — the system refuses, it is not a policy someone
+    can forget. A different person with Checker permission approves, and a third step records the
+    payment with its UTR. No single person can take a payout from creation to payment alone.</p>
+  </div>
+
+  <div class="card">
+    <h4>If you want automated transfers later</h4>
+    <p>It is possible — through a bank payout facility such as RazorpayX, Cashfree Payouts or
+    connected banking with your own bank. It needs a QCred account approved for that service,
+    their onboarding, and carries per-transaction charges. The approval controls already in place
+    are what such an integration would sit behind. Worth revisiting once volumes justify it.</p>
+  </div>
+
+  <div class="foot"><span>How payouts work</span><span>Section 02</span></div>
+</div>
+
+<!-- 03 LENDER MODULE -->
+<div class="page">
+  <div class="rule"><div class="n">Section 03</div><h2>The lender module</h2></div>
+
+  <p>You asked for lenders to carry product programmes with payouts and product details, so
+  commissions calculate themselves. That is what this is.</p>
+
+  <h3>Why programmes, and not one rate per lender</h3>
+  <p>A lender does not pay one commission. The same bank pays differently for a prime salaried
+  case and a self-employed loan against property. So each lender holds as many programmes as they
+  publish, and each programme carries its own payout and its own eligibility.</p>
+
+  <div class="flow">
+    <div class="chain">
+      <div class="node"><b>Lender</b><i>e.g. HDFC</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Programme</b><i>Salaried — Prime<br>payout 1.20%</i></div>
+      <div class="arw">→</div>
+      <div class="node"><b>Eligibility</b><i>FOIR, LTV, CIBIL,<br>property types</i></div>
+      <div class="arw">→</div>
+      <div class="node g"><b>Payout</b><i>base + target bonus</i></div>
+    </div>
+    <div class="cap">Choosing the programme at disbursement is what makes the commission calculate itself.</div>
+  </div>
+
+  <h3>What each programme holds</h3>
+  <table>
+    <thead><tr><th style="width:34mm">Group</th><th>Fields</th></tr></thead>
+    <tbody>
+      <tr><td><b>Eligibility</b></td><td>FOIR ceiling · LTV ceiling · minimum CIBIL · age band · minimum income · <b>assessment basis</b> (EBITDA, gross profit, gross receipts, GST turnover, banking) · <b>minimum business vintage</b> · accepted property types · borrower profiles</td></tr>
+      <tr><td><b>Commercials</b></td><td>Interest rate range · processing fee · minimum and maximum ticket size · maximum tenure · brochure link</td></tr>
+      <tr><td><b>Payout</b></td><td>Base payout percentage · target bonus slabs</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>The lender module</span><span>Section 03 · continues</span></div>
+</div>
+
+<div class="page">
+  <div class="rule" style="border-bottom:1.4px solid var(--line)">
+    <div class="n">Section 03 · continued</div>
+    <h2 style="font-size:12.5pt;color:var(--navy-light)">Lenders that publish grids</h2>
+  </div>
+
+  <h3 style="margin-top:0">Where a lender publishes a grid rather than one number</h3>
+  <p>Thank you for sharing the Poonawalla Fincorp LAP magazine — it changed how we
+  modelled this. Their LTV is not a single figure, it is a grid by property type, and their
+  maximum loan amount changes by city tier:</p>
+
+  <table>
+    <thead><tr><th style="width:38mm">Poonawalla LAP</th><th>As published</th></tr></thead>
+    <tbody>
+      <tr><td><b>LTV by property</b></td>
+        <td>Residential 80% · Commercial 75% · Industrial 55% · Land/Plot 50% · Specialised collateral 65%</td></tr>
+      <tr><td><b>Max loan by tier</b></td>
+        <td>Metro &amp; Tier 1 ₹25 Cr · Tier 2 ₹7.5 Cr · Tier 3 &amp; 4 ₹3 Cr <i>(Standard Income programme)</i></td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Both are optional, and off by default</h4>
+    <p>Plenty of your lenders will quote a single LTV and a single maximum, so the screen asks
+    for one number each. Where a lender does publish a grid, you tick a box and fill only the
+    cells they actually publish — anything left blank falls back to the single figure. A lender
+    without a grid behaves exactly as before.</p>
+    <p style="margin-top:2mm">The Poonawalla <i>Standard Income (EBITDA)</i> programme is already
+    loaded in the system with these exact figures, so you can see how it looks.</p>
+  </div>
+
+  <h3>Target bonuses</h3>
+  <p>You add slabs such as “₹1 crore in the month, extra 0.25%”. The system totals that month's
+  volume with that lender and applies the <b>highest slab reached</b> — slabs do not stack, since
+  lender schemes are normally written as a single improved rate rather than as accumulating tiers.</p>
+
+  <div class="card a">
+    <h4>Please confirm two things</h4>
+    <p><b>Do your lenders stack bonus slabs, or does the best one apply?</b> We have built
+    best-slab-wins. If any of your schemes accumulate, tell us before real payouts run.</p>
+    <p style="margin-top:2mm"><b>What are your standard partner share and TDS percentages?</b>
+    The system currently uses 60% and 5% as placeholders. We will set your real figures.</p>
+  </div>
+
+  <h3>Policy warnings</h3>
+  <p>Where a file sits outside the programme it is being booked under — LTV above the ceiling,
+  FOIR too high, ticket size out of range — the system can flag it rather than silently accepting
+  it. Useful when a junior team member books a case against the wrong programme.</p>
+
+  <div class="foot"><span>The lender module</span><span>Section 03</span></div>
+</div>
+
+<!-- 04 -->
+<div class="page">
+  <div class="rule"><div class="n">Section 04</div><h2>Training, and what comes next</h2></div>
+
+  <h3>On the training videos</h3>
+  <p>You wrote that you would like screen-recorded videos per role with a voice-over, so training
+  completeness can be confirmed <b>before a partner enters the queue for approval or activation</b>.</p>
+
+  <p>Reading that carefully, there are two separate things in it:</p>
+  <table>
+    <thead><tr><th style="width:44mm">What</th><th>Where it stands</th></tr></thead>
+    <tbody>
+      <tr><td><b>The gate itself</b></td>
+        <td>Already built. Activation is refused until training is recorded against the partner, exactly as your framework §4 requires.</td></tr>
+      <tr><td><b>Video content attached to it</b></td>
+        <td>Not built. Videos per role, held in the system, with completion tracked before the gate opens — this is a small module and we would like to scope it with you.</td></tr>
+      <tr><td><b>The recordings</b></td>
+        <td>Best done once the screens are final. If we record now and this week's feedback changes a screen, every video has to be re-shot.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Our suggestion</h4>
+    <p>Let your feedback settle this week, then we record the set in one pass and, if you want it,
+    build the completion tracking into the activation gate at the same time. That way the videos
+    are made once and they line up with what the system actually enforces.</p>
+  </div>
+
+  <h3>What we would like from you</h3>
+  <table>
+    <thead><tr><th style="width:52mm">Decision</th><th>Why it matters now</th></tr></thead>
+    <tbody>
+      <tr><td><b>The domain</b> — e.g. <code>crm.qcred.in</code></td>
+        <td>The platform moves onto your address and your team can start using it properly</td></tr>
+      <tr><td><b>Go-ahead to create the production database and document storage under QCred ownership</b></td>
+        <td>So your live customer data begins in your own accounts and never has to be migrated</td></tr>
+      <tr><td><b>BH or SH</b> in partner codes</td>
+        <td>Your framework document uses both. It is a setting, but best fixed before the network grows</td></tr>
+      <tr><td><b>Business Head access</b> — own state only, or the full book?</td>
+        <td>Best decided before real staff accounts are created</td></tr>
+      <tr><td><b>Bonus slabs</b> — stack or best-slab?</td>
+        <td>Affects every payout figure</td></tr>
+      <tr><td><b>Partner share and TDS percentages</b></td>
+        <td>Currently placeholders</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card">
+    <h4>A note on scope, said plainly</h4>
+    <p>The lender module, the programme-driven payout calculation and the training module were not
+    part of the original scope list or the agreed milestones. We have built the first two anyway,
+    because the system genuinely needs them and we would rather you had a platform that works than
+    a narrow reading of a document. We would simply like them recognised as a second phase rather
+    than absorbed silently, so that the mobile applications are not delayed behind further additions.</p>
+  </div>
+
+  <div class="foot"><span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span><span>Section 04</span></div>
+</div>
+
+</body>
+</html>

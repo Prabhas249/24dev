@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>CALL NOTES — QCred CRM+Apps · 11 AM</title>
+<style>
+  :root { --ink:#16181d; --muted:#69707a; --orange:#FD4D11; --green:#0a7a41; --red:#c62828; --line:#e6e4e0; --wash:#faf9f7; --yellow:#fff7e0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Helvetica Neue",Arial,sans-serif; color:var(--ink); font-size:13.5px; line-height:1.55; background:#f4f3f0; padding:26px; }
+  .sheet { max-width:1060px; margin:0 auto; background:#fff; padding:36px 42px; border:1px solid var(--line); }
+  h1 { font-size:22px; letter-spacing:-.01em; }
+  h1 span { color:var(--orange); }
+  .sub { color:var(--muted); font-size:12.5px; margin-top:3px; }
+  h2 { font-size:14px; font-weight:700; margin:26px 0 8px; text-transform:uppercase; letter-spacing:.08em; }
+  h2.g { color:var(--green); } h2.o { color:var(--orange); } h2.r { color:var(--red); }
+  .box { border:1px solid var(--line); padding:14px 18px; margin-top:8px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; }
+  table { width:100%; border-collapse:collapse; margin-top:6px; }
+  th { text-align:left; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); padding:6px 8px; border-bottom:1.5px solid var(--ink); }
+  td { padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; font-size:12.5px; }
+  td.k { font-weight:700; white-space:nowrap; }
+  td.money { text-align:right; font-weight:700; white-space:nowrap; }
+  .say { background:var(--yellow); border-left:3px solid var(--orange); padding:10px 14px; margin-top:8px; font-size:12.5px; }
+  .say b { display:block; font-size:10px; text-transform:uppercase; letter-spacing:.1em; color:var(--orange); margin-bottom:3px; }
+  ul { list-style:none; }
+  li { padding:3.5px 0 3.5px 16px; position:relative; font-size:12.5px; }
+  li::before { content:"→"; position:absolute; left:0; color:var(--orange); font-weight:700; }
+  li.ok::before { content:"✓"; color:var(--green); }
+  li.no::before { content:"✕"; color:var(--red); }
+  .big { font-size:26px; font-weight:800; letter-spacing:-.02em; }
+  .tagline { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.1em; }
+  .ladder { display:flex; gap:0; margin-top:8px; text-align:center; }
+  .rung { flex:1; padding:12px 8px; border:1px solid var(--line); }
+  .rung + .rung { border-left:none; }
+  .rung .p { font-size:19px; font-weight:800; }
+  .rung .l { font-size:10.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; margin-top:2px; }
+  .rung.start { background:#eafaf0; } .rung.land { background:var(--yellow); } .rung.floor { background:#fdeaea; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h1>📞 CALL NOTES — QCred CRM + Apps <span>· 11:00 AM</span></h1>
+  <p class="sub">Private prep sheet. Goal: close at ₹1.2L, get website payment status, agree kick-off date.</p>
+
+  <h2>1 · What he asked for → what we're giving (say this mapping out loud)</h2>
+  <table>
+    <thead><tr><th>He said (WhatsApp / diagram)</th><th>Our answer</th></tr></thead>
+    <tbody>
+      <tr><td class="k">"Customer app, partner app, web admin console with maker-checker"</td><td>All three, exactly as named: <b>QCred</b> (customer) + <b>QCred Partner</b> + Web Admin Console. Maker-checker on advisor approval, payout release, status overrides — with audit trail.</td></tr>
+      <tr><td class="k">"Break it up: CRM+Android / CRM+Android+iOS"</td><td>Broken up: CRM ₹25k · Android ₹65k · iOS ₹45k. He can see both combinations.</td></tr>
+      <tr><td class="k">"Same as Finoza demo to start, then add features"</td><td>Logged into both their CRMs, mapped every module — our scope covers 100% of what their demo does (9 lead products, team tree, payout charts, marketing tools, pincode/company search, lender docs).</td></tr>
+      <tr><td class="k">"Whose login from our website"</td><td>Partner + customer logins launch from qcred.in — one integrated system, not a bolted-on subdomain like theirs.</td></tr>
+      <tr><td class="k">"Keep store accounts separate"</td><td>Done — Play ₹2.1k one-time, Apple ₹8.5k/yr, hosting ₹0–2k/mo, SMS per-use. All in his name, table in PDF.</td></tr>
+      <tr><td class="k">Screenshot protection</td><td>Website: right-click/copy/save blocked (done, live). Apps: REAL screenshot blocking (FLAG_SECURE) — the thing websites can't do, apps can. In scope.</td></tr>
+      <tr><td class="k">Chatbot for onboarding (he raised last night)</td><td>Acknowledge: designed in NEXT phase — flow design free with this project, build quoted separately after core ships.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>2 · His architecture diagram — the honest walkthrough (this builds trust)</h2>
+  <div class="grid3">
+    <div class="box">
+      <div class="tagline" style="color:var(--green)">NOW — this project</div>
+      <ul>
+        <li class="ok">Customer App (Apply/Track/Documents/Offers/Support)</li>
+        <li class="ok">Partner App (Lead/Apply/Track/Payouts/Support)</li>
+        <li class="ok">CRM — lead &amp; customer management</li>
+        <li class="ok">Analytics dashboards</li>
+        <li class="ok">Access control + security layer (encryption, roles, audit)</li>
+        <li class="ok">Cloud infra (scalable, backed up)</li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="tagline" style="color:var(--orange)">NEXT — quoted after core is live</div>
+      <ul>
+        <li>LOS — structured loan-origination workflow</li>
+        <li>Lender Dashboard — onboarding, deals, tracking</li>
+        <li>Collections dashboard</li>
+        <li>Onboarding chatbot</li>
+      </ul>
+      <p style="font-size:11.5px; color:var(--muted); margin-top:6px">Say: "phase these when volumes exist — you shouldn't pay for LOS before you have origination volume."</p>
+    </div>
+    <div class="box">
+      <div class="tagline" style="color:var(--red)">LATER — blocked on HIS contracts, not us</div>
+      <ul>
+        <li>Credit Bureau (needs TransUnion/Experian agreement — QCred signs)</li>
+        <li>CKYC (CERSAI registration)</li>
+        <li>DigiLocker (MeitY partner onboarding)</li>
+        <li>API Banking / Account Aggregator (AA licence ecosystem)</li>
+        <li>AI Lead Engine + Fraud Engine (needs data volume first)</li>
+      </ul>
+      <p style="font-size:11.5px; color:var(--muted); margin-top:6px">Say: "no vendor can sell you these today — the integrations need YOUR commercial agreements. When you sign one, we integrate it."</p>
+    </div>
+  </div>
+  <div class="say"><b>Key line</b>"Your diagram is the right 2-year vision. Today's quote builds the part that earns money now — and everything later plugs into it without rebuilding. A template can never do that."</div>
+
+  <h2>3 · Money — the ladder (know your steps before he speaks)</h2>
+  <table>
+    <tbody>
+      <tr><td class="k">Web Admin CRM</td><td>maker-checker core, payout engine, reports, roles</td><td class="money">₹25,000</td></tr>
+      <tr><td class="k">Android apps (both)</td><td>QCred + QCred Partner, Play Store, push, FLAG_SECURE</td><td class="money">₹65,000</td></tr>
+      <tr><td class="k">iOS apps (both)</td><td>App Store + review handling</td><td class="money">₹45,000</td></tr>
+      <tr><td class="k" style="border-top:1.5px solid var(--ink)">List</td><td style="border-top:1.5px solid var(--ink)"></td><td class="money" style="border-top:1.5px solid var(--ink)">₹1,35,000</td></tr>
+    </tbody>
+  </table>
+  <div class="ladder">
+    <div class="rung start"><div class="p">₹1,25,000</div><div class="l">Open — package price</div></div>
+    <div class="rung land"><div class="p">₹1,20,000</div><div class="l">Concede here — target land</div></div>
+    <div class="rung floor"><div class="p">₹1,10,000</div><div class="l">Absolute floor</div></div>
+    <div class="rung"><div class="p">− iOS</div><div class="l">Below floor: cut scope, not price (drop iOS −₹45k, add later)</div></div>
+  </div>
+  <ul style="margin-top:8px">
+    <li>Concessions are TRADED, never given: "₹1.2L if we kick off this week with the 30% advance."</li>
+    <li>vs the ₹89k template: their price = Android + CRM only. Our Android+CRM = ₹90k — same money, but includes the CUSTOMER app too, custom brand, code ownership, no yearly renewal. iOS is the +₹45k difference. Ask him: "check what their yearly renewal is."</li>
+    <li>Milestones: 30% kick-off · 30% CRM preview (wk4) · 20% app builds (wk7) · 20% store handover (wk10). Weekly Friday demos.</li>
+    <li>Timeline: 10 weeks. If he pushes for faster: "the template is instant because it's not yours. Custom takes 10 weeks and then it's an asset."</li>
+  </ul>
+
+  <h2>4 · Landmines — expected objections, ready answers</h2>
+  <table>
+    <thead><tr><th>He'll say</th><th>You say</th></tr></thead>
+    <tbody>
+      <tr><td class="k">"₹89k gets me everything from them"</td><td>"₹89k gets you Android + CRM, no iOS, no customer app, a template every DSA uses, yearly renewal, and no source code. Our SAME pair is ₹90k with the customer app included — you're really paying ₹45k extra for iOS + owning everything forever."</td></tr>
+      <tr><td class="k">"Reduce the price"</td><td>Step to ₹1.2L against this-week kick-off. Hold. If pushed again → ₹1.1L floor → then scope cut (drop iOS), never below.</td></tr>
+      <tr><td class="k">"Why is CRM only ₹25k with them at ₹89k?"</td><td>"Because you're already my client — the CRM reuses the live qcred.in foundation we built. That discount exists only in this package."</td></tr>
+      <tr><td class="k">"Screenshot block on website?"</td><td>Settled last night — his incognito test explained it. Real blocking lives in the apps (FLAG_SECURE), which this project includes.</td></tr>
+      <tr><td class="k">"Add AI scoring / bureau / CKYC in this price"</td><td>"Those need YOUR commercial agreements with TransUnion/CERSAI/NSDL — no dev can legally ship them without it. The moment you have an agreement, integration is a quoted phase."</td></tr>
+      <tr><td class="k">"Chatbot included?"</td><td>"Flow design free with this project. Build is next-phase — after partners are actually onboarding."</td></tr>
+      <tr><td class="k">GST just applied</td><td>Play Store needs it for a business account — fine. Can launch on individual account and migrate later if needed.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="r">5 · Before the call ends — non-negotiable checklist</h2>
+  <div class="box" style="border-color:var(--red)">
+    <ul>
+      <li class="no"><b>WEBSITE PAYMENT</b> — settle status BEFORE agreeing CRM kick-off. Line: "Let's clear the website invoice this week so the CRM starts clean." Do NOT stack two unpaid projects.</li>
+      <li>Get verbal YES on package + price on the call, then: "I'll send the agreement + advance invoice today; kick-off on advance."</li>
+      <li>Advance = 30% (₹36k at 1.2L). No advance, no start — remember Rajeshwari.</li>
+      <li>Agree WHO provides: logo assets ✓ (have), product list per app, lender list, payout chart structure (ask him to send Excel).</li>
+      <li>Chatbot = flow design session AFTER kick-off, not before.</li>
+      <li>Confirm demo-day: every Friday, 15 min.</li>
+    </ul>
+  </div>
+
+  <p style="margin-top:20px; font-size:11px; color:var(--muted)">Private — 24dev internal. Quote PDF: 24dev-quotation-qcred-crm / quotation-qcred-platform.html (₹1.35L list → ₹1.25L package).</p>
+</div>
+</body>
+</html>

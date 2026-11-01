@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred CRM — Review Access</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --navy-light:#17529c;
+    --green:#068a3e; --green-50:#e8f6ee; --navy-50:#eef4fb;
+    --ink:#0f172a; --mute:#5b6b80; --line:#dbe3ee; --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:var(--ink);
+    font-size:10pt; line-height:1.5; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .head{
+    background:linear-gradient(150deg,var(--navy) 0%,var(--navy-dark) 70%,#061f42 100%);
+    color:#fff; padding:10mm 15mm 8mm;
+  }
+  .head img{height:10mm; filter:brightness(0) invert(1); margin-bottom:5mm;}
+  .head .k{font-size:8pt; letter-spacing:.22em; text-transform:uppercase; color:#9dc0ea;}
+  .head h1{margin:2.5mm 0 0; font-size:19pt; letter-spacing:-.4px;}
+  .head p{margin:3mm 0 0; color:#cfe0f5; font-size:9.4pt; max-width:130mm;}
+
+  .body{padding:6mm 15mm 7mm;}
+
+  .box{
+    border:1.5px solid var(--navy); border-radius:4px; padding:3.4mm 5.5mm; margin:0 0 4mm;
+    background:var(--navy-50); display:flex; align-items:center; gap:8mm;
+  }
+  .box .lbl{font-size:7.6pt; letter-spacing:.16em; text-transform:uppercase; color:var(--navy-light); font-weight:700;}
+  .box .val{font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12.5pt; color:var(--navy); font-weight:700; margin-top:1.5mm;}
+  .box .val.pw{color:var(--green);}
+  .div{width:1px; align-self:stretch; background:var(--navy-100,#c6d8ee);}
+
+  h2{font-size:10.5pt; color:var(--navy); margin:0 0 2.4mm;}
+  table{width:100%; border-collapse:collapse; margin:0 0 3.5mm; font-size:8.6pt;}
+  th{background:var(--navy); color:#fff; text-align:left; padding:2.2mm 3mm; font-size:8.2pt; font-weight:600;
+     border-right:1px solid rgba(255,255,255,.16);}
+  th:last-child{border-right:none;}
+  td{padding:1.6mm 3mm; border-bottom:1px solid var(--line); vertical-align:top;}
+  tbody tr:nth-child(even){background:#f7fafd;}
+  .mono{font-family:"SF Mono",Menlo,Consolas,monospace; font-size:9.4pt; font-weight:700; color:var(--navy-dark);
+        letter-spacing:.02em;}
+  .code{font-family:"SF Mono",Menlo,Consolas,monospace; font-size:7.8pt; color:var(--mute); display:block; margin-top:.8mm;}
+  .grp{background:var(--navy-50) !important;}
+  .grp td{font-size:7.8pt; letter-spacing:.14em; text-transform:uppercase; color:var(--navy);
+          font-weight:700; padding:1.8mm 3mm;}
+
+  .note{border-left:3px solid var(--amber); background:var(--amber-50); padding:3mm 4mm; border-radius:2px;
+        font-size:8.4pt; margin-bottom:4mm;}
+  .note b{color:var(--amber);}
+  .note.g{border-left-color:var(--green); background:var(--green-50);}
+  .note.g b{color:var(--green);}
+  .note p{margin:0 0 4px;} .note p:last-child{margin:0;}
+
+  .foot{border-top:1px solid var(--line); margin-top:5mm; padding-top:3mm;
+        font-size:8pt; color:var(--mute); display:flex; justify-content:space-between;}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <img src="assets/logo-full.png" alt="QCred">
+  <div class="k">Review Access · Core CRM &amp; Channel Partner Portal</div>
+  <h1>Your login details</h1>
+  <p>Each account below shows a different access level, so you can see exactly what your
+  staff and your partners will each be able to do.</p>
+</div>
+
+<div class="body">
+
+  <div class="box">
+    <div>
+      <div class="lbl">Website</div>
+      <div class="val">https://qcred-crm.vercel.app</div>
+    </div>
+    <div class="div"></div>
+    <div>
+      <div class="lbl">Password — all accounts</div>
+      <div class="val pw">qcred@123</div>
+    </div>
+  </div>
+
+  <h2>Accounts</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:34mm">Login (phone)</th>
+        <th style="width:24mm">Password</th>
+        <th style="width:46mm">Role</th>
+        <th>What to look at</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="grp"><td colspan="4">CRM — your office team</td></tr>
+      <tr>
+        <td class="mono">9999900001</td><td class="mono">qcred@123</td>
+        <td><b>Super Admin</b></td>
+        <td>Full access to everything. Please start here.</td>
+      </tr>
+      <tr>
+        <td class="mono">9999900002</td><td class="mono">qcred@123</td>
+        <td><b>Maker</b> — staff</td>
+        <td>Sees only his own leads, not the whole book — access levels working.</td>
+      </tr>
+      <tr>
+        <td class="mono">9999900003</td><td class="mono">qcred@123</td>
+        <td><b>Checker</b></td>
+        <td>Can approve payouts but cannot raise them — the same person can never do both.</td>
+      </tr>
+
+      <tr class="grp"><td colspan="4">Partner portal — your channel network</td></tr>
+      <tr>
+        <td class="mono">9820011001</td><td class="mono">qcred@123</td>
+        <td><b>Sub-DSA</b><span class="code">QC-MH-MUM-SDA-0001</span></td>
+        <td>The partner's own portal, with a connector team reporting under him.</td>
+      </tr>
+      <tr>
+        <td class="mono">9820011010</td><td class="mono">qcred@123</td>
+        <td><b>Business Head</b><span class="code">QC-MH-BH-01</span></td>
+        <td>State-level code format — no city segment, 2-digit sequence.</td>
+      </tr>
+      <tr>
+        <td class="mono">9820011012</td><td class="mono">qcred@123</td>
+        <td><b>Cluster / Regional Head</b><span class="code">QC-UP-CH-01</span></td>
+        <td>The optional Tier 3 layer from your framework document.</td>
+      </tr>
+      <tr>
+        <td class="mono">9820011003</td><td class="mono">qcred@123</td>
+        <td><b>Connector</b> — certified<span class="code">QC-MH-MUM-CON-0001</span></td>
+        <td>Certified, so he is permitted to collect KYC documents.</td>
+      </tr>
+      <tr>
+        <td class="mono">9820011013</td><td class="mono">qcred@123</td>
+        <td><b>Connector</b> — not trained<span class="code">QC-KA-BLR-CON-0001</span></td>
+        <td>Activation is blocked until training is recorded — Section 4 of your framework, enforced.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note g">
+    <p><b>Your coding framework is fully implemented.</b> Every partner code above is generated by
+    the system in the exact format from your document — state code, city code, partner type and a
+    sequence running per state-city-type combination. Codes are permanent and can never be reused.</p>
+  </div>
+
+  <div class="note">
+    <p><b>Please note:</b> all customers and partners in the system are fictional demonstration data,
+    created only for this review — no real customer information has been used. These passwords are
+    for review only; your team's real accounts are created when the platform moves onto your own domain.</p>
+  </div>
+
+  <div class="foot">
+    <span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span>
+    <span>1 August 2026</span>
+  </div>
+
+</div>
+</body>
+</html>

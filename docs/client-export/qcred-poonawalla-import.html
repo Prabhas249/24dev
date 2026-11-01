@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred — Your Poonawalla sheet, loaded</title>
+<style>
+  @page { size: A4; margin: 13mm 12mm 14mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --green:#068a3e; --green-50:#e8f6ee;
+    --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80; --line:#dbe3ee;
+    --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9.2pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3{margin:0;line-height:1.25} p{margin:0 0 5px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,thead{page-break-after:avoid} tr,.card{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .hero{background:linear-gradient(150deg,var(--navy),var(--navy-dark) 70%,#061f42);color:#fff;
+        margin:-13mm -12mm 6mm;padding:12mm 12mm 9mm}
+  .hero img{height:13mm;filter:brightness(0) invert(1);margin-bottom:7mm}
+  .hero .k{font-size:8pt;letter-spacing:.2em;text-transform:uppercase;color:#9dc0ea}
+  .hero h1{margin-top:2.5mm;font-size:21pt;letter-spacing:-.4px}
+  .hero p{margin-top:3.5mm;color:#cbd5e1;font-size:9.4pt;max-width:155mm}
+
+  h2{font-size:12.5pt;color:var(--navy);margin:5mm 0 2.5mm}
+  table{width:100%;border-collapse:collapse;margin:2mm 0 3.5mm;font-size:8.6pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:2.2mm 2.6mm;font-size:8pt;font-weight:600;
+     border-right:1px solid rgba(255,255,255,.15)}
+  th:last-child{border-right:none}
+  td{padding:2mm 2.6mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  .tick{color:var(--green);font-weight:700;white-space:nowrap}
+  code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8.2pt;background:var(--navy-50);
+       padding:.4mm 1.2mm;border-radius:2px;color:var(--navy-dark)}
+
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2.8mm 3.4mm;margin:2.5mm 0;border-radius:2px;font-size:8.8pt}
+  .card.g{border-left-color:var(--green);background:var(--green-50)}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card b.t{display:block;margin-bottom:1mm}
+  .q{border-left:3px solid var(--amber);background:var(--amber-50);padding:2.8mm 3.4mm;
+     margin:0 0 3mm;border-radius:2px}
+  .q .qq{font-weight:700;font-size:9.4pt;color:var(--amber)}
+  .q p{margin:1.5mm 0 0;font-size:8.8pt}
+  .foot{border-top:1px solid var(--line);margin-top:5mm;padding-top:2.5mm;font-size:7.6pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hero">
+    <img src="assets/logo-full.png" alt="QCred">
+    <div class="k">Lender data import · 4 August 2026</div>
+    <h1>Your Poonawalla sheet is loaded</h1>
+    <p>The product sheet you shared (QCred_LAP_Product_Features_Poonawala.xlsx) has been imported
+    into the CRM — as its own header says, as the primary reference. Every sheet was read; here is
+    exactly what went where, verified live, plus two small questions.</p>
+  </div>
+
+  <h2>Sheet by sheet</h2>
+  <table>
+    <thead><tr><th style="width:38mm">Your sheet</th><th style="width:16mm">Status</th><th>Where it lives in the CRM now</th></tr></thead>
+    <tbody>
+      <tr><td><b>Program Features</b></td><td class="tick">✓ Imported</td>
+        <td>All <b>11 LAP programmes</b> in the lender module — assessment basis (EBITDA, Gross Profit, Gross Receipts, GST, Banking, rental…), FOIR where published, target segments, property types, tenure, and each programme&rsquo;s conditions in its notes.</td></tr>
+      <tr><td><b>Max Loan Amount Grid</b></td><td class="tick">✓ Imported</td>
+        <td>Each programme carries its tier-wise maximums exactly as published — Standard Income <code>₹25 Cr</code> metro / <code>₹7.5 Cr</code> tier 2 / <code>₹3 Cr</code> tier 3&amp;4, down to LIP&rsquo;s flat ₹2 Cr — plus the minimums including LRD&rsquo;s ₹1 Cr and Pure Rental&rsquo;s ₹75 L exceptions.</td></tr>
+      <tr><td><b>LTV Grid</b></td><td class="tick">✓ Imported</td>
+        <td>The property-wise grid (Residential 80 · Commercial 75 · Industrial 55 · Land/Plot 50 · Specialised 65) on every programme; Low LTV carries its own 40% / 35% ceilings.</td></tr>
+      <tr><td><b>GST Margin Grid</b></td><td class="tick">✓ Captured</td>
+        <td>Manufacturer 12% · Services 15% · Retailers 10% · Wholesalers 5% — recorded on the GST Programme where your team reads it while working a file. (Making it <i>compute</i> eligibility is possible — say the word and we&rsquo;ll scope it.)</td></tr>
+      <tr><td><b>Sales Team Contacts</b></td><td class="tick">✓ Imported</td>
+        <td>The full directory — NSM, Product Head, and all zonal &amp; regional managers, <b>23 contacts</b> with phone and email — now lives under the lender in the CRM, tap-to-call. When a file is stuck, who to chase is one tap away.</td></tr>
+      <tr><td><b>Branch Classification</b></td><td>◐ Read</td>
+        <td>The Metro / Tier 1 city list is noted but not yet applied as automatic data — one question below decides how it should work.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <b class="t">Verified live, and working downstream</b>
+    The Best Match engine now ranks cases against the real 11-programme library. Test case: a
+    ₹5 Cr industrial-property file correctly ranks the Standard Income programme first and rules
+    out LIP at its ₹2 Cr cap — with the reason shown. And this confirms the pipeline for the next
+    100 lenders: fill the Excel template, send it, it loads the same way.
+  </div>
+
+  <h2>Two small questions</h2>
+  <div class="q"><span class="qq">1 · Payout percentages</span>
+    <p>Every Poonawalla programme is loaded with the payout <b>blank</b> — deliberately. What
+    Poonawalla pays QCred is your commercial term, not something in their product sheet. Add the
+    figures in Manage Lenders, or send them and we&rsquo;ll load them.</p>
+  </div>
+  <div class="q"><span class="qq">2 · The branch classification</span>
+    <p>Is the Metro / Tier 1 list Poonawalla&rsquo;s own, or the classification you want applied
+    across <b>all</b> lenders? If the latter, we&rsquo;ll make city → tier automatic — so booking a
+    Surat case applies Tier 1 limits by itself instead of the team picking the tier manually.</p>
+  </div>
+
+  <div class="foot"><span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span><span>Poonawalla import — 4 Aug 2026</span></div>
+</div>
+
+</body>
+</html>

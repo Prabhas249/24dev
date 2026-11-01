@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PollVerse — Vote on today's battle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#101014; --body:#4B4B57; --mut:#8A8A98; --line:#E8E8ED;
+    --bg:#F7F7F9; --card:#FFFFFF;
+    --acc:#4F46E5; --acc-dk:#4338CA;
+    --arg:#0F2A66; --arg2:#1D4ED8;
+    --por:#7F1D1D; --por2:#B91C1C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-font-smoothing:antialiased}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+
+  /* ---------- NAV ---------- */
+  nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  .nav-in{max-width:1120px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;gap:32px}
+  .logo{font-family:Archivo;font-weight:900;font-size:20px;letter-spacing:-.5px;color:var(--ink)}
+  .logo i{font-style:normal;color:var(--acc)}
+  .nav-links{display:flex;gap:26px;font-size:14px;font-weight:600;color:var(--body)}
+  .nav-links .on{color:var(--ink);position:relative}
+  .nav-links .on::after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:2px;background:var(--acc)}
+  .nav-cta{margin-left:auto;display:flex;gap:10px;align-items:center}
+  .btn-ghost{font-size:14px;font-weight:700;color:var(--ink);padding:9px 16px;border-radius:10px}
+  .btn-solid{font-size:14px;font-weight:700;color:#fff;background:var(--ink);padding:9px 18px;border-radius:10px}
+
+  /* ---------- CATEGORIES ---------- */
+  .cats{max-width:1120px;margin:0 auto;padding:20px 24px 0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+  .cats::-webkit-scrollbar{display:none}
+  .cat{font-size:13px;font-weight:700;padding:8px 15px;border-radius:99px;background:#fff;border:1px solid var(--line);color:var(--body);white-space:nowrap}
+  .cat.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+  /* ---------- HERO Q ---------- */
+  .wrap{max-width:1120px;margin:0 auto;padding:36px 24px 64px}
+  .eyebrow{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+  .eyebrow .pulse{width:8px;height:8px;border-radius:50%;background:#10B981;box-shadow:0 0 0 3px rgba(16,185,129,.18)}
+  h1{font-family:Archivo;font-weight:900;font-size:clamp(28px,4.2vw,46px);letter-spacing:-1.2px;line-height:1.06;max-width:720px}
+  .sub{font-size:15px;color:var(--mut);font-weight:500;margin-top:12px}
+  .sub b{color:var(--ink);font-weight:700}
+
+  /* ---------- ARENA ---------- */
+  .arena{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+  .side{position:relative;border-radius:20px;overflow:hidden;color:#fff;padding:34px 32px 30px;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 1px 2px rgba(16,16,20,.06), 0 12px 32px rgba(16,16,20,.10)}
+  .side.a{background:linear-gradient(150deg,var(--arg) 0%,var(--arg2) 120%)}
+  .side.b{background:linear-gradient(150deg,var(--por) 0%,var(--por2) 120%)}
+  .side::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 26px)}
+  .num{position:absolute;top:-38px;right:-6px;font-family:Archivo;font-weight:900;font-size:280px;line-height:1;color:rgba(255,255,255,.10);letter-spacing:-10px;user-select:none}
+  .flag{position:relative;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:10px}
+  .pname{position:relative;font-family:Archivo;font-weight:900;font-size:clamp(30px,3.4vw,44px);letter-spacing:-1px;line-height:.98}
+  .pmeta{position:relative;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.85);margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+  .pmeta span{display:flex;align-items:center;gap:6px}
+  .votebtn{position:relative;margin-top:22px;width:100%;background:#fff;color:var(--ink);font-family:Archivo;font-weight:800;font-size:15px;letter-spacing:.3px;padding:15px;border-radius:12px;border:none;text-align:center;cursor:pointer}
+  .side.b .votebtn{color:#7F1D1D}
+  .side.a .votebtn{color:#0F2A66}
+  .vs{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;width:60px;height:60px;border-radius:50%;background:var(--ink);color:#fff;font-family:Archivo;font-weight:900;font-size:17px;display:flex;align-items:center;justify-content:center;border:4px solid var(--bg);box-shadow:0 8px 24px rgba(16,16,20,.25)}
+
+  /* ---------- STATS ROW ---------- */
+  .stats{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 24px}
+  .stat{display:flex;align-items:baseline;gap:8px}
+  .stat b{font-family:Archivo;font-weight:900;font-size:22px;letter-spacing:-.5px}
+  .stat span{font-size:13px;color:var(--mut);font-weight:600}
+  .avatars{display:flex;align-items:center}
+  .avatars i{width:28px;height:28px;border-radius:50%;border:2px solid #fff;margin-left:-8px;font-style:normal;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff}
+  .avatars i:nth-child(1){background:#F59E0B;margin-left:0}
+  .avatars i:nth-child(2){background:#10B981}
+  .avatars i:nth-child(3){background:#6366F1}
+  .avatars i:nth-child(4){background:#EC4899}
+  .avatars span{font-size:13px;color:var(--mut);font-weight:600;margin-left:12px}
+
+  /* ---------- RESULTS ---------- */
+  .results{margin-top:32px;display:none}
+  .rcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 1px 2px rgba(16,16,20,.04)}
+  .rrow{margin-bottom:26px}
+  .rrow:last-of-type{margin-bottom:0}
+  .rtop{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+  .rname{font-family:Archivo;font-weight:900;font-size:20px;letter-spacing:-.4px;display:flex;align-items:center;gap:10px}
+  .chip-win{font-family:Inter;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#065F46;background:#D1FAE5;padding:4px 10px;border-radius:99px}
+  .rpct{font-family:Archivo;font-weight:900;font-size:34px;letter-spacing:-1px}
+  .rrow.w .rpct{color:var(--acc)}
+  .rrow.l .rpct{color:var(--mut);font-size:26px}
+  .track{height:18px;border-radius:99px;background:#EEEEF3;overflow:hidden}
+  .fill{height:100%;border-radius:99px;transform-origin:left}
+  .rrow.w .fill{width:62%;background:linear-gradient(90deg,var(--acc),#818CF8);animation:grow 1.1s cubic-bezier(.2,.8,.2,1)}
+  .rrow.l .fill{width:38%;background:#C9C9D6;animation:grow 1.1s cubic-bezier(.2,.8,.2,1)}
+  @keyframes grow{from{transform:scaleX(0)}}
+  .rfoot{display:flex;justify-content:space-between;align-items:center;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+  .live{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#059669}
+  .live::before{content:"";width:8px;height:8px;border-radius:50%;background:#10B981;box-shadow:0 0 0 3px rgba(16,185,129,.18)}
+  .share{display:flex;gap:10px}
+  .share .s{font-size:13.5px;font-weight:700;padding:11px 18px;border-radius:10px;border:1px solid var(--line);color:var(--ink);background:#fff}
+  .share .s.p{background:var(--acc);border-color:var(--acc);color:#fff}
+
+  /* ---------- AD STATE ---------- */
+  .adstate{display:none;margin-top:32px}
+  .adcard{position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(140deg,#111827,#1F2937);min-height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:#fff}
+  .adcard::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 80% 10%, rgba(79,70,229,.45), transparent 60%)}
+  .adtag{position:absolute;top:18px;left:18px;font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.25);padding:5px 12px;border-radius:99px}
+  .adname{position:relative;font-family:Archivo;font-weight:900;font-size:clamp(28px,3.6vw,44px);letter-spacing:-1px;text-align:center;line-height:1.05}
+  .adsub{position:relative;font-size:15px;color:rgba(255,255,255,.7);font-weight:500}
+  .adcta{position:relative;background:#fff;color:var(--ink);font-weight:800;font-size:14px;padding:13px 28px;border-radius:12px}
+  .adtimer{position:absolute;bottom:18px;right:18px;display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;color:rgba(255,255,255,.75)}
+  .adtimer .ring{width:36px;height:36px;border-radius:50%;background:conic-gradient(#fff 0 216deg, rgba(255,255,255,.2) 216deg 360deg);display:flex;align-items:center;justify-content:center}
+  .adtimer .ring i{width:27px;height:27px;border-radius:50%;background:#1F2937;font-style:normal;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff}
+
+  footer{border-top:1px solid var(--line);background:#fff}
+  .foot-in{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--mut);font-weight:500}
+  .foot-in .l{font-family:Archivo;font-weight:900;color:var(--ink);font-size:15px}
+  .foot-in .l i{font-style:normal;color:var(--acc)}
+
+  /* ---------- MOBILE ---------- */
+  @media (max-width:640px){
+    .nav-in{padding:0 18px;height:58px;gap:0}
+    .nav-links{display:none}
+    .wrap{padding:26px 18px 48px}
+    .arena{grid-template-columns:1fr;gap:14px;margin-top:24px}
+    .side{min-height:250px;padding:24px 22px 22px}
+    .num{font-size:190px;top:-24px}
+    .vs{width:52px;height:52px;font-size:15px}
+    .stats{flex-wrap:wrap;padding:16px 18px;gap:12px}
+    .rcard{padding:22px 18px}
+    .rfoot{flex-direction:column;align-items:flex-start;gap:16px}
+    .share{width:100%}
+    .share .s{flex:1;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<nav><div class="nav-in">
+  <div class="logo">Poll<i>Verse</i></div>
+  <div class="nav-links"><span class="on">Battles</span><span>Leaderboard</span><span>Categories</span><span>About</span></div>
+  <div class="nav-cta"><span class="btn-ghost">Log in</span><span class="btn-solid">Sign up free</span></div>
+</div></nav>
+
+<div class="cats">
+  <span class="cat on">🔥 Trending</span><span class="cat">⚽ Sports</span><span class="cat">📱 Tech</span><span class="cat">🎬 Movies</span><span class="cat">🎵 Music</span><span class="cat">🍔 Food</span><span class="cat">🏏 Cricket</span>
+</div>
+
+<div class="wrap">
+  <div class="eyebrow"><span class="pulse"></span> Battle of the day · Sports</div>
+  <h1>Who is the greatest footballer of all time?</h1>
+  <div class="sub"><b>12,847</b> votes so far · poll closes in <b>6h 24m</b></div>
+
+  <!-- VOTE STATE -->
+  <div class="arena" id="vote">
+    <div class="side a">
+      <div class="num">10</div>
+      <div class="flag">Argentina · Inter Miami</div>
+      <div class="pname">LIONEL<br>MESSI</div>
+      <div class="pmeta"><span>🏆 8× Ballon d'Or</span><span>🌍 World Cup 2022</span></div>
+      <button class="votebtn">Vote Messi</button>
+    </div>
+    <div class="vs">VS</div>
+    <div class="side b">
+      <div class="num">7</div>
+      <div class="flag">Portugal · Al Nassr</div>
+      <div class="pname">CRISTIANO<br>RONALDO</div>
+      <div class="pmeta"><span>🏆 5× Champions League</span><span>⚽ 900+ goals</span></div>
+      <button class="votebtn">Vote Ronaldo</button>
+    </div>
+  </div>
+
+  <!-- AD STATE -->
+  <div class="adstate" id="ad">
+    <div class="adcard">
+      <span class="adtag">Sponsored</span>
+      <div class="adname">Your brand,<br>seen by every voter.</div>
+      <div class="adsub">Premium ad slot · shown for 5 seconds after each vote</div>
+      <div class="adcta">Learn more →</div>
+      <div class="adtimer"><span>Your results in</span><div class="ring"><i>3</i></div></div>
+    </div>
+  </div>
+
+  <!-- RESULTS STATE -->
+  <div class="results" id="results">
+    <div class="rcard">
+      <div class="rrow w">
+        <div class="rtop"><div class="rname">Lionel Messi <span class="chip-win">Winning</span></div><div class="rpct">62%</div></div>
+        <div class="track"><div class="fill"></div></div>
+      </div>
+      <div class="rrow l">
+        <div class="rtop"><div class="rname">Cristiano Ronaldo</div><div class="rpct">38%</div></div>
+        <div class="track"><div class="fill"></div></div>
+      </div>
+      <div class="rfoot">
+        <div class="live">Live — 12,847 votes and counting</div>
+        <div class="share"><span class="s">Copy link</span><span class="s">𝕏 Post</span><span class="s p">↗ Share result</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>12,847</b><span>votes today</span></div>
+    <div class="stat"><b>214</b><span>active polls</span></div>
+    <div class="stat"><b>38k</b><span>members</span></div>
+    <div class="avatars"><i>AK</i><i>PR</i><i>SD</i><i>MJ</i><span>+412 voting right now</span></div>
+  </div>
+</div>
+
+<footer><div class="foot-in">
+  <span class="l">Poll<i>Verse</i></span>
+  <span>Battles · Leaderboard · Advertise · Privacy</span>
+</div></footer>
+
+<script>
+  if (new URLSearchParams(location.search).has('debug')) {
+    window.addEventListener('load', () => {
+      let widest = null, max = 0;
+      document.querySelectorAll('*').forEach(el => {
+        const w = el.scrollWidth;
+        if (w > max) { max = w; widest = el; }
+      });
+      const d = document.createElement('div');
+      d.style.cssText = 'position:fixed;top:0;left:0;z-index:999;background:#000;color:#0f0;font:12px monospace;padding:8px;max-width:380px';
+      d.textContent = `innerW=${innerWidth} docScrollW=${document.documentElement.scrollWidth} bodyW=${document.body.offsetWidth} widest=${widest.tagName}.${widest.className} (${max}px)`;
+      document.body.appendChild(d);
+    });
+  }
+  const p = new URLSearchParams(location.search).get('screen') || 'vote';
+  if (p === 'results') { document.getElementById('vote').style.display='none'; document.getElementById('results').style.display='block'; }
+  if (p === 'ad') { document.getElementById('vote').style.display='none'; document.getElementById('ad').style.display='block'; }
+</script>
+</body>
+</html>

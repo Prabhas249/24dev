@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>QCred.in — Technology Architecture Deck</title>
+<style>
+  @page { size: 1920px 1080px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #12304a;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 1920px; height: 1080px; overflow: hidden; position: relative;
+    background:
+      radial-gradient(1200px 520px at 50% -120px, #eaf2fc 0%, rgba(234,242,252,0) 70%),
+      #ffffff;
+    page-break-after: always;
+    padding: 40px 56px;
+    display: flex; flex-direction: column;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .kick { font-size: 12px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; color: #068A3E; }
+  h1 { font-size: 42px; font-weight: 800; color: #0B3B78; letter-spacing: -0.02em; margin-top: 6px; }
+  h1 small { display: block; font-size: 17px; color: #63748a; font-weight: 500; margin-top: 8px; letter-spacing: 0; }
+  .logo img { height: 44px; display: block; margin-left: auto; }
+  .logo small { display: block; text-align: right; font-size: 11.5px; color: #63748a; margin-top: 4px; }
+
+  .pageno {
+    position: absolute; bottom: 26px; right: 56px;
+    font-size: 12px; font-weight: 700; color: #9db1c7; letter-spacing: .1em;
+  }
+  .footbrand {
+    position: absolute; bottom: 26px; left: 56px;
+    font-size: 12px; font-weight: 700; color: #9db1c7; letter-spacing: .06em;
+  }
+
+  /* ---------- shared bits ---------- */
+  .lozenge {
+    display: inline-block; background: #0B3B78; color: #fff; border-radius: 999px;
+    font-size: 11px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase;
+    padding: 7px 24px;
+  }
+  .lozenge.green { background: #068A3E; }
+
+  .cdot {
+    width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+    background: #e7f0fb; color: #0B3B78; display: flex; align-items: center; justify-content: center;
+  }
+  .cdot.g { background: #d9f0e3; color: #068A3E; }
+  .cdot svg { width: 21px; height: 21px; }
+
+  /* ---------- page 1 : cover / big picture ---------- */
+  .flow {
+    flex: 1; display: grid; grid-template-rows: 1fr auto 1fr auto 1fr; align-items: stretch;
+    margin-top: 18px; min-height: 0;
+  }
+  .lane {
+    border: 1.6px solid #b9cfe8; border-radius: 16px; background: #fff;
+    box-shadow: 0 10px 28px rgba(11,59,120,.07);
+    display: grid; grid-template-columns: 250px 1fr; align-items: center;
+    padding: 0 34px 0 0; min-height: 0;
+  }
+  .lane.green { border-color: #9ed7b4; }
+  .lane .tag { padding: 0 34px; }
+  .lane-items { display: flex; gap: 16px; justify-content: space-between; padding: 18px 0; }
+  .li { display: flex; align-items: center; gap: 13px; min-width: 0; flex: 1; }
+  .li b { display: block; font-size: 16px; font-weight: 800; color: #0B3B78; }
+  .li.green b { color: #056b30; }
+  .li span { display: block; font-size: 12.5px; color: #63748a; margin-top: 2px; line-height: 1.3; }
+  .link {
+    display: flex; align-items: center; justify-content: center; color: #7a9cc4;
+    font-size: 20px; font-weight: 800; height: 34px;
+  }
+
+  /* ---------- generic card grid pages ---------- */
+  .grid2 { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20px; min-height: 0; }
+  .grid3 { flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 20px; min-height: 0; }
+  .big {
+    border: 1.6px solid #b9cfe8; border-radius: 18px; background: #fff;
+    box-shadow: 0 10px 28px rgba(11,59,120,.07);
+    padding: 30px 32px; display: flex; flex-direction: column; min-width: 0;
+  }
+  .big.green { border-color: #9ed7b4; background: #fbfefc; }
+  .big.navy { background: #0B3B78; border-color: #0B3B78; color: #fff; }
+  .big h3 { font-size: 25px; font-weight: 800; color: #0B3B78; letter-spacing: -.01em; }
+  .big.navy h3 { color: #fff; }
+  .big .who { font-size: 14px; font-weight: 600; color: #63748a; margin: 4px 0 14px; }
+  .big.navy .who { color: #a8c3e4; }
+  .feat { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-top: 1px dashed #dbe7f4; flex: 1; }
+  .big.navy .feat { border-top-color: #2b5a96; }
+  .feat:first-of-type { border-top: 0; }
+  .feat b { display: block; font-size: 18px; font-weight: 800; color: #0B3B78; }
+  .big.green .feat b { color: #056b30; }
+  .big.navy .feat b { color: #fff; }
+  .feat span { display: block; font-size: 14.5px; color: #63748a; margin-top: 4px; line-height: 1.45; }
+  .big.navy .feat span { color: #a8c3e4; }
+  .big .cdot { width: 48px; height: 48px; }
+  .big .cdot svg { width: 23px; height: 23px; }
+  .big.navy .cdot { background: #12457f; color: #8ee0ad; }
+
+  .devrow { display: flex; align-items: center; gap: 20px; margin-bottom: 16px; }
+  .phone {
+    width: 74px; height: 130px; flex-shrink: 0;
+    background: #0B3B78; border-radius: 14px; padding: 7px 6px 9px;
+    box-shadow: 0 12px 24px rgba(11,59,120,.22);
+  }
+  .phone .nub { width: 22px; height: 3px; border-radius: 2px; background: #08294f; margin: 0 auto 6px; }
+  .phone .scr { height: 105px; border-radius: 8px; background: #fff; overflow: hidden; }
+  .scr .bar { height: 19px; background: #0B3B78; }
+  .ring {
+    width: 46px; height: 46px; margin: 10px auto 0; border-radius: 50%;
+    background: conic-gradient(#068A3E 0 268deg, #dcebe0 268deg 360deg);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .ring i {
+    width: 33px; height: 33px; border-radius: 50%; background: #fff; font-style: normal;
+    color: #068A3E; font-size: 11.5px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .scr .rows { padding: 7px 7px 0; display: grid; gap: 4px; }
+  .scr .rows i { display: block; height: 5px; border-radius: 2px; background: #e2ecf7; }
+  .scr .rows i:nth-child(2) { width: 68%; background: #9fd4b4; }
+  .shk { height: 105px; display: flex; align-items: center; justify-content: center; background: linear-gradient(#f0f7ff, #e8f6ee); border-radius: 8px; }
+  .shk b { width: 48px; height: 48px; border-radius: 50%; background: #068A3E; color: #fff; display: flex; align-items: center; justify-content: center; }
+  .shk svg { width: 27px; height: 27px; }
+  .laptop { width: 118px; flex-shrink: 0; }
+  .laptop .lid { height: 80px; background: #0B3B78; border-radius: 10px 10px 2px 2px; padding: 6px; box-shadow: 0 12px 24px rgba(11,59,120,.22); }
+  .laptop .lscr { height: 100%; background: #fff; border-radius: 5px; overflow: hidden; }
+  .lscr .bar { height: 14px; background: #0B3B78; }
+  .lscr .rows { padding: 7px 8px 0; display: grid; gap: 5px; }
+  .lscr .rows i { display: block; height: 6px; border-radius: 2px; background: #e2ecf7; }
+  .lscr .rows i:nth-child(2) { width: 62%; background: #9fd4b4; }
+  .laptop .base { height: 8px; background: #12457f; border-radius: 0 0 10px 10px; margin: 0 -8px; }
+
+  .statline {
+    margin-top: 20px; background: #0B3B78; color: #fff; border-radius: 14px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 30px; font-size: 14px; font-weight: 600;
+  }
+  .statline strong { font-weight: 800; letter-spacing: .04em; }
+  .statline i { font-style: normal; color: #8ee0ad; margin: 0 12px; }
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 : THE BIG PICTURE ============ -->
+<section class="page">
+  <div class="top">
+    <div>
+      <div class="kick">Investor Deck · Technology</div>
+      <h1>Technology — Architecture
+        <small>Three doors in. One platform. Every rupee released under maker-checker.</small>
+      </h1>
+    </div>
+    <div class="logo"><img src="qcred-logo-wordmark.png" alt="QCred.in" /><small>Credit. Credibility. Confidence.</small></div>
+  </div>
+
+  <div class="flow">
+    <div class="lane">
+      <div class="tag"><span class="lozenge">User Channels</span></div>
+      <div class="lane-items">
+        <div class="li">
+          <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <div><b>Customer app</b><span>Apply · track · documents · offers</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 13l2-6 2 1 1 5"/><path d="M11 11h6a2 2 0 0 1 2 2v1a3 3 0 0 1-3 3h-4l-3 3H7a2 2 0 0 1-2-2v-2a3 3 0 0 1 3-3h3z"/></svg></div>
+          <div><b>Partner app</b><span>Android + iOS · lead to payout in the field</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div><b>Web admin console</b><span>Staff control room with maker-checker</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="link">⇅</div>
+
+    <div class="lane">
+      <div class="tag"><span class="lozenge">QCred Platform</span></div>
+      <div class="lane-items">
+        <div class="li">
+          <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="16" r="3"/></svg></div>
+          <div><b>CRM &amp; origination</b><span>18-stage pipeline</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg></div>
+          <div><b>Best Match</b><span>Ranked lender shortlist</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
+          <div class="green"><b style="color:#056b30">Construction Finance</b><span>100-pt readiness score</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></div>
+          <div><b>Money · maker-checker</b><span>Payouts · GST / TDS</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M7 16V8m5 8V5m5 11v-6"/></svg></div>
+          <div><b>P&amp;L &amp; analytics</b><span>Book · commission</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="link">⇅</div>
+
+    <div class="lane green">
+      <div class="tag"><span class="lozenge green">Lender Network</span></div>
+      <div class="lane-items">
+        <div class="li green">
+          <div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+          <div><b style="color:#056b30">Banks</b><span>Programmes on file</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg></div>
+          <div><b style="color:#056b30">NBFCs / HFCs</b><span>Poonawalla · ABFL · IIFL +</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg></div>
+          <div><b style="color:#056b30">Apply links</b><span>Straight into lender portals</span></div>
+        </div>
+        <div class="li">
+          <div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14h12V9z"/><path d="M14 3v6h6"/></svg></div>
+          <div><b style="color:#056b30">CF pack</b><span>Scored PDF after GO</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="statline">
+    <div><strong>ONE STACK</strong><i>|</i>Vercel · Neon Postgres · encrypted files · Expo Android + iOS</div>
+    <div><strong>SECURE BY DEFAULT</strong><i>|</i>HTTPS · JWT · RBAC · full audit trail</div>
+  </div>
+
+  <div class="footbrand">QCRED.IN · TECHNOLOGY</div>
+  <div class="pageno">01 / 04</div>
+</section>
+
+<!-- ============ PAGE 2 : USER CHANNELS ============ -->
+<section class="page">
+  <div class="top">
+    <div>
+      <div class="kick">User Channels</div>
+      <h1>Three doors, one login system
+        <small>Customer, field partner and staff all land on the same platform — nothing lives in spreadsheets.</small>
+      </h1>
+    </div>
+    <div class="logo"><img src="qcred-logo-wordmark.png" alt="QCred.in" /><small>Credit. Credibility. Confidence.</small></div>
+  </div>
+
+  <div class="grid3">
+    <div class="big">
+      <div class="devrow">
+        <div class="phone"><div class="nub"></div><div class="scr"><div class="bar"></div><div class="ring"><i>750</i></div><div class="rows"><i></i><i></i></div></div></div>
+        <div><h3>Customer app</h3><div class="who">End customer · qcred.in + app</div></div>
+      </div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><div><b>Apply</b><span>Product forms for every loan type on the book</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>Track</b><span>Live file status through all 18 stages</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div><div><b>Documents &amp; offers</b><span>Upload KYC once, see matched offers</span></div></div>
+    </div>
+
+    <div class="big">
+      <div class="devrow">
+        <div class="phone"><div class="nub"></div><div class="shk"><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 13l2-6 2 1 1 5"/><path d="M11 11h6a2 2 0 0 1 2 2v1a3 3 0 0 1-3 3h-4l-3 3H7a2 2 0 0 1-2-2v-2a3 3 0 0 1 3-3h3z"/></svg></b></div></div>
+        <div><h3>Partner app</h3><div class="who">Field partners · Android + iOS</div></div>
+      </div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div><div><b>Lead to file</b><span>Capture a lead and push it into the pipeline from the field</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h3l2-2h6l2 2h3v12H4z"/><circle cx="12" cy="12" r="3.5"/></svg></div><div><b>Camera KYC</b><span>Shoot PAN / Aadhaar on the spot — straight to the vault</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg></div><div><b>Payouts &amp; team</b><span>See earnings and the team tree — screenshot-blocked</span></div></div>
+    </div>
+
+    <div class="big">
+      <div class="devrow">
+        <div class="laptop"><div class="lid"><div class="lscr"><div class="bar"></div><div class="rows"><i></i><i></i><i></i></div></div></div><div class="base"></div></div>
+        <div><h3>Web admin console</h3><div class="who">Staff · crm.qcred.in</div></div>
+      </div>
+      <div class="feat"><div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m4 12 4 4L20 6"/><path d="m4 18 4 4"/></svg></div><div><b style="color:#056b30">Maker-checker</b><span>Every payout, activation and rate change needs a second approver</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="16" r="3"/></svg></div><div><b>Leads &amp; partners</b><span>Full pipeline, org tree, verification queues</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M7 16V8m5 8V5m5 11v-6"/></svg></div><div><b>Payouts &amp; P&amp;L</b><span>Commission engine, GST / TDS, exports for the accountant</span></div></div>
+    </div>
+  </div>
+
+  <div class="footbrand">QCRED.IN · TECHNOLOGY</div>
+  <div class="pageno">02 / 04</div>
+</section>
+
+<!-- ============ PAGE 3 : PLATFORM CORE ============ -->
+<section class="page">
+  <div class="top">
+    <div>
+      <div class="kick">Platform Core</div>
+      <h1>What the engine actually does
+        <small>Six modules, one database — a file moves from lead to lender without leaving the system.</small>
+      </h1>
+    </div>
+    <div class="logo"><img src="qcred-logo-wordmark.png" alt="QCred.in" /><small>Credit. Credibility. Confidence.</small></div>
+  </div>
+
+  <div class="grid3">
+    <div class="big">
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="16" r="3"/></svg></div><div><b>CRM &amp; origination</b><span>Leads, partners, employees and an 18-stage file pipeline with an org tree that controls who sees what.</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg></div><div><b>Best Match engine</b><span>Ranks lenders and programmes for each file from the live catalogue — the shortlist, in seconds.</span></div></div>
+    </div>
+    <div class="big green">
+      <div class="feat"><div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 15 2 2 4-4"/></svg></div><div><b>Construction Finance desk</b><span>A 100-point lender-readiness score across 7 factors with red-flag overrides. Every builder file leaves as GO, HOLD or DECLINE — with a bank-ready PDF.</span></div></div>
+      <div class="feat"><div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14h12V9z"/><path d="M14 3v6h6"/></svg></div><div><b>CF pack to lender</b><span>After GO, the scored pack goes to the bank. The bank still sanctions — QCred owns the screening.</span></div></div>
+    </div>
+    <div class="big">
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></div><div><b>Money with maker-checker</b><span>Disbursements, payout charts, GST / TDS. Nothing is released until a second person approves.</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M7 16V8m5 8V5m5 11v-6"/></svg></div><div><b>P&amp;L &amp; analytics</b><span>Book, commission and org drill-down against salary × target — the number an investor can audit.</span></div></div>
+    </div>
+  </div>
+
+  <div class="statline">
+    <div><strong>DOCUMENTS &amp; KYC</strong><i>|</i>Capture → verify queue → activation gate. A file does not move until it is clean.</div>
+  </div>
+
+  <div class="footbrand">QCRED.IN · TECHNOLOGY</div>
+  <div class="pageno">03 / 04</div>
+</section>
+
+<!-- ============ PAGE 4 : TRUST + INFRA ============ -->
+<section class="page">
+  <div class="top">
+    <div>
+      <div class="kick">Trust &amp; Infrastructure</div>
+      <h1>Built to be audited
+        <small>Control layer on every request, lender network on the way out, one cloud stack underneath.</small>
+      </h1>
+    </div>
+    <div class="logo"><img src="qcred-logo-wordmark.png" alt="QCred.in" /><small>Credit. Credibility. Confidence.</small></div>
+  </div>
+
+  <div class="grid3">
+    <div class="big">
+      <h3>Control on every request</h3>
+      <div class="who">Data &amp; control layer</div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg></div><div><b>Identity &amp; access</b><span>JWT sessions, roles, own / team / all data scopes</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v13H4z"/><path d="M8 7V5h8v2"/><path d="M12 11v4M10 13h4"/></svg></div><div><b>Document vault</b><span>Auth-gated, expiring links — nothing public</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5h12l4 4v10z"/><path d="M16 5v4h4"/></svg></div><div><b>Audit trail</b><span>Who, what, when, before / after on every change</span></div></div>
+    </div>
+
+    <div class="big green">
+      <h3 style="color:#056b30">Lender network</h3>
+      <div class="who">The way out of the platform</div>
+      <div class="feat"><div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><div><b>Banks &amp; NBFCs / HFCs</b><span>Poonawalla, ABFL, IIFL and the rest of the book — programmes and apply IDs on file</span></div></div>
+      <div class="feat"><div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg></div><div><b>Apply links</b><span>Files go straight into lender portals with tracked login IDs</span></div></div>
+      <div class="feat"><div class="cdot g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14h12V9z"/><path d="M14 3v6h6"/></svg></div><div><b>CF pack after GO</b><span>Scored construction-finance PDF, ready for credit committee</span></div></div>
+    </div>
+
+    <div class="big navy">
+      <h3>One cloud stack</h3>
+      <div class="who">No servers to babysit</div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a5 5 0 1 1 1-9.9A7 7 0 0 1 21 12h-1a4 4 0 0 1 0 6z"/></svg></div><div><b>Vercel</b><span>Next.js · crm.qcred.in · auto-scaling</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div><div><b>Neon Postgres + Blob</b><span>One database of record · encrypted document store</span></div></div>
+      <div class="feat"><div class="cdot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><div><b>Expo EAS</b><span>Native Android + iOS builds · screenshot block on app</span></div></div>
+    </div>
+  </div>
+
+  <div class="statline">
+    <div><strong>SECURITY</strong><i>|</i>End-to-end HTTPS · JWT · role-based access · full audit trail · FLAG_SECURE on mobile</div>
+  </div>
+
+  <div class="footbrand">QCRED.IN · TECHNOLOGY</div>
+  <div class="pageno">04 / 04</div>
+</section>
+
+</body>
+</html>

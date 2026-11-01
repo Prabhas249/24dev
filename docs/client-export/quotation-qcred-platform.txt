@@ -1,0 +1,113 @@
+￼
+QUOTATION #24D-2026-QC02
+July 17, 2026 · Valid 15 days
+PROJECT QUOTATION
+QCred Technology Platform Web Admin CRM + QCred Partner App
+Your operations core, exactly as scoped: the web admin console with maker-checker workflows (internal team works on web), and the QCred Partner app on Android and iOS. Customer app reserved as a later phase. Custom-built on the QCred brand, integrated with your live website.
+PREPARED FOR
+QCred.in · Simply Insight Consultancy LLP
+info@qcred.in
+PREPARED BY
+24dev — Web Development Agency
+Prabhas Raju · prabhasraju1817@gmail.com
+01Scope — the two products
+
+QCred Partner
+PARTNER APP · ANDROID + IOS
+	•	Lead — product-wise lead forms (9 products)
+	•	Apply & Track — lead status, filters, reports
+	•	Team — sub-advisor invites, team tree
+	•	Payouts — commission overview, payout charts
+	•	Tools — marketing creatives, pincode & company search, lender policy docs
+	•	Profile & KYC — bank details, PAN upload
+Web Admin Console
+YOUR OPERATIONS TEAM
+	•	Dashboard — advisors, leads, approvals, disbursals, payouts
+	•	Advisor onboarding & KYC — maker-checker
+	•	Lead pipeline — status workflow, assignment, filters
+	•	Payout engine — release via maker-checker, audit trail
+	•	Reports — lead / product / advisor-wise, CSV export
+	•	Products, employees & roles, broadcast notifications
+QCred customer app — reserved for later, priced now: when you're ready for the end-customer app (apply / track / documents / offers), it plugs into this same backend with no rebuild — ₹35,000 Android or ₹45,000 Android + iOS.
+Maker-checker, built into the core: every sensitive action — advisor approval, payout release, lead status override — is raised by a maker and takes effect only after a checker approves it, with a complete audit trail of who did what and when.
+02Your architecture, sequenced
+
+Mapped against the Technology-Architecture you shared and both reference demo CRMs (explored module by module). This quotation delivers the User Channels and platform core — the layers that run the business today. The rest is sequenced so nothing is rebuilt later.
+PHASE
+FROM YOUR ARCHITECTURE
+STATUS
+This quotation
+Partner App · CRM (lead management) · Web Admin Console · Analytics · Access Control & Security
+Full build, 7 weeks
+Next phase
+Customer App · LOS workflow · Lender Dashboard · Collections · Onboarding chatbot
+Quoted when core is live
+Integration phase
+Credit Bureau · CKYC · DigiLocker · API Banking · AI Lead Engine · Fraud Engine · Insurance
+Needs QCred's commercial agreements with the providers (bureau, NSDL, AA); we integrate as each is signed
+￼
+QUOTATION #24D-2026-QC02 · Page 2
+03Commercials
+
+COMPONENT
+INCLUDES
+PRICE
+Web Admin CRM
+Admin console + partner web portal (internal team on web), maker-checker core, payout engine, reports, roles & audit trail, WhatsApp OTP validation for leads, integrated with qcred.in
+₹30,000
+QCred Partner — Android
+Full partner app on Play Store — leads, team tree, payouts, tools, push notifications, screenshot-blocked (FLAG_SECURE)
+₹45,000
+QCred Partner — iOS
+Same app on the App Store — review handling included
+₹30,000
+Complete package — Web CRM + Partner app on both stores
+₹1,05,000
+Single-engagement package (everything together): ₹95,000
+Reference point: the white-label template vendor charges ₹89,000 for Android + web CRM — no iOS, no source code, the same template resold across the market, with yearly renewal fees typical. For ₹6,000 more, this engagement adds iOS, a custom build on the QCred brand, integration with your live website, and 100% source code ownership with no recurring licence — ever.
+04Delivery & payment
+
+MILESTONE
+YOU SEE
+PAYMENT
+Kick-off
+Architecture, designs and project plan; build starts
+30%
+Week 3 — CRM preview
+Admin console + partner portal live on a preview link
+30%
+Week 5 — App preview
+Partner app installable on your phones (test build)
+20%
+Week 7 — Handover
+App live on both stores, CRM on your domain, source code transferred
+20%
+Weekly demo every Friday throughout. Two revision rounds per milestone included; new modules or scope additions are quoted separately before work begins.
+05Third-party costs — separate, at actuals, in QCred's accounts
+
+ITEM
+APPROX. COST
+WHEN
+Google Play developer account
+US $25 (~₹2,100) one-time
+Before Android launch
+Apple developer account
+US $99 (~₹8,500) per year
+Before iOS launch
+Hosting, database & push infrastructure
+₹0 – 2,000 / month at launch scale
+From go-live
+SMS / WhatsApp OTP and alerts
+Provider rates (~₹0.15 – 0.35 per message)
+When enabled
+GST
+As applicable on invoice
+—
+06Ownership & support
+
+	•	Stack: Next.js + PostgreSQL (web CRM, same stack as qcred.in) · React Native (both apps, one codebase each)
+	•	Role-based access control, encrypted data at rest and in transit, full audit logging
+	•	100% source code ownership transfers on final payment; no licence or renewal fees
+	•	30 days of post-launch bug-fix support included; Care Plan available at ₹7,999/month thereafter (priority support, monitoring, minor enhancements)
+24dev — the team that built and runs qcred.in
+prabhasraju1817@gmail.com

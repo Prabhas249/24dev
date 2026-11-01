@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred — Monthly MIS P&amp;L, five questions</title>
+<style>
+  @page { size: A4; margin: 13mm 12mm 14mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --green:#068a3e; --green-50:#e8f6ee;
+    --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80; --line:#dbe3ee;
+    --amber:#b45309; --amber-50:#fef6e7; --red:#b42318; --red-50:#fdecea;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9.2pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3{margin:0;line-height:1.25} p{margin:0 0 4.5px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,thead,.rule{page-break-after:avoid} tr,.card,.q{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .hero{background:linear-gradient(150deg,var(--navy),var(--navy-dark) 70%,#061f42);color:#fff;
+        margin:-13mm -12mm 5mm;padding:11mm 12mm 8mm}
+  .hero img{height:13mm;filter:brightness(0) invert(1);margin-bottom:6mm}
+  .hero .k{font-size:8pt;letter-spacing:.2em;text-transform:uppercase;color:#9dc0ea}
+  .hero h1{margin-top:2.5mm;font-size:18pt;letter-spacing:-.4px}
+  .hero h1 span{display:block;color:#7fd6a2;font-weight:400;font-size:11.5pt;margin-top:2.5mm}
+  .hero p{margin-top:3mm;color:#cbd5e1;font-size:9.2pt;max-width:168mm}
+  .meta{display:flex;gap:10mm;margin-top:6mm;padding-top:5mm;border-top:1px solid rgba(255,255,255,.2);
+        font-size:8pt;color:#9dc0ea}
+  .meta b{display:block;color:#fff;font-size:8.6pt;margin-top:1mm;font-weight:600}
+
+  .rule{border-bottom:2.5px solid var(--navy);padding-bottom:2mm;margin:0 0 3.5mm}
+  .rule .n{font-size:7.4pt;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:700}
+  .rule h2{font-size:13.5pt;color:var(--navy);margin-top:1mm;letter-spacing:-.3px}
+
+  table{width:100%;border-collapse:collapse;margin:1.5mm 0 3mm;font-size:8.4pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:2mm 2.4mm;font-size:7.8pt;font-weight:600;
+     border-right:1px solid rgba(255,255,255,.15)}
+  th:last-child{border-right:none}
+  td{padding:1.7mm 2.4mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  .tick{color:var(--green);font-weight:700;white-space:nowrap}
+  .wait{color:var(--amber);font-weight:700;white-space:nowrap}
+
+  .flow{background:#fbfcfe;border:1px solid var(--line);border-radius:3px;padding:3mm 3mm;margin:2.2mm 0}
+  .chain{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap}
+  .node{border:1.4px solid var(--navy);background:#fff;border-radius:3px;padding:1.8mm 2.2mm;
+        font-size:7.2pt;text-align:center;min-width:22mm;max-width:32mm;line-height:1.3}
+  .node b{display:block;color:var(--navy);font-size:7.4pt}
+  .node i{display:block;font-style:normal;color:var(--mute);font-size:6.6pt;margin-top:.5mm}
+  .node.g{border-color:var(--green);background:var(--green-50)} .node.g b{color:var(--green)}
+  .node.a{border-color:var(--amber);background:var(--amber-50)} .node.a b{color:var(--amber)}
+  .node.r{border-color:var(--red);background:var(--red-50)} .node.r b{color:var(--red)}
+  .arw{display:flex;align-items:center;color:#17529c;font-size:10pt;padding:0 1.2mm;font-weight:700}
+
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2.6mm 3.2mm;margin:2.2mm 0;border-radius:2px;font-size:8.6pt}
+  .card.g{border-left-color:var(--green);background:var(--green-50)}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card b.t{display:block;margin-bottom:1mm;color:var(--navy)}
+
+  .q{border-left:3px solid var(--amber);background:var(--amber-50);padding:2.2mm 2.8mm;margin:0 0 2.4mm;
+     border-radius:0 2px 2px 0;font-size:8.6pt}
+  .q .qq{display:block;font-weight:700;color:var(--amber);font-size:8.4pt;margin-bottom:.8mm}
+  .q .opt{display:block;margin-top:1.4mm;color:var(--navy-dark);font-size:8.2pt}
+  .q .opt b{font-weight:700}
+
+  .foot{border-top:1px solid var(--line);margin-top:4mm;padding-top:2.2mm;font-size:7.4pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <div class="hero">
+    <img src="assets/logo-full.png" alt="QCred">
+    <div class="k">Checked against the live CRM · 2 September 2026</div>
+    <h1>Your Monthly MIS dashboard — five decisions
+      <span>We read the file. P&amp;L in the CRM is not this yet. Please confirm only the points below.</span>
+    </h1>
+    <p>You sent <b>QCred Monthly MIS Dashboard</b> (Dashboard, Monthly MIS, Target Setup, Team Master, Employee Master, Lender Master). We treated the rupee examples and placeholder salaries as illustrations — we are not asking you to re-confirm those numbers. These five answers decide how P&amp;L should look on the CRM and the apps.</p>
+    <div class="meta">
+      <div>Your file<b>QCred_Monthly_MIS_Dashboard.xlsx</b></div>
+      <div>Checked against<b>crm.qcred.in · live P&amp;L</b></div>
+      <div>Prepared by<b>24dev · Prabhas Raju</b></div>
+    </div>
+  </div>
+
+  <div class="rule"><div class="n">Section 01</div><h2>What we read from your Dashboard</h2></div>
+  <p>For a salaried (Direct) person, one month:</p>
+  <div class="flow">
+    <div class="chain">
+      <div class="node"><b>Fees received</b><i>loan × lender %</i></div>
+      <div class="arw">&rarr;</div>
+      <div class="node"><b>Channel payout</b><i>~90% of fees</i></div>
+      <div class="arw">&rarr;</div>
+      <div class="node g"><b>Net margin</b><i>what is left</i></div>
+      <div class="arw">&rarr;</div>
+      <div class="node a"><b>Salary + incentive</b><i>spent on him</i></div>
+      <div class="arw">&rarr;</div>
+      <div class="node r"><b>Company profit</b><i>can be negative</i></div>
+    </div>
+  </div>
+  <p>Incentive is 50% of only the slice of net margin <b>above</b> salary × target multiple. Below that line, incentive is zero and salary is still paid — so company profit goes red. Indirect / channel partners have no salary: they take 90–95% of fees, QCred keeps the rest.</p>
+  <p>A supervisor (Durgesh in the file) sees each person under him, plus one combined line — fees in, salary spent, profit including the losses.</p>
+
+  <div class="rule"><div class="n">Section 02</div><h2>What the CRM shows today</h2></div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:42mm">Your Dashboard</th>
+        <th style="width:22mm">Live CRM</th>
+        <th>What we found</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Company profit on each person (returned − spent, can be red)</td>
+        <td class="wait">Not this</td>
+        <td>CRM P&amp;L is take-home vs target (salary × multiple). A slow month still shows full salary. There is no “QCred lost money on him” column.</td>
+      </tr>
+      <tr>
+        <td>Channel ~90% taken out before salary</td>
+        <td class="wait">Not on P&amp;L</td>
+        <td>Generated commission is the full lender %. Channel / partner payout sits on a separate Payouts screen.</td>
+      </tr>
+      <tr>
+        <td>Supervisor combined profit of everyone under him</td>
+        <td class="tick">Partly</td>
+        <td>The reporting tree rolls up <b>generated</b> commission. It does not add up all salaries under him and show one company profit.</td>
+      </tr>
+      <tr>
+        <td>Indirect: 90–95% out, rest to company, no salary</td>
+        <td class="tick">Close</td>
+        <td>Partners already have a share %. CRM shows their take-home of generated, not “what QCred kept after paying them”.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <b class="t">In plain terms</b>
+    Your file is a <b>company P&amp;L</b>. The CRM today is a <b>paycheck screen</b>. We will not change P&amp;L until you tick the five questions on the next page.
+  </div>
+
+  <div class="foot"><span>QCred · Monthly MIS P&amp;L, five questions · 2 September 2026</span><span>Page 1</span></div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="rule"><div class="n">Section 03</div><h2>Please confirm only these</h2></div>
+  <p style="color:var(--mute);font-size:8.5pt;margin-bottom:3mm">
+    One-line answers are enough. We are not asking about the sample rupees, placeholder salaries, or dummy customer names in the workbook.</p>
+
+  <div class="q">
+    <span class="qq">1 · Is the screen company profit, not take-home?</span>
+    Should each employee (and each person under a manager) show <b>returned to QCred vs spent on him</b>, with red when spent is higher — the way your Dashboard column “Company Profit” works?
+    <span class="opt"><b>A</b> Yes — that is the P&amp;L. Take-home can stay as a second line if needed. &nbsp; <b>B</b> No — keep today’s take-home vs target.</span>
+  </div>
+
+  <div class="q">
+    <span class="qq">2 · What is “returned” before we subtract salary?</span>
+    In your sheet, fees come in, then ~90% channel payout comes off, then salary. In the CRM today, generated is the <b>full</b> lender %.
+    <span class="opt"><b>A</b> Returned = fees minus channel / partner payout, then salary. &nbsp; <b>B</b> Returned = full lender commission, salary compared to that.</span>
+  </div>
+
+  <div class="q">
+    <span class="qq">3 · Which files count in the month?</span>
+    Your Dashboard currently sums every Monthly MIS row for that person and month (Lead Generated, Logged In, Sanctioned, Disbursed). The CRM P&amp;L counts <b>only disbursed</b>.
+    <span class="opt"><b>A</b> Disbursed only — money that actually came in. &nbsp; <b>B</b> All files logged that month, as the Dashboard does now.</span>
+  </div>
+
+  <div class="q">
+    <span class="qq">4 · How far does a manager’s combined number go?</span>
+    In the file, Durgesh’s rollup is people whose Supervisor cell is Durgesh (one level — 17 Directs). You also said a role-7 should see everyone under him combined.
+    <span class="opt"><b>A</b> One level — only direct reports, plus their own combined total. &nbsp; <b>B</b> Full tree — every employee under him, however deep, in one combined profit.</span>
+  </div>
+
+  <div class="q">
+    <span class="qq">5 · Indirect / DSA — same as the 90–95% table?</span>
+    Channel partners: no fixed salary, payout 90–95% of fees, QCred keeps the rest. ADS and Dhananjay in the CRM already have a share %. Should their P&amp;L be this residual (what the company kept), not a salary-style take-home?
+    <span class="opt"><b>A</b> Yes — Indirect table as in your Dashboard. &nbsp; <b>B</b> Different for some partners — we will say who.</span>
+  </div>
+
+  <div class="card a" style="margin-top:4mm">
+    <b class="t">What we need back</b>
+    1A/B, 2A/B, 3A/B, 4A/B, 5A/B — WhatsApp is enough. Once those five are ticked we will change P&amp;L on CRM and the apps to match, including red when QCred is down on a person. We will not start that build on an assumption.
+  </div>
+
+  <div class="foot"><span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span><span>Page 2</span></div>
+</div>
+
+</body>
+</html>

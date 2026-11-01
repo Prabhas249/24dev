@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24dev — Proposal: Rajeshwari's Home Food</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141414;
+    --mut:#5c5c5c;
+    --faint:#909090;
+    --line:#e3dfd8;
+    --rule:#141414;
+    --paper:#FDFCFA;
+    --wash:#f6f4f0;
+    --orange:#FD4D11;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#e9e7e2;display:flex;flex-direction:column;align-items:center;gap:24px;font-family:Inter,sans-serif}
+
+  .page{
+    width:1080px;height:1350px;overflow:hidden;position:relative;
+    color:var(--ink);background:var(--paper);
+    -webkit-print-color-adjust:exact;
+    padding:52px 76px 38px;
+    display:flex;flex-direction:column;
+  }
+
+  /* ---------- header ---------- */
+  .top{display:flex;justify-content:space-between;align-items:center;padding-bottom:20px;border-bottom:2.5px solid var(--rule)}
+  .top img{height:46px;display:block}
+  .doclbl{text-align:right}
+  .doclbl .b{font-weight:800;font-size:17px;letter-spacing:4.5px}
+  .doclbl small{display:block;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:12px;color:var(--mut);letter-spacing:.5px;margin-top:6px}
+
+  .meta{display:flex;padding:16px 0 0;margin-bottom:34px;gap:60px}
+  .meta .col .k{font-size:10.5px;letter-spacing:2.2px;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:5px}
+  .meta .col .v{font-size:14.5px;font-weight:600;line-height:1.5}
+  .meta .col .v span{color:var(--mut);font-weight:500}
+  .meta .col:last-child{margin-left:auto;text-align:right}
+
+  /* ---------- hero ---------- */
+  h1{font-weight:900;font-size:40px;line-height:1.12;letter-spacing:-1.4px;margin-bottom:14px}
+  .sub{font-size:16.5px;color:var(--mut);line-height:1.6;margin-bottom:34px;max-width:880px}
+
+  /* ---------- price band ---------- */
+  .band{display:flex;align-items:stretch;border-top:2.5px solid var(--rule);border-bottom:1px solid var(--line);margin-bottom:34px}
+  .band .cell{padding:22px 34px 24px;border-right:1px solid var(--line)}
+  .band .cell:first-child{padding-left:0}
+  .band .cell:last-child{border-right:none;padding-right:0;margin-left:auto;text-align:right}
+  .band .k{font-size:10.5px;letter-spacing:2.2px;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:10px}
+  .band .amt{font-weight:900;font-size:54px;letter-spacing:-2px;line-height:1}
+  .band .v{font-weight:800;font-size:21px;line-height:1.35;letter-spacing:-.3px;padding-top:4px}
+  .band .v small{display:block;font-size:13px;color:var(--mut);font-weight:500;margin-top:4px}
+
+  /* ---------- section label ---------- */
+  .sect{display:flex;align-items:center;gap:12px;font-size:11.5px;letter-spacing:2.6px;text-transform:uppercase;font-weight:800;margin-bottom:4px}
+  .sect::before{content:"";width:8px;height:8px;background:var(--orange)}
+
+  /* ---------- breakup table ---------- */
+  .breakup{margin-bottom:34px}
+  .brow{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+  .brow .t{font-size:17px;font-weight:700}
+  .brow .t small{display:block;font-weight:400;font-size:13.5px;color:var(--mut);margin-top:3px}
+  .brow .rs{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:18px;white-space:nowrap}
+  .brow.total{border-bottom:none;border-top:2.5px solid var(--rule);padding:16px 0 0}
+  .brow.total .t{font-size:17px;font-weight:900;letter-spacing:.2px}
+  .brow.total .rs{font-size:24px;font-weight:600}
+
+  /* ---------- payment steps ---------- */
+  .steps{margin-bottom:30px}
+  .step{display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}
+  .step:last-child{border-bottom:none}
+  .step .n{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:13px;color:var(--orange);border:1.5px solid var(--orange);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .step .t{font-size:16.5px;font-weight:700;line-height:1.35}
+  .step .t small{display:block;font-weight:400;font-size:13.5px;color:var(--mut);margin-top:3px;line-height:1.5}
+  .step .amt{margin-left:auto;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:19px;white-space:nowrap}
+
+  .note{border-left:3px solid var(--orange);padding:4px 0 4px 20px;font-size:14.5px;color:#3d3d3d;line-height:1.65;margin-bottom:auto}
+  .note b{color:var(--ink)}
+
+  /* ---------- footer ---------- */
+  .foot{border-top:2.5px solid var(--rule);padding-top:13px;display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+  .foot img{height:26px;display:block}
+  .foot .mid{font-size:12.5px;color:var(--mut);font-weight:500}
+  .foot .valid{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--mut);text-align:right;line-height:1.7}
+
+  /* ============ page 2 ============ */
+  .p2top{margin-bottom:20px}
+
+  /* timeline strip */
+  .tl{display:flex;border-top:2.5px solid var(--rule);border-bottom:1px solid var(--line);margin-bottom:16px}
+  .tl .wk{flex:1;padding:11px 18px 12px;border-right:1px solid var(--line)}
+  .tl .wk:last-child{border-right:none}
+  .tl .wk .w{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;color:var(--orange);letter-spacing:1.5px;margin-bottom:7px}
+  .tl .wk .t{font-size:13.5px;font-weight:700;line-height:1.4}
+  .tl .wk .t small{display:block;font-weight:400;font-size:12px;color:var(--mut);margin-top:3px;line-height:1.45}
+
+  /* scope */
+  .scope{padding:11px 0 12px;border-bottom:1px solid var(--line)}
+  .scope:first-of-type{border-top:1px solid var(--line)}
+  .scope h3{font-weight:800;font-size:17.5px;letter-spacing:-.2px;margin-bottom:11px;display:flex;align-items:baseline;gap:12px}
+  .scope h3 span{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:12.5px;color:var(--orange)}
+  .scope ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 26px}
+  .scope li{display:flex;gap:10px;font-size:14px;color:#333;line-height:1.45}
+  .scope li::before{content:"✓";color:var(--orange);font-weight:800;flex:0 0 auto;font-size:13px}
+
+  /* three panels */
+  .threecol{display:flex;gap:0;margin:13px 0 11px;border-top:2.5px solid var(--rule)}
+  .panel{flex:1;padding:13px 22px 2px;border-right:1px solid var(--line)}
+  .panel:first-child{padding-left:0}
+  .panel:last-child{border-right:none;padding-right:0}
+  .panel h4{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;font-weight:800;margin-bottom:11px}
+  .panel ul{list-style:none}
+  .panel li{display:flex;gap:9px;font-size:12.5px;color:#3d3d3d;line-height:1.45;margin-bottom:5px}
+  .panel li::before{content:"—";color:var(--faint);flex:0 0 auto}
+
+  /* add-ons strip */
+  .addons{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:13px}
+  .addons .ad{flex:1;padding:10px 20px 11px;border-right:1px solid var(--line)}
+  .addons .ad:first-child{padding-left:0}
+  .addons .ad:last-child{border-right:none;padding-right:0}
+  .addons .ad .t{font-size:13.5px;font-weight:800;letter-spacing:-.1px}
+  .addons .ad .d{font-size:11.5px;color:var(--mut);line-height:1.45;margin-top:3px}
+  .addons .ad .p{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;margin-top:6px}
+
+  /* care plan */
+  .care{background:var(--wash);border:1px solid var(--line);border-left:4px solid var(--orange);padding:14px 26px;margin-bottom:auto}
+  .care .carehead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+  .care .carehead .cn{font-weight:900;font-size:20px;letter-spacing:-.3px}
+  .care .carehead .cn small{display:inline-block;font-weight:800;font-size:10px;color:var(--paper);background:var(--ink);padding:3px 10px;letter-spacing:1.8px;margin-left:12px;vertical-align:middle}
+  .care .carehead .cp{font-weight:900;font-size:25px;letter-spacing:-.5px}
+  .care .carehead .cp small{font-weight:600;font-size:13.5px;color:var(--mut)}
+  .care ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 26px;margin-bottom:10px}
+  .care li{display:flex;gap:10px;font-size:13.5px;color:#333;line-height:1.45}
+  .care li::before{content:"✓";color:var(--orange);font-weight:800;flex:0 0 auto;font-size:12.5px}
+  .care .anchor{font-size:12.5px;color:var(--mut);line-height:1.6;border-top:1px solid var(--line);padding-top:11px}
+  .care .anchor b{color:var(--ink)}
+
+  @page{size:1080px 1350px;margin:0}
+  @media print{
+    body{background:none;gap:0;display:block}
+    .page{page-break-after:always}
+    .page:last-child{page-break-after:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 ============ -->
+<div class="page">
+
+  <div class="top">
+    <img src="assets/24dev-logo.png" alt="24dev">
+    <div class="doclbl">
+      <div class="b">PROPOSAL</div>
+      <small>Nº 24DEV-2026-014 · 10 JULY 2026</small>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div class="col">
+      <div class="k">Prepared for</div>
+      <div class="v">Rajeshwari's Home Food<span> · Mumbai</span><br><span>rajeshwarishomefood.com</span></div>
+    </div>
+    <div class="col">
+      <div class="k">Prepared by</div>
+      <div class="v">R. Prabhas Raju · 24dev<span> · Bengaluru</span><br><span>prabhasraju1817@gmail.com</span></div>
+    </div>
+    <div class="col">
+      <div class="k">Valid until</div>
+      <div class="v">24 July 2026<br><span>14 days</span></div>
+    </div>
+  </div>
+
+  <h1>Website + iOS &amp; Android apps —<br>one system, one team.</h1>
+  <div class="sub">A complete rebuild of rajeshwarishomefood.com with full online ordering &amp; payments, plus your own apps on the App Store and Play Store — all three running on one shared backend, managed from a single admin panel.</div>
+
+  <div class="band">
+    <div class="cell">
+      <div class="k">Total — Fixed Price</div>
+      <div class="amt">₹2,00,000</div>
+    </div>
+    <div class="cell">
+      <div class="k">Website Preview</div>
+      <div class="v">Week 2<small>Live link, fully working</small></div>
+    </div>
+    <div class="cell">
+      <div class="k">Full Delivery</div>
+      <div class="v">4–5 weeks<small>Apps + website + admin, handed over</small></div>
+    </div>
+  </div>
+
+  <div class="sect">Price break-up</div>
+  <div class="breakup">
+    <div class="brow">
+      <div class="t">E-commerce website — full redesign<small>Product catalog, cart &amp; checkout, online payments, customer accounts</small></div>
+      <div class="rs">₹50,000</div>
+    </div>
+    <div class="brow">
+      <div class="t">iOS + Android apps<small>Both platforms from one codebase — same features, half the cost of building twice</small></div>
+      <div class="rs">₹1,30,000</div>
+    </div>
+    <div class="brow">
+      <div class="t">Admin panel + shared backend<small>Update menu &amp; prices once — changes appear on website and both apps instantly</small></div>
+      <div class="rs">₹20,000</div>
+    </div>
+    <div class="brow total">
+      <div class="t">Total — full scope on page 2 included</div>
+      <div class="rs">₹2,00,000</div>
+    </div>
+  </div>
+
+  <div class="sect">Payment terms — see it working before each payment</div>
+  <div class="steps">
+    <div class="step">
+      <div class="n">01</div>
+      <div class="t">Advance to start the build
+        <small>Locks the team &amp; timeline on your project. Work starts the same day.</small>
+      </div>
+      <div class="amt">₹60,000</div>
+    </div>
+    <div class="step">
+      <div class="n">02</div>
+      <div class="t">After you approve the website on a live preview link
+        <small>Browse products, add to cart, test checkout — verify everything yourself first.</small>
+      </div>
+      <div class="amt">₹70,000</div>
+    </div>
+    <div class="step">
+      <div class="n">03</div>
+      <div class="t">On app handover &amp; store submission
+        <small>Both apps tested on your phone, submitted to App Store &amp; Play Store.</small>
+      </div>
+      <div class="amt">₹70,000</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Your risk is capped at ₹60,000.</b> Before any further payment you get a fully working website preview to click through yourself — we never ask for the next milestone until you've approved the previous one, live.
+  </div>
+
+  <div class="foot">
+    <img src="assets/24dev-logo.png" alt="24dev">
+    <div class="mid">One backend · Three storefronts · One team to call</div>
+    <div class="valid">PAGE 1 / 2</div>
+  </div>
+
+</div>
+
+<!-- ============ PAGE 2 ============ -->
+<div class="page">
+
+  <div class="top p2top">
+    <img src="assets/24dev-logo.png" alt="24dev">
+    <div class="doclbl">
+      <div class="b">SCOPE &amp; TERMS</div>
+      <small>Nº 24DEV-2026-014 · 10 JULY 2026</small>
+    </div>
+  </div>
+
+  <div class="sect">Delivery schedule — 4 to 5 weeks total</div>
+  <div class="tl">
+    <div class="wk">
+      <div class="w">WEEK 1</div>
+      <div class="t">Design<small>Look &amp; feel shared for your approval</small></div>
+    </div>
+    <div class="wk">
+      <div class="w">WEEK 2</div>
+      <div class="t">Website live preview<small>Full site working — milestone 2</small></div>
+    </div>
+    <div class="wk">
+      <div class="w">WEEK 3</div>
+      <div class="t">Admin panel + backend<small>Your menu &amp; orders system ready</small></div>
+    </div>
+    <div class="wk">
+      <div class="w">WEEK 4</div>
+      <div class="t">iOS &amp; Android build<small>Apps tested on your own phone</small></div>
+    </div>
+    <div class="wk">
+      <div class="w">WEEK 5</div>
+      <div class="t">Handover<small>Store submission — milestone 3</small></div>
+    </div>
+  </div>
+
+  <div class="sect">Full scope of work</div>
+  <div class="scope">
+    <h3><span>01</span>E-commerce Website</h3>
+    <ul>
+      <li>Complete redesign — modern, mobile-first</li>
+      <li>Full product catalog with categories</li>
+      <li>Cart, checkout &amp; online payments (Razorpay/UPI)</li>
+      <li>Customer accounts &amp; order history</li>
+      <li>Delivery areas, charges &amp; COD option</li>
+      <li>Discount coupons &amp; offers</li>
+      <li>Order confirmation on WhatsApp/email</li>
+      <li>Fast loading + basic SEO setup</li>
+    </ul>
+  </div>
+
+  <div class="scope">
+    <h3><span>02</span>iOS &amp; Android Apps</h3>
+    <ul>
+      <li>Both apps from one codebase — identical features</li>
+      <li>Full ordering — browse, cart, pay, track</li>
+      <li>Push notifications — today's menu, offers, order updates</li>
+      <li>2-tap reorder &amp; saved addresses for regulars</li>
+      <li>Published under your own developer accounts</li>
+      <li>Store listings (screenshots, descriptions) &amp; submission by us</li>
+    </ul>
+  </div>
+
+  <div class="scope">
+    <h3><span>03</span>Admin Panel + Shared Backend</h3>
+    <ul>
+      <li>Add/edit products, prices &amp; photos yourself</li>
+      <li>Mark items sold out with one tap</li>
+      <li>One update → website + both apps, instantly</li>
+      <li>Orders dashboard — see &amp; manage every order</li>
+      <li>Customer list with order history</li>
+      <li>Training call on handover — you run it yourself</li>
+    </ul>
+  </div>
+
+  <div class="threecol">
+    <div class="panel">
+      <h4>We need from you, day 1</h4>
+      <ul>
+        <li>Menu list with prices</li>
+        <li>Product photos &amp; logo files</li>
+        <li>Razorpay account (we help set up)</li>
+        <li>Apple &amp; Google developer accounts (we help register)</li>
+        <li>Domain &amp; hosting access</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>On your side (paid directly)</h4>
+      <ul>
+        <li>Apple Developer — $99/year (Apple's fee)</li>
+        <li>Google Play — $25 one-time (Google's fee)</li>
+        <li>Domain &amp; hosting renewals</li>
+        <li>Payment gateway charges (~2%/transaction, Razorpay's fee)</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>Good to know</h4>
+      <ul>
+        <li>30-day free bug-fix warranty after handover</li>
+        <li>Your current products &amp; customers migrated free</li>
+        <li>Weekly progress updates on WhatsApp</li>
+        <li>2 rounds of design revisions included</li>
+        <li>App Store review (1–7 days) is Apple's &amp; Google's timeline</li>
+        <li>Full source code handed over — you own everything</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sect">Optional add-ons — can be added anytime, before or after launch</div>
+  <div class="addons">
+    <div class="ad">
+      <div class="t">AI search visibility (AEO)</div>
+      <div class="d">Show up when customers ask ChatGPT &amp; Google AI for "best home food in Mumbai"</div>
+      <div class="p">₹20,000</div>
+    </div>
+    <div class="ad">
+      <div class="t">Local SEO pack</div>
+      <div class="d">Auto-generated pages for every area &amp; dish ("tiffin in Andheri") + Google Business setup</div>
+      <div class="p">₹25,000</div>
+    </div>
+    <div class="ad">
+      <div class="t">Branding kit</div>
+      <div class="d">Logo refresh, colours &amp; social media templates — one consistent look everywhere</div>
+      <div class="p">₹15,000</div>
+    </div>
+  </div>
+
+  <div class="care">
+    <div class="carehead">
+      <div class="cn">Care Plan<small>OPTIONAL</small></div>
+      <div class="cp">₹7,999<small>/month · first month FREE</small></div>
+    </div>
+    <ul>
+      <li>Menu, price &amp; product updates — up to 20/month</li>
+      <li>App updates for new iOS/Android + store compliance</li>
+      <li>Bug fixes, uptime monitoring &amp; backups</li>
+      <li>Priority WhatsApp support + small design tweaks</li>
+    </ul>
+    <div class="anchor">Without a Care Plan, changes &amp; app updates after handover are billed at <b>₹1,500/hour</b> — one iOS update can exceed a month of Care.</div>
+  </div>
+
+  <div class="foot">
+    <img src="assets/24dev-logo.png" alt="24dev">
+    <div class="mid">Questions? Reply to this email — same-day response</div>
+    <div class="valid">PAGE 2 / 2</div>
+  </div>
+
+</div>
+
+</body>
+</html>

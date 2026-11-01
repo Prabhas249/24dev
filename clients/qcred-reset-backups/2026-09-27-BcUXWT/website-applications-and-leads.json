@@ -1,0 +1,4693 @@
+[
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.BUA79lrPx3WJwlEv4Rq6h0",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "Nasik",
+    "name": "B",
+    "phone": "9967589900",
+    "product": "Credit Cards",
+    "receivedAt": "2026-07-22T11:20:03.869Z",
+    "remarks": "Chatbot enquiry — First card",
+    "source": "chatbot:Credit Cards",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.BUA79lrPx3WJwlEv4Rq7pG",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "Test",
+    "name": "Email Debug",
+    "phone": "9000000009",
+    "product": "Personal Loan",
+    "receivedAt": "2026-07-22T11:22:00.736Z",
+    "remarks": "",
+    "source": "email-debug",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.BUA79lrPx3WJwlEv4RqRWM",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "Mumbai",
+    "name": "End Flow Test",
+    "phone": "9876501234",
+    "product": "Personal Loan",
+    "receivedAt": "2026-07-22T11:49:54.964Z",
+    "remarks": "Chatbot enquiry — ₹5–25 Lakh",
+    "source": "chatbot:Personal Loan",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.Jee9DuSlJ704SNbO3Yo4OV",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "Mumbai",
+    "name": "Bobby",
+    "phone": "9967577889",
+    "product": "Business Loan",
+    "receivedAt": "2026-07-22T11:13:44.531Z",
+    "remarks": "Chatbot enquiry — ₹5–25 Lakh",
+    "source": "chatbot:Business Loan",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.Jee9DuSlJ704SNbO3YprNE",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "pune",
+    "name": "genie -q",
+    "phone": "9175683403",
+    "product": "Education Loan",
+    "receivedAt": "2026-07-22T11:40:16.563Z",
+    "remarks": "Chatbot enquiry — Above ₹1 Cr",
+    "source": "chatbot:Education Loan",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.Jee9DuSlJ704SNbO3Yr7vd",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "Mumbai",
+    "name": "DEMO LEAD — email + CMS test",
+    "phone": "9123456780",
+    "product": "Home Loan",
+    "receivedAt": "2026-07-22T12:01:46.313Z",
+    "remarks": "Verifying email delivery after FormSubmit activation",
+    "source": "delivery-verify",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.Ms2tsLQBpd1vUA2A17uTci",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "Mumbai",
+    "name": "Bobby",
+    "phone": "9967577889",
+    "product": "Car Loan",
+    "receivedAt": "2026-07-21T10:46:51.887Z",
+    "remarks": "Chatbot enquiry — Under ₹5 Lakh",
+    "source": "chatbot:Car Loan",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T07:40:04Z",
+    "_id": "drafts.VYQz6kRGBI2TD0HjW0x7wu",
+    "_rev": "BUA79lrPx3WJwlEv4S9u86",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T07:40:04Z",
+    "city": "Mumbai",
+    "name": "Prod CMS Test",
+    "phone": "9000000007",
+    "product": "Car Loan",
+    "receivedAt": "2026-07-20T10:41:21.024Z",
+    "remarks": "prod verify",
+    "source": "prod-test",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-14T11:24:19Z",
+    "_id": "drafts.lead-10070c94-72a3-4373-949b-ecad1a2ed35f",
+    "_rev": "oqzgrKGMIxFMreVMC7oT6M",
+    "_type": "lead",
+    "_updatedAt": "2026-09-14T11:24:19Z",
+    "city": "",
+    "name": "Quick lead",
+    "phone": "8976154389",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-14T11:24:19.717Z",
+    "remarks": "",
+    "source": "quick-strip",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-08-31T07:19:11Z",
+    "_id": "drafts.lead-14cb4691-e820-410b-8249-e269001c0536",
+    "_rev": "Lf7o4tbSRFd4ey0FFEW1uZ",
+    "_type": "lead",
+    "_updatedAt": "2026-08-31T07:19:11Z",
+    "city": "Pune ",
+    "name": "Rani Kumari",
+    "phone": "7814004596",
+    "product": "Two Wheeler Loan",
+    "receivedAt": "2026-08-31T07:19:11.453Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-01T16:09:50Z",
+    "_id": "drafts.lead-252dd334-63fa-4bed-992b-da1121bd94c9",
+    "_rev": "N4pnZkGkVIM6tbAU2MLK2f",
+    "_type": "lead",
+    "_updatedAt": "2026-09-01T16:09:50Z",
+    "city": "",
+    "name": "Quick lead",
+    "phone": "9833911729",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-01T16:09:50.693Z",
+    "remarks": "",
+    "source": "quick-strip",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-22T19:10:03Z",
+    "_id": "drafts.lead-33d24fd0-fe92-49f1-b0a8-40d482256a0f",
+    "_rev": "Til0bZMJEUzd2akoHcGFyP",
+    "_type": "lead",
+    "_updatedAt": "2026-09-22T19:10:03Z",
+    "city": "",
+    "name": "Quick lead",
+    "phone": "9841841059",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-22T19:10:03.600Z",
+    "remarks": "",
+    "source": "quick-strip",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-24T20:41:17Z",
+    "_id": "drafts.lead-544093ad-2e64-493d-9be3-716a415e507c",
+    "_rev": "QemagYEAVW6d9yUvwCJD3v",
+    "_type": "lead",
+    "_updatedAt": "2026-09-24T20:41:17Z",
+    "city": "Hubli ",
+    "name": "Supreet Hosamani",
+    "phone": "7204838912",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-24T20:41:17.646Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-18T02:41:26Z",
+    "_id": "drafts.lead-550b206e-ccd4-4fb2-aa5c-3423d0fa9259",
+    "_rev": "ZCDrUBE1iWcZJmJOvMzW14",
+    "_type": "lead",
+    "_updatedAt": "2026-09-18T02:41:26Z",
+    "city": "Habiganj ",
+    "name": "Saiful islam Rayhan",
+    "phone": "1963006475",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-18T02:41:26.291Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-14T08:23:42Z",
+    "_id": "drafts.lead-6500695c-5a0d-4399-b6cf-2fb818299eff",
+    "_rev": "jITbevOCTIorBgoUCY3RnG",
+    "_type": "lead",
+    "_updatedAt": "2026-09-14T08:23:42Z",
+    "city": "",
+    "name": "Quick lead",
+    "phone": "9819724955",
+    "product": "Business Loan",
+    "receivedAt": "2026-09-14T08:23:42.036Z",
+    "remarks": "",
+    "source": "quick-strip",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-19T14:22:38Z",
+    "_id": "drafts.lead-7032e8c1-8c4d-4785-b076-41bf048d400e",
+    "_rev": "fBrCjNug36o8mO87Svu1TW",
+    "_type": "lead",
+    "_updatedAt": "2026-09-19T14:22:38Z",
+    "city": "Talap",
+    "name": "Karabi Sonowal",
+    "phone": "6000075687",
+    "product": "Home Loan",
+    "receivedAt": "2026-09-19T14:22:38.687Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-24T20:40:49Z",
+    "_id": "drafts.lead-73a996f3-66d7-45a0-a85a-aa39c97f9102",
+    "_rev": "hlhLRnJC2qq7qfNW6fdSkt",
+    "_type": "lead",
+    "_updatedAt": "2026-09-24T20:40:49Z",
+    "city": "Hubli ",
+    "name": "Supreet Hosamani",
+    "phone": "7204838912",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-24T20:40:49.793Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-13T06:46:22Z",
+    "_id": "drafts.lead-78d1ffd9-8b69-407b-afbb-57d53f3f47da",
+    "_rev": "oqzgrKGMIxFMreVMC5mTpN",
+    "_type": "lead",
+    "_updatedAt": "2026-09-13T06:46:22Z",
+    "city": "Saharanpur",
+    "name": "Abrar",
+    "phone": "7505062346",
+    "product": "Credit Cards",
+    "receivedAt": "2026-09-13T06:46:22.408Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T10:37:01Z",
+    "_id": "drafts.lead-84753845-cc65-4c90-8252-4d63b3d196ca",
+    "_rev": "BUA79lrPx3WJwlEv4SDGz4",
+    "_type": "lead",
+    "_updatedAt": "2026-07-23T10:37:01Z",
+    "city": "mum",
+    "name": "bh",
+    "phone": "9876543219",
+    "product": "Business Loan",
+    "receivedAt": "2026-07-23T10:37:01.096Z",
+    "remarks": "Chatbot enquiry — Under ₹5 Lakh",
+    "source": "chatbot:Business Loan",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-20T07:41:39Z",
+    "_id": "drafts.lead-9242c5a4-5f24-4d0b-9c03-48dccd31e99a",
+    "_rev": "jLe7hSgM7sILxxhuYoJBSp",
+    "_type": "lead",
+    "_updatedAt": "2026-09-20T07:41:39Z",
+    "city": "Trichy",
+    "name": "Selvakumar Velusamy",
+    "phone": "9790680362",
+    "product": "Others",
+    "receivedAt": "2026-09-20T07:41:39.876Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-08-20T02:04:35Z",
+    "_id": "drafts.lead-b3807568-80ad-49ac-832a-afcf93e003fb",
+    "_rev": "WosRBRqmGXIPhm03OfevpF",
+    "_type": "lead",
+    "_updatedAt": "2026-08-20T02:04:35Z",
+    "city": "Thane",
+    "name": "P jayshankar ",
+    "phone": "8976154389",
+    "product": "Home Loan",
+    "receivedAt": "2026-08-20T02:04:35.777Z",
+    "remarks": "Require only pre sanction I will book my flat on the dated coming Dewali . ",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-25T13:42:09Z",
+    "_id": "drafts.lead-b6f907ab-f3a7-461f-b248-c7242c678b19",
+    "_rev": "QemagYEAVW6d9yUvwFiBCR",
+    "_type": "lead",
+    "_updatedAt": "2026-09-25T13:42:09Z",
+    "city": "Ahmednagar ",
+    "name": "shubham paratmol",
+    "phone": "7798332046",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-25T13:42:09.383Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-24T15:24:05Z",
+    "_id": "drafts.lead-be4553fa-ec6b-4013-a858-e532cc896600",
+    "_rev": "hlhLRnJC2qq7qfNW6ejJwp",
+    "_type": "lead",
+    "_updatedAt": "2026-09-24T15:24:05Z",
+    "city": "Jamnagar",
+    "name": "Nikhil Barot",
+    "phone": "7229007585",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-24T15:24:05.344Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-01T06:22:45Z",
+    "_id": "drafts.lead-c58aa568-25a2-4fb3-bdb5-8ecad2da83cf",
+    "_rev": "N4pnZkGkVIM6tbAU2Joj8j",
+    "_type": "lead",
+    "_updatedAt": "2026-09-01T06:22:45Z",
+    "city": "",
+    "name": "Quick lead",
+    "phone": "9970546189",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-01T06:22:44.886Z",
+    "remarks": "",
+    "source": "quick-strip",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-19T11:12:50Z",
+    "_id": "drafts.lead-c6a2cba5-01c1-4c91-9b96-b1453fa92168",
+    "_rev": "jLe7hSgM7sILxxhuYnIKYP",
+    "_type": "lead",
+    "_updatedAt": "2026-09-19T11:12:50Z",
+    "city": "",
+    "name": "Quick lead",
+    "phone": "7635030816",
+    "product": "Business Loan",
+    "receivedAt": "2026-09-19T11:12:50.468Z",
+    "remarks": "",
+    "source": "quick-strip",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-08-05T06:23:32Z",
+    "_id": "drafts.lead-dc68af58-5421-4c65-83c4-a0ee1bd65783",
+    "_rev": "dHIt4AvkoimGdzNqYoTkFj",
+    "_type": "lead",
+    "_updatedAt": "2026-08-05T06:23:32Z",
+    "city": "Pune",
+    "name": "CRM Pipe Test (24dev - please ignore)",
+    "phone": "9876540002",
+    "product": "Personal Loan",
+    "receivedAt": "2026-08-05T06:23:32.079Z",
+    "remarks": "Internal integration test of QGenie to CRM pipe - safe to ignore",
+    "source": "qgenie",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-28T06:24:32Z",
+    "_id": "drafts.lead-e27c3c6c-5733-4cba-b6ab-c4dbcf7cb97c",
+    "_rev": "nX4UJtN64XhPlovUgWVkyZ",
+    "_type": "lead",
+    "_updatedAt": "2026-07-28T06:24:32Z",
+    "city": "Alwar",
+    "name": "Soyab Malik",
+    "phone": "9813296698",
+    "product": "Personal Loan",
+    "receivedAt": "2026-07-28T06:24:31.966Z",
+    "remarks": "Emrjancy",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-08-11T12:13:59Z",
+    "_id": "drafts.lead-e2bbe2c8-68c2-4d3a-9a79-114ffc291978",
+    "_rev": "84yru1YmbtjxTzqq0he5FU",
+    "_type": "lead",
+    "_updatedAt": "2026-08-11T12:13:59Z",
+    "city": "Mumbai",
+    "name": "Amit Prakash",
+    "phone": "8080850308",
+    "product": "Education Loan",
+    "receivedAt": "2026-08-11T12:13:59.640Z",
+    "remarks": "",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-10T13:16:24Z",
+    "_id": "drafts.lead-f9fe1557-f2fc-4e68-99e9-26e4ddb4e720",
+    "_rev": "TTr0IfAYvmKfDEO5orw1tb",
+    "_type": "lead",
+    "_updatedAt": "2026-09-10T13:16:24Z",
+    "city": "",
+    "name": "Quick lead",
+    "phone": "7330806440",
+    "product": "Personal Loan",
+    "receivedAt": "2026-09-10T13:16:24.649Z",
+    "remarks": "",
+    "source": "quick-strip",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-28T06:25:24Z",
+    "_id": "drafts.lead-fa7cc93d-67fc-4302-a50e-dd0190b617cc",
+    "_rev": "179kh736VLd2XUiRpzGWFT",
+    "_type": "lead",
+    "_updatedAt": "2026-07-28T06:25:24Z",
+    "city": "Alwar",
+    "name": "Soyab Malik",
+    "phone": "9813296698",
+    "product": "Personal Loan",
+    "receivedAt": "2026-07-28T06:25:24.736Z",
+    "remarks": "Wwisi",
+    "source": "contact-form",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-07-23T10:35:33Z",
+    "_id": "drafts.partnerLead-02ad7ef0-c739-48e2-b205-2fa070deb363",
+    "_rev": "BUA79lrPx3WJwlEv4SDGLa",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-07-23T10:35:33Z",
+    "businessCategory": "Loan Consulting",
+    "category": "LLP",
+    "city": "mumbai",
+    "email": "gh@fh.com",
+    "entityName": "Sk llp",
+    "filesPerMonth": "11–25",
+    "gst": "skip",
+    "leadSources": "Chartered Accountants",
+    "monthlyVolume": "₹50 Lakhs – ₹1 Cr",
+    "name": "bsc",
+    "pan": "aderg6452d",
+    "phone": "9999999999",
+    "products": "Home Loan, LAP, Business Loan",
+    "receivedAt": "2026-07-23T10:35:33.728Z",
+    "state": "mp",
+    "status": "new",
+    "teamSize": "2–5",
+    "tradeName": "qcred",
+    "yearsInBusiness": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-07-25T06:25:23Z",
+    "_id": "drafts.partnerLead-0679b290-5248-43c3-9afa-4c6110794dfd",
+    "_rev": "k57DXB4TxK58qNiTm5PKQ6",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-07-25T06:25:23Z",
+    "businessCategory": "Financial Services Company",
+    "category": "Financial Services Entity",
+    "city": "Mumbai",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-12bd4895314e1e45169c377e6bba7204f052432b-jpg",
+          "_type": "reference"
+        },
+        "label": "Company PAN"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1b9acaec702d51061a907439bff01408920154b7-pdf",
+          "_type": "reference"
+        },
+        "label": "Registration / Incorporation Certificate"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b948adef1354301ee853a9b00c9e6ba7e10480eb-jpg",
+          "_type": "reference"
+        },
+        "label": "GST Certificate"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-543ce1c9804d820ce7125da1c3f9e0fee519fbce-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "amitash@gmail.com",
+    "entityName": "ABC finance Pvt Ltd ",
+    "filesPerMonth": "51–100",
+    "gst": "26AHBCR2876I1zJ",
+    "leadSources": "Walk-ins",
+    "monthlyVolume": "₹5 Cr – ₹10 Cr",
+    "name": "Amit Prakash",
+    "pan": "AHBRR2876I",
+    "phone": "8085450308",
+    "products": "Home Loan, Insurance",
+    "receivedAt": "2026-07-25T06:25:23.344Z",
+    "source": "partner-page",
+    "state": "Maharashtra",
+    "status": "new",
+    "teamSize": "26–50",
+    "tradeName": "ABBC",
+    "yearsInBusiness": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-22T19:56:53Z",
+    "_id": "drafts.partnerLead-102d7086-1eb9-4975-92d6-905f9dbffbfa",
+    "_rev": "pd35FzxfIqoaHCbwKTSHvg",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-22T19:56:53Z",
+    "businessCategory": "Other",
+    "category": "Individual",
+    "city": "Thane",
+    "email": "pradipshegokar9@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Walk-ins, Property Brokers, Builders, Digital Marketing, Referrals, Existing Customers, Corporate Tie-ups",
+    "monthlyVolume": "₹50 Lakhs – ₹1 Cr",
+    "name": "Pradip Gajanan shegokar",
+    "phone": "8308517078",
+    "products": "Supply Chain Finance, LAP, MSME Loan, Home Loan, Business Loan, Wealth Products, Insurance",
+    "receivedAt": "2026-09-22T19:56:53.465Z",
+    "source": "chatbot:partner-onboarding",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-21T17:13:46Z",
+    "_id": "drafts.partnerLead-1d423e1b-5adf-48af-9874-5be13684837e",
+    "_rev": "R8mJaCdk02nUGcjIazOqAp",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-21T17:13:46Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Ghaziabad",
+    "email": "pankajgupta6605@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Digital Marketing",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Pankaj",
+    "phone": "9354111868",
+    "products": "Home Loan, MSME Loan, Insurance",
+    "receivedAt": "2026-09-21T17:13:46.578Z",
+    "source": "chatbot:partner-onboarding",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-17T16:48:11Z",
+    "_id": "drafts.partnerLead-28d729df-311c-4e89-81ea-5d5e644ec7bc",
+    "_rev": "yVUSWpZ5ubAa4jHyiMfPIH",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-17T16:48:11Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Kanpur",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1669906072dbaff708c14465f393d90b91aaafce-png",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      }
+    ],
+    "email": "sahu.avadheshkumar@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Walk-ins, Referrals, Existing Customers",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Awadhesh Kumar Sahu",
+    "phone": "9628184206",
+    "products": "LAP, Business Loan, Home Loan, MSME Loan, Supply Chain Finance, Insurance, Wealth Products",
+    "receivedAt": "2026-09-17T16:48:11.760Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsExperience": "5–10 years"
+  },
+  {
+    "_createdAt": "2026-09-04T02:03:42Z",
+    "_id": "drafts.partnerLead-3084067d-4407-4ef5-b702-d69e0da58786",
+    "_rev": "nXfR47JxO13AdXevvuQE4p",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-04T02:03:42Z",
+    "businessCategory": "Insurance Advisor",
+    "category": "Individual",
+    "city": "Aligarh ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-42e4209102fdc5f11b483497293c3a62217d04e7-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-490a3aad421eaaef6573eb475740711f1d5c2655-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1d22228de364a663c69fc3f684a0ed161c13a7a5-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "karankumar13022008@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Existing Customers",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Karan kumar ",
+    "phone": "7983645749",
+    "products": "Home Loan",
+    "receivedAt": "2026-09-04T02:03:42.805Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsExperience": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-23T05:36:48Z",
+    "_id": "drafts.partnerLead-3199dccb-4243-421c-8968-1328060e0152",
+    "_rev": "pd35FzxfIqoaHCbwKTjfHn",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-23T05:36:48Z",
+    "businessCategory": "Financial Advisor",
+    "category": "Individual",
+    "city": "Sriganganagar ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-d562ebe854706326603b545368f4d3c1d51449a0-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-02916ae67e55decc775df3131f4dea769d090438-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-87b4e56dab4045595fc55b5e911c363e50ecc01d-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "ksmshrmas79@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Digital Marketing, Referrals, Existing Customers",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Kusum",
+    "phone": "6350149257",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Wealth Products, Supply Chain Finance",
+    "receivedAt": "2026-09-23T05:36:48.243Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-14T11:30:42Z",
+    "_id": "drafts.partnerLead-3538fc18-8b12-4094-8b09-764f0eab0d72",
+    "_rev": "YZC3gt9B2ovKDmMC9VfO02",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-14T11:30:42Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Solapur, Maharashtra",
+    "email": "bmhetre199@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Walk-ins",
+    "monthlyVolume": "₹1 Cr – ₹5 Cr",
+    "name": "Basavraj Nagappa Mhetre",
+    "phone": "9637752562",
+    "products": "LAP, Business Loan, Wealth Products, Supply Chain Finance",
+    "receivedAt": "2026-09-14T11:30:42.382Z",
+    "source": "chatbot:partner-onboarding",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-09-22T21:00:02Z",
+    "_id": "drafts.partnerLead-3d8bb80a-5ca7-4680-8ca9-9604dccd28ee",
+    "_rev": "Til0bZMJEUzd2akoHcaReD",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-22T21:00:02Z",
+    "businessCategory": "DSA",
+    "category": "Private Limited Company",
+    "city": "Jabalpur",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1161542eec21f0a314dc5e21d53891288e4ce802-pdf",
+          "_type": "reference"
+        },
+        "label": "Company PAN"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-443314c25bed996cb3549f151c291afdd95aab49-pdf",
+          "_type": "reference"
+        },
+        "label": "Certificate of Incorporation"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-6d0e4ce2c95e6369565d6850f70cdac28368b4a3-pdf",
+          "_type": "reference"
+        },
+        "label": "Board Resolution / Authorization Letter"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3611b907d873b5f49368e0bc49a91a6a0e451c82-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "raikiosk@gmail.com",
+    "entityName": "RAIKIOS SERVICES PRIVATE LIMITED",
+    "filesPerMonth": "26–50",
+    "gst": "23AAICR5862L2ZX",
+    "hasGst": "Yes",
+    "leadSources": "Property Brokers, Digital Marketing, Referrals, Existing Customers, Corporate Tie-ups, Walk-ins, Builders, Chartered Accountants",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "ANURAG RAI",
+    "pan": "AAICR5862L",
+    "phone": "9806191822",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Insurance, Supply Chain Finance",
+    "receivedAt": "2026-09-22T21:00:02.686Z",
+    "source": "partner-page",
+    "state": "MADHYA PRADESH",
+    "status": "new",
+    "teamSize": "2–5",
+    "tradeName": "startpayonline",
+    "yearsInBusiness": "10+ years"
+  },
+  {
+    "_createdAt": "2026-09-08T15:46:17Z",
+    "_id": "drafts.partnerLead-454a131a-56eb-4841-88bf-2e19763a17cc",
+    "_rev": "izqKHkiYODlGt5yibXaI7F",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-08T15:46:17Z",
+    "businessCategory": "DSA",
+    "category": "Proprietorship",
+    "city": "Dhule ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1d29c2b860f8bb88fe1c86f87eb4597b9e58b23c-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card (Proprietor)"
+      }
+    ],
+    "email": "capaxiscorporateadvisory@gmail.com",
+    "entityName": "CapAxis Corporate Advisory Services ",
+    "filesPerMonth": "26–50",
+    "hasGst": "No",
+    "leadSources": "Walk-ins, Property Brokers, Chartered Accountants, Builders, Referrals, Digital Marketing, Existing Customers, Corporate Tie-ups",
+    "monthlyVolume": "Above ₹10 Cr",
+    "name": "Yogesh Patil",
+    "pan": "EVFPP9015N",
+    "phone": "7218736102",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Supply Chain Finance, Insurance, Wealth Products",
+    "receivedAt": "2026-09-08T15:46:16.994Z",
+    "source": "partner-page",
+    "state": "Maharashtra ",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsInBusiness": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-06T05:17:29Z",
+    "_id": "drafts.partnerLead-498c6959-4824-4840-8732-caec9fe36b3d",
+    "_rev": "dFAVSasokFbCybtJSdHjv7",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-06T05:17:29Z",
+    "businessCategory": "DSA",
+    "category": "Financial Services Entity",
+    "city": "Muslim",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5da5c2b1d3b4ab2f1ce2b3ea3efe47e5b578cb25-jpg",
+          "_type": "reference"
+        },
+        "label": "Company PAN"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-057373e7aeaca68677c470e3573506d273170314-png",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "mdnafisanwar2003@gmail.com",
+    "entityName": "Md  Nafis Anwar ",
+    "filesPerMonth": "1–10",
+    "hasGst": "No",
+    "leadSources": "Digital Marketing, Existing Customers, Builders, Property Brokers, Walk-ins, Chartered Accountants, Referrals, Corporate Tie-ups",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Md Nafis Anwar",
+    "pan": "EDDPA9553G",
+    "phone": "9955563191",
+    "products": "Business Loan, Home Loan, LAP, Supply Chain Finance, MSME Loan, Wealth Products",
+    "receivedAt": "2026-09-06T05:17:29.436Z",
+    "source": "partner-page",
+    "state": "Bihar",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsInBusiness": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-16T08:40:55Z",
+    "_id": "drafts.partnerLead-4adc8e3a-8bda-443c-a222-65695c453493",
+    "_rev": "G8XUo5NGq8zUO8V2IHyRW2",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-16T08:40:55Z",
+    "businessCategory": "Loan Consultant",
+    "category": "Individual",
+    "city": "Bangalore",
+    "email": "maktumm0333@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Digital Marketing, Walk-ins",
+    "monthlyVolume": "₹1 Cr – ₹5 Cr",
+    "name": "Maktumsab",
+    "phone": "9742972643",
+    "products": "Home Loan, LAP, Business Loan, Insurance",
+    "receivedAt": "2026-09-16T08:40:55.402Z",
+    "source": "chatbot:partner-onboarding",
+    "status": "new",
+    "teamSize": "6–10",
+    "yearsExperience": "10+ years"
+  },
+  {
+    "_createdAt": "2026-09-10T07:13:45Z",
+    "_id": "drafts.partnerLead-4f57910b-b775-458e-b886-8bc210c97149",
+    "_rev": "PGZhlb2SqMdd7klBIJOc6p",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-10T07:13:45Z",
+    "businessCategory": "Other",
+    "category": "Private Limited Company",
+    "city": "Bangalore",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3edbb92b055ea8f4a210b707cbc0db787e87b3ec-png",
+          "_type": "reference"
+        },
+        "label": "Company PAN"
+      }
+    ],
+    "email": "naveen.dasarathi@gmail.com",
+    "entityName": "CenturianIT",
+    "filesPerMonth": "1–10",
+    "hasGst": "No",
+    "leadSources": "Walk-ins, Referrals, Existing Customers",
+    "monthlyVolume": "Just starting out",
+    "name": "Naveen Dasarathi",
+    "pan": "AANCC1461H",
+    "phone": "9742731558",
+    "products": "Insurance, Wealth Products",
+    "receivedAt": "2026-09-10T07:13:45.535Z",
+    "source": "partner-page",
+    "state": "Karnataka",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsInBusiness": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-13T15:54:58Z",
+    "_id": "drafts.partnerLead-54ff4d59-2d8d-49e9-9313-96fd436ed08b",
+    "_rev": "oqzgrKGMIxFMreVMC6QSx5",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-13T15:54:58Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Yavatmal ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-58c0e29398b397f3eabf2bb2420ed4720e2a5df6-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5958930a4fba8a04fe21b7ebff089862de8de08a-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      }
+    ],
+    "email": "shyamdhavane@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Walk-ins, Digital Marketing, Builders",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Shyam dhavane",
+    "phone": "9011480399",
+    "products": "Business Loan",
+    "receivedAt": "2026-09-13T15:54:58.539Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "50+",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-07-25T05:36:45Z",
+    "_id": "drafts.partnerLead-55c1d1bd-7e4c-4927-afeb-ae60805d42c5",
+    "_rev": "PGI1Mc19xNWwE3RgMrpgPj",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-07-25T05:36:45Z",
+    "businessCategory": "Property Consulting",
+    "category": "Private Limited Company",
+    "city": "MUMBAI",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c8ed71ec974209f0f2a0ce7e860d2734a602fc69-pdf",
+          "_type": "reference"
+        },
+        "label": "Company PAN"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7c2f9d6fb8c57faa43563e988d7249a5b2f0564e-pdf",
+          "_type": "reference"
+        },
+        "label": "Certificate of Incorporation"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3d5726ba0265690d57d98b0d1a7bc9759c359bff-pdf",
+          "_type": "reference"
+        },
+        "label": "MOA"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-acdf54e10600e3f7f21001840201d19090715d06-pdf",
+          "_type": "reference"
+        },
+        "label": "AOA"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-59f72e489420d55649b211232cd38ac012a48433-pdf",
+          "_type": "reference"
+        },
+        "label": "GST Certificate"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1472e7934a3351722029008d423874bcae136606-jpeg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-24b82ef796cd6db1379f09f6224319817bde7268-pdf",
+          "_type": "reference"
+        },
+        "label": "Board Resolution / Authorization Letter"
+      }
+    ],
+    "email": "BSC@GMAIL.COM",
+    "entityName": "Test India Pvt Ltd",
+    "filesPerMonth": "26–50",
+    "gst": "NA",
+    "leadSources": "Property Brokers",
+    "monthlyVolume": "Above ₹10 Cr",
+    "name": "BOBBY",
+    "pan": "ABSDF2345D",
+    "phone": "9967577889",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan",
+    "receivedAt": "2026-07-25T05:36:45.218Z",
+    "source": "partner-page",
+    "state": "MAHARASHTRA",
+    "status": "new",
+    "teamSize": "2–5",
+    "tradeName": "Q",
+    "yearsInBusiness": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-22T10:17:41Z",
+    "_id": "drafts.partnerLead-57c20cdb-170b-4689-83d7-3f23449a4e8f",
+    "_rev": "ZmSY0nLQVDHod8budXaz4d",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-22T10:17:41Z",
+    "businessCategory": "DSA",
+    "category": "Private Limited Company",
+    "city": "PUNE",
+    "email": "velynxprivatelimited@gmail.com",
+    "entityName": "VELYNX PRIVATE LIMITED",
+    "filesPerMonth": "51–100",
+    "gst": "27AAMCV3580B1Z8",
+    "hasGst": "Yes",
+    "leadSources": "Walk-ins, Property Brokers, Corporate Tie-ups, Referrals, Builders, Digital Marketing, Existing Customers",
+    "monthlyVolume": "₹1 Cr – ₹5 Cr",
+    "name": "VIKRANT SAKATE",
+    "pan": "AAMCV3580B",
+    "phone": "9119449992",
+    "products": "MSME Loan, Insurance",
+    "receivedAt": "2026-09-22T10:17:41.571Z",
+    "source": "chatbot:partner-onboarding",
+    "state": "MAHARASHTRA",
+    "status": "new",
+    "teamSize": "26–50",
+    "tradeName": "VELYNX PRIVATE LIMITED",
+    "yearsInBusiness": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-04T17:36:28Z",
+    "_id": "drafts.partnerLead-63fd0366-0433-4d5e-b7f0-50256203c648",
+    "_rev": "nXfR47JxO13AdXevvwIq6N",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-04T17:36:28Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Ramagundam ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5725b2d2ee18882a8b66d39f286102332fcc0f5d-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c7de1f573a8cd01d42b38d864713bd3c9dfc66f7-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-cda1279aee158bdc0805e0f60298a8409bd8e227-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "gurukuntlaraviraj@gmail.com",
+    "filesPerMonth": "26–50",
+    "leadSources": "Walk-ins, Property Brokers, Digital Marketing, Referrals, Existing Customers, Builders, Chartered Accountants, Corporate Tie-ups",
+    "monthlyVolume": "₹50 Lakhs – ₹1 Cr",
+    "name": "Gurukuntla Raviraj",
+    "phone": "8886443414",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Insurance, Supply Chain Finance",
+    "receivedAt": "2026-09-04T17:36:28.433Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-20T14:18:14Z",
+    "_id": "drafts.partnerLead-79cb7cb8-9fe0-4d05-bd0c-309f9330d779",
+    "_rev": "fBrCjNug36o8mO87Sx7bfE",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-20T14:18:14Z",
+    "businessCategory": "Other",
+    "category": "Individual",
+    "city": "Guwahati",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1a8b4cf8ea2945a06ac0ab3563ef8c19119fbf6d-jpeg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-09aa71052abe867d00b91dc551f59f901f642308-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1bd8d14051523544203e3391eade49813737c61b-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "meinkaranmalihu@gmail.com",
+    "filesPerMonth": "100+",
+    "leadSources": "Digital Marketing, Referrals",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Karan Mali",
+    "phone": "8011781238",
+    "products": "Home Loan, Business Loan, LAP, MSME Loan, Supply Chain Finance, Insurance",
+    "receivedAt": "2026-09-20T14:18:14.402Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-17T18:06:19Z",
+    "_id": "drafts.partnerLead-7a08a9a9-2bc4-4787-b92d-977d2bda46ee",
+    "_rev": "ZCDrUBE1iWcZJmJOvMHGSD",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-17T18:06:19Z",
+    "businessCategory": "Other",
+    "category": "Individual",
+    "city": "Guwahati ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1a8b4cf8ea2945a06ac0ab3563ef8c19119fbf6d-jpeg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-09aa71052abe867d00b91dc551f59f901f642308-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1bd8d14051523544203e3391eade49813737c61b-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "meinkaranmalihu@gmail.com",
+    "filesPerMonth": "100+",
+    "leadSources": "Digital Marketing",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Karan Mali",
+    "phone": "8011781238",
+    "products": "Home Loan, Business Loan, Insurance",
+    "receivedAt": "2026-09-17T18:06:19.497Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-24T07:27:10Z",
+    "_id": "drafts.partnerLead-823961b4-52c9-46aa-9cb0-ef5d86a5c4b6",
+    "_rev": "QemagYEAVW6d9yUvw8f6ZT",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-24T07:27:10Z",
+    "businessCategory": "DSA",
+    "category": "Proprietorship",
+    "city": "Shahdol ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-871d689a5fe50203ffb40212be2a7b6a86f6575b-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card (Proprietor)"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4e2c453df6c1f3aa0f4bf74ef6ae2234d7c2c4f1-jpg",
+          "_type": "reference"
+        },
+        "label": "Shop Act Licence / Business Proof"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ce4038141bd63a35360ef7018dedf02e7bb7a500-pdf",
+          "_type": "reference"
+        },
+        "label": "Aadhaar (Proprietor)"
+      }
+    ],
+    "email": "bs8114719@gmail.com",
+    "entityName": "Birendra Singh ",
+    "filesPerMonth": "26–50",
+    "hasGst": "No",
+    "leadSources": "Digital Marketing",
+    "monthlyVolume": "₹1 Cr – ₹5 Cr",
+    "name": "Birendra Singh ",
+    "pan": "GAZPS8448M",
+    "phone": "9340839364",
+    "products": "Home Loan, Business Loan, LAP, MSME Loan, Supply Chain Finance, Wealth Products",
+    "receivedAt": "2026-09-24T07:27:10.382Z",
+    "source": "partner-page",
+    "state": "Madhya pradesh ",
+    "status": "new",
+    "teamSize": "26–50",
+    "yearsInBusiness": "10+ years"
+  },
+  {
+    "_createdAt": "2026-09-18T11:15:18Z",
+    "_id": "drafts.partnerLead-85a581a5-e47e-4be3-b1eb-67280884e03d",
+    "_rev": "YAQPPnsbN3qxLrlToYm7wN",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-18T11:15:18Z",
+    "businessCategory": "Financial Services Company",
+    "category": "Proprietorship",
+    "city": "Jaipur",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-dbbc9c20f56adb517ad4d4bbaa268cf5a6847cba-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card (Proprietor)"
+      }
+    ],
+    "email": "BALVEERRATNU23@GMAIL.COM",
+    "entityName": "CSP DIGITAL CENTRE",
+    "filesPerMonth": "51–100",
+    "gst": "08EBDPR7590J2ZW",
+    "hasGst": "Yes",
+    "leadSources": "Existing Customers, Digital Marketing, Referrals",
+    "monthlyVolume": "Just starting out",
+    "name": "BALVEER SINGH",
+    "pan": "EBDPR7590J",
+    "phone": "9079112710",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Insurance, Wealth Products",
+    "receivedAt": "2026-09-18T11:15:18.157Z",
+    "source": "partner-page",
+    "state": "Rajasthan",
+    "status": "new",
+    "teamSize": "50+",
+    "yearsInBusiness": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-21T19:35:03Z",
+    "_id": "drafts.partnerLead-885da177-195f-4d13-9a63-c2e92928302a",
+    "_rev": "ZmSY0nLQVDHod8budUtr8M",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-21T19:35:03Z",
+    "businessCategory": "Financial Services Company",
+    "category": "Proprietorship",
+    "city": "Faridkot",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-14fbfe0a42c6db3549b1800819e4193950e395d3-pdf",
+          "_type": "reference"
+        },
+        "label": "PAN Card (Proprietor)"
+      }
+    ],
+    "email": "mikkvo01@gmail.com",
+    "entityName": "MIKKVO",
+    "filesPerMonth": "26–50",
+    "gst": "03LSUPS1591R1ZE",
+    "hasGst": "Yes",
+    "leadSources": "Existing Customers, Property Brokers, Builders, Chartered Accountants, Digital Marketing, Corporate Tie-ups, Referrals, Walk-ins",
+    "monthlyVolume": "₹1 Cr – ₹5 Cr",
+    "name": "Dharampreet Singh",
+    "pan": "LSUPS1591R",
+    "phone": "9815424137",
+    "products": "MSME Loan, Supply Chain Finance, Business Loan, Wealth Products, Home Loan, LAP",
+    "receivedAt": "2026-09-21T19:35:03.009Z",
+    "source": "partner-page",
+    "state": "Punjab",
+    "status": "new",
+    "teamSize": "6–10",
+    "tradeName": "MIKKVO",
+    "yearsInBusiness": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-09-21T07:26:46Z",
+    "_id": "drafts.partnerLead-8c269121-1d12-4cb7-a956-465872f2c70d",
+    "_rev": "fBrCjNug36o8mO87Sxu4Tc",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-21T07:26:46Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Harda",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-35df12bfbec59245ed4e45cdf73dc7b7ac91091d-jpeg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-bb683f801681d0073dc862d65bcef0be3199f835-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f3e8a667572bc341f61cf1dd688bae7f7d99cbec-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-6401d9d7b5eee4e3de66a4c08c15ff5ed7719012-jpeg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "mohitmeenadeshwali@gmail.com",
+    "filesPerMonth": "26–50",
+    "leadSources": "Walk-ins, Property Brokers, Builders, Chartered Accountants, Digital Marketing, Referrals, Corporate Tie-ups, Existing Customers",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Mohit Meena",
+    "phone": "8770348734",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Wealth Products, Insurance, Supply Chain Finance",
+    "receivedAt": "2026-09-21T07:26:46.277Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "50+",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-09-23T09:06:42Z",
+    "_id": "drafts.partnerLead-8d9e95e2-ff90-49bb-80a5-24a8e051f291",
+    "_rev": "Til0bZMJEUzd2akoHeBknd",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-23T09:06:42Z",
+    "businessCategory": "Loan Consulting",
+    "category": "Proprietorship",
+    "city": "Mumbai",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-35c0835db3e752cad42e174106f1aee00e1fe458-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card (Proprietor)"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7b4b8ecb46bf180a476cebe088c7ebd9f9710ecb-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar (Proprietor)"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-426b73b03d9f77e6f5224f69f06a943bc05c4791-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "royshubhankar249@gmail.com",
+    "entityName": "JMV financial",
+    "filesPerMonth": "1–10",
+    "hasGst": "No",
+    "leadSources": "Referrals",
+    "monthlyVolume": "₹1 Cr – ₹5 Cr",
+    "name": "Shubhankar roy",
+    "pan": "AJTPR7021E",
+    "phone": "9987090788",
+    "products": "Home Loan, LAP, MSME Loan, Business Loan, Insurance",
+    "receivedAt": "2026-09-23T09:06:42.741Z",
+    "source": "partner-page",
+    "state": "Maharashtra ",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsInBusiness": "10+ years"
+  },
+  {
+    "_createdAt": "2026-09-19T04:25:08Z",
+    "_id": "drafts.partnerLead-94a82759-8084-4178-9373-82074a0e4fcb",
+    "_rev": "iS10sBQXwjmqz8At2P7rSh",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-19T04:25:08Z",
+    "businessCategory": "Other",
+    "category": "Individual",
+    "city": "Sonitpur",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-51d3897478cca71d5bacdd4c25b0136d7932b4c4-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-8a2ddb1c557f978c2008ce7b2ac9092e2e62764a-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7f73f65b8334c48113205fec95229cf21f133c0b-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c9b7dfb9624569c9400726184feee97f1256fd92-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "writetopratim@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Walk-ins, Digital Marketing, Referrals, Existing Customers",
+    "monthlyVolume": "Just starting out",
+    "name": "PRATIM GOSWAMI",
+    "phone": "8486753775",
+    "products": "Home Loan, LAP, Business Loan, Insurance",
+    "receivedAt": "2026-09-19T04:25:08.435Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "10+ years"
+  },
+  {
+    "_createdAt": "2026-09-13T16:00:52Z",
+    "_id": "drafts.partnerLead-9870ce8e-35f1-47e7-9e02-7472ed2c6938",
+    "_rev": "VOfSO31kbJ3qiUlVmUI0vX",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-13T16:00:52Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Yavatmal",
+    "email": "shyamdhavane@gmail.com",
+    "filesPerMonth": "51–100",
+    "leadSources": "Walk-ins, Builders, Digital Marketing",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Shyam vitthal dhavane",
+    "phone": "9011480399",
+    "products": "Business Loan, Home Loan",
+    "receivedAt": "2026-09-13T16:00:52.447Z",
+    "source": "chatbot:partner-onboarding",
+    "status": "new",
+    "teamSize": "50+",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-07-25T11:30:03Z",
+    "_id": "drafts.partnerLead-a2c5e0af-8325-4cde-b474-99341ae77912",
+    "_rev": "k57DXB4TxK58qNiTm5Z39O",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-07-25T11:30:03Z",
+    "businessCategory": "DSA",
+    "category": "LLP",
+    "city": "mumbai",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c8ed71ec974209f0f2a0ce7e860d2734a602fc69-pdf",
+          "_type": "reference"
+        },
+        "label": "LLP PAN"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1b9acaec702d51061a907439bff01408920154b7-pdf",
+          "_type": "reference"
+        },
+        "label": "LLP Incorporation Certificate"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1472e7934a3351722029008d423874bcae136606-jpeg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "bs@gmail.com",
+    "entityName": "Simply",
+    "filesPerMonth": "11–25",
+    "hasGst": "No",
+    "leadSources": "Chartered Accountants, Property Brokers, Digital Marketing",
+    "monthlyVolume": "Above ₹10 Cr",
+    "name": "Ss",
+    "pan": "ABSGH2562D",
+    "phone": "9967577889",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan",
+    "receivedAt": "2026-07-25T11:30:03.220Z",
+    "source": "partner-page",
+    "state": "Maharashtra",
+    "status": "new",
+    "teamSize": "6–10",
+    "tradeName": "Qcred",
+    "yearsInBusiness": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-24T15:53:40Z",
+    "_id": "drafts.partnerLead-a8d293b5-9219-4f24-a6c4-fe7cfd23d9b3",
+    "_rev": "hlhLRnJC2qq7qfNW6emv7j",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-24T15:53:40Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Solapur",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-d05b1a065ae811d487fca99c6ed0862b418615e9-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-83162662ea74f64203ca28415f508e0aedb5c5ec-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-df2c5ae9dc87e0bda474a8c00ecf6b82a242e92e-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "bmhetre199@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Walk-ins, Digital Marketing, Existing Customers, Referrals",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Basavraj Nagappa Mhetre ",
+    "phone": "9637752562",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Insurance, Supply Chain Finance, Wealth Products",
+    "receivedAt": "2026-09-24T15:53:40.184Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-09-13T06:41:43Z",
+    "_id": "drafts.partnerLead-ac9267ad-9f69-4cfc-add4-f72183f92f57",
+    "_rev": "VOfSO31kbJ3qiUlVmTWNyi",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-13T06:41:43Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Saharanpur",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3aa656d755c187d41be32ff645132b85d95760f0-jpeg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-23e21a16eafa3a4a34f422f3bf8d4c5a67cfaa6b-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-d99d834178d029e0d7b5434503af880b4d39200e-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4b8a2e218ad140a700b6f4f593e925cbd66e7b9d-jpeg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "webdeveloping144@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Referrals, Digital Marketing, Chartered Accountants, Walk-ins, Property Brokers, Builders, Existing Customers",
+    "monthlyVolume": "₹50 Lakhs – ₹1 Cr",
+    "name": "Abrar ",
+    "phone": "7505062346",
+    "products": "Business Loan, MSME Loan, Home Loan, LAP",
+    "receivedAt": "2026-09-13T06:41:43.721Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-07T08:44:26Z",
+    "_id": "drafts.partnerLead-accdf008-4822-4d8e-8af6-99739615c9b6",
+    "_rev": "6EJ87NIp0Kc4fxPT5bpgvf",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-07T08:44:26Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "SAHARANPUR",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b7ae515ce0ff128153c960077659ba7a69adee74-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      }
+    ],
+    "email": "Prernaprajapati10691069@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Digital Marketing, Referrals, Corporate Tie-ups",
+    "monthlyVolume": "₹50 Lakhs – ₹1 Cr",
+    "name": "Prerna Kumari Prajapati ",
+    "phone": "8534031069",
+    "products": "Home Loan, LAP, MSME Loan, Business Loan, Supply Chain Finance, Insurance, Wealth Products",
+    "receivedAt": "2026-09-07T08:44:26.295Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-09-23T14:34:52Z",
+    "_id": "drafts.partnerLead-b2733d7a-44d3-4f16-b954-455be5170f51",
+    "_rev": "RAr4Iw85WoHkL7bGq9LE5k",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-23T14:34:52Z",
+    "businessCategory": "Other",
+    "category": "Individual",
+    "city": "kurnool",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2ad310c737853737c9854807162e4e55fe0edf48-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      }
+    ],
+    "email": "shanmuka7073@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Digital Marketing, Walk-ins, Referrals, Existing Customers",
+    "monthlyVolume": "Just starting out",
+    "name": "avula srinivas",
+    "phone": "7569114679",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan",
+    "receivedAt": "2026-09-23T14:34:52.862Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-07-25T06:15:55Z",
+    "_id": "drafts.partnerLead-ba791074-c8a3-4d9b-aae3-3fb757a25c9c",
+    "_rev": "PGI1Mc19xNWwE3RgMruPcl",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-07-25T06:15:55Z",
+    "businessCategory": "Insurance Advisory",
+    "category": "Financial Services Entity",
+    "city": "MUMBAI",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c8ed71ec974209f0f2a0ce7e860d2734a602fc69-pdf",
+          "_type": "reference"
+        },
+        "label": "Company PAN"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ee56cb9c0e0574d5f5b8b88f1f75d06c3f6b44af-pdf",
+          "_type": "reference"
+        },
+        "label": "Registration / Incorporation Certificate"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ee56cb9c0e0574d5f5b8b88f1f75d06c3f6b44af-pdf",
+          "_type": "reference"
+        },
+        "label": "GST Certificate"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1472e7934a3351722029008d423874bcae136606-jpeg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "SP@QCRED.IN",
+    "entityName": "Test",
+    "filesPerMonth": "26–50",
+    "gst": "na",
+    "leadSources": "Builders, Digital Marketing, Chartered Accountants",
+    "monthlyVolume": "₹50 Lakhs – ₹1 Cr",
+    "name": "SP",
+    "pan": "abscr4567h",
+    "phone": "9967577889",
+    "products": "Business Loan",
+    "receivedAt": "2026-07-25T06:15:55.682Z",
+    "source": "partner-page",
+    "state": "MAHARASHTRA",
+    "status": "new",
+    "teamSize": "6–10",
+    "tradeName": "Test A",
+    "yearsInBusiness": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-23T08:04:50Z",
+    "_id": "drafts.partnerLead-bc064a0a-5332-4b3b-b6c0-1e0ce4862eb5",
+    "_rev": "pd35FzxfIqoaHCbwKTrnfr",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-23T08:04:50Z",
+    "businessCategory": "Financial Advisor",
+    "category": "Individual",
+    "city": "Sadulshahar ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-d562ebe854706326603b545368f4d3c1d51449a0-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      }
+    ],
+    "email": "ksmshrmas79@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Digital Marketing, Referrals, Existing Customers",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Kusum",
+    "phone": "6350149257",
+    "products": "Home Loan, Business Loan, LAP, MSME Loan, Wealth Products, Supply Chain Finance",
+    "receivedAt": "2026-09-23T08:04:50.822Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-25T10:01:11Z",
+    "_id": "drafts.partnerLead-cfe9a096-1d33-46c0-a3d3-8106e9e926a6",
+    "_rev": "RAr4Iw85WoHkL7bGqG5z0Y",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-25T10:01:11Z",
+    "businessCategory": "DSA",
+    "category": "Proprietorship",
+    "city": "ANUPSHAHR",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-91a2ef308512c03a9fab8e4bbda473992468383e-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card (Proprietor)"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-92195354ed8ee9bf3ca9fa3bd1b517b6be79b00c-pdf",
+          "_type": "reference"
+        },
+        "label": "Shop Act Licence / Business Proof"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-94188a8d53ea6250f5ca9371a96213dc48b204fa-pdf",
+          "_type": "reference"
+        },
+        "label": "Aadhaar (Proprietor)"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-24fd61c1d6a2de2b62f6e4e69d6bd6954db8b0be-pdf",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "R68230701@GMAIL.COM",
+    "entityName": "RK FINANCE AND SERVICE",
+    "filesPerMonth": "51–100",
+    "hasGst": "No",
+    "leadSources": "Walk-ins, Property Brokers, Builders, Chartered Accountants, Digital Marketing, Referrals, Existing Customers, Corporate Tie-ups",
+    "monthlyVolume": "Above ₹10 Cr",
+    "name": "RINKU",
+    "pan": "FCEPR4426L",
+    "phone": "7982095373",
+    "products": "MSME Loan, Business Loan, LAP, Home Loan, Supply Chain Finance",
+    "receivedAt": "2026-09-25T10:01:10.985Z",
+    "source": "partner-page",
+    "state": "UTTAR PRADESH",
+    "status": "new",
+    "teamSize": "6–10",
+    "yearsInBusiness": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-06T18:39:46Z",
+    "_id": "drafts.partnerLead-d4a2706c-be41-41c6-95ad-e760b49ce674",
+    "_rev": "6EJ87NIp0Kc4fxPT5az20S",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-06T18:39:46Z",
+    "businessCategory": "Other",
+    "category": "Individual",
+    "city": "Mumbai ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c42a8ebc4f4e581c2f8d9c780026fa3436bd09a5-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      }
+    ],
+    "email": "abhishekj1991@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Existing Customers, Digital Marketing",
+    "monthlyVolume": "Just starting out",
+    "name": "Abhishek Jha ",
+    "phone": "9324879843",
+    "products": "LAP, Business Loan, Supply Chain Finance, MSME Loan",
+    "receivedAt": "2026-09-06T18:39:46.229Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsExperience": "10+ years"
+  },
+  {
+    "_createdAt": "2026-09-20T16:25:48Z",
+    "_id": "drafts.partnerLead-dc763492-d15b-4f08-9df9-aa93ec7bc6df",
+    "_rev": "fBrCjNug36o8mO87SxEqTW",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-20T16:25:48Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "JALALABAD",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-32ae202bcf9ebc63d62b7b77d82de9c89b87a67a-jpeg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      }
+    ],
+    "email": "MANJEETSINGHMSK2026@GMAIL.COM",
+    "filesPerMonth": "26–50",
+    "leadSources": "Existing Customers, Walk-ins, Builders, Referrals, Digital Marketing",
+    "monthlyVolume": "Just starting out",
+    "name": "MANJEET SINGH",
+    "phone": "8054051609",
+    "products": "Home Loan, LAP, Business Loan, Insurance, Wealth Products",
+    "receivedAt": "2026-09-20T16:25:48.004Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "11–25",
+    "yearsExperience": "5–10 years"
+  },
+  {
+    "_createdAt": "2026-09-13T16:16:48Z",
+    "_id": "drafts.partnerLead-dc926e65-d56c-4142-ac82-f1178dcb703c",
+    "_rev": "VOfSO31kbJ3qiUlVmUJkP5",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-13T16:16:48Z",
+    "businessCategory": "Other",
+    "category": "Individual",
+    "city": "Hoskote benguluru rural ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-92ea54b422c4db91b481c4117f549c278533b6f2-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      }
+    ],
+    "email": "sudharshanwps6@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Property Brokers, Builders, Digital Marketing, Referrals, Existing Customers",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Sudharshan m",
+    "phone": "8217767014",
+    "products": "Business Loan, MSME Loan",
+    "receivedAt": "2026-09-13T16:16:48.617Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsExperience": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-06T18:01:17Z",
+    "_id": "drafts.partnerLead-df8bc784-6d7d-4886-b57f-5a2ad4105ef0",
+    "_rev": "6EJ87NIp0Kc4fxPT5awnkO",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-06T18:01:17Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "GURGAON",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-432d85845efcdc3bad1afe73f5f63e3d7289b051-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b0b66f7c50ba2915d68f0e8d42840e1f84e5ed30-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-a4ee9c5ac40877f42aa739127f111026633bacac-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "kushwahaajeet867@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Corporate Tie-ups, Existing Customers, Builders, Referrals",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Ajit Kumar ",
+    "phone": "9250315452",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan, Supply Chain Finance",
+    "receivedAt": "2026-09-06T18:01:17.699Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "6–10",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-18T11:30:38Z",
+    "_id": "drafts.partnerLead-e4149d58-40f2-413a-9062-52e614b37b00",
+    "_rev": "LrvI7c0hbxuHvWjaLuml5v",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-18T11:30:38Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "MUMBAI",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2a5dab8086890992f563d25915e3816df11add4a-pdf",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-20f8a85b1d5b4efe76482f201aefba712ecedfcd-pdf",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-20f8a85b1d5b4efe76482f201aefba712ecedfcd-pdf",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5b6038ad32ec09ccd9a3aa5547e34fefaa1129fe-pdf",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "chaitanyay274@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Referrals, Chartered Accountants, Property Brokers, Walk-ins, Digital Marketing, Existing Customers, Corporate Tie-ups",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Chaitanya Yadav",
+    "phone": "8855007768",
+    "products": "Business Loan, MSME Loan, LAP, Home Loan",
+    "receivedAt": "2026-09-18T11:30:38.899Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-09-08T11:25:06Z",
+    "_id": "drafts.partnerLead-e8c9b996-f68b-4c85-a314-b9f8c72ec86e",
+    "_rev": "HSOMLVgQdJvdc6HMUS9GxW",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-08T11:25:06Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Bhind ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-58e5efa5dd962d21fc5107516b66d71e0595895c-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b2e3c69c77428b194293aa1f07d3950d003133f7-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1bce9a54fc672bf6a865cb7330457ebbed314bfc-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "vashurajawat05@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Referrals",
+    "monthlyVolume": "Just starting out",
+    "name": "Arjun Singh Rajawat ",
+    "phone": "7509547037",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan",
+    "receivedAt": "2026-09-08T11:25:05.955Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "Just me",
+    "yearsExperience": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-07-25T05:53:29Z",
+    "_id": "drafts.partnerLead-e9a45e4b-5829-47b0-b7e3-ff5b77372d04",
+    "_rev": "k57DXB4TxK58qNiTm5OYZK",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-07-25T05:53:29Z",
+    "businessCategory": "Other",
+    "category": "LLP",
+    "city": "Mumbai",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-e89b97c579580d2df000475e8cc20125923b0f2e-jpg",
+          "_type": "reference"
+        },
+        "label": "LLP PAN"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0a9b80ab221843de8a99c2d2d38bb87214ed3e4d-pdf",
+          "_type": "reference"
+        },
+        "label": "LLP Incorporation Certificate"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ea5af373316c6e21b7fbc26a2a319dc1921df84a-pdf",
+          "_type": "reference"
+        },
+        "label": "GST Certificate"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-12bd4895314e1e45169c377e6bba7204f052432b-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled Cheque"
+      }
+    ],
+    "email": "amitdpraash@gmail.com",
+    "entityName": "Sunflower  LLP ",
+    "filesPerMonth": "11–25",
+    "gst": "27ABC9817N1zj",
+    "leadSources": "Existing Customers",
+    "monthlyVolume": "Above ₹10 Cr",
+    "name": "Amit Prakash",
+    "pan": "ABCDE9817N",
+    "phone": "8080860308",
+    "products": "Home Loan, LAP, Business Loan",
+    "receivedAt": "2026-07-25T05:53:29.371Z",
+    "source": "partner-page",
+    "state": "Maharashtra",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsInBusiness": "Less than 1"
+  },
+  {
+    "_createdAt": "2026-09-23T05:33:42Z",
+    "_id": "drafts.partnerLead-ebb993bf-d122-4a5e-8f75-840dc6252ff3",
+    "_rev": "H3YD8BMIdWPjd317GrptJr",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-23T05:33:42Z",
+    "businessCategory": "Financial Advisor",
+    "category": "Individual",
+    "city": "Sriganganagar",
+    "email": "ksmshrmas79@gmail.com",
+    "filesPerMonth": "1–10",
+    "leadSources": "Digital Marketing, Referrals, Existing Customers",
+    "monthlyVolume": "Below ₹50 Lakhs",
+    "name": "Kusum",
+    "phone": "6350149257",
+    "products": "MSME Loan, Supply Chain Finance, Business Loan, LAP, Home Loan, Wealth Products",
+    "receivedAt": "2026-09-23T05:33:42.018Z",
+    "source": "chatbot:partner-onboarding",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "3–5 years"
+  },
+  {
+    "_createdAt": "2026-09-04T17:04:14Z",
+    "_id": "drafts.partnerLead-ebfc3be3-2d54-45b5-887d-ce6b528129d1",
+    "_rev": "6EJ87NIp0Kc4fxPT5VX0IW",
+    "_type": "partnerLead",
+    "_updatedAt": "2026-09-04T17:04:14Z",
+    "businessCategory": "DSA",
+    "category": "Individual",
+    "city": "Muzaffarnagar ",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-6168106bb8f60611203452c76fcd9f3d6c34bb6c-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-52ac6f0334f913c2ba5264c2964b1021d124726d-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Front"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-be481717e4e6e05a09c2a20a506dca488fa45749-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar — Back"
+      }
+    ],
+    "email": "rana214354@gmail.com",
+    "filesPerMonth": "11–25",
+    "leadSources": "Walk-ins, Existing Customers, Referrals",
+    "monthlyVolume": "Just starting out",
+    "name": "Mohd Suhail ",
+    "phone": "8937051944",
+    "products": "Home Loan, LAP, Business Loan, MSME Loan",
+    "receivedAt": "2026-09-04T17:04:14.036Z",
+    "source": "partner-page",
+    "status": "new",
+    "teamSize": "2–5",
+    "yearsExperience": "1–3 years"
+  },
+  {
+    "_createdAt": "2026-09-13T10:09:34Z",
+    "_id": "employeeLead-0a77ef3b-5984-44e3-ba43-a064dd729504",
+    "_rev": "jITbevOCTIorBgoUCWGRMw",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-13T10:09:34Z",
+    "bloodGroup": "Don't know",
+    "city": "MUMBRA",
+    "currentAddress": "ROOM NO 103/1 ABDULLAH APARTMENT DEVRIPADA HASMAT CHOWK KAUSA MUMBRA THANE",
+    "dob": "2000-12-13",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1a946140fcdc6749d9cc41e2a1d92021521d0061-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5c8fb3613d3c3f6a1cb050edb87fc598f4cc7f5f-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-343371e3314645fb0a7aa266ab8cd6791973c25c-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-be1a322cd90184d7e2523c58b85a8e0eea86f3ce-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-186c42a2763bd9bfb28722da87f527fa0386b257-jpg",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b408742941e9bc60e3cc7b51371d595c979d5dd4-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-e3c6320a337bd81d0130e77e13b7cba1d3875cca-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-aa66a37df3f6caf4cfc78b5992996cd2952274b4-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "sharifmdnawaz76@gmail.com",
+    "emergencyName": "ARSHI FATIMA",
+    "emergencyPhone": "9820275063",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "Md Nawaz Sharif ",
+    "pan": "LAWPS3763F",
+    "permanentAddress": "ROOM NO 103/1 ABDULLAH APARTMENT DEVRIPADA HASMAT CHOWK KAUSA MUMBRA THANE",
+    "phone": "8873001389",
+    "pin": "400612",
+    "receivedAt": "2026-09-13T10:09:33.820Z",
+    "sameAddress": "no",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T12:01:13Z",
+    "_id": "employeeLead-16e4ace7-27df-41cf-a9ae-64e84841dbf3",
+    "_rev": "VOfSO31kbJ3qiUlVmRomAq",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T12:01:13Z",
+    "bloodGroup": "AB+",
+    "city": "Thane",
+    "currentAddress": "Room no 306, Sai paradise building, Mumbra Devi colony road near st.mary school diva east",
+    "dob": "1990-10-08",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9f456c139e97866c55b9e6145c1706852c1ccf32-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-28dd321e44f2bc487b6a7796f00f99bc373b6eac-pdf",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-dc2ceadd3a2f29e912c3c3c9f2922e3f924daa50-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5d98ec35d4c39d0c3479ac5c16f4f88145a916a1-pdf",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1a522f42d6e03a15d61b02d3795f03c74c73aeb4-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-e23446383a234e91be6a5e83fa279990749be928-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-e23446383a234e91be6a5e83fa279990749be928-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-e23446383a234e91be6a5e83fa279990749be928-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "rajeshsingh1425394@gmail.com",
+    "emergencyName": "Kumari PUSHPANJALI ",
+    "emergencyPhone": "9341893838",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Rajesh Kumar kritinarayan singh ",
+    "pan": "CQEPK3484E",
+    "permanentAddress": "Room no 306, Sai paradise building, Mumbra Devi colony road near st.mary school diva east",
+    "phone": "8976163173",
+    "pin": "400612",
+    "receivedAt": "2026-09-12T12:01:13.383Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T11:26:32Z",
+    "_id": "employeeLead-1908e9db-9844-42eb-8e6d-5011593246de",
+    "_rev": "jITbevOCTIorBgoUCU8mdm",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T11:26:32Z",
+    "bloodGroup": "A+",
+    "city": "Kalyan",
+    "currentAddress": "Flat no 301 3rd floor B wing shree samarth Apt chinchpada gaon nr pandit Nagari opp church Kalyan east ",
+    "dob": "1991-05-02",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3d0ca22492b676777b3333292522d42b26e082a1-pdf",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9b58848302f274c8b2d18965e3f5621e626b2198-pdf",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-479e092bd11d0f24681b5b2b26dd4199fc8dfda3-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f1d8b55b663c471f0e8d08e8ff47cf36e0f2e87d-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7dd161c3790b8c6fa9cefe4303c755a350ffb70c-jpg",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-a067ad60fda2b3645ba6b8d0b42e61e5c3b25461-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4445f51398f952782348e99f37d5fb36ded4acf4-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4445f51398f952782348e99f37d5fb36ded4acf4-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "manishs128@yahoo.com",
+    "emergencyName": "Suman shukla ",
+    "emergencyPhone": "9870246903",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Manish kumar Shukla",
+    "pan": "CIUPS5189L",
+    "permanentAddress": "Flat no 301 3rd floor B wing shree samarth Apt chinchpada gaon nr pandit Nagari opp church Kalyan east ",
+    "phone": "8976734089",
+    "pin": "421306",
+    "receivedAt": "2026-09-12T11:26:31.950Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-13T09:35:29Z",
+    "_id": "employeeLead-1ac21499-950c-4e88-a5a5-4ee9e0fab93c",
+    "_rev": "VOfSO31kbJ3qiUlVmTnBYY",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-13T09:35:29Z",
+    "bloodGroup": "AB+",
+    "city": "Thane ",
+    "currentAddress": "RM No 12 Jai Laxmi Soc Samata Niwas Hanuman Nagar wagle Bus Depo Thane West ",
+    "dob": "2006-08-20",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-294437d3fdf55e038901a821b3e24e70667ae1ca-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-485b6d7e04b0812ad2541e039f790cd6475faebc-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4f6d28e953e4fd0843079adcd7c6df90839838fa-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-92b3c51bb78cae714a96cb35b469b9277be839d6-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "nikhil.n.prajapati@gmail.com",
+    "emergencyName": "9324880445",
+    "emergencyPhone": "9324880445",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Nikhil Nilesh Praj5",
+    "pan": "INBPP7178A",
+    "permanentAddress": "RM No 12 Jai Laxmi Soc Samata Niwas Hanuman Nagar wagle Bus Depo Thane West ",
+    "phone": "7021068072",
+    "pin": "400604",
+    "receivedAt": "2026-09-13T09:35:29.120Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T10:22:42Z",
+    "_id": "employeeLead-303b1d20-a456-4a6a-aafb-9deacba94ca7",
+    "_rev": "VOfSO31kbJ3qiUlVmRdPUf",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T10:22:42Z",
+    "bloodGroup": "AB+",
+    "city": "Mumbai ",
+    "currentAddress": "A201, Mangaldeep Chs\nSubhash lane\nKandivali west",
+    "dob": "1979-12-14",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ce6429ca0226dd48cb4b3887b5b59c013e1442fa-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4c776ab4be6f2cd77b88a2287e4a58a9037bf1f4-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-6898b1c4c5c1f86704d80aa8e68c8515f6cff616-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3d1c1e12b5c1692b2b07114f504c62ec602d5973-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-22ac880e2c331100a6ad6c6e4bf453bd8d06bf9b-jpg",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      }
+    ],
+    "email": "punit.rughani@gmail.com",
+    "emergencyName": "Shirley Sathian ",
+    "emergencyPhone": "9833042992",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Punit Haridas Rughani ",
+    "pan": "AEZPR7565J",
+    "permanentAddress": "A201, Mangaldeep Chs\nSubhash lane\nKandivali west",
+    "phone": "9820594341",
+    "pin": "400067",
+    "receivedAt": "2026-09-12T10:22:42.353Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-13T10:33:39Z",
+    "_id": "employeeLead-3ef4af5e-bdec-41ca-86d3-c14690959eef",
+    "_rev": "jITbevOCTIorBgoUCWHMag",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-13T10:33:39Z",
+    "bloodGroup": "O+",
+    "city": "Kalyan",
+    "currentAddress": "B-205, Sai Aashish, Behind Kohinoor Eden, Kalyan-East\nPin code-421306",
+    "dob": "1982-10-24",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-49bd0b1704c9769271703982fdb21e42329c513f-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-33b43f819a85ef93c641c18cf80a5160ec4e70ec-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5fc97a76cbcb8fe44b934aae43ea040f5a599367-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2ec644ef0bf1e191b00b9527cc3e49ae0c472857-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "rajhypr18@gmail.com",
+    "emergencyName": "Nivedita Prajapati",
+    "emergencyPhone": "7045984044",
+    "emergencyRelation": "Child",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Rajkumar Prajapati",
+    "pan": "BAIPP5076Q",
+    "permanentAddress": "3/212, Binakumari Soc., MP road, Behind RPF, Mulund-East-400081",
+    "phone": "7895007818",
+    "pin": "421306",
+    "receivedAt": "2026-09-13T10:33:39.167Z",
+    "sameAddress": "no",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T11:15:10Z",
+    "_id": "employeeLead-41e07976-c560-4c83-9ae3-53715290898e",
+    "_rev": "oqzgrKGMIxFMreVMC4Jm6s",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T11:15:10Z",
+    "bloodGroup": "Don't know",
+    "city": "Titwala East",
+    "currentAddress": "1/3, Balyani Tekadi, Vaishno Mata Mandir, Near Dubey College,\nTitwala East-421605",
+    "dob": "2000-12-25",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-79419c007ede53e1f966cc54860ac28252c334d5-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0fdc07259da4c957a64df2fa28dc4d1e71f61001-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-aa9edd3c90f4633aaf33a9fff9d7d07774be058b-png",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-75e0a5a911f9878be6f1c1b600f1ecab21215129-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-522a70fc06e456fd133edad5ff578e0a60309186-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0dcd88d7e2d1109d66bba80db49ea029e35cd0f7-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-523ac12d87e3cd5603420f36ccd77388e5654618-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-75054222d01ae0ea3ed0000d16d392f79cffb8de-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "bssindia.bhadohi@gmail.com",
+    "emergencyName": "Pushpraj ",
+    "emergencyPhone": "9984139249",
+    "emergencyRelation": "Other",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "KALRAJ MISHRA ",
+    "pan": "FDRPM0492K",
+    "permanentAddress": "1/3, Balyani Tekadi, Vaishno Mata Mandir, Near Dubey College,\nTitwala East-421605",
+    "phone": "9559248956",
+    "pin": "421605",
+    "receivedAt": "2026-09-12T11:15:10.622Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-15T06:49:20Z",
+    "_id": "employeeLead-4ad55c7c-7902-4590-b034-76f14f444b60",
+    "_rev": "rUX3I5BNz7LQf8rTWeoLTN",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-15T06:49:20Z",
+    "bloodGroup": "AB+",
+    "city": "Mumbai",
+    "currentAddress": " Room No - 302, 2 nd Floor, Budhajii Smruti, Sagaon, Manpada Road, Dombivali East - 421201",
+    "dob": "1979-09-14",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-d81fba25fd92009a3e7427d86e84c7562f06a8ca-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-e5072350d3bb0303c73981b063790615a60ee1f3-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9c43d71da3f895d7057c73f0482e4ffc77ce4951-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-91bd9e3b06d6aa19963a24ee36c0df08e14e632f-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-593d0c77b442b337ec80c7f94f855666bf9a41f1-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3969c42dabf8cd0974dfa1c61372aeb18d6ac0c8-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3969c42dabf8cd0974dfa1c61372aeb18d6ac0c8-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3969c42dabf8cd0974dfa1c61372aeb18d6ac0c8-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "devrajsalvi1978@gmail.com",
+    "emergencyName": "9768013120",
+    "emergencyPhone": "9137794470",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "Devraj Atmaram Salvi ",
+    "pan": "DUBPS4649B",
+    "permanentAddress": "1301, 13 th Floor, Shrisai Shivshahi Co Op Hsg Soc, Sadanand Hasu Tandel Marg, Century Bazar, Prabhadevi",
+    "phone": "9082326636",
+    "pin": "400030",
+    "receivedAt": "2026-09-15T06:49:20.076Z",
+    "sameAddress": "no",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-11T16:31:57Z",
+    "_id": "employeeLead-4e7bae40-6871-422d-bc81-90b49050c75f",
+    "_rev": "VOfSO31kbJ3qiUlVmQM6nI",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-11T16:31:57Z",
+    "bloodGroup": "B-",
+    "city": "Mumbai ",
+    "currentAddress": "404 Whispering Woods CHS Powai Mumbai Maharashtra India m",
+    "dob": "2000-09-11",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-8ee08588685af08690573ed398524313e6be93f4-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-8ee08588685af08690573ed398524313e6be93f4-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-a84e8d3eaf9fa6a46fbe2038b0ee063194877316-png",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-8ee08588685af08690573ed398524313e6be93f4-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4700e163662a5d52b520764d750717679999f48d-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-beb46bfd1c25a360a9f113fddd3e915cc5ce2954-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4700e163662a5d52b520764d750717679999f48d-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-beb46bfd1c25a360a9f113fddd3e915cc5ce2954-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "bsc02728@gmail.com",
+    "emergencyName": "Dhananjay Shetty",
+    "emergencyPhone": "9967577886",
+    "emergencyRelation": "Friend",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "Bobby Singh Chandel",
+    "pan": "ADCPC2792C",
+    "permanentAddress": "404 Whispering Woods CHS Powai Mumbai Maharashtra India m",
+    "phone": "9967577889",
+    "pin": "400076",
+    "receivedAt": "2026-09-11T16:31:56.911Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-24T04:56:09Z",
+    "_id": "employeeLead-4e89b21d-ce5b-40f7-9697-569acfd3be59",
+    "_rev": "hlhLRnJC2qq7qfNW6cE6vD",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-24T04:56:09Z",
+    "bloodGroup": "A+",
+    "city": "Mumbai ",
+    "currentAddress": "Flat no. 006 ground floor bldg no. 19/h1 shree ganesh chs.Ltd. Sangharsh nagar Chandivali andheri east ",
+    "dob": "1988-06-01",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-887f8df1995956a423850f3d377caf288e0e55f9-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4ae439a45a78d52b9135ae0236a894616dc4d2bd-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f6bd8f64ce310d99f4e1e981bea1b1e756fa444b-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4e0de208839dd8c66ff0465b482675787c8eaa8c-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "raviverma98191@gmail.com",
+    "emergencyName": "Ragini Ravi verma",
+    "emergencyPhone": "8108878378",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Ravi R Verma",
+    "pan": "BKLPK7853B",
+    "permanentAddress": "Flat no. 006 ground floor bldg no. 19/h1 shree ganesh chs.Ltd. Sangharsh nagar Chandivali andheri east ",
+    "phone": "9967906691",
+    "pin": "400072",
+    "receivedAt": "2026-09-24T04:56:08.891Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-26T12:27:32Z",
+    "_id": "employeeLead-50a41dfe-a9e1-4ce8-bb05-538f7a4d92ae",
+    "_rev": "RAr4Iw85WoHkL7bGqJZs9u",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-26T12:27:32Z",
+    "bloodGroup": "A+",
+    "city": "Varanasi ",
+    "currentAddress": "Room no 51 elite housing CHS Building no4 sardar Nagar sionkholiwada 400037",
+    "dob": "1997-07-05",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ede3802f3c98f68b837c59dcb86d20e6e3aae726-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4f7c75f082b6f34a4c73c9487a5e05cfefe885d9-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-92c2348e164c8392d18beaf782245a094e2af934-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-d292db1c059e4c913b9c84feea6189d98fe0d3ab-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "Mishrarohitmishra0542@gmail.com",
+    "emergencyName": "+91 88501 82623",
+    "emergencyPhone": "8850182623",
+    "emergencyRelation": "Relative",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Rohit Mishra ",
+    "pan": "DFVPM7082F",
+    "permanentAddress": "Village  bunchi post rajpur varanasi ",
+    "phone": "9140082610",
+    "pin": "221202",
+    "receivedAt": "2026-09-26T12:27:32.539Z",
+    "sameAddress": "no",
+    "source": "employee-page",
+    "state": "Uttar Pradesh",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-16T08:47:51Z",
+    "_id": "employeeLead-5c0ce87e-43c1-45ea-adb0-ac3f9c7c52eb",
+    "_rev": "lnB0qlaDS5FEZXt2c9QKEM",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-16T08:47:51Z",
+    "bloodGroup": "A+",
+    "city": "Bhiwandi ",
+    "currentAddress": "Flat no.15 2nd floor near varalaxmi Shankar hotel sonar pada Ganesh takies padma Nagar Bhiwandi ",
+    "dob": "1985-03-23",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-29f298c64d95222fbc7aba1f455fff24e941e2ac-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4d554d20354bd9df4565143cc724a698bbe22632-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-a6387b960af42c0ec3f769fe6739ee2057337c50-jpeg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-e96151cec17e2591bf8f426c68e362a5df425674-pdf",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "Sugreevb375@gmail.com",
+    "emergencyName": "Priya",
+    "emergencyPhone": "8922098179",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Afbpv0113p",
+    "pan": "AFBPV0113P",
+    "permanentAddress": "Flat no.15 2nd floor near varalaxmi Shankar hotel sonar pada Ganesh takies padma Nagar Bhiwandi ",
+    "phone": "8530477326",
+    "pin": "421305",
+    "receivedAt": "2026-09-16T08:47:51.144Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T11:35:20Z",
+    "_id": "employeeLead-5cd86908-4bc9-4503-a94e-6e9e1abcefcb",
+    "_rev": "jITbevOCTIorBgoUCU9l1m",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T11:35:20Z",
+    "bloodGroup": "O+",
+    "city": "Thane ",
+    "currentAddress": "Flat no-204 prince apartment malang road adivali dokali kalyan east near anjanabai garden ",
+    "dob": "1988-10-27",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-af771797a70b65797adc8cdfdd59b9903db21bfa-pdf",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9b10c9fe76dbb8d8f30357441d3d79987d88466c-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2d0e55be33acd26bf9867aabbfe960cb441df490-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-29505ded361af3a7e32fe0c06902c940764180c1-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-662db1b8343de0b7b000c6f62c5ba7c4bda70462-jpg",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ac76196076d3d82ea279f3fef9e4f0ce439a347a-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-827dde7f361101e7d470116391dc7c1876c2aab3-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4f62fb23689dc590a61739e40ff7a3f453372afa-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "amitstiwari4444@gmail.com",
+    "emergencyName": "Shivani Tiwari",
+    "emergencyPhone": "9651883381",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "Amit kumar tiwari ",
+    "pan": "ANZPT7419E",
+    "permanentAddress": "Flat no-204 prince apartment malang road adivali dokali kalyan east near anjanabai garden ",
+    "phone": "9987904621",
+    "pin": "421306",
+    "receivedAt": "2026-09-12T11:35:20.031Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-27T06:29:42Z",
+    "_id": "employeeLead-65418dcd-a851-44a8-8ffa-b3094593971c",
+    "_rev": "QemagYEAVW6d9yUvwM2OCt",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-27T06:29:42Z",
+    "bloodGroup": "O+",
+    "city": "Thane",
+    "currentAddress": "Vikram Singh chawl Nalpada pipe line Kapudbawdi thane wast ",
+    "dob": "2001-02-20",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7135ba7c43bf10da28c36fa4b086e710e666027f-jpeg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2667ca6d12aa5959783193799c7e68a8709188ae-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-915e9885a04974c26a17f90ff0f2f5d979cc6c3c-jpeg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-68d8cfe225ca6e3dc5875a8fec4e6207a962bf7a-jpeg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "yogeshyaduvanshi0720@gmail.com",
+    "emergencyName": "Umesh yadav",
+    "emergencyPhone": "7700901616",
+    "emergencyRelation": "Parent",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "YOGESH RAJKUMAR YADAV",
+    "pan": "BBAPY0472J",
+    "permanentAddress": "Vikram Singh chawl Nalpada pipe line Kapudbawdi thane wast ",
+    "phone": "9987400600",
+    "pin": "400601",
+    "receivedAt": "2026-09-27T06:29:42.162Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-15T08:14:02Z",
+    "_id": "employeeLead-68211690-f8c9-433c-96dd-fae276562587",
+    "_rev": "ykhPml3pKjIN8LwEgdNPvI",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-15T08:14:02Z",
+    "bloodGroup": "O+",
+    "city": "Thane",
+    "currentAddress": "701 C Wing 7th Floor Gaurav Residency Phase 1 CHSL,\nMira Bhayandar Road, Nr. Beverly Park, Mira Road 401107.",
+    "dob": "1991-07-22",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b376e4d1dbe16041841a6df9ca107c054e8dd147-pdf",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-886cf7c142c5e057f5559fc285e954f2ed375d21-png",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-821dab18d0027fc3b0ac188f482626df84268835-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4947620a315c7e7c63c7dc89a7d5fc96a94e7765-pdf",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b376e4d1dbe16041841a6df9ca107c054e8dd147-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b376e4d1dbe16041841a6df9ca107c054e8dd147-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4947620a315c7e7c63c7dc89a7d5fc96a94e7765-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4947620a315c7e7c63c7dc89a7d5fc96a94e7765-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "ganeshlal.pundot@gmail.com",
+    "emergencyName": "Bhairu Lal pundot",
+    "emergencyPhone": "9920460376",
+    "emergencyRelation": "Parent",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "GANESH LAL PUNDOT",
+    "pan": "AREPP2345N",
+    "permanentAddress": "701 C Wing 7th Floor Gaurav Residency Phase 1 CHSL,\nMira Bhayandar Road, Nr. Beverly Park, Mira Road 401107.",
+    "phone": "8850458269",
+    "pin": "401107",
+    "receivedAt": "2026-09-15T08:14:02.010Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T11:31:40Z",
+    "_id": "employeeLead-70e5c11a-352b-4368-b185-7b3aba41e335",
+    "_rev": "oqzgrKGMIxFMreVMC4LFUB",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T11:31:40Z",
+    "bloodGroup": "B+",
+    "city": "Mumbai ",
+    "currentAddress": "Liana C 904, Lodha Primier,\nDombivli East 421204",
+    "dob": "1973-02-06",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c9b5063b6c0617601c5f2adb5639165dd4fc03f7-pdf",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9cf00a1b6d421b0063515e4097fe75445ddaa38a-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-81c8dac43b4f25c8ffc1b08e32da84aece6dfb26-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f852e94182ca9a7250ecafbd51c7a0e63254405a-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-74957c90655b430e7d0665ca07beb53b2734e073-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-71007702ebd86e712dcdc6678ede4241a218cbed-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5f65bfbf110d6b640a839cf53b75877f90a8d35c-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-504bd25b68a1b4c7fc8bfc4acbc43d7028507811-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "mshukla1984@gmail.com",
+    "emergencyName": "Bharti Shukla ",
+    "emergencyPhone": "9867110766",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Manoj Shriniwas Shukla ",
+    "pan": "BXLPS2502N",
+    "permanentAddress": "2/1 Kalidin Tiwari Chawl \nDatta Mandir Road Bhandup West \nMumbai 400078",
+    "phone": "9029801155",
+    "pin": "400078",
+    "receivedAt": "2026-09-12T11:31:40.594Z",
+    "sameAddress": "no",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T12:26:48Z",
+    "_id": "employeeLead-84a77493-0dcb-473e-9cb4-ab7abcbb369e",
+    "_rev": "oqzgrKGMIxFMreVMC4PfAN",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T12:26:48Z",
+    "bloodGroup": "O+",
+    "city": "Ludhiana",
+    "currentAddress": "H No B-25, 261/5\nGuru Sagar Vihar \nSalem Tabri",
+    "dob": "1975-11-28",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f37016128339af62754cfa8b377cc96bff65a98d-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7b9bd4caabc38d8efbbe17a2d3c14bc71579b1b7-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4784e96f66d1f69afb430a4e18dd19b055ac53ac-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-99c4d2e59a10d77bccfa87a845158631ace63b64-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0c3573115fa178edd9c8d96e812c0d870ff3579c-jpg",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0c3573115fa178edd9c8d96e812c0d870ff3579c-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9bd129d766eff53dee602333f0cf7801fc0d2bb2-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9bd129d766eff53dee602333f0cf7801fc0d2bb2-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "Arora.kuljeet@gmail.com",
+    "emergencyName": "Narinder Kaur ",
+    "emergencyPhone": "9988990122",
+    "emergencyRelation": "Parent",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "Kuljeet Singh Arora ",
+    "pan": "AGVPA2087N",
+    "permanentAddress": "H No B-25, 261/5\nGuru Sagar Vihar \nSalem Tabri",
+    "phone": "9592178629",
+    "pin": "141008",
+    "receivedAt": "2026-09-12T12:26:48.764Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Punjab",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-15T06:59:14Z",
+    "_id": "employeeLead-902fb942-aade-4cc6-811d-1a150c6f11a0",
+    "_rev": "ykhPml3pKjIN8LwEgdCubs",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-15T06:59:14Z",
+    "bloodGroup": "AB-",
+    "city": "Thane ",
+    "currentAddress": "Indira Nagar Rupa devi NO 2 Rd 33 Wagle estate Thane w ",
+    "dob": "2006-04-02",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0822b31748b369b3fed1f4955f9ca69aabea2ecd-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2f5673a1f837c00e73a8eba6a705afa999e5f47c-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-b9da1bf3598d9e94dec7008ad62868b57562b842-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5cc5bccdbcde9f784fdaf271f2903ecb008d822b-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "mouryano1@gmail.com",
+    "emergencyName": "Dharmendra mourya",
+    "emergencyPhone": "9987996327",
+    "emergencyRelation": "Parent",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Avinash Dharmendra Mourya ",
+    "pan": "JNNPM4736E",
+    "permanentAddress": "Indira Nagar Rupa devi NO 2 Rd 33 Wagle estate Thane w ",
+    "phone": "9004047879",
+    "pin": "400604",
+    "receivedAt": "2026-09-15T06:59:14.449Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-15T06:52:38Z",
+    "_id": "employeeLead-ac87c79d-7b91-4a2a-903d-d974605cf525",
+    "_rev": "E4bnejbhjnfCHU5VQcECTf",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-15T06:52:38Z",
+    "bloodGroup": "B+",
+    "city": "Mumbai",
+    "currentAddress": "Room no 1705 17th floor Rajiv Gandhi co op hsg society sm road sion Koliwada sion 400037",
+    "dob": "1982-03-13",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-a36cf9465bc375bdd5d6218533588bd6c34db096-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-427110e26dd8e163a208e7f67cf83f4969f5699e-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-66ce3588405704b9695e1a803b9c9caf1a1c1485-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-df8bc98fb8ace15d108371f2ec293f0b0aaf07e1-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "lakshmandevendra123@gmail.com",
+    "emergencyName": "Sangee",
+    "emergencyPhone": "7666872800",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Lakshmanan Arumugam Devendra",
+    "pan": "BOBPD2792E",
+    "permanentAddress": "Room no 1705 17th floor Rajiv Gandhi co op hsg society sm road sion Koliwada sion 400037",
+    "phone": "8691976760",
+    "pin": "400037",
+    "receivedAt": "2026-09-15T06:52:38.396Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-15T07:42:37Z",
+    "_id": "employeeLead-b59ff08e-425e-4768-a079-52be1a40aa08",
+    "_rev": "rUX3I5BNz7LQf8rTWeu1lD",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-15T07:42:37Z",
+    "bloodGroup": "B+",
+    "city": "Mumbai ",
+    "currentAddress": "176 kadam pada CHS. Dr.R.P.Road Mulund West Mumbai ",
+    "dob": "1976-12-11",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-28bf8ade65d4a03c6de1bc2f83772c53692e8752-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0e8c4c4d5c11935c8377152bae248d04e0626e90-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-131f8ad7160c4cfd864080d22a51a015083801f9-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f9f6d2821ee581336e97991f7369d456bfa5a291-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-befd6aa72a4143f40a7aaa6e1a9ccab93961d3fa-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-befd6aa72a4143f40a7aaa6e1a9ccab93961d3fa-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-befd6aa72a4143f40a7aaa6e1a9ccab93961d3fa-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "writesuraj12@gmail.com",
+    "emergencyName": "Lata Suraj Chauhan ",
+    "emergencyPhone": "8928295140",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Suraj Kumar p chauhan ",
+    "pan": "ANLPC9359J",
+    "permanentAddress": "176 kadam pada CHS. Dr.R.P.Road Mulund West Mumbai ",
+    "phone": "8850068312",
+    "pin": "400080",
+    "receivedAt": "2026-09-15T07:42:37.117Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-13T02:03:29Z",
+    "_id": "employeeLead-bff5e0b0-3779-49b6-a018-361563f7dca0",
+    "_rev": "oqzgrKGMIxFMreVMC5XmSB",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-13T02:03:29Z",
+    "bloodGroup": "O+",
+    "city": "Thane",
+    "currentAddress": "Flat no 208, B wing, Nath apartment, Diva east , thane 400612",
+    "dob": "1985-07-04",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-164e8e6be628c8b6e5f6124761250155da748fff-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-00edf1daa2b008cffe8e1bb4312379e46cb22c40-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-71061afe032174e8d9454a52ffb063ebc57b21c1-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-1c265eabcfe788e8fb716ec73becd8e4850c799d-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-186038583d5f5b370317d4dea199857dbf7caf54-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ee30fa34b7dc651b8cb65208397e9a7ff22a20be-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2acd1bc2605d6ef983475ade8b687f70fc189808-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-cfe753f1e7236fee0b949e7971a1058dd281f8af-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "prajapati.usp88@gmail.com",
+    "emergencyName": "Satyam prajapati ",
+    "emergencyPhone": "7718085071",
+    "emergencyRelation": "Child",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "UMASHANKAR RAMCHAYAN PRAJAPATI ",
+    "pan": "CETPP8520B",
+    "permanentAddress": "Flat no 208, B wing, Nath apartment, Diva east , thane 400612",
+    "phone": "9769528005",
+    "pin": "400612",
+    "receivedAt": "2026-09-13T02:03:29.724Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-25T06:58:51Z",
+    "_id": "employeeLead-cc635284-12fa-4fd4-a4d9-64dae7b99885",
+    "_rev": "QemagYEAVW6d9yUvwDwhep",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-25T06:58:51Z",
+    "bloodGroup": "B+",
+    "city": "Kalyan",
+    "currentAddress": "Flat no 001,royal park, building no 2, opp charms hights, Titwala west",
+    "dob": "1991-12-05",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-557e068c18b77dcbc5126a2e8dc7cc5d0da53fc9-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-3ae231f20b0dba5733e8ff045f139f912c458cce-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-0387bc6cf923ef7a97f42f431897377e8a35b987-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ee2071099d730d9e833656634eef0848b8b25bac-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c5f2fe811945f3c73a9dab8da466eb6eb45a78ea-jpg",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      }
+    ],
+    "email": "hanifatar@gmail.com",
+    "emergencyName": "Salma Attar",
+    "emergencyPhone": "9730893528",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Hanif Yusuf Attar",
+    "pan": "ELXPA2373C",
+    "permanentAddress": "Flat no 001,royal park, building no 2, opp charms hights, Titwala west",
+    "phone": "8169356009",
+    "pin": "421605",
+    "receivedAt": "2026-09-25T06:58:50.862Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T10:37:09Z",
+    "_id": "employeeLead-d44c71bd-9466-484d-b7d9-da0138f0798d",
+    "_rev": "oqzgrKGMIxFMreVMC4GXZO",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T10:37:09Z",
+    "bloodGroup": "O+",
+    "city": "Thane",
+    "currentAddress": "Nath apartment 208 1 st floor B wing near Prashant sankul Diva Dativali Road Diva East Dist Thane 400612",
+    "dob": "1981-03-08",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-97c320e748a2808ad2d92c6b3ad617baeb76176d-pdf",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-399e86e9427a2529921d9c4c8484ae368128f4ae-pdf",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-a87616aa131f0c3073ea19cc7a4f061ac275832e-png",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f6ece1cdcc36c9a65b4639eb3836bde935def02f-pdf",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-8ee35c21aec29f0efc6e1d2bdaaa3c93e11acce6-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7725f9490b2a8541cd2de1dd52007eda3e3ed73a-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-20c8497232303883ba98630acc8a656fae4f14d9-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-a98d1855bde28215c196f61a346b898cdebb9723-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "jayshankarindia11@gmail.com",
+    "emergencyName": "Sarita Prajapati ",
+    "emergencyPhone": "8097165234",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "BDDPP1023M",
+    "pan": "BDDPP1023M",
+    "permanentAddress": "Nath apartment 208 1 st floor B wing near Prashant sankul Diva Dativali Road Diva East Dist Thane 400612",
+    "phone": "8976154389",
+    "pin": "400612",
+    "receivedAt": "2026-09-12T10:37:09.448Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T10:20:04Z",
+    "_id": "employeeLead-dcdb7b78-7e9b-43d6-a8d4-9e8d00ccf3bd",
+    "_rev": "jITbevOCTIorBgoUCU236a",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T10:20:04Z",
+    "bloodGroup": "B+",
+    "city": "Thane",
+    "currentAddress": "A4/104,Pine Wood CHS Sursthill complex jambul Road opposite dental College Chikloli Ambernath West ",
+    "dob": "1979-10-31",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-61728875306d48d7e7d3f8e1322c0e3b914903aa-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-c2543b09838bc684d655622758058b8651b48263-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-8b84f824da10ff342a0d2c93564a881a286b488e-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-7c56e9354653970d3d845711dee53d41eb48da26-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "rajesh.karia3@gmail.com",
+    "emergencyName": "9022966885",
+    "emergencyPhone": "9022966885",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "Rajesh S kariya ",
+    "pan": "CBJPK3627B",
+    "permanentAddress": "A4/104,Pine Wood CHS Sursthill complex jambul Road opposite dental College Chikloli Ambernath West ",
+    "phone": "9867836003",
+    "pin": "421505",
+    "receivedAt": "2026-09-12T10:20:04.518Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-12T11:07:24Z",
+    "_id": "employeeLead-e0d3d35e-6936-4c1f-9488-e387ab82b53d",
+    "_rev": "oqzgrKGMIxFMreVMC4JDcu",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-12T11:07:24Z",
+    "bloodGroup": "AB+",
+    "city": "Bilaspur",
+    "currentAddress": "Thane",
+    "dob": "1989-04-07",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-4ea8a4df7efb62828afc01deb726df095a01fac3-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-ff692e577bb1e401aaf54fe221b6d4593c121df7-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-09bbd88d6bdcab9c496f08a9770f98a904b5e56c-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-410c5c043ccf5f18ed103203413d21a7b22fdedf-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-42d23a358fcce79bdcacac3ad2d0ff507f0961d9-pdf",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-cb4fec68d0ae83f2ba651b8e09ee4851eef52aea-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-50a359918a793d010e325cfeaab003d6a9c39762-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-cb4fec68d0ae83f2ba651b8e09ee4851eef52aea-jpg",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "kapilmeshram030@gmail.com",
+    "emergencyName": "Praful meshram ",
+    "emergencyPhone": "7803009696",
+    "emergencyRelation": "Parent",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "Kapil kumar praful Meshram",
+    "pan": "CVAPM3901R",
+    "permanentAddress": "Hno 30 panchshil colony yadunandan nagar tifra ",
+    "phone": "9232850935",
+    "pin": "495001",
+    "receivedAt": "2026-09-12T11:07:23.960Z",
+    "sameAddress": "no",
+    "source": "employee-page",
+    "state": "Chhattisgarh",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-13T14:22:15Z",
+    "_id": "employeeLead-e7e96967-4e12-4c33-a115-7e806fc582a4",
+    "_rev": "VOfSO31kbJ3qiUlVmUA484",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-13T14:22:15Z",
+    "bloodGroup": "A+",
+    "city": "Thane",
+    "currentAddress": "Thane lokmanya nagar pada no 4",
+    "dob": "1994-02-07",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-5317fbf731fe2eb0940097d8f910f3e9e370a887-jpg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-466f8a619776f7b97f64bd943308e2e15e1eafa9-jpg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-616e5a39dfcaced21c1f364e9c58f5367b627057-jpg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-541a516e9a5382fd9e956f3fa90058a4e4cfac6f-jpg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      }
+    ],
+    "email": "rakeshthakre907@gmail.com",
+    "emergencyName": "9324070029",
+    "emergencyPhone": "8169631033",
+    "emergencyRelation": "Parent",
+    "gender": "Male",
+    "hasPreviousEmployment": "No",
+    "name": "ASFPT8254L ",
+    "pan": "ASFPT8254L",
+    "permanentAddress": "Thane lokmanya nagar pada no 4",
+    "phone": "8169328318",
+    "pin": "400606",
+    "receivedAt": "2026-09-13T14:22:15.479Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Maharashtra",
+    "status": "new"
+  },
+  {
+    "_createdAt": "2026-09-19T07:15:49Z",
+    "_id": "employeeLead-fd7eaa08-c0ab-430d-aeca-ea12228a44e5",
+    "_rev": "iS10sBQXwjmqz8At2PDEjL",
+    "_type": "employeeLead",
+    "_updatedAt": "2026-09-19T07:15:49Z",
+    "bloodGroup": "A+",
+    "city": "Hyderabad",
+    "currentAddress": "F.no # 105, Brindavanam Apartment, Czech colony 4th Lane, Sanath Nagar, Hyderabad - 500018",
+    "dob": "1980-04-19",
+    "documents": [
+      {
+        "_key": "doc-0",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9a446008d224ccae763413006cc4ddc6c779e76b-jpeg",
+          "_type": "reference"
+        },
+        "label": "PAN Card"
+      },
+      {
+        "_key": "doc-1",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-cf5693ec79ae1016e40665004740e38d58533a2e-jpeg",
+          "_type": "reference"
+        },
+        "label": "Aadhaar Card"
+      },
+      {
+        "_key": "doc-2",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-da916baba0b55454c13b810b20b9b8e06c01a5dc-jpeg",
+          "_type": "reference"
+        },
+        "label": "Passport-size photo"
+      },
+      {
+        "_key": "doc-3",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-9dd22de0394f4a406dd14c0a6266dbcf1f3bd931-jpeg",
+          "_type": "reference"
+        },
+        "label": "Cancelled cheque"
+      },
+      {
+        "_key": "doc-4",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-2fade6c3b1cc5ba3794788982774975583952653-jpeg",
+          "_type": "reference"
+        },
+        "label": "Previous employment relieving letter"
+      },
+      {
+        "_key": "doc-5",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-f385ef367b2d3bd5471729ac9bf8c12a95dfe0a9-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — latest month"
+      },
+      {
+        "_key": "doc-6",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-cfee637338976ebdd11312195afa4df08c800d4c-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 2 months ago"
+      },
+      {
+        "_key": "doc-7",
+        "_type": "file",
+        "asset": {
+          "_ref": "file-395231a249bd20558fcd90694a9a4ed0c172a675-pdf",
+          "_type": "reference"
+        },
+        "label": "Salary slip — 3 months ago"
+      }
+    ],
+    "email": "kkousar23@gmail.com",
+    "emergencyName": "Jasmine Sayyad",
+    "emergencyPhone": "8142786032",
+    "emergencyRelation": "Spouse",
+    "gender": "Male",
+    "hasPreviousEmployment": "Yes",
+    "name": "Kausar Basha Sayyad",
+    "pan": "BCSPK4101P",
+    "permanentAddress": "F.no # 105, Brindavanam Apartment, Czech colony 4th Lane, Sanath Nagar, Hyderabad - 500018",
+    "phone": "8142786230",
+    "pin": "500018",
+    "receivedAt": "2026-09-19T07:15:49.659Z",
+    "sameAddress": "yes",
+    "source": "employee-page",
+    "state": "Telangana",
+    "status": "new"
+  }
+]

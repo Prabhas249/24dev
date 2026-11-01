@@ -1,0 +1,44 @@
+￼
+INVOICE
+#24D-INV-2026-011
+Date: July 23, 2026 · Due on receipt
+BILLED TO
+QCred.in
+708, Accord Classic, Aarey Road,
+Goregaon East, Mumbai, Maharashtra 400063
+info@qcred.in
+FROM
+24dev — Web Development Agency
+Raghavaraju Prabhas Raju
+Whitefield, Bangalore 560066
+prabhasraju1817@gmail.com
+PROJECT: QCRED.IN — WEBSITE, CHATBOT & CONTENT PLATFORM (DELIVERED ✓)
+DELIVERABLE
+AMOUNT
+Website — design & development
+119-page platform live on www.qcred.in: homepage, 9 loan product pages, credit-card pages for 10 banks + 8 category pages, 40 lender-rate pages, guides, FAQs, terms & privacy, branded 404 · fully mobile-responsive
+Included
+30 financial calculators
+EMI, eligibility, prepayment, balance transfer, tax benefit, SIP/FD/RD/PPF, income tax FY 25-26, GST, HRA and more — each with its own SEO page
+Included
+QGenie chat assistant
+Customer enquiry journey + full Partner (Sub-DSA) onboarding journey per your flow document · lead capture with validation
+Included
+Lead management system
+Every enquiry → email to info@qcred.in + dashboard with status workflow & team notes + one-click Excel downloads (leads & partner applications)
+Included
+Content management system
+Self-service dashboard at qcred.in/studio — edit hero, promo banners, lender rates, products, FAQs, settings · admin access on your account
+Included
+Growth & protection setup
+Google Analytics + Vercel analytics & speed insights · SEO/AEO (sitemaps, structured data) · content protection · security hardening · domain & SSL setup
+Included
+Project total
+₹ 10,000
+Less: paid (with thanks)
+− ₹ 5,000
+Balance due
+₹ 5,000
+Ongoing support: come to us anytime for updates or changes — while we work on your CRM & partner apps, all website changes are free of charge. For any issue, just reach out on WhatsApp and we'll sort it.
+24dev — thank you for building with us. 🧡
+prabhasraju1817@gmail.com

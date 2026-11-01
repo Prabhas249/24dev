@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24dev — 2 Ad Carousels · launch set</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#0B0B0C; --ink2:#101012; --lime:#0FFF00; --lime-d:#0bd400; --ivory:#FAF6E9; --coral:#FF6B47; --line:rgba(255,255,255,.07); }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#070708;color:#eee;font-family:Inter,sans-serif;padding:44px 30px 120px;
+    background-image:radial-gradient(900px 500px at 15% -5%, rgba(15,255,0,.05), transparent 60%);}
+  h1{font-family:Unbounded;font-weight:300;font-size:32px;letter-spacing:-1px;margin-bottom:6px}
+  h1 b{color:var(--lime);font-weight:600}
+  .sub{color:#8a8a8a;margin-bottom:26px;font-size:14.5px;max-width:1040px;line-height:1.6}
+
+  .strategy{background:linear-gradient(160deg,#0e140d,#0a0a0b);border:1px solid rgba(15,255,0,.22);border-radius:18px;padding:22px 26px;margin-bottom:56px;max-width:2700px;position:relative;overflow:hidden}
+  .strategy::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 240px at 0% 0%, rgba(15,255,0,.07), transparent 60%);pointer-events:none}
+  .strategy h3{font-family:Unbounded;font-weight:500;font-size:15px;color:var(--lime);margin-bottom:11px;position:relative}
+  .strategy p{font-size:13px;line-height:1.75;color:#bcbcbc;margin-bottom:7px;position:relative}
+  .strategy b{color:#fff}
+  .strategy .no{color:var(--coral);font-weight:700}
+
+  .block{margin-bottom:92px}
+  .block .tag{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:2px;font-weight:800;color:var(--ink);background:var(--lime);padding:6px 14px;border-radius:100px;margin-bottom:10px;text-transform:uppercase;box-shadow:0 0 24px rgba(15,255,0,.3)}
+  .block h2{font-family:Unbounded;font-weight:400;font-size:22px;margin-bottom:30px;letter-spacing:-.5px;color:#f2f2f2}
+  .cards{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;margin-bottom:24px}
+  .slide{position:relative}
+  .slide .snum{position:absolute;top:-26px;left:3px;font-size:10px;font-weight:800;letter-spacing:1.5px;color:#5e5e5e;text-transform:uppercase;white-space:nowrap}
+  .slide .snum b{color:var(--lime)}
+
+  .meta2{display:flex;gap:24px;flex-wrap:wrap;max-width:1500px}
+  .copy{flex:1;min-width:340px;background:#0f0f10;border:1px solid var(--line);border-radius:14px;padding:20px;font-size:13px;line-height:1.7;color:#cfcfcf;white-space:pre-line}
+  .sidebox{width:430px;flex-shrink:0}
+  .kv{font-size:12.5px;color:#9a9a9a;line-height:1.95;margin-bottom:11px}
+  .kv b{color:#fff;font-weight:600}
+  .kv .cta{color:var(--lime);font-weight:700}
+  .why{background:linear-gradient(160deg,#0c0d14,#0a0a0c);border:1px solid #23233a;border-radius:12px;padding:15px 17px;font-size:12px;line-height:1.65;color:#9a9aae}
+  .why b{color:#bfcaff}
+
+  /* ===== CARD BASE 1080x1080 @ 380px ===== */
+  .card{width:380px;height:380px;border-radius:14px;overflow:hidden;position:relative;flex-shrink:0;
+    background:var(--ink);
+    box-shadow:0 24px 60px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.06);}
+  /* texture layers shared by all cards */
+  .tex{position:absolute;inset:0;pointer-events:none;z-index:1;
+    background-image:radial-gradient(rgba(255,255,255,.022) 1px, transparent 1px);
+    background-size:15px 15px;}
+  .glow{position:absolute;inset:0;pointer-events:none;z-index:0;
+    background:radial-gradient(110% 80% at 100% 0%, rgba(15,255,0,.10), transparent 55%);}
+  .card > .inner{position:relative;z-index:2;height:100%}
+  .wm{position:absolute;bottom:13px;left:16px;font-family:Unbounded;font-weight:600;font-size:11px;color:#fff;z-index:14;display:flex;align-items:center;gap:6px;letter-spacing:-.3px}
+  .wm .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px 1px var(--lime);animation:pulse 1.7s infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  .swipe{position:absolute;bottom:13px;right:16px;font-size:9.5px;font-weight:800;color:var(--lime);letter-spacing:1.5px;z-index:14;display:flex;align-items:center;gap:4px}
+  .swipe::after{content:"›";font-size:15px;line-height:1;animation:nudge 1.2s infinite}
+  @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+
+  /* ---- hook ---- */
+  .hookS{display:flex;flex-direction:column;justify-content:center;padding:30px 28px 42px;height:100%}
+  .hookS .eb{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#cfcfcf;font-weight:800;margin-bottom:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:5px 10px;border-radius:100px}
+  .hookS .eb::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime)}
+  .hookS .h{font-family:Unbounded;font-weight:600;font-size:25px;color:#fff;letter-spacing:-1px;line-height:1.18}
+  .hookS .h b{color:var(--lime)}
+  .hookS .pricewrap{position:relative;margin-top:14px;align-self:flex-start}
+  .hookS .pricewrap::before{content:"";position:absolute;left:-12px;top:50%;transform:translateY(-50%);width:150px;height:90px;background:radial-gradient(circle,rgba(15,255,0,.28),transparent 65%);filter:blur(8px);z-index:-1}
+  .hookS .anchor2{font-size:12px;color:#9a9a9a;text-decoration:line-through;text-decoration-color:rgba(255,107,71,.8);margin-bottom:3px;font-weight:700;letter-spacing:-.2px}
+  .hookS .p{font-family:Unbounded;font-weight:700;font-size:44px;color:var(--lime);letter-spacing:-2.5px;line-height:1}
+  .hookS .p span{font-family:Inter;font-size:12px;color:#9a9a9a;font-weight:700;letter-spacing:0}
+  .hookS .s{margin-top:14px;font-size:12px;color:#a8a8a8;line-height:1.55;max-width:300px}
+  .hookS .s b{color:#fff}
+  .hookS .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+  .hookS .chips span{font-size:9.5px;font-weight:700;color:#e4e4e4;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);padding:6px 11px;border-radius:100px}
+  .hookS .chips span b{color:var(--lime)}
+
+  /* ---- info ---- */
+  .infoS{padding:24px 24px 40px;display:flex;flex-direction:column;height:100%}
+  .infoS .t{font-family:Unbounded;font-weight:600;font-size:15px;color:#fff;letter-spacing:-.4px;margin-bottom:15px;line-height:1.3}
+  .infoS .t b{color:var(--lime)}
+  .infoS ul{list-style:none;display:flex;flex-direction:column;gap:9px;flex:1}
+  .infoS li{display:flex;gap:9px;font-size:11px;color:#d2d2d2;line-height:1.45;align-items:flex-start}
+  .infoS li::before{content:"";width:14px;height:14px;border-radius:50%;background:rgba(15,255,0,.12);border:1px solid rgba(15,255,0,.4);color:var(--lime);font-size:8px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .infoS li::before{content:"✓"}
+  .infoS li b{color:#fff}
+  .infoS .note{margin-top:12px;border-top:1px solid rgba(255,255,255,.07);padding-top:11px;font-size:9px;color:#7c7c7c;line-height:1.55}
+  .infoS .note b{color:var(--lime)}
+
+  .care{margin-top:12px;background:linear-gradient(100deg,rgba(15,255,0,.1),rgba(15,255,0,.03));border:1px solid rgba(15,255,0,.32);border-radius:11px;padding:12px 13px;position:relative;overflow:hidden}
+  .care .ch{font-size:10.5px;font-weight:800;color:var(--lime);margin-bottom:4px;display:flex;align-items:center;gap:6px}
+  .care .cp{font-size:9px;color:#c5d3c5;line-height:1.5}
+
+  /* ---- timeline ---- */
+  .tl{display:flex;flex-direction:column;margin-top:4px}
+  .tlstep{display:flex;gap:11px;align-items:flex-start}
+  .tlstep .tt{font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:600;color:var(--lime);width:62px;flex-shrink:0;padding-top:2px;letter-spacing:-.3px}
+  .tlstep .rail{width:9px;display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+  .tlstep .rail i{width:9px;height:9px;border-radius:50%;background:var(--ink);border:2px solid var(--lime);display:block;box-shadow:0 0 8px rgba(15,255,0,.5)}
+  .tlstep .rail s{flex:1;width:2px;background:linear-gradient(rgba(15,255,0,.5),rgba(15,255,0,.08));display:block;min-height:20px}
+  .tlstep .td{font-size:11px;color:#d2d2d2;padding-bottom:15px;line-height:1.4}
+  .tlstep .td b{color:#fff}
+
+  /* ---- comparison receipts (honest proof, replaces fake testimonials) ---- */
+  .cmpS{padding:20px 16px 38px;display:flex;flex-direction:column;height:100%}
+  .cmpS .t{font-family:Unbounded;font-weight:600;font-size:15px;color:#fff;text-align:center;margin-bottom:3px;letter-spacing:-.3px;line-height:1.25}
+  .cmpS .t b{color:var(--coral)}
+  .cmpS .sub2{font-size:9.5px;color:#9a9a9a;text-align:center;margin-bottom:13px}
+  .cmpS .cols{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .cmpS .rcpt{border-radius:11px;padding:11px 10px;display:flex;flex-direction:column}
+  .cmpS .rcpt.trap{background:linear-gradient(160deg,#1a1011,#120c0d);border:1px solid rgba(255,107,71,.4)}
+  .cmpS .rcpt.real{background:linear-gradient(160deg,rgba(15,255,0,.08),#0e120e);border:1.5px solid var(--lime);box-shadow:0 0 22px rgba(15,255,0,.16)}
+  .cmpS .rcpt .rh{font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;text-align:center}
+  .cmpS .rcpt.trap .rh{color:var(--coral)}
+  .cmpS .rcpt.real .rh{color:var(--lime)}
+  .cmpS .rcpt .li{display:flex;justify-content:space-between;gap:6px;font-size:8.5px;color:#cfcfcf;padding:4px 0;border-bottom:1px dashed rgba(255,255,255,.09);line-height:1.3}
+  .cmpS .rcpt .li .amt{font-family:'JetBrains Mono',monospace;font-weight:600;flex-shrink:0}
+  .cmpS .rcpt.trap .li .amt{color:#ff8b6f}
+  .cmpS .rcpt.real .li .amt{color:var(--lime)}
+  .cmpS .rcpt .tot{margin-top:auto;padding-top:8px;font-size:10.5px;font-weight:800;text-align:center;line-height:1.3}
+  .cmpS .rcpt.trap .tot{color:#ff8b6f}
+  .cmpS .rcpt.real .tot{color:var(--lime)}
+  .cmpS .punch{text-align:center;margin-top:12px;font-size:11.5px;font-weight:800;color:#fff;letter-spacing:-.2px}
+  .cmpS .punch b{color:var(--lime)}
+
+  /* ---- tier table ---- */
+  .tblS{padding:18px 16px 36px;display:flex;flex-direction:column;height:100%}
+  .tblS .t{font-family:Unbounded;font-weight:600;font-size:14px;color:#fff;margin-bottom:4px;letter-spacing:-.3px}
+  .tblS .anchor{font-size:8.5px;color:#d39a86;margin-bottom:11px;line-height:1.4}
+  .tier{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:9px;margin-bottom:6px;background:linear-gradient(160deg,#141416,#0e0e10);border:1px solid #232325;position:relative}
+  .tier.hot{background:linear-gradient(100deg,rgba(15,255,0,.12),rgba(15,255,0,.03));border:1.5px solid var(--lime);box-shadow:0 0 22px rgba(15,255,0,.22)}
+  .tier .pr{font-family:Unbounded;font-weight:700;font-size:13px;color:var(--lime);width:64px;flex-shrink:0;letter-spacing:-.5px}
+  .tier .mid{flex:1;min-width:0}
+  .tier .lbl{font-size:10px;font-weight:800;color:#fff;letter-spacing:.4px}
+  .tier .desc{font-size:9px;color:#a4a4a4;line-height:1.35;margin-top:2px}
+  .tier .pop{position:absolute;font-size:7px;font-weight:800;color:var(--ink);background:var(--lime);padding:2px 7px;border-radius:100px;right:9px;top:-8px;box-shadow:0 0 14px rgba(15,255,0,.4)}
+  .tblS .foot{margin-top:auto;padding-top:9px;font-size:8px;color:#777;line-height:1.5;text-align:center}
+
+  /* ---- justify ---- */
+  .justS{padding:24px 22px 38px;display:flex;flex-direction:column;height:100%}
+  .justS .t{font-family:Unbounded;font-weight:600;font-size:14.5px;color:#fff;margin-bottom:15px;letter-spacing:-.3px;line-height:1.3}
+  .justS .t b{color:var(--lime)}
+  .justrow{display:flex;gap:11px;margin-bottom:11px;align-items:flex-start}
+  .justrow .pr{font-family:Unbounded;font-size:10px;font-weight:700;color:var(--lime);width:54px;flex-shrink:0;padding-top:1px;letter-spacing:-.4px}
+  .justrow .d{font-size:10px;color:#d2d2d2;line-height:1.42}
+  .justrow .d b{color:#fff}
+
+  /* ---- addons ---- */
+  .addS{padding:24px 22px 38px;display:flex;flex-direction:column;height:100%}
+  .addS .t{font-family:Unbounded;font-weight:600;font-size:15px;color:#fff;margin-bottom:14px;letter-spacing:-.3px}
+  .addS .t b{color:var(--lime)}
+  .addrow{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:11px;color:#d2d2d2}
+  .addrow b{color:#fff}
+  .addrow .ap{font-family:Unbounded;font-weight:600;font-size:11px;color:var(--lime)}
+  .addS .carebig{margin-top:14px;background:linear-gradient(100deg,rgba(15,255,0,.1),rgba(15,255,0,.03));border:1px solid rgba(15,255,0,.32);border-radius:11px;padding:13px}
+  .addS .carebig .h{font-size:11px;font-weight:800;color:var(--lime)}
+  .addS .carebig .p{font-size:9px;color:#c5d3c5;line-height:1.5;margin-top:3px}
+
+  /* ---- portfolio browser frame ---- */
+  .portS{height:100%;display:flex;flex-direction:column;padding:16px 16px 36px}
+  .portS .ptop{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px}
+  .portS .ptop .lbl{font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#9a9a9a;display:flex;align-items:center;gap:6px}
+  .portS .ptop .lbl::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--lime);box-shadow:0 0 7px var(--lime)}
+  .portS .ptop .cnt{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:600;color:var(--lime);letter-spacing:1px}
+  .bframe{flex:1;border-radius:10px;overflow:hidden;background:#1a1a1c;border:1px solid #303034;display:flex;flex-direction:column;box-shadow:0 14px 34px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06);min-height:0}
+  .bframe .bbar{height:23px;background:linear-gradient(#2a2a2e,#222226);display:flex;align-items:center;gap:5px;padding:0 10px;flex-shrink:0;border-bottom:1px solid #161618}
+  .bframe .bbar i{width:7px;height:7px;border-radius:50%;display:block}
+  .bframe .bbar i:nth-child(1){background:#ff5f57}.bframe .bbar i:nth-child(2){background:#febc2e}.bframe .bbar i:nth-child(3){background:#28c840}
+  .bframe .bbar .url{margin-left:9px;background:#141416;border-radius:5px;font-size:7.5px;color:#9a9a9a;padding:3px 10px 3px 22px;flex:1;text-align:center;font-family:'JetBrains Mono',monospace;position:relative}
+  .bframe .bbar .url::before{content:"🔒";position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:7px;filter:grayscale(1) brightness(1.5)}
+  .bframe .shot{flex:1;overflow:hidden;min-height:0;position:relative}
+  .bframe .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .portS .pcap{margin-top:12px}
+  .portS .pcap .nm{font-size:11.5px;font-weight:800;color:#fff}
+  .portS .pcap .mt{font-size:9px;color:#a9bda9;margin-top:3px;font-weight:600}
+  .portS .pcta{margin-top:11px;background:linear-gradient(var(--lime),var(--lime-d));color:var(--ink);font-weight:800;font-size:11px;text-align:center;padding:11px;border-radius:100px;box-shadow:0 6px 20px rgba(15,255,0,.3), inset 0 1px 0 rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;gap:6px}
+</style>
+</head>
+<body>
+
+<h1>24dev — <b>3 ad carousels</b> · launch set 🚀</h1>
+<p class="sub">10 cards each · <b>Ad 1 = ₹2,000 Starter</b> · <b>Ad 2 = Business from ₹4,999</b> · <b>Ad 3 = Apps/MVP from ₹49,999</b> · all 6 demos embedded in each · WhatsApp Click-to-Chat.</p>
+
+<div class="strategy">
+  <h3>⚙️ READ FIRST</h3>
+  <p><b>Setup:</b> 1 campaign (Engagement → WhatsApp, optimize CONVERSATIONS) → 1 broad ad set → these 3 carousels inside it. <span class="no">Fresh account → start ₹800–1,000/day, NOT ₹2,000.</span> Scale to ₹2,000 only after 2 weeks of advances self-funding it. Turn OFF card auto-reordering. CTA every card = Send WhatsApp Message.</p>
+  <p><b>Card count:</b> 10 each (Meta max). <span class="no">~70% drop off after card 1</span> and cards 8–10 are barely seen — so the 6 demos run after the offer, strongest demo FIRST. Want all 6 seen with zero swipe drop-off? A <b>&lt;15s video</b> beats a 10-card carousel — say the word.</p>
+  <p><b>✅ Honesty (baked in):</b> testimonials are <span class="no">NOT fabricated</span> — the old fake wall is replaced by a true ₹999-trap cost comparison. <b>Demos are framed as "the calibre we build", not false client claims</b> — confirm these 6 are your own designs, and swap in real shipped sites the moment you have them. free logo = brand kit · free domain = setup+yr1 · SEO = process (footnote) · AEO = "structured so AI can find you".</p>
+</div>
+
+<!-- ============================================================ AD 1 -->
+<div class="block">
+  <span class="tag">AD 1 · ₹2,000 Starter — volume engine</span>
+  <h2>Shop website at ₹2,000 · everything done for you</h2>
+  <div class="cards">
+
+    <div class="slide"><div class="snum"><b>Card 1</b> · hook</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="hookS">
+        <div class="eb">Complete website · done for you</div>
+        <div class="h">A real website at <b>just ₹2,000</b>.</div>
+        <div class="pricewrap"><div class="anchor2">₹30,000+ at an agency</div><div class="p">₹2,000<span> &nbsp;all-in, once</span></div></div>
+        <div class="s">Design, domain, hosting, logo, branding & copy — <b>everything included.</b> Nothing more to pay, ever. Live in 48 hrs.</div>
+        <div class="chips"><span><b>✓</b> Hosting free for life</span><span><b>✓</b> No renewals</span></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 2</b> · what you get</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="infoS">
+        <div class="t">Everything in your <b>₹2,000</b></div>
+        <ul>
+          <li><b>Free domain setup</b> + first year</li>
+          <li><b>Free lifetime hosting</b> — never pay a hosting bill</li>
+          <li><b>Starter logo + brand kit</b> — colours, fonts, your mark</li>
+          <li><b>Built search-ready</b> — clean, fast, mobile-first</li>
+          <li><b>AEO-ready</b> — structured so ChatGPT & Google AI find you</li>
+          <li><b>WhatsApp chat button</b> — one-tap customer contact</li>
+          <li><b>Delivered under 48 hours</b></li>
+        </ul>
+        <div class="care"><div class="ch">+ Website Care — ₹1,000/mo (optional)</div><div class="cp">Backups, security, 4 free edits/mo, priority support. Cancel anytime. Your site can't break — it's on us.</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 3</b> · how it works</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="infoS">
+        <div class="t">From your message to <b>live</b> — 4 steps</div>
+        <div class="tl">
+          <div class="tlstep"><div class="tt">YOU MSG</div><div class="rail"><i></i><s></s></div><div class="td"><b>WhatsApp us</b> your business name, what you sell, your photos. 5 minutes.</div></div>
+          <div class="tlstep"><div class="tt">WE BUILD</div><div class="rail"><i></i><s></s></div><div class="td"><b>We design it</b> — site, logo, branding, copy. You do nothing.</div></div>
+          <div class="tlstep"><div class="tt">YOU OK IT</div><div class="rail"><i></i><s></s></div><div class="td"><b>Preview on your phone.</b> One free revision.</div></div>
+          <div class="tlstep"><div class="tt">&lt;48 HRS</div><div class="rail"><i></i></div><div class="td"><b>You're LIVE.</b> Domain connected, hosting on, ready for customers.</div></div>
+        </div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 4</b> · the real bill (honest proof)</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="cmpS">
+        <div class="t">The ₹999 website is <b>bait</b>.</div>
+        <div class="sub2">Read the fine print before you pay anyone.</div>
+        <div class="cols">
+          <div class="rcpt trap">
+            <div class="rh">₹999 “deal” · real bill</div>
+            <div class="li"><span>1 page</span><span class="amt">₹999</span></div>
+            <div class="li"><span>Full site (real)</span><span class="amt">+₹2,499</span></div>
+            <div class="li"><span>Hosting yr 2+</span><span class="amt">+₹2,500/yr</span></div>
+            <div class="li"><span>SSL renewal</span><span class="amt">+₹1,200/yr</span></div>
+            <div class="tot">By year 2:<br>₹7,000+ &amp; counting</div>
+          </div>
+          <div class="rcpt real">
+            <div class="rh">24dev · real bill</div>
+            <div class="li"><span>Full website</span><span class="amt">₹2,000</span></div>
+            <div class="li"><span>Live in 48 hrs</span><span class="amt">✓</span></div>
+            <div class="li"><span>Hosting forever</span><span class="amt">FREE</span></div>
+            <div class="li"><span>SSL forever</span><span class="amt">FREE</span></div>
+            <div class="tot">Total, ever:<br>₹2,000</div>
+          </div>
+        </div>
+        <div class="punch">₹2,000 once. <b>Nothing ever again.</b></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 5</b> · demo 1</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">01 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site6-aether.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Clean, fast, made to convert</div><div class="mt">your shop site — same craft, from ₹2,000</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 6</b> · demo 2</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">02 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site2-armature.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Premium feel, mobile-perfect</div><div class="mt">live in under 48 hours</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 7</b> · demo 3</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">03 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site5-cactus.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Modern design that builds trust</div><div class="mt">the standard we hold every site to</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 8</b> · demo 4</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">04 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site3-subpay.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Conversion-first layout</div><div class="mt">from ₹2,000 — fully done for you</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 9</b> · demo 5</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">05 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site1-bento.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Crafted, not templated</div><div class="mt">your brand, your colours, your site</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 10</b> · demo 6 + CTA</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">06 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site4-insforge.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">This is the calibre. ₹2,000.</div><div class="mt">tell us your business → live tomorrow</div></div>
+        <div class="pcta">Get my website →</div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div></div>
+    </div>
+
+  </div>
+  <div class="meta2">
+    <div class="copy">PRIMARY TEXT:
+Your business deserves a real website — not just an Instagram page.
+
+We design, build and launch it in under 48 hours, for ₹2,000 all-in:
+✓ Free domain + lifetime hosting
+✓ Free starter logo & branding
+✓ Built so Google AND AI assistants can find you
+✓ WhatsApp chat button, mobile-perfect
+✓ Done for you — zero meetings, all on WhatsApp
+
+And no year-2 surprise: those ₹999 ads renew hosting + SSL forever. With us, ₹2,000 once — hosting free for life, on your own account.
+
+Optional Website Care at ₹1,000/mo keeps it backed up, secure and updated (4 free edits/month, cancel anytime).
+
+Swipe to see the real cost of "cheap" websites + the calibre we build → then message us your business name. 👇</div>
+    <div class="sidebox">
+      <div class="kv"><b>Headline:</b> A real website — just ₹2,000 (all-in)<br><b>Description:</b> ₹30k+ at agencies. Hosting free for life, no renewals.<br><b>CTA:</b> <span class="cta">Send WhatsApp Message</span><br><b>Pre-filled:</b> "Hi! I want the ₹2,000 website for my business"</div>
+      <div class="why"><b>Updated:</b> fake testimonial wall → honest ₹999-trap receipt comparison (no fabricated proof, account-safe, and a stronger differentiator). All 6 demos now embedded in browser frames as "the calibre we build" (honest framing — relabel/replace with your own shipped sites). ₹1k Care toggle = your MRR seed; pitch it ON checkout. Strongest demo placed first since cards 8–10 are barely seen.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ AD 2 -->
+<div class="block">
+  <span class="tag">AD 2 · Business from ₹4,999 — AOV lifter</span>
+  <h2>5 tiers, each price justified · all 6 demos</h2>
+  <div class="cards">
+
+    <div class="slide"><div class="snum"><b>Card 1</b> · hook</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="hookS">
+        <div class="eb">For serious businesses</div>
+        <div class="h">A business website that <b>actually converts</b>.</div>
+        <div class="pricewrap"><div class="p" style="font-size:34px">from ₹4,999</div></div>
+        <div class="s">Agencies charge <b>₹20,000–₹5,00,000</b> and take 3 weeks. We start at ₹4,999.</div>
+        <div class="chips"><span><b>✓</b> Conversion-designed</span><span><b>✓</b> SEO + AEO</span></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 2</b> · the 5 tiers</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="tblS">
+        <div class="t">Pick your tier</div>
+        <div class="anchor">Indian agencies quote ₹20k–₹5L for these. We deliver from ₹4,999.</div>
+        <div class="tier"><div class="pr">₹4,999</div><div class="mid"><div class="lbl">STARTER</div><div class="desc">Sharp 1-page · mobile · WhatsApp + Maps · SEO basics</div></div></div>
+        <div class="tier hot"><span class="pop">MOST POPULAR</span><div class="pr">₹9,999</div><div class="mid"><div class="lbl">BUSINESS</div><div class="desc">5-7 pages · copywriting done for you · blog/CMS you edit</div></div></div>
+        <div class="tier"><div class="pr">₹14,999</div><div class="mid"><div class="lbl">PRO</div><div class="desc">Custom scroll animations · conversion layout · AEO-built</div></div></div>
+        <div class="tier"><div class="pr">₹24,999</div><div class="mid"><div class="lbl">COMMERCE</div><div class="desc">Online store + Razorpay · OR a 3D interactive hero</div></div></div>
+        <div class="tier"><div class="pr">₹49,999</div><div class="mid"><div class="lbl">FLAGSHIP</div><div class="desc">Headless + 500 auto-SEO pages · multilingual · 3D · A/B</div></div></div>
+        <div class="foot">Each tier = everything below it + its upgrade. Built to be found; rankings depend on Google, never guaranteed.</div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 3</b> · why each price</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="justS">
+        <div class="t">Why each tier costs what it <b>costs</b></div>
+        <div class="justrow"><div class="pr">₹4,999</div><div class="d"><b>One page, done right.</b> A single page is quoted ₹15,000 elsewhere.</div></div>
+        <div class="justrow"><div class="pr">₹9,999</div><div class="d"><b>+ Copywriting + a blog you edit.</b> Words alone cost ₹22,500+.</div></div>
+        <div class="justrow"><div class="pr">₹14,999</div><div class="d"><b>+ Custom motion + conversion design.</b> Animation alone is ₹30k freelance.</div></div>
+        <div class="justrow"><div class="pr">₹24,999</div><div class="d"><b>+ A real store or 3D hero.</b> Starter stores run ₹80k–₹1.2L.</div></div>
+        <div class="justrow"><div class="pr">₹49,999</div><div class="d"><b>+ 500 Google doorways + multilingual.</b> Agencies bill ₹3–5 lakh.</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 4</b> · add-ons + care</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="addS">
+        <div class="t">Bolt on <b>anything</b></div>
+        <div class="addrow"><span><b>Logo + brand kit</b></span><span class="ap">₹7,999</span></div>
+        <div class="addrow"><span><b>Extra page</b></span><span class="ap">₹999</span></div>
+        <div class="addrow"><span><b>Copywriting</b> / page</span><span class="ap">₹499</span></div>
+        <div class="addrow"><span><b>Programmatic SEO</b> pack</span><span class="ap">₹9,999</span></div>
+        <div class="addrow"><span><b>500 auto city+service pages</b></span><span class="ap">add-on</span></div>
+        <div class="carebig"><div class="h">Care & Growth — from ₹1,999/mo</div><div class="p">Hosting, backups, security, edits + light SEO. The build is the car; this is the fuel.</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 5</b> · demo 1</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">01 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site3-subpay.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Conversion-designed · built to sell</div><div class="mt">the standard behind every tier</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 6</b> · demo 2</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">02 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site5-cactus.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Custom animation · premium feel</div><div class="mt">Pro tier and up</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 7</b> · demo 3</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">03 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site1-bento.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Data-rich, dashboard-grade</div><div class="mt">when your site does real work</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 8</b> · demo 4</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">04 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site4-insforge.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Full platform · auth + billing</div><div class="mt">Commerce & Flagship calibre</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 9</b> · demo 5</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">05 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site2-armature.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Built fast, built to scale</div><div class="mt">premium without the agency wait</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 10</b> · demo 6 + CTA</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">06 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-business.com</span></div><div class="shot"><img src="ad-assets/site6-aether.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">This calibre — from ₹4,999.</div><div class="mt">tell us your business → we recommend a tier</div></div>
+        <div class="pcta">Get a quote on WhatsApp →</div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div></div>
+    </div>
+
+  </div>
+  <div class="meta2">
+    <div class="copy">PRIMARY TEXT:
+Most businesses pay ₹20,000–₹5,00,000 and wait 3 weeks for a website. You don't have to.
+
+24dev builds business websites designed to convert — from ₹4,999:
+→ ₹4,999 Starter — a sharp one-page site
+→ ₹9,999 Business — 5-7 pages, written for you, with a blog
+→ ₹14,999 Pro — custom animations + conversion design + built for AI search
+→ ₹24,999 Commerce — full online store with payments, or a 3D hero
+→ ₹49,999 Flagship — headless build + 500 auto-SEO pages + multilingual
+
+Each tier is everything below it, plus one real upgrade. Swipe to see the tiers, what justifies each price, and the calibre we build → message us and we'll recommend the right tier. 👇</div>
+    <div class="sidebox">
+      <div class="kv"><b>Headline:</b> Business website that converts — from ₹4,999<br><b>Description:</b> 5 tiers. Agencies charge ₹20k–₹5L. We start at ₹4,999.<br><b>CTA:</b> <span class="cta">Send WhatsApp Message</span><br><b>Pre-filled:</b> "Hi! I want a business website — which tier fits me?"</div>
+      <div class="why"><b>Research-locked:</b> one new capability per step (pages→copy→motion→commerce/3D→headless+pSEO) so each jump feels earned. Every tier anchors vs real agency rates. ₹9,999 highlighted to push the anchor up. All 6 demos appended as "the calibre we build" (honest framing — swap in your own shipped work). 24-hr promise NOT claimed (premium needs days).</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ AD 3 -->
+<div class="block">
+  <span class="tag">AD 3 · Apps / MVP / SaaS from ₹49,999 — high-ticket engine</span>
+  <h2>Your app idea, built & shipped · all 6 demos</h2>
+  <div class="cards">
+
+    <div class="slide"><div class="snum"><b>Card 1</b> · hook</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="hookS">
+        <div class="eb">For founders with an idea</div>
+        <div class="h">Your app idea — <b>built & shipped</b>.</div>
+        <div class="pricewrap"><div class="anchor2">₹5–20 lakh at a studio</div><div class="p" style="font-size:36px">from ₹49,999</div></div>
+        <div class="s">Real MVPs, SaaS & web apps — <b>built in weeks, not months.</b> And you own every line of code.</div>
+        <div class="chips"><span><b>✓</b> A working product</span><span><b>✓</b> You own the code</span></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 2</b> · the builds</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="tblS">
+        <div class="t">Pick your build</div>
+        <div class="anchor">App studios quote ₹5L–₹20L and take 3–6 months. We start at ₹49,999.</div>
+        <div class="tier"><div class="pr">₹49,999</div><div class="mid"><div class="lbl">VALIDATION</div><div class="desc">Landing + waitlist + 1 live interactive demo · prove demand first</div></div></div>
+        <div class="tier hot"><span class="pop">MOST POPULAR</span><div class="pr">₹99,999</div><div class="mid"><div class="lbl">LAUNCH MVP</div><div class="desc">Auth + database + 2–3 core features · a real, usable product</div></div></div>
+        <div class="tier"><div class="pr">₹1,99,999</div><div class="mid"><div class="lbl">SAAS</div><div class="desc">Payments + subscriptions + user dashboard + admin panel</div></div></div>
+        <div class="tier"><div class="pr">₹3,99,999</div><div class="mid"><div class="lbl">SCALE</div><div class="desc">AI features + integrations + scale-ready architecture</div></div></div>
+        <div class="foot">Fixed scope, fixed price — no ₹/hour surprises. You own 100% of the code.</div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 3</b> · how it works</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="infoS">
+        <div class="t">Idea to live app — <b>in weeks, not months</b></div>
+        <div class="tl">
+          <div class="tlstep"><div class="tt">WEEK 0</div><div class="rail"><i></i><s></s></div><div class="td"><b>We scope it together.</b> Your idea → a fixed feature list & a fixed price. One call.</div></div>
+          <div class="tlstep"><div class="tt">WEEK 1</div><div class="rail"><i></i><s></s></div><div class="td"><b>Clickable prototype.</b> You see real screens — not a Figma promise.</div></div>
+          <div class="tlstep"><div class="tt">WEEK 2–3</div><div class="rail"><i></i><s></s></div><div class="td"><b>We build it for real.</b> Auth, database, features, payments — working.</div></div>
+          <div class="tlstep"><div class="tt">LAUNCH</div><div class="rail"><i></i></div><div class="td"><b>Live & yours.</b> Deployed, code handed over, ready for your first users.</div></div>
+        </div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 4</b> · why each price</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="justS">
+        <div class="t">Why each build costs what it <b>costs</b></div>
+        <div class="justrow"><div class="pr">₹49,999</div><div class="d"><b>A live demo that proves demand.</b> Validate before you sink in lakhs.</div></div>
+        <div class="justrow"><div class="pr">₹99,999</div><div class="d"><b>A real product people can use.</b> Freelancers quote ₹3–5L for the same MVP.</div></div>
+        <div class="justrow"><div class="pr">₹1,99,999</div><div class="d"><b>You start charging.</b> Payments, plans, dashboard — a business, not a demo.</div></div>
+        <div class="justrow"><div class="pr">₹3,99,999</div><div class="d"><b>Built to scale + AI-native.</b> Agencies bill ₹15–20L over 6 months.</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 5</b> · demo 1</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">01 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-app.com</span></div><div class="shot"><img src="ad-assets/site4-insforge.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Full SaaS — auth, billing, dashboard</div><div class="mt">the calibre behind every build</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 6</b> · demo 2</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">02 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-app.com</span></div><div class="shot"><img src="ad-assets/site3-subpay.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Subscriptions & payments, live</div><div class="mt">SaaS tier — you start charging day one</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 7</b> · demo 3</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">03 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-app.com</span></div><div class="shot"><img src="ad-assets/site2-armature.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">AI-native product interface</div><div class="mt">Scale tier — built for what's next</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 8</b> · demo 4</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">04 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-app.com</span></div><div class="shot"><img src="ad-assets/site1-bento.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Dashboards that do real work</div><div class="mt">your product, fully functional</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 9</b> · demo 5</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">05 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-app.com</span></div><div class="shot"><img src="ad-assets/site5-cactus.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">Polished, premium, conversion-built</div><div class="mt">founders' first impression matters</div></div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div><div class="swipe">SWIPE</div></div>
+    </div>
+
+    <div class="slide"><div class="snum"><b>Card 10</b> · demo 6 + CTA</div>
+      <div class="card"><div class="glow"></div><div class="tex"></div><div class="inner"><div class="portS">
+        <div class="ptop"><span class="lbl">The calibre we build</span><span class="cnt">06 / 06</span></div>
+        <div class="bframe"><div class="bbar"><i></i><i></i><i></i><span class="url">your-app.com</span></div><div class="shot"><img src="ad-assets/site6-aether.webp" alt="demo"></div></div>
+        <div class="pcap"><div class="nm">This calibre — from ₹49,999.</div><div class="mt">tell us your idea → we scope it free</div></div>
+        <div class="pcta">Pitch your idea on WhatsApp →</div>
+      </div></div><div class="wm">24dev<span class="dot"></span></div></div>
+    </div>
+
+  </div>
+  <div class="meta2">
+    <div class="copy">PRIMARY TEXT:
+Got an app or SaaS idea? Most studios quote ₹5–20 lakh and disappear for 6 months. You don't have to wait — or overpay.
+
+24dev builds real, working products — from ₹49,999:
+→ ₹49,999 Validation — a live demo to prove demand before you spend big
+→ ₹99,999 Launch MVP — auth, database, your core features, deployed
+→ ₹1,99,999 SaaS — payments, subscriptions, user dashboard + admin
+→ ₹3,99,999 Scale — AI features, integrations, built to grow
+
+Fixed scope, fixed price — and you own 100% of the code. Swipe to see the builds, the process, and the calibre we ship → then message us your idea. 👇</div>
+    <div class="sidebox">
+      <div class="kv"><b>Headline:</b> Your app, built & shipped — from ₹49,999<br><b>Description:</b> MVPs & SaaS in weeks, not months. You own the code.<br><b>CTA:</b> <span class="cta">Send WhatsApp Message</span><br><b>Pre-filled:</b> "Hi! I want to build an app — here's my idea:"</div>
+      <div class="why"><b>⚠️ CONFIRM BEFORE LAUNCH:</b> the 4 prices (₹49,999 / ₹99,999 / ₹1,99,999 / ₹3,99,999) and the "weeks, not months" timeline are <b>sensible placeholders</b> — set them to what you'll actually honour. Demos reuse the same 6 frames under honest "calibre we build" framing — swap in real shipped apps the moment you have them. High-ticket lead → expect fewer, higher-quality WhatsApp chats; qualify on the call.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

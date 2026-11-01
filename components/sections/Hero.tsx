@@ -1,160 +1,121 @@
 "use client";
 
-import { useRef } from "react";
-import { CountdownTimer } from "@/components/motion/CountdownTimer";
-import { KineticHeadline } from "@/components/motion/KineticHeadline";
-import { PortfolioDeck } from "@/components/atoms/PortfolioDeck";
+import Link from "next/link";
 import { motion } from "motion/react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
+import { PortfolioDeck } from "@/components/atoms/PortfolioDeck";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import Particles from "@/components/magicui/particles";
 
 export function Hero() {
-  const heroRef = useRef<HTMLElement>(null);
+  const { hero } = siteConfig;
 
   return (
     <section
-      ref={heroRef}
-      className="relative h-[100svh] min-h-[720px] flex flex-col overflow-hidden pt-16"
+      id="hero"
+      className="relative w-full overflow-hidden bg-stripe-radial pt-32 pb-16 md:pt-40 md:pb-24"
     >
-      {/* subtle paper texture */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.4]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(15,15,15,0.05) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-          maskImage:
-            "radial-gradient(ellipse at center, black 30%, transparent 85%)",
-          WebkitMaskImage:
-            "radial-gradient(ellipse at center, black 30%, transparent 85%)",
-        }}
+      {/* Subtle particles background — orange tint, low density */}
+      <Particles
+        className="absolute inset-0 -z-10"
+        quantity={40}
+        ease={80}
+        color="#FF6B35"
+        refresh={false}
       />
 
-      <div className="relative mx-auto flex w-full max-w-[1400px] flex-1 flex-col px-6 md:px-10">
-        {/* TIER STRIP */}
-        <div className="border-t border-line py-4 relative z-[200] bg-ink">
-          <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-0">
-            <span className="font-mono text-[10px] uppercase tracking-[0.26em] text-fog-dim md:w-[88px] shrink-0">
-              — Tiers
-            </span>
-
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 md:gap-x-8 flex-1">
-              <TierCard label="Starter" price="₹1,999" />
-              <Divider />
-              <TierCard label="Launch" price="₹4,999" highlight />
-              <Divider />
-              <TierCard label="Pro" price="₹9,999" />
-            </div>
-
-            <span className="hidden md:inline font-mono text-[10px] uppercase tracking-[0.22em] text-fog-dim/80 ml-auto whitespace-nowrap">
-              Need more? →{" "}
-              <a
-                href="https://24dev.in"
-                className="text-fog underline decoration-fog-dim underline-offset-2 transition-colors hover:text-orange"
-              >
-                24dev.in
-              </a>
-            </span>
-          </div>
-        </div>
-
-        {/* MAIN GRID */}
-        <div className="relative grid flex-1 grid-cols-1 gap-8 pt-8 md:grid-cols-[1fr_1.05fr] md:gap-10 md:pt-10">
-          {/* LEFT — headline + timer + ctas */}
-          <div className="flex flex-col justify-center gap-10">
-            <KineticHeadline
-              lines={[
-                ["Websites", "from"],
-                [{ text: "₹1,999", priceStyle: true, accent: true }],
-                [
-                  { text: "Live", italic: true, serif: true },
-                  { text: "in", italic: true, serif: true },
-                  { text: "24h.", bold: true },
-                ],
-              ]}
-              className="text-[clamp(2.5rem,9.5vw,9.5rem)] text-left"
-              baseDelay={0.5}
-              wordStagger={0.1}
-              lineGap={0.12}
-            />
-
+      <div className="container-24dev">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          {/* LEFT — copy + CTAs */}
+          <div className="lg:col-span-7 flex flex-col gap-6 lg:gap-8">
+            {/* Live counter badge */}
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.5, ease: [0.22, 1, 0.36, 1] }}
-              className="relative z-[150] flex flex-wrap items-end gap-6"
+              transition={{ duration: 0.4, delay: 0.05, ease: [0.3, 0, 0.2, 1] }}
+              className="inline-flex items-center gap-2 self-start rounded-full border border-line bg-ink-raised/60 backdrop-blur-sm px-3 py-1.5 text-xs font-medium text-fog-muted"
             >
-              <div className="flex flex-col gap-1.5">
-                <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-fog-dim">
-                  ⏱ Live delivery clock
-                </span>
-                <CountdownTimer />
-              </div>
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-orange" />
+              </span>
+              {hero.badge}
+            </motion.div>
 
-              <div className="flex flex-wrap gap-3 ml-auto">
-                <a
-                  href="#pricing"
-                  className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-orange px-6 py-3 text-sm font-medium text-[#0F0F0F] transition-all hover:bg-orange-soft"
-                >
-                  <span className="relative z-10">See pricing</span>
-                  <span className="relative z-10 transition-transform group-hover:translate-x-0.5" aria-hidden>→</span>
-                  <span aria-hidden className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-                </a>
-                <a
-                  href="#work"
-                  className="group inline-flex items-center gap-2 rounded-full border border-line-strong bg-ink-soft/40 px-6 py-3 text-sm font-medium text-fog backdrop-blur transition-all hover:bg-ink-raised hover:border-fog-dim"
-                >
-                  See work
-                  <span className="transition-transform group-hover:translate-y-0.5" aria-hidden>↓</span>
-                </a>
-              </div>
+            {/* Headline — Stripe-light weight, 2-line layout */}
+            <motion.h1
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: [0.3, 0, 0.2, 1] }}
+              className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] tracking-[-0.04em] text-fog leading-[1.02]"
+            >
+              Beautifully crafted websites.
+              <br />
+              <span className="italic font-accent text-fog-muted">Delivered before dinner.</span>
+            </motion.h1>
+
+            {/* Subhead */}
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: [0.3, 0, 0.2, 1] }}
+              className="text-lg md:text-xl text-fog-muted max-w-xl leading-relaxed"
+            >
+              {hero.description}
+            </motion.p>
+
+            {/* CTAs */}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3, ease: [0.3, 0, 0.2, 1] }}
+              className="flex flex-wrap items-center gap-3 mt-2"
+            >
+              <Link
+                href={hero.cta.primary.href}
+                className="relative group inline-flex items-center gap-2 rounded-full bg-fog px-6 py-3 text-sm font-medium text-ink shadow-md transition-all ease-stripe duration-200 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] overflow-hidden"
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  {hero.cta.primary.text}
+                  <ArrowRight className="h-4 w-4 transition-transform ease-stripe group-hover:translate-x-0.5" />
+                </span>
+                <BorderBeam
+                  size={80}
+                  duration={6}
+                  colorFrom="#FF6B35"
+                  colorTo="#B8FF38"
+                />
+              </Link>
+
+              <Link
+                href={hero.cta.secondary.href}
+                className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-ink-raised px-6 py-3 text-sm font-medium text-fog transition-all ease-stripe duration-200 hover:bg-ink-soft hover:border-fog active:scale-[0.98]"
+              >
+                {hero.cta.secondary.text}
+              </Link>
+            </motion.div>
+
+            {/* Trust strip */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.45 }}
+              className="flex items-center gap-2 text-xs text-fog-dim mt-2"
+            >
+              <Sparkles className="h-3.5 w-3.5 text-orange" />
+              <span>{hero.trustStrip}</span>
             </motion.div>
           </div>
 
-          {/* RIGHT — portfolio deck */}
-          <div className="relative min-h-[420px] md:min-h-0">
-            <PortfolioDeck constraintsRef={heroRef} />
+          {/* RIGHT — draggable portfolio deck (clipped to column) */}
+          <div className="lg:col-span-5 relative flex items-center justify-center h-[420px] md:h-[520px] lg:h-[560px] overflow-hidden rounded-xl">
+            <div className="relative w-full h-full flex items-center justify-center">
+              <PortfolioDeck />
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
-
-function TierCard({
-  label,
-  price,
-  highlight,
-}: {
-  label: string;
-  price: string;
-  delivery?: string;
-  highlight?: boolean;
-}) {
-  return (
-    <div className="flex items-baseline gap-2 group relative">
-      {highlight && (
-        <span className="absolute -top-3.5 left-0 rounded-full border border-orange/50 bg-orange/10 px-1.5 py-[1px] font-mono text-[10px] uppercase tracking-[0.22em] text-orange leading-none">
-          ★ most
-        </span>
-      )}
-      <span
-        className={`font-mono text-[10px] uppercase tracking-[0.22em] ${
-          highlight ? "text-orange/80" : "text-fog-muted"
-        }`}
-      >
-        {label}
-      </span>
-      <span
-        className={`font-display font-bold tracking-[-0.03em] text-[15px] ${
-          highlight ? "text-orange" : "text-fog"
-        }`}
-      >
-        {price}
-      </span>
-    </div>
-  );
-}
-
-function Divider() {
-  return <span className="hidden md:inline-block h-5 w-px bg-line" aria-hidden />;
 }

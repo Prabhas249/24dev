@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { AsteriskStar } from "@/components/atoms/Flourish";
 
 export function FinalCta() {
   return (
@@ -33,7 +34,9 @@ export function FinalCta() {
           className="flex items-center justify-center gap-3 font-mono text-[11px] uppercase tracking-[0.28em] text-fog-dim"
         >
           <span className="h-px w-10 bg-orange" />
+          <AsteriskStar size={16} />
           Ready?
+          <AsteriskStar size={16} />
           <span className="h-px w-10 bg-orange" />
         </motion.div>
 

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24dev — Invoice Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#0B0B0C; --lime:#0FFF00; --lime-dk:#0a7a00; --grey:#6b6b6b; --line:#e6e6e6; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  @page{ size:A4; margin:0 }
+  body{font-family:Inter,sans-serif;color:#15151a;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:210mm;min-height:297mm;padding:0 0 18mm;position:relative;page-break-after:always;background:#fff}
+  .page:last-child{page-break-after:auto}
+
+  /* header band */
+  .band{background:var(--ink);color:#fff;padding:13mm 16mm 11mm;display:flex;justify-content:space-between;align-items:flex-start;position:relative;overflow:hidden}
+  .band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--lime)}
+  .band .brand{font-family:Unbounded;font-weight:700;font-size:30px;letter-spacing:-.5px;display:flex;align-items:center;gap:9px}
+  .band .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px 1px var(--lime)}
+  .band .brand small{display:block;font-family:Inter;font-weight:500;font-size:11px;color:#b5b5b5;letter-spacing:.3px;margin-top:5px}
+  .band .doc{text-align:right}
+  .band .doc .lbl{font-family:Unbounded;font-weight:600;font-size:23px;color:var(--lime);letter-spacing:1px}
+  .band .doc .from{font-size:10.5px;color:#c7c7c7;line-height:1.7;margin-top:8px}
+
+  .body{padding:11mm 16mm 0}
+
+  .meta{display:flex;justify-content:space-between;gap:20px;margin-bottom:9mm}
+  .meta .box{font-size:11.5px;line-height:1.85;color:#3a3a3a}
+  .meta .box .k{color:var(--grey);font-weight:600;display:inline-block;min-width:96px}
+  .meta .box b{color:#111}
+  .meta .billto{text-align:left}
+  .meta .billto .ttl, .meta .ref .ttl{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--lime-dk);font-weight:800;margin-bottom:6px}
+
+  table{width:100%;border-collapse:collapse;margin-bottom:7mm}
+  thead th{background:#f4f4f2;color:#444;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;font-weight:800;text-align:left;padding:11px 12px;border-bottom:2px solid var(--ink)}
+  thead th.r{text-align:right}
+  tbody td{padding:13px 12px;font-size:12px;border-bottom:1px solid var(--line);vertical-align:top;color:#222}
+  tbody td.r{text-align:right;font-family:'JetBrains Mono',monospace;font-weight:600}
+  tbody td .sub{display:block;color:var(--grey);font-size:10.5px;margin-top:3px}
+
+  .totwrap{display:flex;justify-content:flex-end;margin-bottom:7mm}
+  .totals{width:74mm}
+  .totals .tr{display:flex;justify-content:space-between;padding:8px 12px;font-size:11.5px;color:#333}
+  .totals .tr .amt{font-family:'JetBrains Mono',monospace;font-weight:600}
+  .totals .tr.muted{color:var(--grey)}
+  .totals .grand{display:flex;justify-content:space-between;padding:13px 14px;margin-top:6px;background:rgba(15,255,0,.12);border:1.5px solid var(--lime);border-radius:8px;font-family:Unbounded;font-weight:700;font-size:16px;color:#0a3d00}
+  .totals .grand .amt{font-family:Unbounded}
+
+  .pay{border:1px solid var(--line);border-radius:9px;padding:13px 16px;margin-bottom:7mm;background:#fafafa}
+  .pay .h{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--lime-dk);font-weight:800;margin-bottom:8px}
+  .pay .pr{display:flex;justify-content:space-between;font-size:11.5px;padding:4px 0;color:#333}
+  .pay .pr .amt{font-family:'JetBrains Mono',monospace;font-weight:600}
+  .pay .pr.due{border-top:1px dashed #ccc;margin-top:5px;padding-top:8px;font-weight:800;color:#0a3d00}
+
+  .incl{font-size:10.5px;color:#555;line-height:1.85;border-top:1px solid var(--line);padding-top:9px}
+  .incl b{color:#111}
+  .gstnote{font-size:10px;color:#7a7a7a;margin-top:9px;padding:9px 12px;background:#f4f4f2;border-radius:7px;line-height:1.6}
+  .gstnote b{color:#333}
+
+  .foot{position:absolute;bottom:8mm;left:16mm;right:16mm;display:flex;justify-content:space-between;align-items:flex-end;border-top:2px solid var(--ink);padding-top:8px}
+  .foot .ty{font-family:Unbounded;font-weight:600;font-size:13px;color:#111}
+  .foot .ty small{display:block;font-family:Inter;font-weight:500;font-size:10px;color:var(--grey);margin-top:3px}
+  .foot .sign{text-align:right;font-size:10px;color:var(--grey)}
+  .foot .sign .ln{width:46mm;border-bottom:1px solid #999;height:30px}
+
+  .variant{position:absolute;top:13mm;left:50%;transform:translateX(-50%);font-size:8.5px;letter-spacing:2px;text-transform:uppercase;color:var(--lime);font-weight:800;opacity:.0}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 — VARIANT A: NOT GST-REGISTERED ================= -->
+<div class="page">
+  <div class="band">
+    <div class="brand">24dev<span class="dot"></span>
+      <small>Fast-delivery websites for Indian businesses</small>
+    </div>
+    <div class="doc">
+      <div class="lbl">INVOICE</div>
+      <div class="from">[Proprietor Name]<br>[City, State – PIN]<br>[WhatsApp]&nbsp;·&nbsp;[Email]<br>[website]</div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="meta">
+      <div class="box billto">
+        <div class="ttl">Bill To</div>
+        [Client / Business Name]<br>
+        [Client address, City, State]<br>
+        [Client phone]&nbsp;·&nbsp;[Client email]
+      </div>
+      <div class="box ref">
+        <div class="ttl">Details</div>
+        <span class="k">Invoice No</span> <b>24DEV/26-27/0001</b><br>
+        <span class="k">Invoice Date</span> <b>[DD-MMM-YYYY]</b><br>
+        <span class="k">Job ID</span> <b>JOB-0042</b>
+      </div>
+    </div>
+
+    <table>
+      <thead><tr><th>#</th><th>Description</th><th class="r">Amount (₹)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>[Tier] Website<span class="sub">[scope — e.g. 5–7 pages + copywriting + CMS]</span></td><td class="r">[amount]</td></tr>
+        <tr><td>2</td><td>Add-on: [e.g. Logo + brand kit]</td><td class="r">[amount]</td></tr>
+        <tr><td>3</td><td>Add-on: [e.g. Extra page × 2]</td><td class="r">[amount]</td></tr>
+      </tbody>
+    </table>
+
+    <div class="totwrap"><div class="totals">
+      <div class="tr"><span>Subtotal</span><span class="amt">₹[subtotal]</span></div>
+      <div class="tr muted"><span>Discount</span><span class="amt">−₹[discount]</span></div>
+      <div class="grand"><span>TOTAL</span><span class="amt">₹[total]</span></div>
+    </div></div>
+
+    <div class="pay">
+      <div class="h">Payment Status</div>
+      <div class="pr"><span>50% Advance received · [DD-MMM-YYYY]</span><span class="amt">₹[advance]</span></div>
+      <div class="pr"><span>50% Balance received · [DD-MMM-YYYY]</span><span class="amt">₹[balance]</span></div>
+      <div class="pr due"><span>Amount Paid&nbsp;&nbsp;(Balance Due: ₹0)</span><span class="amt">₹[total]</span></div>
+      <div class="pr" style="color:#888;font-size:10.5px"><span>Paid via Razorpay · Ref(s): [payment_id]</span><span></span></div>
+    </div>
+
+    <div class="incl">
+      <b>What's included / ownership:</b> Client owns 100% of the website, code, domain &amp; content ·
+      Domain: setup + year 1 included, renewal at cost from year 2 · Hosting: deployed to client's
+      <b>own account</b>, free for life (no renewals payable to 24dev) · Logo = starter brand kit · 1 free revision included.
+    </div>
+    <div class="gstnote"><b>Note:</b> Not registered under GST; <b>GST not applicable.</b> This is a simple commercial invoice.</div>
+  </div>
+
+  <div class="foot">
+    <div class="ty">Thank you for your business! <small>Questions? [WhatsApp] · [Email]</small></div>
+    <div class="sign"><div class="ln"></div>For 24dev</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 2 — VARIANT B: GST-REGISTERED ================= -->
+<div class="page">
+  <div class="band">
+    <div class="brand">24dev<span class="dot"></span>
+      <small>Fast-delivery websites for Indian businesses</small>
+    </div>
+    <div class="doc">
+      <div class="lbl">TAX INVOICE</div>
+      <div class="from">[Legal / Proprietor Name]<br>[Full Registered Address, City, State – PIN]<br>[WhatsApp]&nbsp;·&nbsp;[Email]<br><b style="color:#fff">GSTIN: [your GSTIN]</b> · State: [State] ([NN])</div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="meta">
+      <div class="box billto">
+        <div class="ttl">Bill To</div>
+        [Client / Business Name]<br>
+        [Client address, City, State – PIN]<br>
+        GSTIN/UIN: [Client GSTIN or "Unregistered"]<br>
+        State: [State] ([NN])&nbsp;·&nbsp;[client phone]
+      </div>
+      <div class="box ref">
+        <div class="ttl">Details</div>
+        <span class="k">Invoice No</span> <b>24DEV/26-27/0001</b><br>
+        <span class="k">Invoice Date</span> <b>[DD-MMM-YYYY]</b><br>
+        <span class="k">Job ID</span> <b>JOB-0042</b><br>
+        <span class="k">Place of Supply</span> <b>[State] ([NN])</b><br>
+        <span class="k">Reverse Charge</span> <b>No</b>
+      </div>
+    </div>
+
+    <table>
+      <thead><tr><th>#</th><th>Description</th><th>SAC</th><th class="r">Taxable Value (₹)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>[Tier] Website<span class="sub">[scope]</span></td><td>998314</td><td class="r">[taxable]</td></tr>
+        <tr><td>2</td><td>Add-on: [logo, etc.]</td><td>998314</td><td class="r">[taxable]</td></tr>
+      </tbody>
+    </table>
+
+    <div class="totwrap"><div class="totals">
+      <div class="tr"><span>Taxable Value</span><span class="amt">₹[taxable_total]</span></div>
+      <div class="tr muted"><span>CGST @ [r/2]%&nbsp;<i>(intra-state)</i></span><span class="amt">₹[cgst]</span></div>
+      <div class="tr muted"><span>SGST @ [r/2]%&nbsp;<i>(intra-state)</i></span><span class="amt">₹[sgst]</span></div>
+      <div class="tr muted"><span>— OR — IGST @ [r]%&nbsp;<i>(inter-state)</i></span><span class="amt">₹[igst]</span></div>
+      <div class="grand"><span>INVOICE TOTAL</span><span class="amt">₹[grand_total]</span></div>
+    </div></div>
+
+    <div class="pay">
+      <div class="h">Payment Status</div>
+      <div class="pr"><span>50% Advance received · [DD-MMM-YYYY]</span><span class="amt">₹[advance]</span></div>
+      <div class="pr"><span>50% Balance received · [DD-MMM-YYYY]</span><span class="amt">₹[balance]</span></div>
+      <div class="pr due"><span>Amount Paid&nbsp;&nbsp;(Balance Due: ₹0)</span><span class="amt">₹[grand_total]</span></div>
+      <div class="pr" style="color:#888;font-size:10.5px"><span>Amount in words: [Rupees … only] · Razorpay Ref: [payment_id]</span><span></span></div>
+    </div>
+
+    <div class="incl">
+      <b>Ownership / inclusions:</b> Client owns 100% of the website, code, domain &amp; content ·
+      Domain setup + year 1 included (renewal at cost year 2+) · Hosting on client's own account, free for life ·
+      Logo = starter brand kit · 1 free revision included.
+    </div>
+    <div class="gstnote"><b>⚠ Use this variant ONLY after GST registration.</b> Intra-state → CGST + SGST; inter-state → IGST (delete the row that doesn't apply). Confirm SAC (998314), rate, place-of-supply &amp; reverse-charge with your CA.</div>
+  </div>
+
+  <div class="foot">
+    <div class="ty">Thank you for your business! <small>Questions? [WhatsApp] · [Email]</small></div>
+    <div class="sign"><div class="ln"></div>Authorised Signatory, 24dev</div>
+  </div>
+</div>
+
+</body>
+</html>

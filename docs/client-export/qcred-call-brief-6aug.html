@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred — Status &amp; next steps · 6 August 2026</title>
+<style>
+  @page { size: A4; margin: 13mm 12mm 14mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --green:#068a3e; --green-50:#e8f6ee;
+    --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80; --line:#dbe3ee;
+    --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9.2pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3{margin:0;line-height:1.25} p{margin:0 0 4.5px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,thead,.rule{page-break-after:avoid} tr,.card,.lvl{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .hero{background:linear-gradient(150deg,var(--navy),var(--navy-dark) 70%,#061f42);color:#fff;
+        margin:-13mm -12mm 5mm;padding:11mm 12mm 8mm}
+  .hero img{height:13mm;filter:brightness(0) invert(1);margin-bottom:6mm}
+  .hero .k{font-size:8pt;letter-spacing:.2em;text-transform:uppercase;color:#9dc0ea}
+  .hero h1{margin-top:2.5mm;font-size:19pt;letter-spacing:-.4px}
+  .hero h1 span{display:block;color:#7fd6a2;font-weight:400;font-size:12pt;margin-top:2.5mm}
+  .hero p{margin-top:3mm;color:#cbd5e1;font-size:9.2pt;max-width:162mm}
+  .meta{display:flex;gap:10mm;margin-top:6mm;padding-top:5mm;border-top:1px solid rgba(255,255,255,.2);
+        font-size:8pt;color:#9dc0ea}
+  .meta b{display:block;color:#fff;font-size:8.6pt;margin-top:1mm;font-weight:600}
+
+  .rule{border-bottom:2.5px solid var(--navy);padding-bottom:2mm;margin:0 0 3.5mm}
+  .rule .n{font-size:7.4pt;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:700}
+  .rule h2{font-size:13.5pt;color:var(--navy);margin-top:1mm;letter-spacing:-.3px}
+  h3{font-size:10.5pt;color:var(--navy);margin:3.5mm 0 1.8mm}
+
+  table{width:100%;border-collapse:collapse;margin:1.5mm 0 3mm;font-size:8.4pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:2mm 2.4mm;font-size:7.8pt;font-weight:600;
+     border-right:1px solid rgba(255,255,255,.15)}
+  th:last-child{border-right:none}
+  td{padding:1.7mm 2.4mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  .tick{color:var(--green);font-weight:700;white-space:nowrap}
+  .part{color:var(--amber);font-weight:700;white-space:nowrap}
+  .wait{color:var(--mute);font-weight:600;white-space:nowrap}
+  code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8pt;background:var(--navy-50);
+       padding:.4mm 1.1mm;border-radius:2px;color:var(--navy-dark)}
+
+  .lvl{border:1px solid var(--line);border-radius:4px;margin:0 0 2.8mm;overflow:hidden}
+  .lvl .h{background:var(--navy-50);padding:2.2mm 3.2mm;display:flex;align-items:baseline;gap:2.5mm}
+  .lvl .h .n{font-size:11pt;font-weight:800;color:var(--navy)}
+  .lvl .h .t{font-weight:700;font-size:9.4pt;color:var(--navy)}
+  .lvl .h .w{margin-left:auto;font-size:7.4pt;font-weight:700;padding:.5mm 2.2mm;border-radius:8px}
+  .lvl .b{padding:2.2mm 3.2mm;font-size:8.6pt}
+  .ok{background:var(--green-50);color:var(--green)}
+  .wt{background:var(--amber-50);color:var(--amber)}
+
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2.6mm 3.2mm;margin:2.2mm 0;border-radius:2px;font-size:8.6pt}
+  .card.g{border-left-color:var(--green);background:var(--green-50)}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card b.t{display:block;margin-bottom:1mm;color:var(--navy)}
+  ul{margin:0 0 2mm;padding-left:4.5mm} li{margin-bottom:1.2mm}
+  .foot{border-top:1px solid var(--line);margin-top:4mm;padding-top:2.2mm;font-size:7.4pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+  .q{border-left:3px solid var(--amber);background:var(--amber-50);padding:2mm 2.8mm;margin:1.8mm 0;
+     border-radius:0 2px 2px 0;font-size:8.5pt}
+  .q .qq{display:block;font-weight:700;color:var(--amber);font-size:8pt;margin-bottom:.8mm}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <div class="hero">
+    <img src="assets/logo-full.png" alt="QCred">
+    <div class="k">Status &amp; next steps · call note · 6 August 2026</div>
+    <h1>Where we are — and what we need from you
+      <span>CRM delivered · apps next · AI data path clear</span>
+    </h1>
+    <p>Short note for tonight&rsquo;s discussion. The CRM and partner portal are delivered;
+    Milestone 2 is half-paid (₹12,500 received, ₹12,500 still pending). This page lists what
+    is live, what still needs your data or a decision, and what we need to open so both Partner
+    apps can aim for the stores by ~20 August.</p>
+    <div class="meta">
+      <div>Prepared for<b>QCred.in · Simply Insight Consultancy LLP</b></div>
+      <div>Prepared by<b>24dev · Prabhas Raju</b></div>
+      <div>CRM demo<b>qcred-crm.vercel.app</b></div>
+      <div>Money to date<b>₹27,500 of ₹1,00,000</b></div>
+    </div>
+  </div>
+
+  <div class="rule"><div class="n">Section 01</div><h2>Commercial &amp; delivery status</h2></div>
+  <table>
+    <thead><tr><th style="width:38mm">Milestone</th><th style="width:22mm">Amount</th><th style="width:22mm">Status</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>1 · Kick-off</td><td>₹15,000</td><td class="tick">✓ Paid</td><td>Designs &amp; architecture</td></tr>
+      <tr><td>2 · CRM live</td><td>₹25,000</td><td class="part">◐ Partial</td>
+        <td>Admin + advisor/partner portal delivered. ₹12,500 received · <b>₹12,500 still not received</b>. Domain go-live still on your side (DNS).</td></tr>
+      <tr><td>3 · Android live</td><td>₹20,000</td><td class="wait">Next</td><td>Build ~5 days · Play Store review separate</td></tr>
+      <tr><td>4 · iOS live</td><td>₹20,000</td><td class="wait">Next</td><td>Same codebase · App Store review separate</td></tr>
+      <tr><td>5 · Source handover</td><td>₹20,000</td><td class="wait">Later</td><td>After both stores</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <b class="t">Is most of the CRM done?</b>
+    Yes. Both feedback rounds (nineteen numbered points) are actioned except training
+    <i>videos</i> — the activation gate itself already blocks until training is recorded.
+    Your team is reviewing modules; send any change list and it will be turned around the
+    same way as the last two rounds.
+  </div>
+
+  <div class="rule"><div class="n">Section 02</div><h2>What you asked for — built vs waiting</h2></div>
+  <table>
+    <thead><tr><th style="width:48mm">Ask</th><th style="width:20mm">Status</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Full CRM + partner portal (Finoza-class)</td><td class="tick">✓ Done</td>
+        <td>Leads, partners, payouts, lender programmes, hierarchy, invites, reports, marketing…</td></tr>
+      <tr><td>Payout auto-calculated from lender module</td><td class="tick">✓ Done</td>
+        <td>Programme rate → maker–checker → your team transfers → UTR recorded. CRM does not move money.</td></tr>
+      <tr><td>Poonawalla product sheet loaded</td><td class="tick">✓ Done</td>
+        <td>11 LAP programmes in the lender module; Best Match ranks against them.</td></tr>
+      <tr><td>QGenie / website leads → CRM</td><td class="tick">✓ Done</td>
+        <td>Central-office allotment from site + chatbot.</td></tr>
+      <tr><td>Super Admin data downloads</td><td class="tick">✓ Done</td>
+        <td>Visible on list screens for Super Admin only.</td></tr>
+      <tr><td>Lender data-sheet format</td><td class="tick">✓ Sent</td>
+        <td>Template v2 Excel — fill and return; we load it.</td></tr>
+      <tr><td>Narration box → best lender (Level 1)</td><td class="tick">✓ Live</td>
+        <td>Type a case in plain English; ranked lenders with reasons.</td></tr>
+      <tr><td>Payout grid + city tiers per lender (Level 2)</td><td class="part">◐ Waiting on you</td>
+        <td>Sheets in template v2. Per-lender city classification as you preferred.</td></tr>
+      <tr><td>ML from past file outcomes (Level 3)</td><td class="part">◐ Waiting on you</td>
+        <td>Need anonymised past files — see Section 03.</td></tr>
+      <tr><td>Training videos + tracked completion</td><td class="part">◐ Scope later</td>
+        <td>Gate exists. Role-wise videos = small module once screens are final.</td></tr>
+      <tr><td>Voice note → speech-to-text → best lender</td><td class="wait">Phase 2</td>
+        <td>Same engine as Level 1 + STT. Not in the ₹1L app milestones — to quote separately.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>QCred · Status &amp; next steps · 6 August 2026</span><span>Page 1</span></div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="rule"><div class="n">Section 03</div><h2>AI lender match — data still needed</h2></div>
+  <p style="margin-bottom:3mm;color:var(--mute);font-size:8.6pt">
+    Docs already with you: <i>AI data requirements</i> PDF + lender template v2 Excel + Poonawalla import note.
+  </p>
+
+  <div class="lvl">
+    <div class="h"><span class="n">1</span><span class="t">Narration → best lender</span><span class="w ok">BUILT · NO NEW DATA</span></div>
+    <div class="b">Plain-text case → Best Match. Live in the CRM. Voice later = this plus speech-to-text.</div>
+  </div>
+  <div class="lvl">
+    <div class="h"><span class="n">2</span><span class="t">Payout + city tiers (per lender)</span><span class="w wt">NEEDS YOUR SHEETS</span></div>
+    <div class="b">
+      Fill <code>Payout Grid</code> and <code>City Tiers (per lender)</code> in template v2.
+      Each lender&rsquo;s own city classification — as discussed. Reloads in minutes when you send updates.
+    </div>
+  </div>
+  <div class="lvl">
+    <div class="h"><span class="n">3</span><span class="t">Learning from past data</span><span class="w wt">NEEDS FILE HISTORY</span></div>
+    <div class="b">
+      Per past file (no names / phones): product · lender · amount · city · profile · CIBIL band ·
+      property type · <b>outcome</b> (Approved / Rejected / Disbursed / Withdrawn) · rejection reason ·
+      days to decision. Even 200–300 rows starts the model; CRM records outcomes going forward automatically.
+    </div>
+  </div>
+
+  <div class="rule" style="margin-top:4mm"><div class="n">Section 04</div><h2>Partner apps — path to ~20 August</h2></div>
+  <p>Build itself is about <b>five days</b>. Store live dates depend on <b>company developer accounts</b>, not coding.</p>
+  <table>
+    <thead><tr><th style="width:42mm">Step</th><th style="width:28mm">Owner</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td><b>D-U-N-S number</b> for Simply Insight Consultancy LLP</td><td>You (or confirm if you already have it)</td>
+        <td>Required for <b>both</b> Apple and Google <i>organisation</i> accounts. Free from Dun &amp; Bradstreet. Can take days–weeks if new.</td></tr>
+      <tr><td>Google Play Console — <b>Organisation</b></td><td>You + we guide</td>
+        <td>$25 one-time. Org account = <b>no</b> 12-tester / 14-day closed testing. Personal account forces that wait.</td></tr>
+      <tr><td>Apple Developer — <b>Organisation</b></td><td>You + we guide</td>
+        <td>$99/year. Seller shows as the LLP (not the brand alone). App name can still be QCred Partner.</td></tr>
+      <tr><td>Add 24dev as Admin / Developer</td><td>You</td>
+        <td>So we can upload builds and handle review replies.</td></tr>
+      <tr><td>Build + submit + store review</td><td>Us + Google/Apple</td>
+        <td>Play typically 1–7 days · Apple typically 1–3 days after accounts are ready.</td></tr>
+    </tbody>
+  </table>
+  <div class="card a">
+    <b class="t">Target: both apps on stores by ~20 August</b>
+    Realistic <b>if</b> D-U-N-S exists (or is applied this week) and org accounts are opened during the build.
+    If enrollment starts only after the build, Play may still make it; Apple often slips.
+  </div>
+
+  <div class="rule" style="margin-top:3.5mm"><div class="n">Section 05</div><h2>Decisions for this call</h2></div>
+
+  <div class="q"><span class="qq">1 · D-U-N-S</span>
+    Does Simply Insight Consultancy LLP already have a D-U-N-S number? If yes, share it. If no, we start the free application today.</div>
+  <div class="q"><span class="qq">2 · Who enrolls the store accounts?</span>
+    Which designated partner has authority to bind the LLP, and which company email (e.g. info@qcred.in) should own Play + Apple?</div>
+  <div class="q"><span class="qq">3 · CRM domain</span>
+    Confirm <code>crm.qcred.in</code> (or preferred host) — one DNS entry — so the team uses it on your address.</div>
+  <div class="q"><span class="qq">4 · Production database &amp; document storage</span>
+    Go-ahead to create these under QCred / LLP ownership (Mumbai region) so live customer data never sits in our demo account.</div>
+  <div class="q"><span class="qq">5 · Commercials still on placeholders</span>
+    Partner share % · TDS % · bonus slabs (best-slab vs stacking) · BH vs SH in partner codes.</div>
+  <div class="q"><span class="qq">6 · Data sheets — when?</span>
+    Timeline for Payout Grid + City Tiers (other lenders) and a first Past Files export from MIS?</div>
+  <div class="q"><span class="qq">7 · Team review</span>
+    Any written change list yet, or still in progress? Voice match + training videos = Phase 2 quote, not absorbed into app milestones.</div>
+
+  <div class="card g" style="margin-top:3mm">
+    <b class="t">Our ask in one line</b>
+    Confirm D-U-N-S / store enrollment owners tonight so app builds can start in parallel with
+    your team&rsquo;s remaining review — and send the lender sheets whenever MIS is ready so Levels 2–3 of Best Match switch on without changing how anyone works.
+  </div>
+
+  <div class="foot"><span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span><span>Page 2</span></div>
+</div>
+
+</body>
+</html>

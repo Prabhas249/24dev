@@ -1,0 +1,28 @@
+# Used when EAS detects the monorepo git root (24dev).
+# Only ship the QCred Partner app — ignore everything else.
+# https://docs.expo.dev/build-reference/easignore/
+
+*
+!clients/
+clients/*
+!clients/qcred-partner-app/
+!clients/qcred-partner-app/**
+
+clients/qcred-partner-app/node_modules/
+clients/qcred-partner-app/.expo/
+clients/qcred-partner-app/dist/
+clients/qcred-partner-app/web-build/
+clients/qcred-partner-app/ios/
+clients/qcred-partner-app/android/
+clients/qcred-partner-app/.env
+clients/qcred-partner-app/.env.*
+clients/qcred-partner-app/docs/**/*.pdf
+clients/qcred-partner-app/docs/**/*.html
+clients/qcred-partner-app/.claude/
+clients/qcred-partner-app/**/*.tsbuildinfo
+
+# Never upload other client projects / agency junk
+node_modules/
+.next/
+.vercel/
+**/.git/

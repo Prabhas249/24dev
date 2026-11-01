@@ -1,0 +1,2525 @@
+{
+  "Lead  0": {
+    "error": "locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[data-bs-toggle=tab]"
+  },
+  "Account": {
+    "error": "locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[data-bs-toggle=tab]"
+  },
+  "System": {
+    "error": "locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[data-bs-toggle=tab]"
+  },
+  "Basic Details": {
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs My Account Dashboard My Account My Account Basic Details Contact Details Bank Details Upload Documents Advisor Agreement Update Password Advisor Code Email Company Name Dob Aadhar Pan Gender Male Female Married Single Married Divorced Widowed Next",
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Upload Documents",
+      "Advisor Agreement",
+      "Update Password",
+      "Next",
+      "Next",
+      "Next",
+      "Change Password",
+      "Upload",
+      "Next"
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "lead_search",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "placeholder": "Search Lead #",
+        "value": "",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bd",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "advisor_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "FC08524097",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "",
+        "value": "demodsa@finozacapital.com",
+        "label": "Email"
+      },
+      {
+        "name": "company_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "NA",
+        "label": "Company Name"
+      },
+      {
+        "name": "dob",
+        "type": "date",
+        "placeholder": "",
+        "value": "",
+        "label": "Dob"
+      },
+      {
+        "name": "aadhar",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Aadhar"
+      },
+      {
+        "name": "pan",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Pan"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Male"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "Female"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "S",
+        "label": "Single"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "M",
+        "label": "Married"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "D",
+        "label": "Divorced"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "W",
+        "label": "Widowed"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "First Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_ct",
+        "label": "First Name"
+      },
+      {
+        "name": "advisor_address_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "contact_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "DSA",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "placeholder": "",
+        "value": "7845124578",
+        "label": "Mobile"
+      },
+      {
+        "name": "alternate_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "0",
+        "label": "Alternate Number"
+      },
+      {
+        "name": "address_line_1",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 1"
+      },
+      {
+        "name": "address_line_2",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 2"
+      },
+      {
+        "name": "landmark",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Landmark"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "AN",
+        "label": "State"
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "0",
+        "label": "District"
+      },
+      {
+        "name": "city",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "City"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Bank Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bk",
+        "label": "Bank Name"
+      },
+      {
+        "name": "bank_name",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Bank Name"
+      },
+      {
+        "name": "account_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "",
+        "label": "Account Number"
+      },
+      {
+        "name": "account_holder_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo DSA",
+        "label": "Account Holder Name"
+      },
+      {
+        "name": "ifsc_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Ifsc Code"
+      },
+      {
+        "name": "upi",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Upi"
+      },
+      {
+        "name": "account_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "SVN",
+        "label": "Account Type"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "In-Active"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_password",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password_confirm",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password Confirm"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "document_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Document Type"
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "7ac8f231990bbbb67afc4d2f295fcd91",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "placeholder": "",
+        "value": "",
+        "label": "Select File"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_docs_dummy",
+        "label": ""
+      }
+    ],
+    "badges": [
+      "#1 Pan Card: Pending Please upload document",
+      "Pending",
+      "#2 Aadhar Card: Pending Please upload document",
+      "Pending",
+      "#3 Address Proof: Pending Please upload document",
+      "Pending",
+      "#4 Cancel Cheque / Passbook: Pending Please upload document",
+      "Pending",
+      "1 - Please enter 'Pan' in 'Basic Details' tab.",
+      "2 - Please enter 'Aadhar' in 'Basic Details' tab.",
+      "3 - Please enter 'Dob' in 'Basic Details' tab.",
+      "4 - Please enter 'Account Number' in 'Bank Details' tab.",
+      "5 - Please enter 'Ifsc Code' in 'Bank Details' tab.",
+      "6 - Please enter 'Account Type' in 'Bank Details' tab.",
+      "7 - Please enter 'Upi' in 'Bank Details' tab.",
+      "8 - Please enter 'Bank Name' in 'Bank Details' tab.",
+      "9 - Please enter 'Address Line 1' in 'Contact Details' tab.",
+      "10 - Please enter 'Address Line 2' in 'Contact Details' tab.",
+      "11 - Please enter 'Landmark' in 'Contact Details' tab.",
+      "12 - Please enter 'State Id' in 'Contact Details' tab.",
+      "13 - Please enter 'District Id' in 'Contact Details' tab.",
+      "14 - Please enter 'City' in 'Contact Details' tab.",
+      "15 - Please upload 'Pan Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "16 - Please upload 'Aadhar Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "17 - Please upload 'Address Proof' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "18 - Please upload 'Cancel Cheque / Passbook' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "Please fill all required fields in all tabs to download advisor agreement."
+    ]
+  },
+  "Contact Details": {
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs My Account Dashboard My Account My Account Basic Details Contact Details Bank Details Upload Documents Advisor Agreement Update Password First Name Last Name Mobile Alternate Number Address Line 1 Address Line 2 Landmark State Andaman & Nicobar Islands Andhra Pradesh Arunachal Pradesh Assam Bihar Chandigarh Chhattisgarh Dadra And Nagar Haveli And Daman And Diu Delhi Goa Gujarat Haryana Himachal Pradesh Jammu & Kashmir Jharkhand Karnataka Kerala Ladakh Lakshadweep Madhya Pradesh Maharashtra Manipur Meghalaya Mizoram Nagaland Odisha Puducherry Punjab Rajasthan Sikkim Tamil Nadu Telangana Tripura Uttar Pradesh Uttarakhand West Bengal District 0 City Next",
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Upload Documents",
+      "Advisor Agreement",
+      "Update Password",
+      "Next",
+      "Next",
+      "Next",
+      "Change Password",
+      "Upload",
+      "Next"
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "lead_search",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "placeholder": "Search Lead #",
+        "value": "",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bd",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "advisor_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "FC08524097",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "",
+        "value": "demodsa@finozacapital.com",
+        "label": "Email"
+      },
+      {
+        "name": "company_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "NA",
+        "label": "Company Name"
+      },
+      {
+        "name": "dob",
+        "type": "date",
+        "placeholder": "",
+        "value": "",
+        "label": "Dob"
+      },
+      {
+        "name": "aadhar",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Aadhar"
+      },
+      {
+        "name": "pan",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Pan"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Male"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "Female"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "S",
+        "label": "Single"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "M",
+        "label": "Married"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "D",
+        "label": "Divorced"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "W",
+        "label": "Widowed"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "First Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_ct",
+        "label": "First Name"
+      },
+      {
+        "name": "advisor_address_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "contact_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "DSA",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "placeholder": "",
+        "value": "7845124578",
+        "label": "Mobile"
+      },
+      {
+        "name": "alternate_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "0",
+        "label": "Alternate Number"
+      },
+      {
+        "name": "address_line_1",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 1"
+      },
+      {
+        "name": "address_line_2",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 2"
+      },
+      {
+        "name": "landmark",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Landmark"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "AN",
+        "label": "State"
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "0",
+        "label": "District"
+      },
+      {
+        "name": "city",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "City"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Bank Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bk",
+        "label": "Bank Name"
+      },
+      {
+        "name": "bank_name",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Bank Name"
+      },
+      {
+        "name": "account_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "",
+        "label": "Account Number"
+      },
+      {
+        "name": "account_holder_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo DSA",
+        "label": "Account Holder Name"
+      },
+      {
+        "name": "ifsc_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Ifsc Code"
+      },
+      {
+        "name": "upi",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Upi"
+      },
+      {
+        "name": "account_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "SVN",
+        "label": "Account Type"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "In-Active"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_password",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password_confirm",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password Confirm"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "document_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Document Type"
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "7ac8f231990bbbb67afc4d2f295fcd91",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "placeholder": "",
+        "value": "",
+        "label": "Select File"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_docs_dummy",
+        "label": ""
+      }
+    ],
+    "badges": [
+      "#1 Pan Card: Pending Please upload document",
+      "Pending",
+      "#2 Aadhar Card: Pending Please upload document",
+      "Pending",
+      "#3 Address Proof: Pending Please upload document",
+      "Pending",
+      "#4 Cancel Cheque / Passbook: Pending Please upload document",
+      "Pending",
+      "1 - Please enter 'Pan' in 'Basic Details' tab.",
+      "2 - Please enter 'Aadhar' in 'Basic Details' tab.",
+      "3 - Please enter 'Dob' in 'Basic Details' tab.",
+      "4 - Please enter 'Account Number' in 'Bank Details' tab.",
+      "5 - Please enter 'Ifsc Code' in 'Bank Details' tab.",
+      "6 - Please enter 'Account Type' in 'Bank Details' tab.",
+      "7 - Please enter 'Upi' in 'Bank Details' tab.",
+      "8 - Please enter 'Bank Name' in 'Bank Details' tab.",
+      "9 - Please enter 'Address Line 1' in 'Contact Details' tab.",
+      "10 - Please enter 'Address Line 2' in 'Contact Details' tab.",
+      "11 - Please enter 'Landmark' in 'Contact Details' tab.",
+      "12 - Please enter 'State Id' in 'Contact Details' tab.",
+      "13 - Please enter 'District Id' in 'Contact Details' tab.",
+      "14 - Please enter 'City' in 'Contact Details' tab.",
+      "15 - Please upload 'Pan Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "16 - Please upload 'Aadhar Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "17 - Please upload 'Address Proof' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "18 - Please upload 'Cancel Cheque / Passbook' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "Please fill all required fields in all tabs to download advisor agreement."
+    ]
+  },
+  "Bank Details": {
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs My Account Dashboard My Account My Account Basic Details Contact Details Bank Details Upload Documents Advisor Agreement Update Password Bank Name Account Number Account Holder Name Ifsc Code Upi Account Type Savings Account Current Account Salary Account NRI Account Status Active In-Active Next",
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Upload Documents",
+      "Advisor Agreement",
+      "Update Password",
+      "Next",
+      "Next",
+      "Next",
+      "Change Password",
+      "Upload",
+      "Next"
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "lead_search",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "placeholder": "Search Lead #",
+        "value": "",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bd",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "advisor_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "FC08524097",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "",
+        "value": "demodsa@finozacapital.com",
+        "label": "Email"
+      },
+      {
+        "name": "company_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "NA",
+        "label": "Company Name"
+      },
+      {
+        "name": "dob",
+        "type": "date",
+        "placeholder": "",
+        "value": "",
+        "label": "Dob"
+      },
+      {
+        "name": "aadhar",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Aadhar"
+      },
+      {
+        "name": "pan",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Pan"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Male"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "Female"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "S",
+        "label": "Single"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "M",
+        "label": "Married"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "D",
+        "label": "Divorced"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "W",
+        "label": "Widowed"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "First Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_ct",
+        "label": "First Name"
+      },
+      {
+        "name": "advisor_address_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "contact_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "DSA",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "placeholder": "",
+        "value": "7845124578",
+        "label": "Mobile"
+      },
+      {
+        "name": "alternate_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "0",
+        "label": "Alternate Number"
+      },
+      {
+        "name": "address_line_1",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 1"
+      },
+      {
+        "name": "address_line_2",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 2"
+      },
+      {
+        "name": "landmark",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Landmark"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "AN",
+        "label": "State"
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "0",
+        "label": "District"
+      },
+      {
+        "name": "city",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "City"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Bank Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bk",
+        "label": "Bank Name"
+      },
+      {
+        "name": "bank_name",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Bank Name"
+      },
+      {
+        "name": "account_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "",
+        "label": "Account Number"
+      },
+      {
+        "name": "account_holder_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo DSA",
+        "label": "Account Holder Name"
+      },
+      {
+        "name": "ifsc_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Ifsc Code"
+      },
+      {
+        "name": "upi",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Upi"
+      },
+      {
+        "name": "account_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "SVN",
+        "label": "Account Type"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "In-Active"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_password",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password_confirm",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password Confirm"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "document_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Document Type"
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "7ac8f231990bbbb67afc4d2f295fcd91",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "placeholder": "",
+        "value": "",
+        "label": "Select File"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_docs_dummy",
+        "label": ""
+      }
+    ],
+    "badges": [
+      "#1 Pan Card: Pending Please upload document",
+      "Pending",
+      "#2 Aadhar Card: Pending Please upload document",
+      "Pending",
+      "#3 Address Proof: Pending Please upload document",
+      "Pending",
+      "#4 Cancel Cheque / Passbook: Pending Please upload document",
+      "Pending",
+      "1 - Please enter 'Pan' in 'Basic Details' tab.",
+      "2 - Please enter 'Aadhar' in 'Basic Details' tab.",
+      "3 - Please enter 'Dob' in 'Basic Details' tab.",
+      "4 - Please enter 'Account Number' in 'Bank Details' tab.",
+      "5 - Please enter 'Ifsc Code' in 'Bank Details' tab.",
+      "6 - Please enter 'Account Type' in 'Bank Details' tab.",
+      "7 - Please enter 'Upi' in 'Bank Details' tab.",
+      "8 - Please enter 'Bank Name' in 'Bank Details' tab.",
+      "9 - Please enter 'Address Line 1' in 'Contact Details' tab.",
+      "10 - Please enter 'Address Line 2' in 'Contact Details' tab.",
+      "11 - Please enter 'Landmark' in 'Contact Details' tab.",
+      "12 - Please enter 'State Id' in 'Contact Details' tab.",
+      "13 - Please enter 'District Id' in 'Contact Details' tab.",
+      "14 - Please enter 'City' in 'Contact Details' tab.",
+      "15 - Please upload 'Pan Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "16 - Please upload 'Aadhar Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "17 - Please upload 'Address Proof' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "18 - Please upload 'Cancel Cheque / Passbook' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "Please fill all required fields in all tabs to download advisor agreement."
+    ]
+  },
+  "Upload Documents": {
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs My Account Dashboard My Account My Account Basic Details Contact Details Bank Details Upload Documents Advisor Agreement Update Password Document Type Select Document Type Pan Card Aadhar Card Address Proof Cancel Cheque / Passbook Advisor Agreement Select File Upload #1 Pan Card: PENDING Please upload document #2 Aadhar Card: PENDING Please upload document #3 Address Proof: PENDING Please upload document #4 Cancel Cheque / Passbook: PENDING Please upload document Document ID File Format Document Type Date Status View Next",
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Upload Documents",
+      "Advisor Agreement",
+      "Update Password",
+      "Next",
+      "Next",
+      "Next",
+      "Change Password",
+      "Upload",
+      "Next"
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "lead_search",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "placeholder": "Search Lead #",
+        "value": "",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bd",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "advisor_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "FC08524097",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "",
+        "value": "demodsa@finozacapital.com",
+        "label": "Email"
+      },
+      {
+        "name": "company_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "NA",
+        "label": "Company Name"
+      },
+      {
+        "name": "dob",
+        "type": "date",
+        "placeholder": "",
+        "value": "",
+        "label": "Dob"
+      },
+      {
+        "name": "aadhar",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Aadhar"
+      },
+      {
+        "name": "pan",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Pan"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Male"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "Female"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "S",
+        "label": "Single"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "M",
+        "label": "Married"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "D",
+        "label": "Divorced"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "W",
+        "label": "Widowed"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "First Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_ct",
+        "label": "First Name"
+      },
+      {
+        "name": "advisor_address_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "contact_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "DSA",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "placeholder": "",
+        "value": "7845124578",
+        "label": "Mobile"
+      },
+      {
+        "name": "alternate_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "0",
+        "label": "Alternate Number"
+      },
+      {
+        "name": "address_line_1",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 1"
+      },
+      {
+        "name": "address_line_2",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 2"
+      },
+      {
+        "name": "landmark",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Landmark"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "AN",
+        "label": "State"
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "0",
+        "label": "District"
+      },
+      {
+        "name": "city",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "City"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Bank Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bk",
+        "label": "Bank Name"
+      },
+      {
+        "name": "bank_name",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Bank Name"
+      },
+      {
+        "name": "account_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "",
+        "label": "Account Number"
+      },
+      {
+        "name": "account_holder_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo DSA",
+        "label": "Account Holder Name"
+      },
+      {
+        "name": "ifsc_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Ifsc Code"
+      },
+      {
+        "name": "upi",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Upi"
+      },
+      {
+        "name": "account_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "SVN",
+        "label": "Account Type"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "In-Active"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_password",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password_confirm",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password Confirm"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "document_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Document Type"
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "7ac8f231990bbbb67afc4d2f295fcd91",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "placeholder": "",
+        "value": "",
+        "label": "Select File"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_docs_dummy",
+        "label": ""
+      }
+    ],
+    "badges": [
+      "#1 Pan Card: PENDING Please upload document",
+      "PENDING",
+      "#2 Aadhar Card: PENDING Please upload document",
+      "PENDING",
+      "#3 Address Proof: PENDING Please upload document",
+      "PENDING",
+      "#4 Cancel Cheque / Passbook: PENDING Please upload document",
+      "PENDING",
+      "1 - Please enter 'Pan' in 'Basic Details' tab.",
+      "2 - Please enter 'Aadhar' in 'Basic Details' tab.",
+      "3 - Please enter 'Dob' in 'Basic Details' tab.",
+      "4 - Please enter 'Account Number' in 'Bank Details' tab.",
+      "5 - Please enter 'Ifsc Code' in 'Bank Details' tab.",
+      "6 - Please enter 'Account Type' in 'Bank Details' tab.",
+      "7 - Please enter 'Upi' in 'Bank Details' tab.",
+      "8 - Please enter 'Bank Name' in 'Bank Details' tab.",
+      "9 - Please enter 'Address Line 1' in 'Contact Details' tab.",
+      "10 - Please enter 'Address Line 2' in 'Contact Details' tab.",
+      "11 - Please enter 'Landmark' in 'Contact Details' tab.",
+      "12 - Please enter 'State Id' in 'Contact Details' tab.",
+      "13 - Please enter 'District Id' in 'Contact Details' tab.",
+      "14 - Please enter 'City' in 'Contact Details' tab.",
+      "15 - Please upload 'Pan Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "16 - Please upload 'Aadhar Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "17 - Please upload 'Address Proof' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "18 - Please upload 'Cancel Cheque / Passbook' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "Please fill all required fields in all tabs to download advisor agreement."
+    ]
+  },
+  "Advisor Agreement": {
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs My Account Dashboard My Account My Account Basic Details Contact Details Bank Details Upload Documents Advisor Agreement Update Password 1 - Please enter 'Pan' in 'Basic Details' tab. 2 - Please enter 'Aadhar' in 'Basic Details' tab. 3 - Please enter 'Dob' in 'Basic Details' tab. 4 - Please enter 'Account Number' in 'Bank Details' tab. 5 - Please enter 'Ifsc Code' in 'Bank Details' tab. 6 - Please enter 'Account Type' in 'Bank Details' tab. 7 - Please enter 'Upi' in 'Bank Details' tab. 8 - Please enter 'Bank Name' in 'Bank Details' tab. 9 - Please enter 'Address Line 1' in 'Contact Details' tab. 10 - Please enter 'Address Line 2' in 'Contact Details' tab. 11 - Please enter 'Landmark' in 'Contact Details' tab. 12 - Please enter 'State Id' in 'Contact Details' tab. 13 - Please enter 'District Id' in 'Contact Details' tab. 14 - Please enter 'City' in 'Contact Details' tab. 15 - Please upload 'Pan Card' in 'Documents' tab. Document Status: PENDING 16 - Please upload 'Aadhar Card' in 'Documents' tab. Document Status: PENDING 17 - Please upload 'Address Proof' in 'Documents' tab. Document Status: PENDING 18 - Please upload 'Cancel Cheque / Passbook' in 'Documents' tab. Document Status: PENDING This is intended for advisors collaborating with us. Please find the attached PDF document containing the agreement. Kindly download the file, thoroughly read our Terms & Conditions, and understand the policies outlined within the agreement. By working as an advisor with Finoza Capital, you implicitly agree to comply with our terms and policies. Once you have reviewed the document, please proceed to sign it. Afterwards, send the signed agreement to support@finozacapital.com , making sure to include your Advisor Code in the Subject line. Thank you. Please fill all required fields in all tabs to download advisor agreement.",
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Upload Documents",
+      "Advisor Agreement",
+      "Update Password",
+      "Next",
+      "Next",
+      "Next",
+      "Change Password",
+      "Upload",
+      "Next"
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "lead_search",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "placeholder": "Search Lead #",
+        "value": "",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bd",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "advisor_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "FC08524097",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "",
+        "value": "demodsa@finozacapital.com",
+        "label": "Email"
+      },
+      {
+        "name": "company_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "NA",
+        "label": "Company Name"
+      },
+      {
+        "name": "dob",
+        "type": "date",
+        "placeholder": "",
+        "value": "",
+        "label": "Dob"
+      },
+      {
+        "name": "aadhar",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Aadhar"
+      },
+      {
+        "name": "pan",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Pan"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Male"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "Female"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "S",
+        "label": "Single"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "M",
+        "label": "Married"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "D",
+        "label": "Divorced"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "W",
+        "label": "Widowed"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "First Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_ct",
+        "label": "First Name"
+      },
+      {
+        "name": "advisor_address_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "contact_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "DSA",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "placeholder": "",
+        "value": "7845124578",
+        "label": "Mobile"
+      },
+      {
+        "name": "alternate_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "0",
+        "label": "Alternate Number"
+      },
+      {
+        "name": "address_line_1",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 1"
+      },
+      {
+        "name": "address_line_2",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 2"
+      },
+      {
+        "name": "landmark",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Landmark"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "AN",
+        "label": "State"
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "0",
+        "label": "District"
+      },
+      {
+        "name": "city",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "City"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Bank Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bk",
+        "label": "Bank Name"
+      },
+      {
+        "name": "bank_name",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Bank Name"
+      },
+      {
+        "name": "account_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "",
+        "label": "Account Number"
+      },
+      {
+        "name": "account_holder_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo DSA",
+        "label": "Account Holder Name"
+      },
+      {
+        "name": "ifsc_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Ifsc Code"
+      },
+      {
+        "name": "upi",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Upi"
+      },
+      {
+        "name": "account_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "SVN",
+        "label": "Account Type"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "In-Active"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_password",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password_confirm",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password Confirm"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "document_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Document Type"
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "7ac8f231990bbbb67afc4d2f295fcd91",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "placeholder": "",
+        "value": "",
+        "label": "Select File"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_docs_dummy",
+        "label": ""
+      }
+    ],
+    "badges": [
+      "#1 Pan Card: Pending Please upload document",
+      "Pending",
+      "#2 Aadhar Card: Pending Please upload document",
+      "Pending",
+      "#3 Address Proof: Pending Please upload document",
+      "Pending",
+      "#4 Cancel Cheque / Passbook: Pending Please upload document",
+      "Pending",
+      "1 - Please enter 'Pan' in 'Basic Details' tab.",
+      "2 - Please enter 'Aadhar' in 'Basic Details' tab.",
+      "3 - Please enter 'Dob' in 'Basic Details' tab.",
+      "4 - Please enter 'Account Number' in 'Bank Details' tab.",
+      "5 - Please enter 'Ifsc Code' in 'Bank Details' tab.",
+      "6 - Please enter 'Account Type' in 'Bank Details' tab.",
+      "7 - Please enter 'Upi' in 'Bank Details' tab.",
+      "8 - Please enter 'Bank Name' in 'Bank Details' tab.",
+      "9 - Please enter 'Address Line 1' in 'Contact Details' tab.",
+      "10 - Please enter 'Address Line 2' in 'Contact Details' tab.",
+      "11 - Please enter 'Landmark' in 'Contact Details' tab.",
+      "12 - Please enter 'State Id' in 'Contact Details' tab.",
+      "13 - Please enter 'District Id' in 'Contact Details' tab.",
+      "14 - Please enter 'City' in 'Contact Details' tab.",
+      "15 - Please upload 'Pan Card' in 'Documents' tab. Document Status: PENDING",
+      "PENDING",
+      "16 - Please upload 'Aadhar Card' in 'Documents' tab. Document Status: PENDING",
+      "PENDING",
+      "17 - Please upload 'Address Proof' in 'Documents' tab. Document Status: PENDING",
+      "PENDING",
+      "18 - Please upload 'Cancel Cheque / Passbook' in 'Documents' tab. Document Status: PENDING",
+      "PENDING",
+      "Please fill all required fields in all tabs to download advisor agreement."
+    ]
+  },
+  "Update Password": {
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs My Account Dashboard My Account My Account Basic Details Contact Details Bank Details Upload Documents Advisor Agreement Update Password New Password New Password Confirm Change Password",
+    "buttons": [
+      "View All Notifications",
+      "Logout",
+      "Call Now",
+      "Basic Details",
+      "Contact Details",
+      "Bank Details",
+      "Upload Documents",
+      "Advisor Agreement",
+      "Update Password",
+      "Next",
+      "Next",
+      "Next",
+      "Change Password",
+      "Upload",
+      "Next"
+    ],
+    "fields": [
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "lead_search",
+        "label": ""
+      },
+      {
+        "name": "LeadID",
+        "type": "text",
+        "placeholder": "Search Lead #",
+        "value": "",
+        "label": ""
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bd",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "advisor_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "FC08524097",
+        "label": "Advisor Code"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "",
+        "value": "demodsa@finozacapital.com",
+        "label": "Email"
+      },
+      {
+        "name": "company_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "NA",
+        "label": "Company Name"
+      },
+      {
+        "name": "dob",
+        "type": "date",
+        "placeholder": "",
+        "value": "",
+        "label": "Dob"
+      },
+      {
+        "name": "aadhar",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Aadhar"
+      },
+      {
+        "name": "pan",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Pan"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Male"
+      },
+      {
+        "name": "gender",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "Female"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "S",
+        "label": "Single"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "M",
+        "label": "Married"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "D",
+        "label": "Divorced"
+      },
+      {
+        "name": "married",
+        "type": "radio",
+        "placeholder": "",
+        "value": "W",
+        "label": "Widowed"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "First Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_ct",
+        "label": "First Name"
+      },
+      {
+        "name": "advisor_address_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "contact_id",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "4",
+        "label": "First Name"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo",
+        "label": "First Name"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "DSA",
+        "label": "Last Name"
+      },
+      {
+        "name": "mobile",
+        "type": "number",
+        "placeholder": "",
+        "value": "7845124578",
+        "label": "Mobile"
+      },
+      {
+        "name": "alternate_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "0",
+        "label": "Alternate Number"
+      },
+      {
+        "name": "address_line_1",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 1"
+      },
+      {
+        "name": "address_line_2",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Address Line 2"
+      },
+      {
+        "name": "landmark",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "Landmark"
+      },
+      {
+        "name": "state_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "AN",
+        "label": "State"
+      },
+      {
+        "name": "district_id",
+        "type": "select",
+        "placeholder": "",
+        "value": "0",
+        "label": "District"
+      },
+      {
+        "name": "city",
+        "type": "text",
+        "placeholder": "",
+        "value": "0",
+        "label": "City"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Bank Name"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_adv_bk",
+        "label": "Bank Name"
+      },
+      {
+        "name": "bank_name",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Bank Name"
+      },
+      {
+        "name": "account_number",
+        "type": "number",
+        "placeholder": "",
+        "value": "",
+        "label": "Account Number"
+      },
+      {
+        "name": "account_holder_name",
+        "type": "text",
+        "placeholder": "",
+        "value": "Demo DSA",
+        "label": "Account Holder Name"
+      },
+      {
+        "name": "ifsc_code",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Ifsc Code"
+      },
+      {
+        "name": "upi",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "label": "Upi"
+      },
+      {
+        "name": "account_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "SVN",
+        "label": "Account Type"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "1",
+        "label": "Active"
+      },
+      {
+        "name": "status",
+        "type": "radio",
+        "placeholder": "",
+        "value": "0",
+        "label": "In-Active"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "New Password"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_password",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password"
+      },
+      {
+        "name": "new_password_confirm",
+        "type": "password",
+        "placeholder": "",
+        "value": "",
+        "label": "New Password Confirm"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "document_type",
+        "type": "select",
+        "placeholder": "",
+        "value": "",
+        "label": "Document Type"
+      },
+      {
+        "name": "token",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "7ac8f231990bbbb67afc4d2f295fcd91",
+        "label": "Document Type"
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "upload_adv_docs",
+        "label": "Document Type"
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "placeholder": "",
+        "value": "",
+        "label": "Select File"
+      },
+      {
+        "name": "menu",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "3",
+        "label": ""
+      },
+      {
+        "name": "act_type",
+        "type": "hidden",
+        "placeholder": "",
+        "value": "update_docs_dummy",
+        "label": ""
+      }
+    ],
+    "badges": [
+      "#1 Pan Card: Pending Please upload document",
+      "Pending",
+      "#2 Aadhar Card: Pending Please upload document",
+      "Pending",
+      "#3 Address Proof: Pending Please upload document",
+      "Pending",
+      "#4 Cancel Cheque / Passbook: Pending Please upload document",
+      "Pending",
+      "1 - Please enter 'Pan' in 'Basic Details' tab.",
+      "2 - Please enter 'Aadhar' in 'Basic Details' tab.",
+      "3 - Please enter 'Dob' in 'Basic Details' tab.",
+      "4 - Please enter 'Account Number' in 'Bank Details' tab.",
+      "5 - Please enter 'Ifsc Code' in 'Bank Details' tab.",
+      "6 - Please enter 'Account Type' in 'Bank Details' tab.",
+      "7 - Please enter 'Upi' in 'Bank Details' tab.",
+      "8 - Please enter 'Bank Name' in 'Bank Details' tab.",
+      "9 - Please enter 'Address Line 1' in 'Contact Details' tab.",
+      "10 - Please enter 'Address Line 2' in 'Contact Details' tab.",
+      "11 - Please enter 'Landmark' in 'Contact Details' tab.",
+      "12 - Please enter 'State Id' in 'Contact Details' tab.",
+      "13 - Please enter 'District Id' in 'Contact Details' tab.",
+      "14 - Please enter 'City' in 'Contact Details' tab.",
+      "15 - Please upload 'Pan Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "16 - Please upload 'Aadhar Card' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "17 - Please upload 'Address Proof' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "18 - Please upload 'Cancel Cheque / Passbook' in 'Documents' tab. Document Status: Pending",
+      "Pending",
+      "Please fill all required fields in all tabs to download advisor agreement."
+    ]
+  }
+}

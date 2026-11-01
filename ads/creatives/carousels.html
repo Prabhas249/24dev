@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; font-family: 'Inter', -apple-system, 'Helvetica Neue', sans-serif; }
+
+  /* ============================ SHARED ============================ */
+  .slide {
+    position: relative; overflow: hidden; color: #F2F3F4;
+    display: flex; flex-direction: column;
+    background: radial-gradient(ellipse 120% 90% at 50% 0%, #101214 0%, #0A0C0E 55%, #08090B 100%);
+  }
+  .slide::before {
+    content: ''; position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .green { color: #4ade80; }
+  .muted { color: #7d838a; }
+  .hl {
+    background: #46c463; color: #08090B; font-weight: 700; padding: 2px 14px 5px 14px;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  }
+  .scribble { display: block; margin-top: 8px; }
+
+  /* header / footer rows live INSIDE the padded safe zone, so they never clip */
+  .top { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
+  .main { flex: 1; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; }
+  .bot { display: flex; align-items: flex-end; min-height: 40px; position: relative; z-index: 2; }
+
+  .logo { font-size: 40px; font-weight: 700; letter-spacing: -0.03em; color: #fff; }
+  .logo .dot { display: inline-block; width: 13px; height: 13px; background: #4ade80; margin-left: 6px; margin-bottom: 24px; border-radius: 2px; }
+  .counter { font-size: 30px; font-weight: 500; color: #C9CCCF; }
+  .badge-top {
+    font-size: 25px; font-weight: 700; letter-spacing: 0.08em; color: #4ade80;
+    border: 2px solid #2c5c3f; padding: 9px 22px; border-radius: 100px; text-transform: uppercase;
+  }
+  .footer-tag { font-size: 30px; font-weight: 500; color: #7d838a; }
+  .fine { font-size: 23px; line-height: 1.45; color: #6b7178; }
+
+  /* ============ AD CARDS — 1080×1350 (4:5) · safe zone = 150px sides ============ */
+  /* Carousel peek-crop shaves the sides harder than a single feed crop, so 150px (14%). */
+  /* Content is vertically CENTERED so top/bottom crop is symmetric and never kills a line. */
+  .slide.ad  { width: 1080px; height: 1350px; padding: 120px 150px 120px; }
+  .slide.send { width: 1080px; height: 1350px; padding: 90px 90px 90px; }  /* WhatsApp = no crop */
+
+  h1 { font-size: 58px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.3; }
+  h1.sm { font-size: 48px; }
+  .gap { height: 46px; } .gap-sm { height: 24px; }
+
+  ul.checks { list-style: none; }
+  ul.checks li {
+    font-size: 35px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3;
+    margin-bottom: 24px; padding-left: 56px; position: relative;
+  }
+  ul.checks li:last-child { margin-bottom: 0; }
+  ul.checks li::before { content: '✓'; position: absolute; left: 0; color: #4ade80; font-weight: 700; }
+  ul.checks li .note { color: #7d838a; font-weight: 400; }
+  ul.checks li b { font-weight: 700; }
+
+  ol.steps { list-style: none; counter-reset: step; }
+  ol.steps li {
+    counter-increment: step; font-size: 43px; font-weight: 500; line-height: 1.25;
+    margin-bottom: 34px; padding-left: 66px; position: relative;
+  }
+  ol.steps li:last-child { margin-bottom: 0; }
+  ol.steps li::before { content: counter(step) '.'; position: absolute; left: 0; color: #4ade80; font-weight: 700; }
+  ol.steps li .sub { display: block; font-size: 30px; color: #7d838a; font-weight: 400; margin-top: 4px; }
+
+  .tier {
+    display: flex; align-items: center; gap: 26px; position: relative;
+    background: #121517; border: 2px solid #1f2428; border-radius: 18px;
+    padding: 20px 28px; margin-bottom: 16px;
+  }
+  .tier:last-child { margin-bottom: 0; }
+  .tier .price { font-size: 40px; font-weight: 800; letter-spacing: -0.03em; color: #4ade80; min-width: 200px; }
+  .tier .name { font-size: 28px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+  .tier .desc { font-size: 23px; color: #7d838a; margin-top: 3px; line-height: 1.3; }
+  .tier.popular { border-color: #46c463; background: #10190f; }
+  .tier .pop {
+    position: absolute; top: -15px; right: 24px; background: #46c463; color: #08090B;
+    font-size: 18px; font-weight: 800; letter-spacing: 0.06em; padding: 5px 15px; border-radius: 100px; text-transform: uppercase;
+  }
+
+  .panel { background: #10190f; border: 2px solid #2c5c3f; border-radius: 18px; padding: 30px 34px; }
+  .panel .t { font-size: 31px; font-weight: 700; color: #4ade80; margin-bottom: 10px; }
+  .panel .b { font-size: 27px; color: #c9cccf; line-height: 1.42; }
+
+  .bills { display: flex; gap: 22px; }
+  .bill { flex: 1; border-radius: 18px; padding: 28px 26px; }
+  .bill.trap { background: #17110f; border: 2px solid #4a2b22; }
+  .bill.ours { background: #10190f; border: 2px solid #46c463; }
+  .bill .bt { font-size: 25px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px; }
+  .bill.trap .bt { color: #e8735a; } .bill.ours .bt { color: #4ade80; }
+  .bill .row { display: flex; justify-content: space-between; font-size: 24px; margin-bottom: 16px; color: #c9cccf; gap: 8px; }
+  .bill .row span:last-child { font-weight: 700; white-space: nowrap; }
+  .bill .total { border-top: 2px solid #2a2f34; padding-top: 16px; margin-top: 4px; font-size: 26px; font-weight: 800; display: flex; justify-content: space-between; }
+  .bill.trap .total { color: #e8735a; } .bill.ours .total { color: #4ade80; }
+</style>
+</head>
+<body>
+
+<!-- ==================================================== -->
+<!-- CAROUSEL A — ₹1,999 STARTER · 1080×1350 · 150px safe -->
+<!-- ==================================================== -->
+
+<div class="slide ad" data-name="A-1999-01">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">1/7</div></div>
+  <div class="main">
+    <h1>Your business.<br><span class="green">Online by tomorrow.</span></h1>
+    <svg class="scribble" width="480" height="18" viewBox="0 0 480 18"><path d="M4 10 C 90 5, 210 13, 300 8 S 430 7, 476 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+    <div class="gap"></div>
+    <h1>A complete website,<br>done-for-you.</h1>
+    <div class="gap"></div>
+    <h1>From just <span class="hl">₹1,999</span> — once.</h1>
+  </div>
+  <div class="bot"><div class="footer-tag">swipe →</div></div>
+</div>
+
+<div class="slide ad" data-name="A-1999-02">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">2/7</div></div>
+  <div class="main">
+    <h1>AI built it in 30 seconds.</h1>
+    <div class="gap-sm"></div>
+    <h1>Your customers can tell in <span class="green">0.05.</span></h1>
+    <svg class="scribble" width="160" height="18" viewBox="0 0 160 18"><path d="M4 10 C 38 5, 78 13, 108 8 S 148 7, 156 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+    <div class="gap"></div>
+    <h1>Ours are <span class="hl">human-crafted.</span></h1>
+    <div class="gap-sm"></div>
+    <h1 class="sm muted">Designed. Written. Built for YOUR business — not a template.</h1>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide ad" data-name="A-1999-03">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">3/7</div></div>
+  <div class="main">
+    <h1 class="sm">Everything in your <span class="hl">₹1,999</span></h1>
+    <div class="gap"></div>
+    <ul class="checks">
+      <li><b>Complete 1-page website</b> <span class="note">— mobile-perfect</span></li>
+      <li><b>Free domain setup</b> <span class="note">+ first year on us</span></li>
+      <li><b>Free hosting for LIFE</b> <span class="note">— no hosting bills, ever</span></li>
+      <li><b>Free logo + brand colours</b> <span class="note">— starter kit</span></li>
+      <li><b>All writing done for you</b></li>
+      <li><b>WhatsApp + call button</b> + Google Map</li>
+      <li><b>Found by Google & AI assistants</b></li>
+      <li><b>1 free revision</b> — you own everything</li>
+    </ul>
+  </div>
+  <div class="bot"><div class="fine">Free domain = setup + year 1, renews in YOUR name at cost · free hosting for life = on your own account.</div></div>
+</div>
+
+<div class="slide ad" data-name="A-1999-04">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">4/7</div></div>
+  <div class="main">
+    <h1 class="sm">How it works: <span class="hl">4 steps</span></h1>
+    <div class="gap"></div>
+    <ol class="steps">
+      <li>Message us on WhatsApp<span class="sub">just your business name to start</span></li>
+      <li>Pay ₹1,000 to begin<span class="sub">50% now, 50% on delivery</span></li>
+      <li>We design, write & build<span class="sub">you approve before going live</span></li>
+      <li>LIVE in under 48 hours<span class="sub">no meetings · no calls · no tech skills</span></li>
+    </ol>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide ad" data-name="A-1999-05">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">5/7</div></div>
+  <div class="main">
+    <h1 class="sm">Seen the <span class="green">₹999 website</span> ads?<br>Read their fine print.</h1>
+    <div class="gap"></div>
+    <div class="bills">
+      <div class="bill trap">
+        <div class="bt">The Trap</div>
+        <div class="row"><span>1 page only</span><span>₹999</span></div>
+        <div class="row"><span>full site actually</span><span>+₹2,499</span></div>
+        <div class="row"><span>hosting yr 2+</span><span>+₹2,500/yr</span></div>
+        <div class="row"><span>SSL yr 2+</span><span>+₹1,200/yr</span></div>
+        <div class="total"><span>by year 2</span><span>₹7,000+</span></div>
+      </div>
+      <div class="bill ours">
+        <div class="bt">24dev</div>
+        <div class="row"><span>full website</span><span>₹1,999</span></div>
+        <div class="row"><span>live in</span><span>48 hours</span></div>
+        <div class="row"><span>hosting</span><span>FREE, life</span></div>
+        <div class="row"><span>renewals</span><span>none</span></div>
+        <div class="total"><span>total. ever.</span><span>₹1,999</span></div>
+      </div>
+    </div>
+    <div class="gap"></div>
+    <h1 class="sm">Pay <span class="green">once.</span> Own it forever.</h1>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide ad" data-name="A-1999-06">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">6/7</div></div>
+  <div class="main">
+    <h1 class="sm">You <span class="green">own</span> everything.</h1>
+    <svg class="scribble" width="170" height="18" viewBox="0 0 170 18"><path d="M4 10 C 38 5, 80 13, 112 8 S 155 7, 166 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+    <div class="gap"></div>
+    <ul class="checks">
+      <li>Domain in <b>your</b> name</li>
+      <li>Site on <b>your</b> hosting account</li>
+      <li>No subscription. No renewals.</li>
+      <li>No year-2 surprise bill.</li>
+    </ul>
+    <div class="gap"></div>
+    <div class="panel">
+      <div class="t">+ Website Care — ₹1,000/mo (optional)</div>
+      <div class="b">We keep it fast, secure & updated — your small changes done for you. Cancel anytime.</div>
+    </div>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide ad" data-name="A-1999-07">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">7/7</div></div>
+  <div class="main">
+    <h1>Live by <span class="green">tomorrow dinner.</span></h1>
+    <svg class="scribble" width="450" height="18" viewBox="0 0 450 18"><path d="M4 10 C 80 5, 195 13, 280 8 S 405 7, 446 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+    <div class="gap"></div>
+    <h1>Message <span class="hl">SITE</span> on WhatsApp with your business name.</h1>
+    <div class="gap"></div>
+    <h1 class="sm muted">24dev — human-crafted websites, live in 24–48 hours. From ₹1,999.</h1>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<!-- ============================================================== -->
+<!-- CAROUSEL B — BUSINESS ₹4,999→₹49,999 · 1080×1350 · 150px safe -->
+<!-- ============================================================== -->
+
+<div class="slide ad" data-name="B-BUSINESS-01">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">1/7</div></div>
+  <div class="main">
+    <h1>A complete business website.</h1>
+    <div class="gap-sm"></div>
+    <h1><span class="green">Done-for-you.</span> Every word written. Every page designed.</h1>
+    <svg class="scribble" width="320" height="18" viewBox="0 0 320 18"><path d="M4 10 C 58 5, 140 13, 200 8 S 290 7, 316 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+    <div class="gap"></div>
+    <h1>From <span class="hl">₹4,999</span></h1>
+  </div>
+  <div class="bot"><div class="footer-tag">swipe →</div></div>
+</div>
+
+<div class="slide ad" data-name="B-BUSINESS-02">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">2/7</div></div>
+  <div class="main">
+    <h1 class="sm">Pick your tier: <span class="hl">5 options</span></h1>
+    <div class="gap"></div>
+    <div class="tier"><div class="price">₹4,999</div><div><div class="name">Starter</div><div class="desc">Sharp 1-page · mobile · enquiry form · SEO basics</div></div></div>
+    <div class="tier popular"><div class="pop">Most popular</div><div class="price">₹9,999</div><div><div class="name">Business</div><div class="desc">5–7 pages · copywriting done for you · blog/CMS you edit</div></div></div>
+    <div class="tier"><div class="price">₹14,999</div><div><div class="name">Pro</div><div class="desc">Custom animations · conversion-focused design</div></div></div>
+    <div class="tier"><div class="price">₹24,999</div><div><div class="name">Commerce</div><div class="desc">Online store + Razorpay — OR a 3D interactive hero</div></div></div>
+    <div class="tier"><div class="price">₹49,999</div><div><div class="name">Flagship</div><div class="desc">Headless · up to 500 auto-SEO pages · multilingual</div></div></div>
+  </div>
+  <div class="bot"><div class="fine">Each tier = everything below it + its upgrade · agencies quote ₹20k–₹5L for the same · rankings depend on Google.</div></div>
+</div>
+
+<div class="slide ad" data-name="B-BUSINESS-03">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">3/7</div></div>
+  <div class="main">
+    <h1 class="sm">Most pick <span class="hl">₹9,999 Business</span></h1>
+    <div class="gap"></div>
+    <ul class="checks">
+      <li><b>5–7 full pages</b> <span class="note">— home, services, about, gallery, contact</span></li>
+      <li><b>Professional copywriting</b> <span class="note">— whole site</span></li>
+      <li><b>Blog/CMS you update yourself</b></li>
+      <li><b>Enquiry forms</b> that reach your WhatsApp</li>
+      <li><b>SEO on every page</b> + basic analytics</li>
+      <li><b>Mobile-perfect</b> + 1 free revision</li>
+      <li><b>You own everything</b> <span class="note">— site, domain, content</span></li>
+    </ul>
+  </div>
+  <div class="bot"><div class="fine">Delivered in a few days — premium work takes more than 24 hours, and we say so.</div></div>
+</div>
+
+<div class="slide ad" data-name="B-BUSINESS-04">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">4/7</div></div>
+  <div class="main">
+    <h1 class="sm muted">An agency quotes ₹30,000–₹1,00,000 for this. Plus a discovery call. Plus 3 weeks.</h1>
+    <div class="gap"></div>
+    <h1>We're builders, not salesmen.</h1>
+    <div class="gap"></div>
+    <h1><span class="green">Fixed price. Fixed timeline.</span><br>Everything on WhatsApp.</h1>
+    <svg class="scribble" width="500" height="18" viewBox="0 0 500 18"><path d="M4 10 C 90 5, 215 13, 310 8 S 455 7, 496 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide ad" data-name="B-BUSINESS-05">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">5/7</div></div>
+  <div class="main">
+    <h1>Human-crafted.<br><span class="green">Not AI slop.</span></h1>
+    <svg class="scribble" width="280" height="18" viewBox="0 0 280 18"><path d="M4 10 C 50 5, 120 13, 175 8 S 255 7, 276 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+    <div class="gap"></div>
+    <h1 class="sm">Real copy about <span class="green">your</span> business. Design that matches <span class="green">your</span> brand. Structured so Google & AI assistants find you.</h1>
+    <div class="gap"></div>
+    <h1 class="sm muted">Your customers can tell the difference. So can Google.</h1>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide ad" data-name="B-BUSINESS-06">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">6/7</div></div>
+  <div class="main">
+    <h1 class="sm">Add-ons — <span class="hl">any tier</span></h1>
+    <div class="gap"></div>
+    <ul class="checks">
+      <li><b>Logo + full brand kit</b> — ₹7,999</li>
+      <li><b>Extra page</b> — ₹999</li>
+      <li><b>Copywriting</b> — ₹499/page</li>
+      <li><b>Programmatic-SEO pack</b> — ₹9,999</li>
+      <li><b>Website Care</b> — from ₹1,000/mo</li>
+    </ul>
+    <div class="gap"></div>
+    <div class="panel">
+      <div class="t">💳 50% to start, 50% on delivery</div>
+      <div class="b">Razorpay/UPI. You own the site, domain & content — full transfer on delivery.</div>
+    </div>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide ad" data-name="B-BUSINESS-07">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="counter">7/7</div></div>
+  <div class="main">
+    <h1>Stop looking smaller than you are.</h1>
+    <div class="gap"></div>
+    <h1>Message <span class="hl">GROW</span> on WhatsApp — we'll pick your tier in 2 minutes.</h1>
+    <div class="gap"></div>
+    <h1 class="sm muted">24dev — complete business websites, done-for-you. From ₹4,999.</h1>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<!-- =============================================== -->
+<!-- SENDABLES — 1080×1350 (WhatsApp only, no crop)  -->
+<!-- =============================================== -->
+
+<div class="slide send" data-name="SEND-starter-menu">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="badge-top">Starter menu</div></div>
+  <div class="main">
+    <h1 class="sm">⭐ <span class="hl">₹1,999 Starter</span> — live in under 48h</h1>
+    <div class="gap-sm"></div>
+    <ul class="checks">
+      <li><b>Complete 1-page website</b> <span class="note">— mobile-perfect</span></li>
+      <li><b>Your own domain</b> <span class="note">— setup + 1st yr on us</span></li>
+      <li><b>Free hosting for life</b> <span class="note">— on YOUR account</span></li>
+      <li><b>Starter logo + brand colours</b></li>
+      <li><b>All writing done for you</b></li>
+      <li><b>WhatsApp + call button</b> + Google Map</li>
+      <li><b>1 free revision</b> — you own everything</li>
+    </ul>
+    <div class="gap-sm"></div>
+    <div class="panel">
+      <div class="t">💳 ₹1,000 to start · ₹999 on delivery</div>
+      <div class="b">Reply "START" → payment link + 4 quick questions → live by tomorrow. 🚀</div>
+    </div>
+  </div>
+  <div class="bot"><div class="fine">Domain yr 1 included, renews in your name at cost · full custom logo = ₹7,999 brand kit · extra pages ₹999 · Care ₹1,000/mo.</div></div>
+</div>
+
+<div class="slide send" data-name="SEND-tier-menu">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="badge-top">Full menu</div></div>
+  <div class="main">
+    <h1 class="sm">Pick your tier <span class="muted">(most land on Business)</span></h1>
+    <div class="gap-sm"></div>
+    <div class="tier"><div class="price">₹49,999</div><div><div class="name">Flagship</div><div class="desc">Headless · up to 500 auto-SEO pages · multilingual · from-price</div></div></div>
+    <div class="tier"><div class="price">₹24,999</div><div><div class="name">Commerce</div><div class="desc">Sell online: catalogue + Razorpay — or a 3D hero</div></div></div>
+    <div class="tier"><div class="price">₹14,999</div><div><div class="name">Pro</div><div class="desc">Premium conversion design + custom animation</div></div></div>
+    <div class="tier popular"><div class="pop">Most popular</div><div class="price">₹9,999</div><div><div class="name">Business</div><div class="desc">5–7 pages · all copy written · blog/CMS you edit · forms · SEO</div></div></div>
+    <div class="tier"><div class="price">₹4,999</div><div><div class="name">Starter</div><div class="desc">One sharp credible page + copywriting + enquiry form</div></div></div>
+  </div>
+  <div class="bot"><div class="fine">💳 50% to start, 50% on delivery · you own everything · domain yr-1 included, renews at cost · hosting on your own account. Reply with the tier name (e.g. "BUSINESS") →</div></div>
+</div>
+
+<div class="slide send" data-name="SEND-addons">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="badge-top">Add-ons</div></div>
+  <div class="main">
+    <h1 class="sm">Add-ons — snap onto <span class="hl">any website</span></h1>
+    <div class="gap"></div>
+    <ul class="checks">
+      <li><b>Logo + full brand kit</b> — ₹7,999 <span class="note">— logo, colours, fonts: your identity</span></li>
+      <li><b>Extra page</b> — ₹999 each</li>
+      <li><b>Copywriting</b> — ₹499/page <span class="note">— we write, you don't</span></li>
+      <li><b>Programmatic-SEO pack</b> — ₹9,999 <span class="note">— many more pages on Google</span></li>
+      <li><b>Website Care</b> — ₹1,000/mo Starter · ₹1,999/mo Business+</li>
+    </ul>
+    <div class="gap"></div>
+    <div class="panel">
+      <div class="t">Want one folded into your quote?</div>
+      <div class="b">Just reply with what you want added. 👍</div>
+    </div>
+  </div>
+  <div class="bot"></div>
+</div>
+
+<div class="slide send" data-name="SEND-care">
+  <div class="top"><div class="logo">24dev<span class="dot"></span></div><div class="badge-top">After delivery</div></div>
+  <div class="main">
+    <h1>Your site is live 🎉</h1>
+    <div class="gap-sm"></div>
+    <h1 class="sm">Keep it working as hard as <span class="green">you</span> do:</h1>
+    <svg class="scribble" width="150" height="18" viewBox="0 0 150 18"><path d="M4 10 C 32 5, 72 13, 102 8 S 140 7, 146 11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>
+    <div class="gap"></div>
+    <div class="panel">
+      <div class="t">🛡️ Website Care</div>
+      <div class="b">Fast, secure, always updated — and any small change you need, just message us and it's done. No logging in. No plugins. No stress.<br><br><b style="color:#4ade80">₹1,000/mo</b> Starter sites · <b style="color:#4ade80">₹1,999/mo</b> Business & up<br>Cancel anytime.</div>
+    </div>
+    <div class="gap"></div>
+    <h1 class="sm muted">Want me to switch it on?</h1>
+  </div>
+  <div class="bot"></div>
+</div>
+
+</body>
+</html>

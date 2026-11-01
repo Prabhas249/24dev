@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24dev — Plans & Pricing (sendable PDF)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#0B0B0C; --ink2:#101012; --lime:#0FFF00; --lime-d:#0bd400; --ivory:#FAF6E9; --coral:#FF6B47; --line:rgba(255,255,255,.08); }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  @page{ size:A4; margin:0; }
+  body{background:#070708;font-family:Inter,sans-serif;display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px}
+
+  /* ===== A4 page ===== */
+  .page{width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--ink);
+    page-break-after:always;break-after:page;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+  .page:last-child{page-break-after:auto;break-after:auto}
+  .tex{position:absolute;inset:0;pointer-events:none;z-index:1;
+    background-image:radial-gradient(rgba(255,255,255,.022) 1.1px, transparent 1.1px);background-size:26px 26px}
+  .glow{position:absolute;inset:0;pointer-events:none;z-index:0;
+    background:radial-gradient(120% 60% at 100% 0%, rgba(15,255,0,.10), transparent 52%)}
+  .pad{position:relative;z-index:2;height:100%;padding:22mm 18mm;display:flex;flex-direction:column}
+
+  /* brand bits */
+  .wm{font-family:Unbounded;font-weight:700;font-size:17px;color:#fff;display:flex;align-items:center;gap:8px;letter-spacing:-.4px}
+  .wm .dot{width:9px;height:9px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px 1px var(--lime)}
+  .toprow{display:flex;justify-content:space-between;align-items:center}
+  .toprow .pn{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#7a7a7a;text-transform:uppercase}
+
+  .chip{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-size:10px;letter-spacing:2.5px;font-weight:800;color:var(--ink);background:var(--lime);padding:7px 14px;border-radius:100px;text-transform:uppercase;box-shadow:0 0 26px rgba(15,255,0,.3)}
+  .chip.ghost{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:#cfcfcf;box-shadow:none}
+
+  /* cover */
+  .cover .pad{justify-content:center}
+  .cover h1{font-family:Unbounded;font-weight:300;font-size:62px;color:#fff;letter-spacing:-2.5px;line-height:1.05;margin-top:26px}
+  .cover h1 b{color:var(--lime);font-weight:700}
+  .cover .sub{font-size:19px;color:#a8a8a8;line-height:1.6;margin-top:22px;max-width:135mm}
+  .cover .sub b{color:#fff}
+  .cover .foot{position:absolute;bottom:22mm;left:18mm;right:18mm;z-index:2;display:flex;justify-content:space-between;align-items:flex-end}
+  .cover .ladder{font-size:12.5px;color:#8e8e8e;line-height:1.9}
+  .cover .ladder b{color:var(--lime);font-family:Unbounded;font-weight:600}
+
+  /* generic heads */
+  .h2{font-family:Unbounded;font-weight:500;font-size:30px;color:#fff;letter-spacing:-1px;line-height:1.15;margin-top:16px}
+  .h2 b{color:var(--lime);font-weight:700}
+  .kick{font-size:13px;color:#9a9a9a;margin-top:12px;line-height:1.6;max-width:150mm}
+  .kick b{color:#fff}
+
+  /* chooser */
+  .choose{display:flex;flex-direction:column;gap:11px;margin-top:24px}
+  .crow{display:flex;gap:16px;align-items:center;padding:15px 18px;border-radius:13px;background:linear-gradient(160deg,#141416,#0d0d0f);border:1px solid #222225}
+  .crow .q{font-size:14px;color:#d8d8d8;flex:1;line-height:1.4}
+  .crow .q b{color:#fff;font-weight:700}
+  .crow .a{font-family:Unbounded;font-weight:700;font-size:17px;color:var(--lime);letter-spacing:-.5px;white-space:nowrap}
+
+  /* === PLAN PAGE === */
+  .plan .price{display:flex;align-items:baseline;gap:12px;margin-top:14px}
+  .plan .price .pr{font-family:Unbounded;font-weight:700;font-size:58px;color:var(--lime);letter-spacing:-3px;line-height:.9;text-shadow:0 0 44px rgba(15,255,0,.34)}
+  .plan .price .nm{font-family:Unbounded;font-weight:600;font-size:22px;color:#fff;letter-spacing:-.5px}
+  .plan .best{font-size:12.5px;color:#9a9a9a;margin-top:14px;letter-spacing:.3px}
+  .plan .best b{color:#fff;font-weight:700}
+  .plan .outcome{font-size:20px;color:#f0f0f0;line-height:1.55;margin-top:20px;font-weight:500;border-left:3px solid var(--lime);padding-left:19px}
+  .plan .cols{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;margin-top:34px}
+  .col .ct{font-size:11.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--lime);margin-bottom:17px}
+  .incl{list-style:none;display:flex;flex-direction:column;gap:15px}
+  .incl li{display:flex;gap:12px;font-size:14px;color:#e0e0e0;line-height:1.45;align-items:flex-start}
+  .incl li::before{content:"✓";width:19px;height:19px;border-radius:50%;background:rgba(15,255,0,.13);border:1.5px solid rgba(15,255,0,.5);color:var(--lime);font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+  .incl li b{color:#fff;font-weight:700}
+  .whybox{background:linear-gradient(160deg,rgba(15,255,0,.07),rgba(15,255,0,.015));border:1px solid rgba(15,255,0,.28);border-radius:14px;padding:22px 23px}
+  .whybox p{font-size:14px;color:#cfdccf;line-height:1.72;margin-bottom:14px}
+  .whybox p:last-child{margin-bottom:0}
+  .whybox p b{color:#fff;font-weight:700}
+  .whybox .anch{color:#ff9c84;font-weight:700}
+  .metarow{display:flex;gap:13px;margin-top:30px}
+  .mcard{flex:1;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:16px 17px}
+  .mcard .ml{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#7e7e7e;font-weight:700;margin-bottom:6px}
+  .mcard .mv{font-size:14px;color:#fff;font-weight:600;line-height:1.4}
+  .mcard .mv b{color:var(--lime)}
+
+  /* bottom start-strip (makes single-page sends self-contained) */
+  .startstrip{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;
+    background:linear-gradient(100deg,#101212,#0c0c0e);border:1px solid var(--line);border-radius:14px;padding:15px 18px}
+  .startstrip .s1{font-size:12px;color:#bdbdbd;line-height:1.45}
+  .startstrip .s1 b{color:#fff;font-weight:700}
+  .startstrip .cta{font-family:Unbounded;font-weight:600;font-size:13px;color:var(--ink);background:linear-gradient(var(--lime),var(--lime-d));padding:12px 18px;border-radius:100px;white-space:nowrap;box-shadow:0 6px 20px rgba(15,255,0,.28)}
+
+  /* add-ons / care */
+  .addrows{display:flex;flex-direction:column;margin-top:18px}
+  .addrow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:15px 4px;border-bottom:1px solid var(--line)}
+  .addrow .al{font-size:14px;color:#e2e2e2}.addrow .al b{color:#fff;font-weight:700}
+  .addrow .al .sub2{font-size:11.5px;color:#8e8e8e;margin-top:3px}
+  .addrow .ap{font-family:Unbounded;font-weight:600;font-size:16px;color:var(--lime);letter-spacing:-.5px;white-space:nowrap}
+  .carebox{margin-top:22px;background:linear-gradient(100deg,rgba(15,255,0,.09),rgba(15,255,0,.02));border:1.5px solid rgba(15,255,0,.3);border-radius:16px;padding:20px 22px}
+  .carebox .ch{font-size:16px;font-weight:800;color:var(--lime);margin-bottom:8px}
+  .carebox .cp{font-size:13px;color:#cdd9cd;line-height:1.55}
+  .carebox .cp b{color:#fff}
+
+  /* steps */
+  .steps{display:flex;flex-direction:column;gap:14px;margin-top:20px}
+  .step{display:flex;gap:16px;align-items:flex-start}
+  .step .n{width:34px;height:34px;border-radius:50%;background:var(--lime);color:var(--ink);font-family:Unbounded;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .step .sd{font-size:14px;color:#dcdcdc;line-height:1.45;padding-top:5px}
+  .step .sd b{color:#fff;font-weight:700}
+  .fine{margin-top:auto;border-top:1px solid var(--line);padding-top:14px;font-size:10.5px;color:#8a8a8a;line-height:1.7}
+  .fine b{color:#b9c9b9}
+
+  /* CTA page */
+  .cta-page .pad{justify-content:center;text-align:center;align-items:center}
+  .cta-page h2{font-family:Unbounded;font-weight:400;font-size:42px;color:#fff;letter-spacing:-1.5px;line-height:1.15}
+  .cta-page h2 b{color:var(--lime);font-weight:700}
+  .cta-page .p{font-size:17px;color:#a8a8a8;line-height:1.6;margin-top:20px;max-width:130mm}
+  .cta-page .big{font-family:Unbounded;font-weight:600;font-size:18px;color:var(--ink);background:linear-gradient(var(--lime),var(--lime-d));padding:18px 34px;border-radius:100px;margin-top:34px;box-shadow:0 10px 34px rgba(15,255,0,.3)}
+
+  .pgnum{position:absolute;bottom:11mm;right:18mm;z-index:2;font-family:'JetBrains Mono',monospace;font-size:10px;color:#5a5a5a}
+  .wmfoot{position:absolute;bottom:11mm;left:18mm;z-index:2}
+
+  @media print{
+    body{padding:0;gap:0;display:block;background:#0B0B0C}
+    .page{box-shadow:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ 1 · COVER ============ -->
+<div class="page cover" data-name="00-cover">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="wm">24dev<span class="dot"></span></div>
+    <h1>Website &amp;<br>Store <b>Plans</b>.</h1>
+    <div class="sub">Every plan, what's inside, and <b>why it costs what it costs</b> — so you can pick the right one with your eyes open. Built fast. <b>Owned by you</b> — your domain, your hosting, your code. No monthly lock-in, ever.</div>
+  </div>
+  <div class="foot">
+    <div class="ladder">
+      THE RANGE<br>
+      <b>₹4,999</b> Starter &nbsp;·&nbsp; <b>₹9,999</b> Business &nbsp;·&nbsp; <b>₹14,999</b> Pro<br>
+      <b>₹24,999</b> Commerce &nbsp;·&nbsp; <b>₹49,999</b> Flagship
+    </div>
+    <div class="chip">50% to start · 50% on delivery</div>
+  </div>
+</div>
+
+<!-- ============ 2 · CHOOSER ============ -->
+<div class="page" data-name="01-choose">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="pn">How to choose</div></div>
+    <div class="h2">Which plan is <b>right for you</b>?</div>
+    <div class="kick">Pick by what the website needs to <b>do for your business</b> — not by price. Here's the honest one-line answer for each.</div>
+    <div class="choose">
+      <div class="crow"><div class="q">I need <b>one strong page</b> — look credible, get calls &amp; enquiries.</div><div class="a">₹4,999 · Starter</div></div>
+      <div class="crow"><div class="q">I want a <b>full website</b> (5–7 pages + blog) I can update myself.</div><div class="a">₹9,999 · Business</div></div>
+      <div class="crow"><div class="q">It has to look <b>premium</b> and actively convert visitors.</div><div class="a">₹14,999 · Pro</div></div>
+      <div class="crow"><div class="q">I want to <b>sell products online</b> — take orders &amp; payments.</div><div class="a">₹24,999 · Commerce</div></div>
+      <div class="crow"><div class="q">I need to be <b>found at scale</b> — many pages, many languages.</div><div class="a">₹49,999 · Flagship</div></div>
+    </div>
+    <div class="kick" style="margin-top:24px"><b>Not sure?</b> Most businesses land on the ₹9,999 Business — it's the complete, do-everything choice. Message us a line about your business and we'll tell you straight which one fits.</div>
+    <div class="fine">Every plan includes: professional copywriting, mobile-perfect build, search-ready SEO, 1 free revision, and <b>full ownership</b> — domain in your name, hosting on your own account (free for life), code &amp; content yours to keep.</div>
+  </div>
+  <div class="wmfoot"></div><div class="pgnum">01</div>
+</div>
+
+<!-- ============ 3 · ₹4,999 STARTER ============ -->
+<div class="page plan" data-name="plan-1-starter-4999">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="chip ghost">Plan 01 · Starter</div></div>
+    <div class="price"><div class="pr">₹4,999</div><div class="nm">Starter</div></div>
+    <div class="best"><b>Best for:</b> a serious business that needs one sharp page — credibility + enquiries, fast.</div>
+    <div class="outcome">One high-craft page that makes your business look established and turns visitors into calls and messages.</div>
+    <div class="cols">
+      <div class="col">
+        <div class="ct">What's included</div>
+        <ul class="incl">
+          <li><b>One high-craft page</b>, custom-designed (not a template)</li>
+          <li><b>Copywriting</b> for the whole page — we write it</li>
+          <li><b>Enquiry / contact form</b> straight to you</li>
+          <li><b>On-page SEO</b> — built search-ready</li>
+          <li><b>Mobile-perfect</b> on every phone</li>
+          <li><b>1 free revision</b> · you own 100%</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="ct">Why this plan</div>
+        <div class="whybox">
+          <p><b>A single page done right is not a cheap page.</b> Custom layout, written for you, and built to convert — agencies quote <span class="anch">₹15,000+</span> for exactly this.</p>
+          <p>You're paying for <b>craft and ownership</b>, not a drag-and-drop template that looks like everyone else's.</p>
+          <p>Perfect if you're a consultant, clinic, local service, or a brand testing the water before going bigger.</p>
+        </div>
+      </div>
+    </div>
+    <div class="metarow">
+      <div class="mcard"><div class="ml">Timeline</div><div class="mv"><b>A couple of days</b></div></div>
+      <div class="mcard"><div class="ml">Grow later</div><div class="mv">Add pages at ₹999 each, anytime</div></div>
+      <div class="mcard"><div class="ml">You own</div><div class="mv">Domain · hosting · code</div></div>
+    </div>
+    <div class="startstrip">
+      <div class="s1"><b>How to start:</b> 50% advance via Razorpay → we begin. Balance only once it's live &amp; you're happy.</div>
+      <div class="cta">Reply "STARTER"</div>
+    </div>
+  </div>
+  <div class="pgnum">02</div>
+</div>
+
+<!-- ============ 4 · ₹9,999 BUSINESS (POPULAR) ============ -->
+<div class="page plan" data-name="plan-2-business-9999">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="chip">★ Most popular</div></div>
+    <div class="price"><div class="pr">₹9,999</div><div class="nm">Business</div></div>
+    <div class="best"><b>Best for:</b> most businesses — a complete website that tells your full story and brings in enquiries.</div>
+    <div class="outcome">A complete 5–7 page website that turns visitors into enquiries — plus a blog you can update yourself, no developer needed.</div>
+    <div class="cols">
+      <div class="col">
+        <div class="ct">What's included</div>
+        <ul class="incl">
+          <li><b>5–7 pages</b> (Home, About, Services, Gallery, Contact…)</li>
+          <li><b>Professional copywriting</b> across the whole site</li>
+          <li><b>Blog / CMS</b> you post to yourself, anytime</li>
+          <li><b>Enquiry forms</b> + search-ready SEO on every page</li>
+          <li><b>Basic analytics</b> + mobile-perfect build</li>
+          <li><b>1 free revision</b> · you own 100%</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="ct">Why this plan</div>
+        <div class="whybox">
+          <p><b>This is a complete web presence, not a page.</b> The real cost here is the writing — 5–7 pages written professionally is <span class="anch">₹22,500+</span> as copy alone.</p>
+          <p>You get the site, the words, <b>and the power to keep it fresh yourself</b> — post offers, news, blogs without paying anyone.</p>
+          <p>It's the choice most serious businesses land on — enough to do everything, without paying for what you don't need yet.</p>
+        </div>
+      </div>
+    </div>
+    <div class="metarow">
+      <div class="mcard"><div class="ml">Timeline</div><div class="mv"><b>A few days</b></div></div>
+      <div class="mcard"><div class="ml">Keep it growing</div><div class="mv">Website Care from ₹1,999/mo</div></div>
+      <div class="mcard"><div class="ml">You own</div><div class="mv">Domain · hosting · code</div></div>
+    </div>
+    <div class="startstrip">
+      <div class="s1"><b>How to start:</b> 50% advance via Razorpay → we begin. Balance only once it's live &amp; you're happy.</div>
+      <div class="cta">Reply "BUSINESS"</div>
+    </div>
+  </div>
+  <div class="pgnum">03</div>
+</div>
+
+<!-- ============ 5 · ₹14,999 PRO ============ -->
+<div class="page plan" data-name="plan-3-pro-14999">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="chip ghost">Plan 03 · Pro</div></div>
+    <div class="price"><div class="pr">₹14,999</div><div class="nm">Pro</div></div>
+    <div class="best"><b>Best for:</b> brands where the <i>feel</i> must be premium and the site has to actively sell.</div>
+    <div class="outcome">A premium, custom-animated website designed around one job: turning visitors into customers.</div>
+    <div class="cols">
+      <div class="col">
+        <div class="ct">What's included</div>
+        <ul class="incl">
+          <li><b>Everything in Business</b>, plus —</li>
+          <li><b>Custom animation</b> &amp; scroll interactions</li>
+          <li><b>Conversion-focused design</b> pass</li>
+          <li><b>Deeper, sharper copywriting</b></li>
+          <li><b>Priority delivery</b></li>
+          <li><b>1 free revision</b> · you own 100%</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="ct">Why this plan</div>
+        <div class="whybox">
+          <p><b>Custom motion + a conversion-designed layout is specialist work.</b> Animation alone runs <span class="anch">₹30,000</span> freelance.</p>
+          <p>This is for when "looking nice" isn't enough — when the site has to <b>out-class your competitors</b> and guide every visitor toward contacting or buying.</p>
+          <p>Perfect for premium D2C, design-led brands, and anyone whose competitors currently look better than them.</p>
+        </div>
+      </div>
+    </div>
+    <div class="metarow">
+      <div class="mcard"><div class="ml">Timeline</div><div class="mv"><b>A few days</b></div></div>
+      <div class="mcard"><div class="ml">Add</div><div class="mv">Online store → Commerce</div></div>
+      <div class="mcard"><div class="ml">You own</div><div class="mv">Domain · hosting · code</div></div>
+    </div>
+    <div class="startstrip">
+      <div class="s1"><b>How to start:</b> 50% advance via Razorpay → we begin. Balance only once it's live &amp; you're happy.</div>
+      <div class="cta">Reply "PRO"</div>
+    </div>
+  </div>
+  <div class="pgnum">04</div>
+</div>
+
+<!-- ============ 6 · ₹24,999 COMMERCE ============ -->
+<div class="page plan" data-name="plan-4-commerce-24999">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="chip ghost">Plan 04 · Commerce</div></div>
+    <div class="price"><div class="pr">₹24,999</div><div class="nm">Commerce</div></div>
+    <div class="best"><b>Best for:</b> businesses ready to <i>sell</i> online — take orders &amp; payments around the clock.</div>
+    <div class="outcome">A real online store — product catalogue + cart + secure Razorpay checkout — that takes money while you sleep.</div>
+    <div class="cols">
+      <div class="col">
+        <div class="ct">What's included</div>
+        <ul class="incl">
+          <li><b>Product pages</b> — photos, prices, variants</li>
+          <li><b>Cart + secure Razorpay checkout</b> (UPI/card/netbanking)</li>
+          <li><b>Order flow</b> — every order to you, clean</li>
+          <li><b>Copywriting + SEO + mobile-perfect</b></li>
+          <li><b>1 free revision</b> · you own 100%</li>
+          <li><i>Or:</i> a standout <b>3D / interactive hero</b> instead of a store</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="ct">Why this plan</div>
+        <div class="whybox">
+          <p><b>A store isn't a webpage with prices on it.</b> It's a checkout that handles money, orders and customers safely — that's real engineering.</p>
+          <p>Agencies quote <span class="anch">₹80,000–₹1,20,000</span> and take a month for this. You get a real, owned store from ₹24,999.</p>
+          <p>You stop just <i>showing</i> your products and start <b>selling</b> them. Perfect for D2C brands, food &amp; beverage, boutiques, anyone with products.</p>
+        </div>
+      </div>
+    </div>
+    <div class="metarow">
+      <div class="mcard"><div class="ml">Timeline</div><div class="mv"><b>A few days</b></div></div>
+      <div class="mcard"><div class="ml">Lean start</div><div class="mv">Catalogue + WhatsApp orders → ₹9,999</div></div>
+      <div class="mcard"><div class="ml">You own</div><div class="mv">Store · domain · code</div></div>
+    </div>
+    <div class="startstrip">
+      <div class="s1"><b>How to start:</b> 50% advance via Razorpay → we begin. Balance only once it's live &amp; you're happy.</div>
+      <div class="cta">Reply "COMMERCE"</div>
+    </div>
+  </div>
+  <div class="pgnum">05</div>
+</div>
+
+<!-- ============ 7 · ₹49,999 FLAGSHIP ============ -->
+<div class="page plan" data-name="plan-5-flagship-49999">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="chip ghost">Plan 05 · Flagship</div></div>
+    <div class="price"><div class="pr">₹49,999</div><div class="nm">Flagship</div><span style="font-size:13px;color:#9a9a9a;font-weight:700">from</span></div>
+    <div class="best"><b>Best for:</b> brands that want to be <i>found at scale</i> — many pages, many languages, blazing fast.</div>
+    <div class="outcome">A growth engine: a lightning-fast headless site with up to 500 auto-generated SEO pages and multilingual reach.</div>
+    <div class="cols">
+      <div class="col">
+        <div class="ct">What's included</div>
+        <ul class="incl">
+          <li><b>Headless architecture</b> — extremely fast</li>
+          <li><b>Up to 500 auto-generated SEO pages</b> (scoped)</li>
+          <li><b>Multilingual</b> reach</li>
+          <li><b>Conversion design + deep copy + the works</b></li>
+          <li><b>1 free revision</b> · you own 100%</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="ct">Why this plan</div>
+        <div class="whybox">
+          <p><b>This is infrastructure, not a website.</b> It's built to capture hundreds of Google searches and serve customers in multiple languages.</p>
+          <p>Agencies bill <span class="anch">₹3–5 lakh</span> over months for this. You get it from ₹49,999, scoped to your project.</p>
+          <p><b>Honest note:</b> "500 pages" = a smart template + your data, agreed up front (not 500 hand-written pages). SEO = search-ready structure; rankings are always Google's call — no "guaranteed #1" here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="metarow">
+      <div class="mcard"><div class="ml">Timeline</div><div class="mv"><b>Several days, scoped</b></div></div>
+      <div class="mcard"><div class="ml">Scope</div><div class="mv">"From" price — quoted to your project</div></div>
+      <div class="mcard"><div class="ml">You own</div><div class="mv">Everything we build</div></div>
+    </div>
+    <div class="startstrip">
+      <div class="s1"><b>How to start:</b> we scope it with you first, then a 50% advance kicks off the build. You own all of it.</div>
+      <div class="cta">Reply "FLAGSHIP"</div>
+    </div>
+  </div>
+  <div class="pgnum">06</div>
+</div>
+
+<!-- ============ 8 · ADD-ONS & CARE ============ -->
+<div class="page" data-name="07-addons-care">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="pn">Add-ons &amp; Care</div></div>
+    <div class="h2">Bolt on <b>anything</b>.</div>
+    <div class="kick">Snap any of these onto any plan. We always tell you the price <b>before</b> we touch it — nothing is ever added to your bill without a yes.</div>
+    <div class="addrows">
+      <div class="addrow"><div class="al"><b>Logo + full brand kit</b><div class="sub2">Logo, colours, fonts — your complete identity</div></div><div class="ap">₹7,999</div></div>
+      <div class="addrow"><div class="al"><b>Extra page</b><div class="sub2">Add to any plan as you grow</div></div><div class="ap">₹999</div></div>
+      <div class="addrow"><div class="al"><b>Copywriting</b><div class="sub2">We write it, you don't — per page</div></div><div class="ap">₹499</div></div>
+      <div class="addrow"><div class="al"><b>Programmatic-SEO pack</b><div class="sub2">Lots more pages, built to be found on Google</div></div><div class="ap">₹9,999</div></div>
+    </div>
+    <div class="carebox">
+      <div class="ch">🛡️ Website Care — the part that keeps it working</div>
+      <div class="cp">We keep your site <b>fast, secure and up to date</b> — and any small change you need, just message us and it's done. No logins, no plugins, no stress. &nbsp;<b>₹1,000/mo</b> for Starter sites · <b>₹1,999/mo</b> for Business &amp; up. Cancel anytime.</div>
+    </div>
+    <div class="fine">A website is a living thing — Care is how it stays fast and current instead of slowly breaking. Most clients add it on day one; it's optional, always.</div>
+  </div>
+  <div class="pgnum">07</div>
+</div>
+
+<!-- ============ 9 · HOW WE WORK ============ -->
+<div class="page" data-name="08-how-we-work">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="toprow"><div class="wm">24dev<span class="dot"></span></div><div class="pn">How we work</div></div>
+    <div class="h2">Simple, safe, <b>yours</b>.</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div class="sd"><b>You message us</b> — tell us your business in a line. We confirm the plan, the exact price, and the timeline. No surprises.</div></div>
+      <div class="step"><div class="n">2</div><div class="sd"><b>50% advance via Razorpay</b> (proper invoice + receipt — never a personal UPI). The moment it clears, your build clock starts.</div></div>
+      <div class="step"><div class="n">3</div><div class="sd"><b>We design &amp; build it</b> — copy, branding, the lot. You preview it on your own phone. <b>1 free revision</b> included.</div></div>
+      <div class="step"><div class="n">4</div><div class="sd"><b>You're live — and you own everything.</b> Balance is due only once it's delivered and you're happy.</div></div>
+    </div>
+    <div class="carebox" style="margin-top:24px">
+      <div class="ch">You own 100% of it</div>
+      <div class="cp">Domain <b>in your name</b> · hosting on <b>your own account</b> (free for life — no monthly bill to us) · the code &amp; content are <b>yours to keep</b>. Fire us tomorrow and your site keeps running. No lock-in, ever.</div>
+    </div>
+    <div class="fine">
+      <b>Honest small print —</b> Free domain = setup + year 1; you renew after at cost (~₹800–1,000/yr, your asset, your name).
+      SEO = we build you search-ready; rankings depend on Google — no "guaranteed #1."
+      AI search = we structure your site so AI assistants can find you; we can't guarantee they'll cite you.
+      Flagship is "from"/MVP scope — final scope agreed before we start.
+      Premium builds (Pro / Commerce / Flagship) take a few days, not 48 hours — built properly, not rushed.
+    </div>
+  </div>
+  <div class="pgnum">08</div>
+</div>
+
+<!-- ============ 10 · CTA ============ -->
+<div class="page cta-page" data-name="09-cta">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="pad">
+    <div class="wm" style="position:absolute;top:22mm;left:18mm">24dev<span class="dot"></span></div>
+    <h2>Pick a plan.<br>We'll start <b>today</b>.</h2>
+    <div class="p">Reply on WhatsApp with the plan name — or just describe your business and we'll tell you exactly which one fits. Live in days, owned by you, no renewals.</div>
+    <div class="big">Message us the plan name →</div>
+  </div>
+  <div class="pgnum">09</div>
+</div>
+
+</body>
+</html>

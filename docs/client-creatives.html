@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24dev — Client Creatives (send-to-client)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#0B0B0C; --ink2:#101012; --lime:#0FFF00; --lime-d:#0bd400; --ivory:#FAF6E9; --coral:#FF6B47; --line:rgba(255,255,255,.08); }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#070708;font-family:Inter,sans-serif;padding:40px;display:flex;flex-wrap:wrap;gap:40px}
+
+  /* ===== creative base 1080x1350 ===== */
+  .creative{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--ink);flex-shrink:0;
+    box-shadow:0 40px 100px rgba(0,0,0,.6);}
+  .tex{position:absolute;inset:0;pointer-events:none;z-index:1;
+    background-image:radial-gradient(rgba(255,255,255,.025) 1.4px, transparent 1.4px);background-size:34px 34px;}
+  .glow{position:absolute;inset:0;pointer-events:none;z-index:0;
+    background:radial-gradient(120% 70% at 100% 0%, rgba(15,255,0,.12), transparent 52%);}
+  .creative .inner{position:relative;z-index:2;height:100%;padding:78px 76px 84px;display:flex;flex-direction:column}
+  .wm{position:absolute;bottom:46px;left:76px;font-family:Unbounded;font-weight:600;font-size:30px;color:#fff;z-index:14;display:flex;align-items:center;gap:13px;letter-spacing:-.5px}
+  .wm .dot{width:14px;height:14px;border-radius:50%;background:var(--lime);box-shadow:0 0 22px 2px var(--lime)}
+  .badge{position:absolute;bottom:48px;right:76px;font-size:23px;font-weight:800;color:var(--lime);letter-spacing:1px;z-index:14}
+
+  .tag{display:inline-flex;align-items:center;gap:14px;align-self:flex-start;font-size:21px;letter-spacing:4px;font-weight:800;color:var(--ink);background:var(--lime);padding:13px 26px;border-radius:100px;text-transform:uppercase;box-shadow:0 0 40px rgba(15,255,0,.34);margin-bottom:34px}
+
+  .dh{font-family:Unbounded;font-weight:500;font-size:62px;color:#fff;letter-spacing:-1.6px;line-height:1.1}
+  .dh b{color:var(--lime);font-weight:700}
+  .lead{font-size:30px;color:#a8a8a8;line-height:1.5;margin-top:22px;max-width:850px}
+  .lead b{color:#fff}
+
+  /* price block */
+  .bigprice{margin-top:30px}
+  .bigprice .anch{font-size:28px;color:#9a9a9a;text-decoration:line-through;text-decoration-color:rgba(255,107,71,.85);font-weight:700;display:block;margin-bottom:6px}
+  .bigprice .pr{font-family:Unbounded;font-weight:700;font-size:118px;color:var(--lime);letter-spacing:-5px;line-height:.95;text-shadow:0 0 60px rgba(15,255,0,.4)}
+  .bigprice .pr span{font-family:Inter;font-size:30px;color:#9a9a9a;font-weight:700;letter-spacing:0;margin-left:10px}
+
+  /* checklist */
+  .incl{list-style:none;display:flex;flex-direction:column;gap:20px;margin-top:42px}
+  .incl li{display:flex;gap:20px;font-size:31px;color:#e2e2e2;line-height:1.35;align-items:flex-start;font-weight:500}
+  .incl li::before{content:"✓";width:38px;height:38px;border-radius:50%;background:rgba(15,255,0,.13);border:2px solid rgba(15,255,0,.55);color:var(--lime);font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:3px}
+  .incl li b{color:#fff;font-weight:700}
+
+  /* tiers */
+  .tiers{display:flex;flex-direction:column;gap:18px;margin-top:40px}
+  .tierrow{display:flex;align-items:center;gap:26px;padding:24px 28px;border-radius:18px;background:linear-gradient(160deg,#141416,#0e0e10);border:1.5px solid #242427;position:relative}
+  .tierrow.hot{background:linear-gradient(100deg,rgba(15,255,0,.13),rgba(15,255,0,.03));border:2px solid var(--lime);box-shadow:0 0 50px rgba(15,255,0,.22)}
+  .tierrow .tp{font-family:Unbounded;font-weight:700;font-size:42px;color:var(--lime);letter-spacing:-1.5px;width:218px;flex-shrink:0}
+  .tierrow .tm .tl{font-size:25px;font-weight:800;color:#fff;letter-spacing:.5px}
+  .tierrow .tm .td{font-size:22px;color:#a4a4a4;line-height:1.35;margin-top:5px}
+  .tierrow .pop{position:absolute;top:-16px;right:26px;font-size:17px;font-weight:800;color:var(--ink);background:var(--lime);padding:6px 16px;border-radius:100px;box-shadow:0 0 26px rgba(15,255,0,.45)}
+
+  /* add-on rows */
+  .addrows{display:flex;flex-direction:column;margin-top:34px}
+  .addrow{display:flex;justify-content:space-between;align-items:center;padding:24px 4px;border-bottom:1.5px solid var(--line);font-size:31px;color:#e2e2e2}
+  .addrow b{color:#fff;font-weight:600}
+  .addrow .ap{font-family:Unbounded;font-weight:600;font-size:31px;color:var(--lime);letter-spacing:-1px}
+
+  .carebox{margin-top:36px;background:linear-gradient(100deg,rgba(15,255,0,.11),rgba(15,255,0,.03));border:2px solid rgba(15,255,0,.34);border-radius:20px;padding:34px 36px}
+  .carebox .h{font-size:30px;font-weight:800;color:var(--lime);margin-bottom:18px}
+  .carebox .pl{display:flex;gap:18px;flex-wrap:wrap}
+  .carebox .pl span{font-size:24px;color:#cfe3cf;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:11px 18px;border-radius:100px;font-weight:600}
+
+  /* numbered steps */
+  .steps{display:flex;flex-direction:column;gap:24px;margin-top:40px}
+  .step{display:flex;gap:24px;align-items:flex-start}
+  .step .n{width:52px;height:52px;border-radius:50%;background:var(--lime);color:var(--ink);font-family:Unbounded;font-weight:700;font-size:26px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .step .sd{font-size:30px;color:#e2e2e2;line-height:1.35;padding-top:6px;font-weight:500}
+  .step .sd b{color:#fff;font-weight:700}
+
+  /* meta rows (quote/welcome) */
+  .mrows{display:flex;flex-direction:column;gap:0;margin-top:38px;border:1.5px solid var(--line);border-radius:20px;overflow:hidden}
+  .mrow{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 32px;border-bottom:1.5px solid var(--line);font-size:28px}
+  .mrow:last-child{border-bottom:none}
+  .mrow .k{color:#8e8e8e;font-weight:600;letter-spacing:.3px}
+  .mrow .v{color:#fff;font-weight:700;text-align:right}
+  .mrow .v.lime{color:var(--lime);font-family:Unbounded;letter-spacing:-.5px}
+
+  /* footer / cta */
+  .foot{margin-top:auto}
+  .ft{font-size:27px;color:#b6b6b6;line-height:1.5;margin-bottom:24px;font-weight:500}
+  .ft b{color:#fff;font-weight:700}
+  .cta{background:linear-gradient(var(--lime),var(--lime-d));color:var(--ink);font-family:Unbounded;font-weight:700;font-size:33px;text-align:center;padding:30px;border-radius:100px;letter-spacing:-.5px;box-shadow:0 16px 50px rgba(15,255,0,.32), inset 0 2px 0 rgba(255,255,255,.4)}
+  .note{font-size:22px;color:#7c7c7c;line-height:1.5;margin-top:20px}
+  .note b{color:var(--lime)}
+</style>
+</head>
+<body>
+
+<!-- ============== MENU 1 — STARTER ============== -->
+<div class="creative" data-name="menu-1-starter" data-w="1080" data-h="1350">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="inner">
+    <div class="tag">24dev · website menu</div>
+    <h2 class="dh">Your business,<br><b>online & done-for-you.</b></h2>
+    <div class="bigprice"><span class="anch">₹30,000+ at an agency</span><div class="pr">₹2,000<span>all-in, once</span></div></div>
+    <ul class="incl">
+      <li>A <b>complete custom website</b> — designed, not templated</li>
+      <li><b>Free domain</b> setup + first year</li>
+      <li><b>Lifetime hosting</b> — on your own account, no renewals</li>
+      <li><b>Starter logo + brand kit</b> & copywriting, done for you</li>
+      <li>Mobile-perfect · <b>WhatsApp chat button</b></li>
+      <li>Built so <b>Google + AI assistants</b> find you</li>
+      <li><b>1 free revision</b> · live in under 48 hours</li>
+    </ul>
+    <div class="foot">
+      <div class="ft">Pay just <b>50% (₹1,000)</b> to start → live by tomorrow.</div>
+      <div class="cta">Message us your business name →</div>
+    </div>
+  </div>
+  <div class="wm">24dev<span class="dot"></span></div>
+  <div class="badge">STARTER</div>
+</div>
+
+<!-- ============== MENU 2 — BUSINESS TIERS ============== -->
+<div class="creative" data-name="menu-2-business" data-w="1080" data-h="1350">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="inner">
+    <div class="tag">24dev · business websites</div>
+    <h2 class="dh">A website that <b>actually converts.</b></h2>
+    <div class="lead">Agencies charge <b>₹20,000–₹5,00,000</b> and take 3 weeks. Pick your tier — we start at ₹4,999.</div>
+    <div class="tiers">
+      <div class="tierrow"><div class="tp">₹4,999</div><div class="tm"><div class="tl">STARTER</div><div class="td">Sharp 1-page site · mobile · WhatsApp + Maps · SEO basics</div></div></div>
+      <div class="tierrow hot"><span class="pop">MOST POPULAR</span><div class="tp">₹9,999</div><div class="tm"><div class="tl">BUSINESS</div><div class="td">5–7 pages · copywriting done for you · a blog you edit</div></div></div>
+      <div class="tierrow"><div class="tp">₹14,999</div><div class="tm"><div class="tl">PRO</div><div class="td">Custom animation · conversion design · AEO-built</div></div></div>
+      <div class="tierrow"><div class="tp">₹24,999</div><div class="tm"><div class="tl">COMMERCE</div><div class="td">Online store + payments · or a 3D interactive hero</div></div></div>
+      <div class="tierrow"><div class="tp">₹49,999</div><div class="tm"><div class="tl">FLAGSHIP</div><div class="td">Headless + 500 auto-SEO pages · multilingual</div></div></div>
+    </div>
+    <div class="foot">
+      <div class="ft">Each tier = everything below it <b>+ its upgrade.</b> We'll recommend the right one.</div>
+      <div class="cta">Tell us about your business →</div>
+    </div>
+  </div>
+  <div class="wm">24dev<span class="dot"></span></div>
+  <div class="badge">FROM ₹4,999</div>
+</div>
+
+<!-- ============== MENU 3 — ADD-ONS & CARE ============== -->
+<div class="creative" data-name="menu-3-addons" data-w="1080" data-h="1350">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="inner">
+    <div class="tag">24dev · add-ons & care</div>
+    <h2 class="dh">Bolt on <b>anything.</b></h2>
+    <div class="lead">Add only what you need — clear prices, no surprises.</div>
+    <div class="addrows">
+      <div class="addrow"><span><b>Logo + brand kit</b></span><span class="ap">₹7,999</span></div>
+      <div class="addrow"><span><b>Extra page</b></span><span class="ap">₹999</span></div>
+      <div class="addrow"><span><b>Copywriting</b> / page</span><span class="ap">₹499</span></div>
+      <div class="addrow"><span><b>Programmatic SEO</b> pack</span><span class="ap">₹9,999</span></div>
+    </div>
+    <div class="carebox">
+      <div class="h">Website Care — from ₹1,000/mo</div>
+      <div class="pl"><span>Managed hosting</span><span>Backups</span><span>Security</span><span>4 edits / mo</span><span>Priority support</span><span>Light SEO</span></div>
+    </div>
+    <div class="foot">
+      <div class="ft"><b>₹1,000/mo</b> Starter Care · <b>₹1,999/mo</b> Care & Growth (Business+). Cancel anytime.</div>
+      <div class="cta">Ask us what fits you →</div>
+    </div>
+  </div>
+  <div class="wm">24dev<span class="dot"></span></div>
+  <div class="badge">ADD-ONS</div>
+</div>
+
+<!-- ============== QUOTE (template) ============== -->
+<div class="creative" data-name="quote" data-w="1080" data-h="1350">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="inner">
+    <div class="tag">24dev · your quote</div>
+    <h2 class="dh">Prepared for<br><b>[Client Name].</b></h2>
+    <div class="mrows">
+      <div class="mrow"><span class="k">Business</span><span class="v">[Business name]</span></div>
+      <div class="mrow"><span class="k">Recommended</span><span class="v">[Tier — e.g. Business]</span></div>
+      <div class="mrow"><span class="k">Add-ons</span><span class="v">[e.g. Logo + 2 pages]</span></div>
+      <div class="mrow"><span class="k">Total</span><span class="v lime">₹[total]</span></div>
+      <div class="mrow"><span class="k">To start (50%)</span><span class="v lime">₹[advance]</span></div>
+    </div>
+    <ul class="incl" style="margin-top:34px">
+      <li>Everything in your tier — designed & built for you</li>
+      <li>Lifetime hosting on your own account · you own it all</li>
+      <li>1 free revision · clear delivery date</li>
+    </ul>
+    <div class="foot">
+      <div class="ft">This quote is valid for <b>48 hours.</b> Pay 50% to lock your build slot.</div>
+      <div class="cta">Reply YES to get started →</div>
+    </div>
+  </div>
+  <div class="wm">24dev<span class="dot"></span></div>
+  <div class="badge">QUOTE</div>
+</div>
+
+<!-- ============== WELCOME (post-advance) ============== -->
+<div class="creative" data-name="welcome" data-w="1080" data-h="1350">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="inner">
+    <div class="tag">24dev · you're booked 🎉</div>
+    <h2 class="dh">Welcome aboard,<br><b>[Client Name].</b></h2>
+    <div class="lead">Advance received — your slot is locked and the clock is running. Here's exactly what happens next.</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div class="sd"><b>Send your details</b> — business name, logo/photos, what you sell.</div></div>
+      <div class="step"><div class="n">2</div><div class="sd"><b>We design & build</b> your site today. You relax.</div></div>
+      <div class="step"><div class="n">3</div><div class="sd"><b>Preview on your phone</b> → your 1 free revision.</div></div>
+      <div class="step"><div class="n">4</div><div class="sd"><b>You're LIVE</b> — domain on, hosting yours, you own everything.</div></div>
+    </div>
+    <div class="foot">
+      <div class="ft">Send me now: <b>business name · logo/photos · what customers should do</b> (call / WhatsApp / buy).</div>
+      <div class="cta">Send your details here →</div>
+    </div>
+  </div>
+  <div class="wm">24dev<span class="dot"></span></div>
+  <div class="badge">BOOKED</div>
+</div>
+
+<!-- ============== CARE PLAN (upsell) ============== -->
+<div class="creative" data-name="care-plan" data-w="1080" data-h="1350">
+  <div class="glow"></div><div class="tex"></div>
+  <div class="inner">
+    <div class="tag">24dev · website care</div>
+    <h2 class="dh">Your site's <b>fuel. ⛽</b></h2>
+    <div class="lead">The build is the car. <b>Care</b> keeps it fast, safe, backed-up and fresh — so it never breaks and never goes stale.</div>
+    <div class="bigprice" style="margin-top:34px"><div class="pr" style="font-size:104px">₹1,000<span>/ month</span></div></div>
+    <ul class="incl" style="margin-top:34px">
+      <li><b>Managed hosting</b> + daily backups</li>
+      <li><b>Security</b> monitoring — your site can't break, it's on us</li>
+      <li><b>4 free edits</b> every month (prices, photos, offers)</li>
+      <li><b>Priority support</b> + light ongoing SEO</li>
+    </ul>
+    <div class="foot">
+      <div class="ft"><b>₹1,000/mo</b> for Starter sites · <b>₹1,999/mo</b> Care & Growth for Business+. Cancel anytime.</div>
+      <div class="cta">Add Care to your plan →</div>
+    </div>
+  </div>
+  <div class="wm">24dev<span class="dot"></span></div>
+  <div class="badge">CARE</div>
+</div>
+
+</body>
+</html>

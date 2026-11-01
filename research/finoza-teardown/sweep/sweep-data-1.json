@@ -1,0 +1,2728 @@
+{
+  "/dashboard": {
+    "url": "https://finozacapital.com/dsa-panel/dashboard",
+    "title": "Finoza Capital crm - Advisor Dashboard",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Advisor Dashboard Dashboard Previous Next Previous Next Team Members All Sub-Advisor 7 Total Logins Including Sub Advisors 291 Total Leads All Leads till the date 291 Loan Disbursed Total disburse loan amount ₹ 0.00 Approved Leads Total Approved Leads 0 Total Payout Commission Generated ₹ 0.00 Add New Leads Kyc Loans LIVE Instant Loan LIVE Personal Loan LIVE Business Loan LIVE Credit Card LIVE Bank Account LIVE Demat Account LIVE Home Loan LIVE Loan Against Shares LIVE Quick Links Leads My Leads Lead Filters All Leads Team My Team Add New Team All Advisors Reports Report Overview All Lead Report Product Wise Lead Analytics 97.25% 283 Leads In Process 0% 0 Leads Disbursed 0% 0 Leads Approved 2.75% 8 Leads Has Query 0% 0 Leads Has Rejected My Leads View All Leads # Status Last Updated Customer Product Amount RM Lead Date Actions 364 3 - UNDER-PROCESS 29-Jul-2026 01:42 PM 2 hour(s) ago Abhinash - +917656787676 Kyc Loans ₹ 0.00 Capital Finoza ( #10 ) +917037984147 29-Jul-2026 01:42 PM 2 hour(s) ago View Apply More 363 3 - UNDER-PROCESS 28-Jul-2026 07:49 PM 19 hour(s) ago Abhinash - +917656787676 Kyc Loans ₹ 0.00 ( #12 ) +91 28-Jul-2026 07:48 PM 19 hour(s) ago View Apply More 362 3 - UNDER-PROCESS 28-Jul-2026 12:58 PM SAMIKSHA - +917089565694 Kyc Loans ₹ 0.00 ( #12 ) +91 28-Jul-2026 12:58 PM View Apply More 361 3 - UNDER-PROCESS 27-Jul-2026 07:20 PM Kkbc - +914758962536 Kyc Loans ₹ 0.00 ( #13 ) +91 27-Jul-2026 07:20 PM View Apply More 360 3 - UNDER-PROCESS 27-Jul-2026 07:20 PM Kkbc - +914758962536 Kyc Loans ₹ 0.00 ( #11 ) +91 27-Jul-2026 07:20 PM View Apply More 359 3 - UNDER-PROCESS 27-Jul-2026 07:19 PM Kkbc - +914758962536 Kyc Loans ₹ 0.00 ( #14 ) +91 27-Jul-2026 07:19 PM View Apply More 358 3 - UNDER-PROCESS 27-Jul-2026 07:19 PM Kkbc - +914758962536 Kyc Loans ₹ 0.00 Capital Finoza ( #10 ) +917037984147 27-Jul-2026 07:19 PM View Apply More 357 3 - UNDER-PROCESS 27-Jul-2026 07:18 PM Kkbc - +914758962536 Kyc Loans ₹ 0.00 ( #12 ) +91 27-Jul-2026 07:17 PM View Apply More 356 3 - UNDER-PROCESS 27-Jul-2026 12:21 PM SAMIKSHA - +917089565694 Instant Loan ₹ 0.00 ( #11 ) +91 27-Jul-2026 12:21 PM View Apply More 355 3 - UNDER-PROCESS 27-Jul-2026 12:06 PM SAMIKSHA - +917089565694 Instant Loan ₹ 0.00 Capital Finoza ( #10 ) +917037984147 27-Jul-2026 12:05 PM View Apply More My Sub Advisor Leads View All Leads No data available Team Members (Sub Advisors) View All Members # Name Mobile Email DOJ Commission Total Earning Status 69 abhinash kumar (FC08S321587 ) NA 7618268675 abhinashkumar766666@gmail.com 02-Jul-2026 0.00 % ₹ 0.00 ACTIVE 66 Abhinash Kumar (FC08S513255 ) NA 7618268130 abhinashkumar76678@gmail.com 27-Jun-2026 0.00 % ₹ 0.00 ACTIVE 62 abhinash kumar (FC08S861628 ) NA 7618268130 abhinashkumar7618268130@gmail.com 22-Jun-2026 0.00 % ₹ 0.00 ACTIVE 60 abhinash kumar (FC08S535183 ) NA 7618268134 abhinashsharma761826@gmail.com 17-Jun-2026 0.00 % ₹ 0.00 ACTIVE 59 Abhinash Kumar (FC08S298523 ) NA 7618268130 abhinashkumar761826@gmail.com 17-Jun-2026 0.00 % ₹ 0.00 ACTIVE 44 pratima kurre (FC08S369322 ) NA 8839192280 luckykanta4458@gmail.com 05-Jun-2026 0.00 % ₹ 0.00 ACTIVE 23 RAJESH JOSHI (FC08S477536 ) NA 7909841442 somjoshi28@gmail.com 03-May-2026 0.00 % ₹ 0.00 ACTIVE © Copyright 2025-26 Finoza Capital. All Rights Reserved. Last Updated : 10-Nov-2025 03:04 PM Finoza Capital Advisor Panel - V 4.0.0",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "View All Leads",
+        "tag": "A",
+        "href": "lead/all",
+        "classes": "btn-icon btn-wide btn-outline-2x btn btn-outline-focus btn-sm d-flex",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(68, 64, 84)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/963567C9B0E80A3ECFF1E284692F5665614F434B55696C736A42436E74744B5343526D787A673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/62AA84538FCA0624B6B3E9122179F18241537542624D6675316B306E496871656568504D44513D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/F6E4F254A2B147E76EAA6E0EA65621577574552F577A2F325646475850697357675A316933413D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/3BB4B1D5600C2BF9EF746C34860DA8346F59734339505950434D557A646B4D6757586E5143773D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/06D80D7CD2C6DF1255C243B5D75EFCAA656A3351666F77316E384959687936416E4C4F566E513D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/9FAE927EF0F5DEC1C000F1868BADF60A347151395339392F38434279526271486F53533053773D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/631F697520377EC4E75CE8D29986CA3E4A674F396C7830794654697A50686F457670687464413D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/639510CF95F20211C41A4F369EBD91B1637A6B57686B61556637556E2F5166416B2B344B57673D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/57C2F3FF38F783DD1761E42B1F8CB8BB53736D6E396C6C7A383753564D7738416638727050513D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/612DE1E838370A9E45878B21B88911C0385152664C655579616A3362772F41785445555641413D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/EEC784ED82BC35CB42F2BA51A7680B6C2B43585641635549783075565438784B4D65617179673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/04A31720E6339679860C8449C8A3D0D64C713537536969514365763275556C583948375679673D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/95EF8801860388C36D7863EE9049FC4778697A59676862377463334831663139745A773043513D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/30714D98519651B0C0C782FAFC0636D74241525332314C5A737A316A70506F4D6564506A65673D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/F34439FA6BFE173C2969345DB20A1C6E503946426A482B525246514A52497A6E6D3878452B673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/F8D01C2DEE4E5217908D7D41FC935D3E4571416E775670567073574666366A564E77344A6D673D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/D114D1C3D32E87BD97874717507BA0984468394A666C6E727542576F453349706D4B775355673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/B134018CBA09A75C7791720E65871223793872304C50737645766F6570774F724D69775849513D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/CB459AA8BFA1E5F8F436BB2D8D470F096A4E674B4C363635333330346A637537654439344C413D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Apply More",
+        "tag": "A",
+        "href": "lead/update/35E1EBAE28301CF3E9F5957842DA3B6966774D6C624C53772F54303031725666344A534858773D3D",
+        "classes": "ms-1 btn-wide bg-warning btn-outline-2x me-md-2 btn btn-outline-focus btn-sm text-dark fw-700",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(52, 58, 64)"
+      },
+      {
+        "text": "View All Leads",
+        "tag": "A",
+        "href": "lead/team",
+        "classes": "btn-icon btn-wide btn-outline-2x btn btn-outline-focus btn-sm d-flex",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(68, 64, 84)"
+      },
+      {
+        "text": "View All Members",
+        "tag": "A",
+        "href": "team/all",
+        "classes": "btn-icon btn-wide btn-outline-2x btn btn-outline-focus btn-sm d-flex",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(68, 64, 84)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "Status",
+          "Last Updated",
+          "Customer",
+          "Product",
+          "Amount",
+          "RM",
+          "Lead Date",
+          "Actions",
+          "364",
+          "3 - UNDER-PROCESS",
+          "29-Jul-2026 01:42 PM 2 hour(s) ago",
+          "Abhinash - +917656787676",
+          "Kyc Loans",
+          "₹ 0.00",
+          "Capital Finoza ( #10 ) +917037984147",
+          "29-Jul-2026 01:42 PM 2 hour(s) ago",
+          "View Apply More"
+        ],
+        "rowCount": 10,
+        "sampleRows": [
+          [
+            "364",
+            "3 - UNDER-PROCESS",
+            "29-Jul-2026 01:42 PM 2 hour(s) ago",
+            "Abhinash - +917656787676",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Capital Finoza ( #10 ) +917037984147",
+            "29-Jul-2026 01:42 PM 2 hour(s) ago",
+            "View Apply More"
+          ],
+          [
+            "363",
+            "3 - UNDER-PROCESS",
+            "28-Jul-2026 07:49 PM 19 hour(s) ago",
+            "Abhinash - +917656787676",
+            "Kyc Loans",
+            "₹ 0.00",
+            "( #12 ) +91",
+            "28-Jul-2026 07:48 PM 19 hour(s) ago",
+            "View Apply More"
+          ],
+          [
+            "362",
+            "3 - UNDER-PROCESS",
+            "28-Jul-2026 12:58 PM",
+            "SAMIKSHA - +917089565694",
+            "Kyc Loans",
+            "₹ 0.00",
+            "( #12 ) +91",
+            "28-Jul-2026 12:58 PM",
+            "View Apply More"
+          ],
+          [
+            "361",
+            "3 - UNDER-PROCESS",
+            "27-Jul-2026 07:20 PM",
+            "Kkbc - +914758962536",
+            "Kyc Loans",
+            "₹ 0.00",
+            "( #13 ) +91",
+            "27-Jul-2026 07:20 PM",
+            "View Apply More"
+          ],
+          [
+            "360",
+            "3 - UNDER-PROCESS",
+            "27-Jul-2026 07:20 PM",
+            "Kkbc - +914758962536",
+            "Kyc Loans",
+            "₹ 0.00",
+            "( #11 ) +91",
+            "27-Jul-2026 07:20 PM",
+            "View Apply More"
+          ],
+          [
+            "359",
+            "3 - UNDER-PROCESS",
+            "27-Jul-2026 07:19 PM",
+            "Kkbc - +914758962536",
+            "Kyc Loans",
+            "₹ 0.00",
+            "( #14 ) +91",
+            "27-Jul-2026 07:19 PM",
+            "View Apply More"
+          ],
+          [
+            "358",
+            "3 - UNDER-PROCESS",
+            "27-Jul-2026 07:19 PM",
+            "Kkbc - +914758962536",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Capital Finoza ( #10 ) +917037984147",
+            "27-Jul-2026 07:19 PM",
+            "View Apply More"
+          ],
+          [
+            "357",
+            "3 - UNDER-PROCESS",
+            "27-Jul-2026 07:18 PM",
+            "Kkbc - +914758962536",
+            "Kyc Loans",
+            "₹ 0.00",
+            "( #12 ) +91",
+            "27-Jul-2026 07:17 PM",
+            "View Apply More"
+          ],
+          [
+            "356",
+            "3 - UNDER-PROCESS",
+            "27-Jul-2026 12:21 PM",
+            "SAMIKSHA - +917089565694",
+            "Instant Loan",
+            "₹ 0.00",
+            "( #11 ) +91",
+            "27-Jul-2026 12:21 PM",
+            "View Apply More"
+          ],
+          [
+            "355",
+            "3 - UNDER-PROCESS",
+            "27-Jul-2026 12:06 PM",
+            "SAMIKSHA - +917089565694",
+            "Instant Loan",
+            "₹ 0.00",
+            "Capital Finoza ( #10 ) +917037984147",
+            "27-Jul-2026 12:05 PM",
+            "View Apply More"
+          ]
+        ]
+      },
+      {
+        "headers": [],
+        "rowCount": 0,
+        "sampleRows": []
+      },
+      {
+        "headers": [
+          "#",
+          "Name",
+          "Mobile",
+          "Email",
+          "DOJ",
+          "Commission",
+          "Total Earning",
+          "Status",
+          "69",
+          "abhinash kumar (FC08S321587 ) NA",
+          "7618268675",
+          "abhinashkumar766666@gmail.com",
+          "02-Jul-2026",
+          "0.00 %",
+          "₹ 0.00",
+          "ACTIVE"
+        ],
+        "rowCount": 7,
+        "sampleRows": [
+          [
+            "69",
+            "abhinash kumar (FC08S321587 ) NA",
+            "7618268675",
+            "abhinashkumar766666@gmail.com",
+            "02-Jul-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "66",
+            "Abhinash Kumar (FC08S513255 ) NA",
+            "7618268130",
+            "abhinashkumar76678@gmail.com",
+            "27-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "62",
+            "abhinash kumar (FC08S861628 ) NA",
+            "7618268130",
+            "abhinashkumar7618268130@gmail.com",
+            "22-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "60",
+            "abhinash kumar (FC08S535183 ) NA",
+            "7618268134",
+            "abhinashsharma761826@gmail.com",
+            "17-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "59",
+            "Abhinash Kumar (FC08S298523 ) NA",
+            "7618268130",
+            "abhinashkumar761826@gmail.com",
+            "17-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "44",
+            "pratima kurre (FC08S369322 ) NA",
+            "8839192280",
+            "luckykanta4458@gmail.com",
+            "05-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "23",
+            "RAJESH JOSHI (FC08S477536 ) NA",
+            "7909841442",
+            "somjoshi28@gmail.com",
+            "03-May-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ]
+        ]
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "Kyc Loans LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "LIVE",
+        "classes": "badge bg-danger fs-8 status_top_right_badge",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Instant Loan LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "Personal Loan LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "Business Loan LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "Credit Card LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "Bank Account LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "Demat Account LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "Home Loan LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "Loan Against Shares LIVE",
+        "classes": "col-md-2 col-lg-2 text-center status_top_right_relative m-div-50",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(73, 80, 87)"
+      },
+      {
+        "text": "3 - UNDER-PROCESS",
+        "classes": "mb-2 me-2 badge bg-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "0.00 %",
+        "classes": "mb-2 me-2 badge bg-info text-white",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "₹ 0.00",
+        "classes": "mb-2 me-2 badge bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "ACTIVE",
+        "classes": "badge rounded-pill bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Previous Next",
+      "Kyc Loans LIVE",
+      "LIVE",
+      "Instant Loan LIVE",
+      "Personal Loan LIVE",
+      "Business Loan LIVE",
+      "Credit Card LIVE",
+      "Bank Account LIVE",
+      "Demat Account LIVE",
+      "Home Loan LIVE",
+      "Loan Against Shares LIVE",
+      "Leads My Leads Lead Filters All Leads",
+      "Team My Team Add New Team All Advisors",
+      "Reports Report Overview All Lead Report Product Wise",
+      "97.25% 283 Leads In Process",
+      "0% 0 Leads Disbursed",
+      "0% 0 Leads Approved",
+      "2.75% 8 Leads Has Query",
+      "0% 0 Leads Has Rejected",
+      "My Sub Advisor Leads View All Leads No data available"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H5: Leads",
+      "H5: Team",
+      "H5: Reports"
+    ]
+  },
+  "/lead/all": {
+    "url": "https://finozacapital.com/dsa-panel/lead/all",
+    "title": "Finoza Capital crm - Lead List",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS My Leads Lead Report & Filter TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Lead List View Dashboard Lead List View New Lead All Leads Show 10 25 50 100 entries Search: # Status Date Advisor Product Amount Customer Mobile Actions 5 3 - UNDER-PROCESS 27-Feb-2026 07:46 PM FC08524097 - Demo DSA Kyc Loans ₹ 0.00 Demo - 7878787878 View Edit 6 3 - UNDER-PROCESS 27-Feb-2026 08:02 PM FC08524097 - Demo DSA Kyc Loans ₹ 0.00 Demo - 7845124578 View Edit 7 3 - UNDER-PROCESS 27-Feb-2026 08:04 PM FC08524097 - Demo DSA Kyc Loans ₹ 0.00 Demo - 4545454545 View Edit 8 3 - UNDER-PROCESS 27-Feb-2026 08:05 PM FC08524097 - Demo DSA Kyc Loans ₹ 0.00 Demo - 7845124578 View Edit 9 3 - UNDER-PROCESS 27-Feb-2026 08:07 PM FC08524097 - Demo DSA Kyc Loans ₹ 0.00 Demo - 7878787878 View Edit 10 3 - UNDER-PROCESS 27-Feb-2026 08:08 PM FC08524097 - Demo DSA Kyc Loans ₹ 0.00 Demo - 7845124587 View Edit 11 3 - UNDER-PROCESS 27-Feb-2026 08:54 PM FC08524097 - Demo DSA Instant Loan ₹ 0.00 Demo - 7845124578 View Edit 12 0 - PENDING 27-Feb-2026 08:58 PM FC08524097 - Demo DSA Instant Loan ₹ 0.00 Abhinash Kumar - 7618268130 View Edit 13 0 - PENDING 28-Feb-2026 06:17 PM FC08524097 - Demo DSA Instant Loan ₹ 0.00 abhinash - 7618268130 View Edit 26 0 - PENDING 07-Mar-2026 04:25 PM FC08524097 - Demo DSA Loan Against Shares ₹ 0.00 Demo - 4512457845 View Edit Showing 1 to 10 of 291 entries Previous 1 2 3 4 5 … 30 Next",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "New Lead",
+        "tag": "A",
+        "href": "lead/add",
+        "classes": "btn btn-shadow btn-wide btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/68C9AF4AD26889452495A10392DC5B87705977596E347735704468514A2F6F5547496B6736413D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/594A769484D64A5C6DF117FC06E2E644716553326143722F55594F4E4E725A626F35335169773D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/F79A990D72F5833185707F940B41B46B6368756C45334D49496C39746B6F42714F6F5A384A413D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/97CABDCAB155D8C1DBFC33E965829FC063674F4158467A30785A57306E426B4B6D46734678773D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/3469C36123CEFF372E4E90B718EFFE01726674324D64304465457675653531704679587032673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/686CD5D98570D43A7702199CAC5E4312685937694F6835314B723459597646376C61613242673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/D113805F87F0D62F9B0F0C83426E3B4564386D73624C56556C6B32726C504B535149322F37673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/020663402E4E282BD86B19FEB93E6F2642705857546F534C394C686D396868346B5A69364F773D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/A456B120E0BA26F8DECB1BB92804ABE4705471373843444758326C66387459326F636C4969673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/B860EEA809BDA0CC1C2F560DCFEAD57E74395A6F4E477861766C355147657668394A687678673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/67116A2D73E64B6FC9E026A1785293806C5832314836456142354E42536E692B6F5A647435413D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/E5F336ABB4232AF0398D72DA9852F8683678306B59677A654661666A754A6C2F5A57512B4E673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/648EAE74E56416A2B05DAEEDB9013AFE30576B72456239322B32744B316966784970755969773D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/EDEF3894C980A48AE9EE3DADEE1F31E857303375747A717A66656739485437464D55624A46513D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/34EC47F5D7342A185DED79A48A2222F85964434A767551624D323779674478665956504264673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/45731B95682588B4219188F50375CB7B4C612B4B4573516977417949316D6A49414D463343673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/C6E032A4081BAE31DC3737235077DFDD456A3542364D4D45774E7257597174665A35425657673D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/8F8868A1A115E09C9EFF115FE29656F85A5958595A65656B4458454B5A6435726F4A784A69773D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View",
+        "tag": "A",
+        "href": "lead/view/C84809D6FD3AB2C4FE9DF9AE96CD4C1F793435456C783162446369784C61566538494F4B44773D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Edit",
+        "tag": "A",
+        "href": "lead/update/97D3DD398C0BAA981ACE14BA0E926443645074624C564D77616F395076314F34792F783056773D3D",
+        "classes": "btn-shadow btn btn-primary",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "Status",
+          "Date",
+          "Advisor",
+          "Product",
+          "Amount",
+          "Customer",
+          "Mobile",
+          "Actions",
+          "5",
+          "3 - UNDER-PROCESS",
+          "27-Feb-2026 07:46 PM",
+          "FC08524097 - Demo DSA",
+          "Kyc Loans",
+          "₹ 0.00",
+          "Demo -",
+          "7878787878",
+          "View Edit"
+        ],
+        "rowCount": 10,
+        "sampleRows": [
+          [
+            "5",
+            "3 - UNDER-PROCESS",
+            "27-Feb-2026 07:46 PM",
+            "FC08524097 - Demo DSA",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Demo -",
+            "7878787878",
+            "View Edit"
+          ],
+          [
+            "6",
+            "3 - UNDER-PROCESS",
+            "27-Feb-2026 08:02 PM",
+            "FC08524097 - Demo DSA",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Demo -",
+            "7845124578",
+            "View Edit"
+          ],
+          [
+            "7",
+            "3 - UNDER-PROCESS",
+            "27-Feb-2026 08:04 PM",
+            "FC08524097 - Demo DSA",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Demo -",
+            "4545454545",
+            "View Edit"
+          ],
+          [
+            "8",
+            "3 - UNDER-PROCESS",
+            "27-Feb-2026 08:05 PM",
+            "FC08524097 - Demo DSA",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Demo -",
+            "7845124578",
+            "View Edit"
+          ],
+          [
+            "9",
+            "3 - UNDER-PROCESS",
+            "27-Feb-2026 08:07 PM",
+            "FC08524097 - Demo DSA",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Demo -",
+            "7878787878",
+            "View Edit"
+          ],
+          [
+            "10",
+            "3 - UNDER-PROCESS",
+            "27-Feb-2026 08:08 PM",
+            "FC08524097 - Demo DSA",
+            "Kyc Loans",
+            "₹ 0.00",
+            "Demo -",
+            "7845124587",
+            "View Edit"
+          ],
+          [
+            "11",
+            "3 - UNDER-PROCESS",
+            "27-Feb-2026 08:54 PM",
+            "FC08524097 - Demo DSA",
+            "Instant Loan",
+            "₹ 0.00",
+            "Demo -",
+            "7845124578",
+            "View Edit"
+          ],
+          [
+            "12",
+            "0 - PENDING",
+            "27-Feb-2026 08:58 PM",
+            "FC08524097 - Demo DSA",
+            "Instant Loan",
+            "₹ 0.00",
+            "Abhinash Kumar -",
+            "7618268130",
+            "View Edit"
+          ],
+          [
+            "13",
+            "0 - PENDING",
+            "28-Feb-2026 06:17 PM",
+            "FC08524097 - Demo DSA",
+            "Instant Loan",
+            "₹ 0.00",
+            "abhinash -",
+            "7618268130",
+            "View Edit"
+          ],
+          [
+            "26",
+            "0 - PENDING",
+            "07-Mar-2026 04:25 PM",
+            "FC08524097 - Demo DSA",
+            "Loan Against Shares",
+            "₹ 0.00",
+            "Demo -",
+            "4512457845",
+            "View Edit"
+          ]
+        ]
+      }
+    ],
+    "selects": [
+      {
+        "name": "example_length",
+        "label": "Show 10 25 50 100 entries",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "100"
+        ]
+      }
+    ],
+    "badges": [
+      {
+        "text": "3 - UNDER-PROCESS",
+        "classes": "mb-2 me-2 badge bg-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "0 - PENDING",
+        "classes": "mb-2 me-2 badge bg-secondary",
+        "bg": "rgb(108, 117, 125)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/lead/report": {
+    "url": "https://finozacapital.com/dsa-panel/lead/report",
+    "title": "Finoza Capital crm - Lead",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS My Leads Lead Report & Filter TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Lead Report & Filters Dashboard Lead Report & Filters Lead Status All Status 0 - Pending 1 - Submitted 2 - Allocated 3 - Under-Process 4 - Approved 5 - Archived 6 - Rejected 7 - Docs Query - EA 8 - Query Resolved - AE 9 - Docs Query - LA 10 - Query Resolved - AL 11 - Blocked 12 - Disbursed 13 - Fake 14 - Brand Disbursed 15 - Un-Archived 16 - Lead Issue 17 - Issue Resolved Loan Type All Loans 18 - Kyc Loans 1 - Instant Loan 2 - Personal Loan 3 - Business Loan 10 - Credit Card 14 - Bank Account 12 - Demat Account 5 - Home Loan 17 - Loan Against Shares Show Leads 10 Leads 50 Leads 100 Leads 500 Leads Start Date End Date Apply Filter Reset",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "Apply Filter",
+        "tag": "BUTTON",
+        "href": null,
+        "classes": "btn btn-primary mt-3 me-4",
+        "bg": "rgb(205, 117, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Reset",
+        "tag": "A",
+        "href": "lead/report-clear",
+        "classes": "mt-3 me-2 btn-icon btn-icon-only btn btn-danger",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [],
+    "selects": [
+      {
+        "name": "lead_status",
+        "label": "Lead Status",
+        "options": [
+          "All Status",
+          "0 - Pending",
+          "1 - Submitted",
+          "2 - Allocated",
+          "3 - Under-Process",
+          "4 - Approved",
+          "5 - Archived",
+          "6 - Rejected",
+          "7 - Docs Query - EA",
+          "8 - Query Resolved - AE",
+          "9 - Docs Query - LA",
+          "10 - Query Resolved - AL",
+          "11 - Blocked",
+          "12 - Disbursed",
+          "13 - Fake",
+          "14 - Brand Disbursed",
+          "15 - Un-Archived",
+          "16 - Lead Issue",
+          "17 - Issue Resolved"
+        ]
+      },
+      {
+        "name": "lead_type",
+        "label": "Loan Type",
+        "options": [
+          "All Loans",
+          "18 - Kyc Loans",
+          "1 - Instant Loan",
+          "2 - Personal Loan",
+          "3 - Business Loan",
+          "10 - Credit Card",
+          "14 - Bank Account",
+          "12 - Demat Account",
+          "5 - Home Loan",
+          "17 - Loan Against Shares"
+        ]
+      },
+      {
+        "name": "lead_limit",
+        "label": "Show Leads",
+        "options": [
+          "10 Leads",
+          "50 Leads",
+          "100 Leads",
+          "500 Leads"
+        ]
+      }
+    ],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/lead/team": {
+    "url": "https://finozacapital.com/dsa-panel/lead/team",
+    "title": "Finoza Capital crm - Lead List",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS My Leads Lead Report & Filter TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Lead List View Dashboard Lead List View Team Leads No data available",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [],
+        "rowCount": 0,
+        "sampleRows": []
+      }
+    ],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Team Leads No data available"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/team": {
+    "url": "https://finozacapital.com/dsa-panel/team",
+    "title": "Finoza Capital crm - Sub Advisors",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM My Team Add New Team All Advisor MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Sub Advisors Dashboard Impression Monthly Hits 0 0% CTR Clicks 0 0% Registration Sub Advisor 0 0% Build Your Team Share your invite link to BUILD your team. © Copyright 2023-24 Finoza Capital crm. All Rights Reserved. Last Updated : 6-Aug-2025 03:48PM Finoza Capital crm Advisor Panel - V 4.0.1",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Impression Monthly Hits 0 0%",
+      "CTR Clicks 0 0%",
+      "Registration Sub Advisor 0 0%",
+      "Build Your Team Share your invite link to BUILD your team."
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H5: Build Your Team"
+    ]
+  },
+  "/team/all": {
+    "url": "https://finozacapital.com/dsa-panel/team/all",
+    "title": "Finoza Capital crm - All Sub Advisors",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM My Team Add New Team All Advisor MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs All Sub Advisors Dashboard Team Members (Sub Advisors) ID Name Mobile Email DOJ Commission Total Earning Status 69 FC08S321587 - abhinash kumar NA 7618268675 abhinashkumar766666@gmail.com 02-Jul-2026 0.00 % ₹ 0.00 ACTIVE 66 FC08S513255 - Abhinash Kumar NA 7618268130 abhinashkumar76678@gmail.com 27-Jun-2026 0.00 % ₹ 0.00 ACTIVE 62 FC08S861628 - abhinash kumar NA 7618268130 abhinashkumar7618268130@gmail.com 22-Jun-2026 0.00 % ₹ 0.00 ACTIVE 60 FC08S535183 - abhinash kumar NA 7618268134 abhinashsharma761826@gmail.com 17-Jun-2026 0.00 % ₹ 0.00 ACTIVE 59 FC08S298523 - Abhinash Kumar NA 7618268130 abhinashkumar761826@gmail.com 17-Jun-2026 0.00 % ₹ 0.00 ACTIVE 44 FC08S369322 - pratima kurre NA 8839192280 luckykanta4458@gmail.com 05-Jun-2026 0.00 % ₹ 0.00 ACTIVE 23 FC08S477536 - RAJESH JOSHI NA 7909841442 somjoshi28@gmail.com 03-May-2026 0.00 % ₹ 0.00 ACTIVE © Copyright 2023-24 Finoza Capital crm. All Rights Reserved. Last Updated : 6-Aug-2025 03:48PM Finoza Capital crm Advisor Panel - V 4.0.1",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "ID",
+          "Name",
+          "Mobile",
+          "Email",
+          "DOJ",
+          "Commission",
+          "Total Earning",
+          "Status",
+          "69",
+          "FC08S321587 - abhinash kumar NA",
+          "7618268675",
+          "abhinashkumar766666@gmail.com",
+          "02-Jul-2026",
+          "0.00 %",
+          "₹ 0.00",
+          "ACTIVE"
+        ],
+        "rowCount": 7,
+        "sampleRows": [
+          [
+            "69",
+            "FC08S321587 - abhinash kumar NA",
+            "7618268675",
+            "abhinashkumar766666@gmail.com",
+            "02-Jul-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "66",
+            "FC08S513255 - Abhinash Kumar NA",
+            "7618268130",
+            "abhinashkumar76678@gmail.com",
+            "27-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "62",
+            "FC08S861628 - abhinash kumar NA",
+            "7618268130",
+            "abhinashkumar7618268130@gmail.com",
+            "22-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "60",
+            "FC08S535183 - abhinash kumar NA",
+            "7618268134",
+            "abhinashsharma761826@gmail.com",
+            "17-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "59",
+            "FC08S298523 - Abhinash Kumar NA",
+            "7618268130",
+            "abhinashkumar761826@gmail.com",
+            "17-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "44",
+            "FC08S369322 - pratima kurre NA",
+            "8839192280",
+            "luckykanta4458@gmail.com",
+            "05-Jun-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ],
+          [
+            "23",
+            "FC08S477536 - RAJESH JOSHI NA",
+            "7909841442",
+            "somjoshi28@gmail.com",
+            "03-May-2026",
+            "0.00 %",
+            "₹ 0.00",
+            "ACTIVE"
+          ]
+        ]
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "0.00 %",
+        "classes": "mb-2 me-2 badge bg-info text-white",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "₹ 0.00",
+        "classes": "mb-2 me-2 badge bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "ACTIVE",
+        "classes": "badge rounded-pill bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/payout": {
+    "url": "https://finozacapital.com/dsa-panel/payout",
+    "title": "Finoza Capital crm - Payout",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT Payout Overview Payout Chart REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Payout Dashboard Payout ... Total Loan Disbursed ₹ 0.00 291 Leads Total Payout ₹ 0.00 Year 2026 My Commission 0 % Average Paid ₹ 0.00 Year 2026 Pending ₹ 0.00 Year 2026 My Payout View All Payout No data available",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "View All Payout",
+        "tag": "A",
+        "href": "payment/total",
+        "classes": "btn-icon btn-wide btn-outline-2x btn btn-outline-focus btn-sm d-flex",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(68, 64, 84)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [],
+        "rowCount": 0,
+        "sampleRows": []
+      }
+    ],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Total Loan Disbursed ₹ 0.00 291 Leads",
+      "Total Payout ₹ 0.00 Year 2026",
+      "My Commission 0 % Average",
+      "Paid ₹ 0.00 Year 2026",
+      "Pending ₹ 0.00 Year 2026",
+      "My Payout View All Payout No data available"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H6: Total Loan Disbursed",
+      "H6: Total Payout",
+      "H6: My Commission",
+      "H6: Paid",
+      "H6: Pending"
+    ]
+  },
+  "/payment": {
+    "url": "https://finozacapital.com/dsa-panel/payment",
+    "title": "Finoza Capital crm - Payout",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT Payout Overview Payout Chart REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Payout Dashboard Payout ... Total Loan Disbursed ₹ 0.00 291 Leads Total Payout ₹ 0.00 Year 2026 My Commission 0 % Average Paid ₹ 0.00 Year 2026 Pending ₹ 0.00 Year 2026 My Payout View All Payout No data available",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "View All Payout",
+        "tag": "A",
+        "href": "payment/total",
+        "classes": "btn-icon btn-wide btn-outline-2x btn btn-outline-focus btn-sm d-flex",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(68, 64, 84)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [],
+        "rowCount": 0,
+        "sampleRows": []
+      }
+    ],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Total Loan Disbursed ₹ 0.00 291 Leads",
+      "Total Payout ₹ 0.00 Year 2026",
+      "My Commission 0 % Average",
+      "Paid ₹ 0.00 Year 2026",
+      "Pending ₹ 0.00 Year 2026",
+      "My Payout View All Payout No data available"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H6: Total Loan Disbursed",
+      "H6: Total Payout",
+      "H6: My Commission",
+      "H6: Paid",
+      "H6: Pending"
+    ]
+  },
+  "/payment/chart": {
+    "url": "https://finozacapital.com/dsa-panel/payment/chart",
+    "title": "Finoza Capital crm - Marketing",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT Payout Overview Payout Chart REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Marketing Tools Dashboard Marketing Tools eBooks ... View PDF in Browser Download PDF View PDF in Browser Download PDF",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "View PDF in Browser",
+        "tag": "A",
+        "href": "../public/chart/PUC/DSA-PAYOUT-CHART-JAN-2026.pdf",
+        "classes": "btn-wide mb-2 me-2 btn-icon btn-icon-right btn-pill btn btn-info btn-lg",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Download PDF",
+        "tag": "A",
+        "href": "../public/chart/PUC/DSA-PAYOUT-CHART-JAN-2026.pdf",
+        "classes": "btn-wide mb-2 me-2 btn-icon btn-icon-right btn-pill btn btn-warning btn-lg",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "View PDF in Browser",
+        "tag": "A",
+        "href": "../public/chart/PUC/INSURANCE-DSA-PAYOUT-CHART.pdf",
+        "classes": "btn-wide mb-2 me-2 btn-icon btn-icon-right btn-pill btn btn-info btn-lg",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Download PDF",
+        "tag": "A",
+        "href": "../public/chart/PUC/INSURANCE-DSA-PAYOUT-CHART.pdf",
+        "classes": "btn-wide mb-2 me-2 btn-icon btn-icon-right btn-pill btn btn-warning btn-lg",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/report": {
+    "url": "https://finozacapital.com/dsa-panel/report",
+    "title": "Finoza Capital crm - Report",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS Report Overview All Lead Report Product Wise MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Report Overview Dashboard Report Overview ... Lead Status Lead Analytics Total Leads Including Sun Advisors 291 Sub Advisors Total Registered Sub Advisors 7 Loan Disbursed Total Loan Approved and Disbursed 0 Total Payout Total Lead Commission Paid 0",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Lead Status",
+      "Lead Analytics Total Leads Including Sun Advisors 291 Sub Advisors Total Registered Sub Advisors 7 Loan Disbursed Total Loan Approved and Disbursed 0 Total Payout Total Lead Commission Paid 0"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H5: Lead Status",
+      "H5: Lead Analytics"
+    ]
+  },
+  "/report/lead-wise": {
+    "url": "https://finozacapital.com/dsa-panel/report/lead-wise",
+    "title": "Finoza Capital crm - Report",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS Report Overview All Lead Report Product Wise MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Report Lead Analytics Dashboard Report Lead Analytics ... Lead Count By Status 0 / PENDING Lead started and waiting for details 84 28.87% 1 / SUBMITTED Lead submitted for Internal Verification 1 0.34% 2 / ALLOCATED Lead Allocated to Employee 0 0.00% 3 / UNDER-PROCESS Lead is under process from lender 198 68.04% 4 / APPROVED Loan approved by lender 0 0.00% 5 / ARCHIVED Lead Archived for Financial Year 0 0.00% 6 / REJECTED Lead Rejected by Lender 0 0.00% 7 / DOCS QUERY - EA Employee has Query for Advisor 5 1.72% 8 / QUERY RESOLVED - AE Advisor responded to Employee Query 1 0.34% 9 / DOCS QUERY - LA Lender has Query for Advisor 1 0.34% 10 / QUERY RESOLVED - AL Advisor responded to Lender Query 1 0.34% 11 / BLOCKED Lead Rejected by BI-V 0 0.00% 12 / DISBURSED Loan has been disbursed to the customer account 0 0.00% 13 / FAKE Fake Lead Detected 0 0.00% Lead Status Distribution (%)",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "0 / PENDING",
+        "classes": "pointer mb-2 me-2 badge bg-secondary",
+        "bg": "rgb(108, 117, 125)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "1 / SUBMITTED",
+        "classes": "pointer mb-2 me-2 badge bg-primary",
+        "bg": "rgb(203, 113, 10)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "2 / ALLOCATED",
+        "classes": "pointer mb-2 me-2 badge bg-mint",
+        "bg": "rgb(63, 202, 216)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "3 / UNDER-PROCESS",
+        "classes": "pointer mb-2 me-2 badge bg-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "4 / APPROVED",
+        "classes": "pointer mb-2 me-2 badge bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "5 / ARCHIVED",
+        "classes": "pointer mb-2 me-2 badge bg-alternate",
+        "bg": "rgb(121, 76, 138)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "6 / REJECTED",
+        "classes": "pointer mb-2 me-2 badge bg-danger",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "7 / DOCS QUERY - EA",
+        "classes": "pointer mb-2 me-2 badge bg-warning",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)"
+      },
+      {
+        "text": "8 / QUERY RESOLVED - AE",
+        "classes": "pointer mb-2 me-2 badge bg-warning",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)"
+      },
+      {
+        "text": "9 / DOCS QUERY - LA",
+        "classes": "pointer mb-2 me-2 badge bg-warning",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)"
+      },
+      {
+        "text": "10 / QUERY RESOLVED - AL",
+        "classes": "pointer mb-2 me-2 badge bg-warning",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(33, 37, 41)"
+      },
+      {
+        "text": "11 / BLOCKED",
+        "classes": "pointer mb-2 me-2 badge bg-danger",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "12 / DISBURSED",
+        "classes": "pointer mb-2 me-2 badge bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "13 / FAKE",
+        "classes": "pointer mb-2 me-2 badge bg-danger",
+        "bg": "rgb(217, 37, 80)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Lead Status Distribution (%)"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H5: Lead Count By Status",
+      "H5: Lead Status Distribution (%)"
+    ]
+  },
+  "/report/product-wise": {
+    "url": "https://finozacapital.com/dsa-panel/report/product-wise",
+    "title": "Finoza Capital crm - Report",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS Report Overview All Lead Report Product Wise MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Report Lead Analytics Dashboard Report Lead Analytics ... Lead Count By Status Kyc Loans 137 47.08% Instant Loan 95 32.65% Loan Against Shares 1 0.34% Demat Account 2 0.69% Bank Account 7 2.41% Personal Loan 18 6.19% Credit Card 19 6.53% Business Loan 9 3.09% Home Loan 3 1.03% Lead Status Distribution (%)",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Lead Status Distribution (%)"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H5: Lead Count By Status",
+      "H5: Lead Status Distribution (%)"
+    ]
+  },
+  "/tools": {
+    "url": "https://finozacapital.com/dsa-panel/tools",
+    "title": "Finoza Capital crm - Marketing",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Marketing Tools Dashboard Marketing Tools ... # 18 Kyc Loans ACTIVE Use the branded Kyc Loans marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 1 Instant Loan ACTIVE Use the branded Instant Loan marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 2 Personal Loan ACTIVE Use the branded Personal Loan marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 3 Business Loan ACTIVE Use the branded Business Loan marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 10 Credit Card ACTIVE Use the branded Credit Card marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 14 Bank Account ACTIVE Use the branded Bank Account marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 12 Demat Account ACTIVE Use the branded Demat Account marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 5 Home Loan ACTIVE Use the branded Home Loan marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0 # 17 Loan Against Shares ACTIVE Use the branded Loan Against Shares marketing material with videos, advertising banners, and PDF's to boost your lead conversion and reach more customer. Available Branded Content: Content File Type Count Action Videos YouTube 0 Banners Images (png, jpg, jpeg) 0 eBooks PDF's 0",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Content",
+          "File Type",
+          "Count",
+          "Action"
+        ],
+        "rowCount": 4,
+        "sampleRows": [
+          [],
+          [
+            "Videos",
+            "YouTube",
+            "0",
+            ""
+          ],
+          [
+            "Banners",
+            "Images (png, jpg, jpeg)",
+            "0",
+            ""
+          ],
+          [
+            "eBooks",
+            "PDF's",
+            "0",
+            ""
+          ]
+        ]
+      }
+    ],
+    "selects": [],
+    "badges": [
+      {
+        "text": "ACTIVE",
+        "classes": "badge rounded-pill fs-7 top-right-abs bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/loan-tools/pincode-search": {
+    "url": "https://finozacapital.com/dsa-panel/loan-tools/pincode-search",
+    "title": "Finoza Capital crm - Data",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY Pincode Company LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Pincode Data Dashboard Data Pincode Pincode Data Search Pincode Search Pincode",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "Search Pincode",
+        "tag": "BUTTON",
+        "href": null,
+        "classes": "mb-2 me-2 btn-icon btn btn btn-warning",
+        "bg": "rgb(247, 185, 36)",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Pincode Data Search Pincode Search Pincode"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/loan-tools/company-search": {
+    "url": "https://finozacapital.com/dsa-panel/loan-tools/company-search",
+    "title": "Finoza Capital crm - Data",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY Pincode Company LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Company Data Dashboard Data Company Company Data Company Search Enter a company name to find its corresponding code",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H2: Company Search"
+    ]
+  },
+  "/policy-docs": {
+    "url": "https://finozacapital.com/dsa-panel/policy-docs",
+    "title": "Finoza Capital crm - Lender",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Lender Policy Docs Dashboard Lender Policy Docs ... Lender Policy Documents .. #Lendingkart Business Loan Policy Start login files for Business loan for Lendingkart finance Ltd REQUIRED DOCS One year PDF banking. Pan Card aadhar card. Registration proof. Loan cap 1 Laks to 35 Lakhs Minimum 12 Lakhs sale yearly as per bank statement. Minimum Vintage 7 month with Co applicant GST with Savings & current account And Udyam only Current account Cibil 600 + 1 Cibil accepted Both rented accepted Without gst return without ITR filling accepted Pan India files acceptable Age 18 + acceptable Age 60+ acceptable with Co applicant Business on saving account + Registration acceptable Udyam certificate vintage one year and banking one year acceptable Only PDF format banking acceptable Without registration not accepted",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H4: #Lendingkart Business Loan Policy"
+    ]
+  },
+  "/product": {
+    "url": "https://finozacapital.com/dsa-panel/product",
+    "title": "Finoza Capital crm - Product",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Product Dashboard Product Products Overview #18 - Kyc Loans KYC - Loan ACTIVE #17 - Loan Against Shares LAS - Loan ACTIVE #14 - Bank Account BNK - Bank Account ACTIVE #12 - Demat Account DMT - Demat Account ACTIVE #10 - Credit Card CRD - Credit Card ACTIVE #5 - Home Loan HML - Loan ACTIVE #3 - Business Loan BNL - Loan ACTIVE #2 - Personal Loan PRL - Loan ACTIVE #1 - Instant Loan IPL - Loan ACTIVE",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "ACTIVE",
+        "classes": "badge rounded-pill bg-success",
+        "bg": "rgb(58, 196, 125)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "#18 - Kyc Loans KYC - Loan ACTIVE",
+      "#17 - Loan Against Shares LAS - Loan ACTIVE",
+      "#14 - Bank Account BNK - Bank Account ACTIVE",
+      "#12 - Demat Account DMT - Demat Account ACTIVE",
+      "#10 - Credit Card CRD - Credit Card ACTIVE",
+      "#5 - Home Loan HML - Loan ACTIVE",
+      "#3 - Business Loan BNL - Loan ACTIVE",
+      "#2 - Personal Loan PRL - Loan ACTIVE",
+      "#1 - Instant Loan IPL - Loan ACTIVE"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130"
+    ]
+  },
+  "/changelog": {
+    "url": "https://finozacapital.com/dsa-panel/changelog",
+    "title": "Finoza Capital crm - Advisor Notifications",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Advisor Notifications All Dashboard Notifications All Finoza Capital - CRM Changelogs 2024-03-02 VERSION 3.5.1 Report page loading issue fixed. Team invite page issue fixed. Social media groups join links for WhatsApp & Telegram added. Dashboard marketing banners updated. DSA payout sheet updated - > payment/chart 2024-03-31 VERSION 4.0.0 [NEW] - New Products added - product [NEW] - Lender Policy added - policy-docs [NEW] - Advisor Training videos added - training [NEW] - Marketing tools added - tools [FIX] - Lead filter improved - lead/report [FIX] - Payout Fixed - payment [FIX] - Report filter added - report/product-wise 02 March 2024 VERSION 3.5 Initial CRM release.",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      }
+    ],
+    "tables": [],
+    "selects": [],
+    "badges": [
+      {
+        "text": "VERSION",
+        "classes": "fw-600 ms-3 me-0 badge bg-dark",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "3.5.1",
+        "classes": "fw-600 ms-1 me-2 badge bg-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "4.0.0",
+        "classes": "fw-600 ms-1 me-2 badge bg-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "VERSION 3.5",
+        "classes": "fw-600 ms-3 me-2 badge bg-dark",
+        "bg": "rgb(52, 58, 64)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "02 March 2024 VERSION 3.5 Initial CRM release."
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H4: Finoza Capital - CRM Changelogs"
+    ]
+  },
+  "/notifications": {
+    "url": "https://finozacapital.com/dsa-panel/notifications",
+    "title": "Finoza Capital crm - Advisor Notifications",
+    "bodyText": "Demo DSA Advisor DASHBOARD ADD NEW LEAD LEADS TEAM MY PAYOUT REPORTS MARKETING TOOLS PINCODE & COMPANY LENDER POLICY & DOCS SERVICE PAYMENT PRODUCT LIST MY PROFILE LEAD UPDATE Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now 🔂 CRM Changelogs Advisor Notifications All Dashboard Notifications All All Notifications All notifications including Lead Updates, Account Related update and transactions, and System update and Announcements Search Notification Leads Notifications (15) # From Date & Time Notification Action 260 Capital Finoza (#10) 04-Jun-2026 09:37 PM New Remark Added For Lead #260 UNCOMMPLITE DOCOMENTS View Lead 260 Capital Finoza (#10) 04-Jun-2026 09:37 PM Status Changed to Docs Query - EA for Lead #260 View Lead 189 Capital Finoza (#10) 06-May-2026 08:20 PM New Remark Added For Lead #189 DOCS View Lead 189 Capital Finoza (#10) 06-May-2026 08:20 PM Status Changed to Docs Query - LA for Lead #189 View Lead 55 Capital Finoza (#10) 22-Mar-2026 01:11 PM New Remark Added For Lead #55 uncompleted application View Lead 58 Capital Finoza (#10) 22-Mar-2026 12:53 PM New Remark Added For Lead #58 uncompleted application View Lead 58 Capital Finoza (#10) 22-Mar-2026 12:53 PM Status Changed to Docs Query - EA for Lead #58 View Lead 58 Capital Finoza (#10) 22-Mar-2026 12:42 PM New Remark Added For Lead #58 uncompleted application Please Continue View Lead 58 Capital Finoza (#10) 22-Mar-2026 12:42 PM Status Changed to Under-Process for Lead #58 View Lead 30 Capital Finoza (#10) 07-Mar-2026 05:49 PM New Remark Added For Lead #30 photo missing hi costumer se bolo ki sahi photo oupload kre View Lead 30 Capital Finoza (#10) 07-Mar-2026 05:49 PM Status Changed to Query Resolved - AE for Lead #30 View Lead 30 Capital Finoza (#10) 07-Mar-2026 05:47 PM New Remark Added For Lead #30 photo missing View Lead 30 Capital Finoza (#10) 07-Mar-2026 05:47 PM Status Changed to Docs Query - EA for Lead #30 View Lead 29 Capital Finoza (#10) 07-Mar-2026 04:33 PM New Remark Added For Lead #29 Nee Documents View Lead 29 Capital Finoza (#10) 07-Mar-2026 04:33 PM Status Changed to Docs Query - EA for Lead #29 View Lead Account Notifications System Notifications",
+    "buttons": [
+      {
+        "text": "View All Notifications",
+        "tag": "A",
+        "href": "notifications",
+        "classes": "btn-shadow btn-wide btn-pill btn btn-focus btn-sm",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Logout",
+        "tag": "A",
+        "href": "logout",
+        "classes": "btn-pill btn-shadow btn-shine btn btn-focus",
+        "bg": "rgb(68, 64, 84)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Call Now",
+        "tag": "A",
+        "href": "tel:+917618268130",
+        "classes": "text-primary fw-700 btn-icon-vertical btn-square btn-transition br-bl btn btn-outline-link",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(65, 64, 148)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/A8A734E8A67781511FCCF25287DF89D8544C2B61694E796F31334D76427A2F575A39624F55673D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/B1304103B304A238E698FB46C7B872345A465670584C776D52314A43342B4F386269644F65513D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/6F63CEBFA6CF0639E47846087BFA4ABE78624B79666B4C53596977754B76706A7530523137513D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/0C1D30D76E023AEBD15CFDB08EEB834446316D484A546176494E6B59307779772F32666A6F773D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/2A499A47CA6946BE5761F00C742D77FF32525342337A447438507944412F41445479384D61673D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/3B05F84592914C83F39F7080F4FD16FF717241425335757978355369655A6C50714A644C4C773D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/7E8AC2690A92BD6508217531478E33AC72597446576E5246794D686869624C505232564775773D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/502064C41B5597D1ECE251F60D3F1853676B2F3177622B586B714F694E6F4E74666B5A3768413D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/1E469A86B8CF019BC5D6D829D64C18AB6644324344464F42432F55417752666F4A67383641413D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/065330082FE30EFB76B10FA656FEF8C059644D555043476578476B796A6339544355774D6C413D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/06A51194FDF511EE20ECF8C531B08A914B6A5566334E6F6C38722B6F5849375974742B5979673D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/6844A6AEA71BA0D1F780E2AABCF7668755712B7368794B61776E4254466D586D463052484D673D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/C8E04E3303A297F931322E335462A84D334F3575357532474C767A69453478476744573850773D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/0A2C4E8AE5F32EA45271710B5E707B8272556869704671376571693571783163417A59572B513D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "View Lead",
+        "tag": "A",
+        "href": "lead/view/3F8DF37130ED123625CDAE19B56B44FD785838657A5A627370556C77656C4C354C476F465A413D3D",
+        "classes": "d-block text-truncate mb-2 me-2 btn-pill btn btn-info",
+        "bg": "rgb(22, 170, 255)",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "From",
+          "Date & Time",
+          "Notification",
+          "Action",
+          "260",
+          "Capital Finoza (#10)",
+          "04-Jun-2026 09:37 PM",
+          "New Remark Added For Lead #260 UNCOMMPLITE DOCOMENTS",
+          "View Lead"
+        ],
+        "rowCount": 15,
+        "sampleRows": [
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #260 UNCOMMPLITE DOCOMENTS"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "Status Changed to Docs Query - EA for Lead #260"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #189 DOCS"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "Status Changed to Docs Query - LA for Lead #189"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #55 uncompleted application"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #58 uncompleted application"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "Status Changed to Docs Query - EA for Lead #58"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #58 uncompleted application Please Continue"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "Status Changed to Under-Process for Lead #58"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #30 photo missing hi costumer se bolo ki sahi photo oupload kre"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "Status Changed to Query Resolved - AE for Lead #30"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #30 photo missing"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "Status Changed to Docs Query - EA for Lead #30"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "New Remark Added For Lead #29 Nee Documents"
+          ],
+          [
+            "Capital Finoza (#10)",
+            "Status Changed to Docs Query - EA for Lead #29"
+          ]
+        ]
+      }
+    ],
+    "selects": [],
+    "badges": [],
+    "kpis": [
+      "Finoza Capital Advisor Support support@finozacapital.com 24/7 Email Support +917618268130 +917618268130 10:00 AM - 6:00 PM Monday - Saturday Call Now",
+      "Account Notifications",
+      "System Notifications"
+    ],
+    "tabs": [
+      "Lead 0",
+      "Account",
+      "System"
+    ],
+    "headings": [
+      "H5: Notifications",
+      "H6: You have 0 unread messages",
+      "H5: Finoza Capital",
+      "H6: Advisor Support",
+      "H4: support@finozacapital.com",
+      "H4: +917618268130",
+      "H4: +917618268130",
+      "H4: Search Notification"
+    ]
+  }
+}

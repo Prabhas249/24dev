@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred — 7 Aug feedback status &amp; points for you · 8 August 2026</title>
+<style>
+  @page { size: A4; margin: 14mm 13mm 15mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --green:#068a3e;
+    --green-50:#e8f6ee; --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80;
+    --line:#dbe3ee; --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9.3pt;line-height:1.48;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3,h4{margin:0;line-height:1.25} p{margin:0 0 4px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,h4,thead,.rule{page-break-after:avoid}
+  .card,tr,.q{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .cover{min-height:262mm;display:flex;flex-direction:column;justify-content:space-between;
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-dark) 62%,#061f42 100%);
+    color:#fff;margin:-14mm -13mm 0;padding:22mm 18mm 16mm}
+  .cover img{height:16mm;margin-bottom:10mm;filter:brightness(0) invert(1)}
+  .cover .k{font-size:8.2pt;letter-spacing:.22em;text-transform:uppercase;color:#9dc0ea;margin-bottom:6mm}
+  .cover h1{font-size:24pt;font-weight:700;letter-spacing:-.5px}
+  .cover h1 span{display:block;color:#7fd6a2;font-weight:400;font-size:14pt;margin-top:4.5mm}
+  .cover .lede{margin-top:7mm;max-width:128mm;color:#cfe0f5;font-size:9.6pt;line-height:1.55}
+  .cover .meta{display:flex;gap:10mm;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.22);
+    padding-top:6mm;font-size:8.4pt}
+  .cover .meta div span{display:block;color:#8fb4e0;font-size:7.2pt;letter-spacing:.12em;
+    text-transform:uppercase;margin-bottom:2mm}
+
+  .rule{border-bottom:2.5px solid var(--navy);padding-bottom:2.4mm;margin:0 0 3.5mm}
+  .rule .n{font-size:7.3pt;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:700}
+  .rule h2{font-size:14.5pt;color:var(--navy);margin-top:1.2mm;letter-spacing:-.3px}
+  h3{font-size:10.5pt;color:var(--navy);margin:3mm 0 1.4mm}
+  .sub{color:var(--mute);font-size:8.6pt;margin:-0.5mm 0 2.5mm}
+
+  table{width:100%;border-collapse:collapse;margin:1.5mm 0 2.5mm;font-size:8.1pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:2mm 2.2mm;font-weight:600;font-size:7.7pt;
+     border-right:1px solid rgba(255,255,255,.16)}
+  th:last-child{border-right:none}
+  td{padding:1.45mm 2.1mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  .num{color:var(--mute);width:5.5mm;font-weight:600}
+  .tick{color:var(--green);font-weight:700;white-space:nowrap}
+  .partial{color:var(--amber);font-weight:700;white-space:nowrap}
+
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2.2mm 2.8mm;margin:2mm 0;border-radius:2px}
+  .card.g{border-left-color:var(--green);background:var(--green-50)}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card h4{margin:0 0 1.2mm;font-size:9pt} .card p:last-child{margin-bottom:0}
+
+  .q{border-left:3px solid var(--amber);background:var(--amber-50);padding:2.1mm 2.8mm;
+     margin:0 0 2.2mm;border-radius:2px}
+  .q .qq{font-weight:700;font-size:9.1pt;color:var(--amber)}
+  .q p{margin:1.2mm 0 0;font-size:8.6pt}
+
+  ul{margin:0 0 4px;padding-left:4.2mm} li{margin-bottom:1.2mm}
+  .foot{border-top:1px solid var(--line);margin-top:3.5mm;padding-top:2mm;font-size:7.3pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+  .pill{display:inline-block;background:var(--navy-50);color:var(--navy-dark);font-size:7.5pt;
+        font-weight:600;padding:.6mm 1.8mm;border-radius:2px;margin-right:1mm}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page">
+  <div class="cover">
+    <div>
+      <img src="assets/logo-full.png" alt="QCred">
+      <div class="k">Feedback status · 7 August change-list · rechecked 8 August 2026</div>
+      <h1>Your 7 Aug list — rechecked item by item
+        <span>What is live, what needs you, and a few points to confirm</span>
+      </h1>
+      <p class="lede">
+        We opened your latest <i>Initial Feedback on Qcred Tech</i> document and walked every
+        point from the <b>07 Aug 2026</b> section against the live CRM
+        (<code style="color:#9dc0ea">qcred-crm.vercel.app</code>). Earlier rounds (3 Aug / 5 Aug)
+        were already answered in previous status notes — this pack focuses on the new list,
+        with a short reminder of open items from before.
+      </p>
+    </div>
+    <div class="meta">
+      <div><span>Prepared for</span>QCred.in<br>Simply Insights LLP · Bobby</div>
+      <div><span>Prepared by</span>24dev<br>Prabhas Raju</div>
+      <div><span>Date</span>8 August 2026</div>
+      <div><span>Live at</span>qcred-crm.vercel.app</div>
+    </div>
+  </div>
+</div>
+
+<!-- 01 SNAPSHOT -->
+<div class="page">
+  <div class="rule"><div class="n">Section 01</div><h2>Snapshot — 7 Aug list</h2></div>
+  <p class="sub">Numbering matches the order of points in your Word document under “07 Aug 2026”.</p>
+
+  <table>
+    <thead><tr><th style="width:28mm">Bucket</th><th style="width:22mm">Count</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tick">✓ Done</span></td><td>19</td><td>Built, deployed, and rechecked on live today.</td></tr>
+      <tr><td><span class="partial">◐ Partial</span></td><td>2</td><td>Working with a caveat that needs credentials or a small confirm from you (#2/#4 invite auto-send; #3 name correction path).</td></tr>
+      <tr><td>Open from earlier rounds</td><td>See §04</td><td>Training videos (3 Aug) still listed as content work — activation gate already exists.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Recheck method</h4>
+    <p>Compared your downloaded doc (today) line-by-line → code + production database + live deploy.
+    Confirmed live: role renames, Divisional Manager <b>team</b> scope, Unit Manager team follow-ups,
+    partner <b>Approving supervisor</b> field, document View-in-tab, IST follow-up times, Edit lead for Unit Manager+.</p>
+  </div>
+
+  <div class="card a">
+    <h4>One setting you must complete for team views to work</h4>
+    <p><b>Employees → Reports to</b> is the reporting tree. Unit Manager / Divisional Manager “team”
+    visibility walks that tree. If nobody reports to a manager, their team list looks empty even though
+    the feature is live. Please map each field person to their supervisor once (or we can do it with you on a short call).</p>
+  </div>
+
+  <div class="foot"><span>7 Aug feedback status — 8 August 2026</span><span>Section 01</span></div>
+</div>
+
+<!-- 02 TABLE A -->
+<div class="page">
+  <div class="rule"><div class="n">Section 02</div><h2>7 Aug points — status (1–11)</h2></div>
+  <p class="sub">Short “what we did” so you can tick on your side while testing.</p>
+
+  <table>
+    <thead><tr><th class="num">#</th><th style="width:48mm">Your point</th><th style="width:15mm">Status</th><th>What is live</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="num">1</td>
+        <td>Block duplicate users (same mobile / PAN)</td>
+        <td class="tick">✓ Done</td>
+        <td>Create / invite refuses duplicate mobile or PAN with a clear error. Open invites also checked.</td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td>On create — email / WhatsApp to start registration + KYC</td>
+        <td class="partial">◐ Partial</td>
+        <td>Invite link is created; CRM <b>auto-opens WhatsApp</b> with the message + link. Fully silent auto-send (no click) needs Meta WhatsApp + Resend keys from you — see §05.</td>
+      </tr>
+      <tr>
+        <td class="num">3</td>
+        <td>Provision to correct a wrongly entered name</td>
+        <td class="partial">◐ Partial</td>
+        <td>The person can correct their own name on <b>Profile</b>. Dedicated Super-Admin “rename employee” on the Employees grid is not a separate control yet — confirm if you want that (§05).</td>
+      </tr>
+      <tr>
+        <td class="num">4</td>
+        <td>Invite link: trigger email / WhatsApp (don’t only copy)</td>
+        <td class="partial">◐ Partial</td>
+        <td>Same as #2 — deep-link WhatsApp works today; silent email/WhatsApp when credentials are provided. Invite URL format fixed (hex tokens on live domain).</td>
+      </tr>
+      <tr>
+        <td class="num">5</td>
+        <td>Designation + Location + Direct / Indirect on create</td>
+        <td class="tick">✓ Done</td>
+        <td>Required on Add employee; stored on user; shown on Employees list.</td>
+      </tr>
+      <tr>
+        <td class="num">6</td>
+        <td>Rename / add roles (Distribution Head, SBH Direct/Indirect, Unit Manager, Connector, Channel Partner)</td>
+        <td class="tick">✓ Done</td>
+        <td>All renames + new roles live in production DB and CRM role pickers.</td>
+      </tr>
+      <tr>
+        <td class="num">7</td>
+        <td>“Share with partner” — what is it / who is the partner?</td>
+        <td class="tick">✓ Done</td>
+        <td>UI explains: unchecked = internal note; checked = visible to the <b>sourcing partner on that lead</b> only (not every partner). Disabled when no partner linked.</td>
+      </tr>
+      <tr>
+        <td class="num">8</td>
+        <td>Other documents — space to name, then upload</td>
+        <td class="tick">✓ Done</td>
+        <td>When type = Other, a free-text name is required; stored/shown as <b>Other — &lt;name&gt;</b>.</td>
+      </tr>
+      <tr>
+        <td class="num">9</td>
+        <td>Supervisor download + email pack / lender RM contact</td>
+        <td class="tick">✓ Done</td>
+        <td>Lead → Documents: View / Download. Email supervisor (mapped or pick staff). Per application: pick/add Lender Relationship person, then email pack. Email needs Resend key for fully automatic send.</td>
+      </tr>
+      <tr>
+        <td class="num">10</td>
+        <td>Follow-up — notify supervisor / lead originator?</td>
+        <td class="tick">✓ Done</td>
+        <td>In-app notification always. Email / WhatsApp when credentials set. Includes lead no, customer, due time, link.</td>
+      </tr>
+      <tr>
+        <td class="num">11</td>
+        <td>Two statuses — lender application vs top-right — how different?</td>
+        <td class="tick">✓ Done</td>
+        <td>UI labels: <b>Lead pipeline</b> (overall file) vs <b>Lender case status</b> (per bank). Clarification only — both still needed.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="foot"><span>7 Aug feedback status — 8 August 2026</span><span>Section 02</span></div>
+</div>
+
+<!-- 03 TABLE B -->
+<div class="page">
+  <div class="rule"><div class="n">Section 03</div><h2>7 Aug points — status (12–21)</h2></div>
+
+  <table>
+    <thead><tr><th class="num">#</th><th style="width:48mm">Your point</th><th style="width:15mm">Status</th><th>What is live</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="num">12</td>
+        <td>Edit the lead — Manager and above</td>
+        <td class="tick">✓ Done</td>
+        <td><b>Edit lead</b> for Unit Manager, Divisional Manager, SBH Direct/Indirect, Distribution Head, Leader, Super Admin. Connectors / Supervisors / RMs cannot change master fields.</td>
+      </tr>
+      <tr>
+        <td class="num">13</td>
+        <td>“ADMIN CRM, WHY?” + QCred logo incorrect</td>
+        <td class="tick">✓ Done</td>
+        <td>Removed Admin CRM label. Official wordmark; navy sidebar uses on-dark mark (white Q/.in + green Cred). Tagline: Credit. Credibility. Confidence.</td>
+      </tr>
+      <tr>
+        <td class="num">14</td>
+        <td>Role should not be visible — Super Admin only</td>
+        <td class="tick">✓ Done</td>
+        <td>Sidebar role/scope line and Profile permissions list: Super Admin only. Others see name + Sign out.</td>
+      </tr>
+      <tr>
+        <td class="num">15</td>
+        <td>Follow-up timestamp incorrect</td>
+        <td class="tick">✓ Done</td>
+        <td>Picker treated as IST (+05:30). Existing wrong rows corrected once. New schedules match the clock you pick.</td>
+      </tr>
+      <tr>
+        <td class="num">16</td>
+        <td>Unit Manager — Team follow-ups, not his own</td>
+        <td class="tick">✓ Done</td>
+        <td>Dashboard / todo: <b>Team follow-ups due</b> = subordinates only (reporting tree minus self). Owner name shown. Needs Reports to mapping.</td>
+      </tr>
+      <tr>
+        <td class="num">17</td>
+        <td>UM self-sourcing lead — verification by his supervisor</td>
+        <td class="tick">✓ Done</td>
+        <td>Maker ≠ checker: whoever <b>created</b> the lead cannot Verify/Reject its documents. Supervisor (or other verifier) must.</td>
+      </tr>
+      <tr>
+        <td class="num">18</td>
+        <td>Docs ask to save — open in separate window to view</td>
+        <td class="tick">✓ Done</td>
+        <td>Button is <b>View</b> (new tab). Files served inline so PDF/image opens in the browser.</td>
+      </tr>
+      <tr>
+        <td class="num">19</td>
+        <td>Dashboards: “Teams document verification pending”</td>
+        <td class="tick">✓ Done</td>
+        <td>Todo / Needs attention label is now <b>Team document verification pending</b>.</td>
+      </tr>
+      <tr>
+        <td class="num">20</td>
+        <td>Partner appointment → approval to selected supervisor</td>
+        <td class="tick">✓ Done</td>
+        <td>Add partner requires <b>Approving supervisor</b>. Only that supervisor (or all-scope Checker/Admin for self-register/legacy) can Approve/Reject. Their queue shows appointments waiting on them.</td>
+      </tr>
+      <tr>
+        <td class="num">21</td>
+        <td>Divisional Manager — only org / reporting team (not all)</td>
+        <td class="tick">✓ Done</td>
+        <td>DM <b>dataScope = team</b>. Employees / leads / partners filtered to reporting line + appointments under them. Needs Reports to mapping.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>How team visibility works (items 16 &amp; 21)</h4>
+    <p>Think of <b>Reports to</b> as the org chart. A Divisional Manager sees himself + everyone who reports to him + people under them.
+    Example: Priya reports to Ramesh (DM); Amit reports to Priya → Ramesh’s team = Ramesh + Priya + Amit.
+    If Amit’s Reports to is blank, Ramesh never sees Amit’s files — that is expected, not a bug.</p>
+  </div>
+
+  <div class="foot"><span>7 Aug feedback status — 8 August 2026</span><span>Section 03</span></div>
+</div>
+
+<!-- 04 EARLIER + ACTION -->
+<div class="page">
+  <div class="rule"><div class="n">Section 04</div><h2>Earlier rounds — already covered</h2></div>
+  <p class="sub">Your Word file also carries 3 Aug and 5 Aug points. Those were answered in prior status PDFs (3 Aug evening + 6 Aug call brief). Short reminder only:</p>
+
+  <ul>
+    <li><b>Hierarchy / team-only data, employee approval, partner access grid, RM Partner/Payout crashes</b> — built (3 Aug evening).</li>
+    <li><b>Super Admin CSV downloads, QGenie → checker allotment, lender add/approve for central, lender hierarchy UX</b> — live / in use.</li>
+    <li><b>Payout module + lender programmes</b> — explained earlier; CRM calculates, does not move money.</li>
+    <li><b>Invite / activation links</b> — fixed on live domain; use current invite links only.</li>
+    <li><b>Training videos by role</b> — still content work. The CRM already blocks partner activation until training is recorded; videos/voiceover are a separate production item if you want us to make them.</li>
+  </ul>
+
+  <div class="rule" style="margin-top:6mm"><div class="n">Section 05</div><h2>Points for you — action &amp; confirmations</h2></div>
+  <p class="sub">One-line answers are enough. These unblock polish and fully automatic messaging.</p>
+
+  <div class="q"><span class="qq">A · Map “Reports to” for field staff</span>
+    <p>Without this, Unit Manager / Divisional Manager team dashboards cannot show the right people. Can we schedule 20 minutes to map your current org on Employees?</p>
+  </div>
+
+  <div class="q"><span class="qq">B · WhatsApp + email credentials (for silent auto-send)</span>
+    <p>Needed on Vercel: <b>WHATSAPP_TOKEN</b>, <b>WHATSAPP_PHONE_NUMBER_ID</b>, <b>RESEND_API_KEY</b> (+ optional RESEND_FROM).
+    Until then: WhatsApp opens with pre-filled message (works); email uses mailto / Resend when key exists.
+    Do you want us to stay on the open-WhatsApp flow, or will you share Meta + Resend credentials?</p>
+  </div>
+
+  <div class="q"><span class="qq">C · Who may rename an employee after create?</span>
+    <p>Today: the employee can fix their own name on Profile. Should Super Admin (and/or Unit Manager+) also edit names on the Employees screen? Yes / No — if Yes, which roles?</p>
+  </div>
+
+  <div class="q"><span class="qq">D · Training videos</span>
+    <p>Do you want 24dev to produce short screen-record + voiceover videos per role, or will QCred supply content and we only host / gate them?</p>
+  </div>
+
+  <div class="card">
+    <h4>Where to test</h4>
+    <p>Live CRM: <b>https://qcred-crm.vercel.app</b> · Times shown in <b>IST</b>. After mapping Reports to, log in as Unit Manager / Divisional Manager and check dashboard queues, Employees list, and Partners pending approvals.</p>
+  </div>
+
+  <div class="foot"><span>7 Aug feedback status — 8 August 2026</span><span>Sections 04–05</span></div>
+</div>
+
+</body>
+</html>

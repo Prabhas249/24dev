@@ -1,0 +1,43 @@
+{
+ "payout": [
+  {
+   "lender": "Poonawalla Fincorp",
+   "product": "Loan Against Property",
+   "programme": "Standard Income (EBITDA)",
+   "payoutPct": 1.15,
+   "bonusSlabs": [
+    {
+     "fromAmount": 10000000.0,
+     "bonusPct": 0.25
+    },
+    {
+     "fromAmount": 50000000.0,
+     "bonusPct": 0.4
+    }
+   ],
+   "notes": "Slabs on monthly disbursed volume"
+  }
+ ],
+ "cityTiers": [
+  {
+   "lender": "Poonawalla Fincorp",
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "tier": "Metro"
+  },
+  {
+   "lender": "Poonawalla Fincorp",
+   "city": "Surat",
+   "state": "Gujarat",
+   "tier": "Tier 1"
+  },
+  {
+   "lender": "Poonawalla Fincorp",
+   "city": "Nashik",
+   "state": "Maharashtra",
+   "tier": "Tier 2"
+  }
+ ],
+ "pastFiles": [],
+ "errors": []
+}

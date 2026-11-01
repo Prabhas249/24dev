@@ -1,23 +1,52 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* PAPER THEME — light mode
-     Names preserved for backwards compatibility.
-     "ink-*" now means paper surfaces (was dark bg).
-     "fog-*" now means ink/text (was light fg). */
-  --color-ink: #FCFAF4;              /* primary page bg — subtle warm off-white */
-  --color-ink-soft: #F1E9D7;         /* warm cream cards / elevated surfaces */
-  --color-ink-raised: #FFFFFF;       /* pure white for max contrast elements */
+  /* ─────────────────────────────────────────────
+     24DEV PAPER THEME — light mode (default)
+     Mixing existing paper aesthetic + Stripe DNA
+     + MagicUI shadcn-compat CSS vars
+     ───────────────────────────────────────────── */
+
+  /* Brand colors — paper canvas */
+  --color-ink: #FCFAF4;              /* primary page bg — warm off-white */
+  --color-ink-soft: #F1E9D7;         /* warm cream cards */
+  --color-ink-raised: #FFFFFF;       /* pure white for max contrast */
   --color-fog: #0F0F0F;              /* primary text — near-black */
-  --color-fog-muted: #2E2A26;        /* secondary text — deeper for readability */
-  --color-fog-dim: #6A6056;          /* tertiary text — deeper gray (was too faint) */
+  --color-fog-muted: #2E2A26;        /* secondary text */
+  --color-fog-dim: #6A6056;          /* tertiary text */
   --color-line: rgba(15, 15, 15, 0.18);
   --color-line-strong: rgba(15, 15, 15, 0.32);
 
-  /* Brand — orange stays */
+  /* Brand accents */
   --color-orange: #FF6B35;
   --color-orange-soft: #FF8D5E;
   --color-orange-dim: #6B2F15;
+  --color-lime: #B8FF38;             /* secondary accent — Agency OS link */
+  --color-coral: #FF6B47;            /* warm pop accent */
+
+  /* shadcn/MagicUI compat — required for Agent components */
+  --color-background: var(--color-ink);
+  --color-foreground: var(--color-fog);
+  --color-card: var(--color-ink-raised);
+  --color-card-foreground: var(--color-fog);
+  --color-popover: var(--color-ink-raised);
+  --color-popover-foreground: var(--color-fog);
+  --color-primary: var(--color-fog);
+  --color-primary-foreground: var(--color-ink);
+  --color-secondary: var(--color-orange);
+  --color-secondary-foreground: var(--color-ink);
+  --color-muted: var(--color-ink-soft);
+  --color-muted-foreground: var(--color-fog-dim);
+  --color-accent: var(--color-ink-soft);
+  --color-accent-foreground: var(--color-fog);
+  --color-destructive: #DC2626;
+  --color-destructive-foreground: var(--color-ink);
+  --color-border: var(--color-line);
+  --color-input: var(--color-line);
+  --color-ring: var(--color-orange);
 
   /* Fonts */
   --font-display: var(--font-unbounded), "Unbounded", "Helvetica Neue", sans-serif;
@@ -25,13 +54,121 @@
   --font-price: var(--font-price), "DM Serif Display", Georgia, serif;
   --font-body: var(--font-geist), "Geist", sans-serif;
   --font-mono: var(--font-geist-mono), "Geist Mono", monospace;
+  --font-sans: var(--font-body);  /* MagicUI default */
 
   /* Display sizes */
   --text-display-xl: clamp(3.25rem, 13vw, 13rem);
   --text-display-lg: clamp(2.75rem, 9vw, 9rem);
   --text-display-md: clamp(2.25rem, 6vw, 6rem);
   --text-display-sm: clamp(1.75rem, 4vw, 4rem);
+
+  /* Border radii — Stripe-inspired tight scale */
+  --radius-xs: 1px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  --radius: 8px;  /* MagicUI default */
+
+  /* Shadows — Stripe-inspired ULTRA subtle (0.06 opacity) */
+  --shadow-sm: 0 1px 2px rgba(15, 15, 15, 0.04);
+  --shadow-md: rgba(15, 15, 15, 0.06) 0px 3px 6px 0px;
+  --shadow-lg: rgba(15, 55, 112, 0.08) 0px 6px 22px 0px, rgba(15, 55, 112, 0.02) 0px 4px 8px 0px;
+  --shadow-xl: rgba(15, 15, 15, 0.08) 0px 15px 35px 0px;
+
+  /* Transitions — Stripe's signature easing */
+  --ease-stripe: cubic-bezier(0.3, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 220ms;
+  --duration-slow: 380ms;
+
+  /* Animations registered for tw-animate-css */
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;
+  --animate-slide-down: slide-down 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-slide-up: slide-up 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-border-beam: border-beam calc(var(--duration) * 1s) infinite linear;
 }
+
+/* ─────────────────────────────────────────────
+   KEYFRAMES
+   ───────────────────────────────────────────── */
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+@keyframes slide-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes slide-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg))
+      translateY(calc(var(--radius) * 1px))
+      rotate(calc(var(--angle) * -1deg));
+  }
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg))
+      translateY(calc(var(--radius) * 1px))
+      rotate(calc((var(--angle) * -1deg) - 360deg));
+  }
+}
+
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+@keyframes border-beam {
+  100% { offset-distance: 100%; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ─────────────────────────────────────────────
+   BASE
+   ───────────────────────────────────────────── */
 
 @layer base {
   html {
@@ -46,6 +183,26 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  /* Stripe-inspired heading hierarchy — LIGHT 300 weight, tight letterspacing */
+  h1, .h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 1.02;
+  }
+  h2, .h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+  h3, .h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
   ::selection {
     background: var(--color-orange);
     color: #FAFAF5;
@@ -56,6 +213,10 @@
     outline-offset: 4px;
   }
 }
+
+/* ─────────────────────────────────────────────
+   UTILITIES
+   ───────────────────────────────────────────── */
 
 @layer utilities {
   .font-display {
@@ -68,7 +229,21 @@
     font-family: var(--font-mono);
   }
 
-  /* Subtle paper grain — multiply blend for warm paper feel */
+  /* Stripe-easing transition utility */
+  .ease-stripe {
+    transition-timing-function: cubic-bezier(0.3, 0, 0.2, 1);
+  }
+
+  /* Container — Stripe's 1266px max */
+  .container-24dev {
+    max-width: 1266px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Subtle paper grain */
   .grain::after {
     content: "";
     position: fixed;
@@ -80,16 +255,23 @@
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 
-  /* Marquee */
-  @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-  .animate-marquee {
+  /* Marquee — keep existing 24dev variant */
+  .animate-marquee-slow {
     animation: marquee 35s linear infinite;
   }
 
-  /* Hide scrollbar for mobile carousels */
+  /* Subtle radial gradient — Stripe-style hero bg */
+  .bg-stripe-radial {
+    background: radial-gradient(125% 125% at 50% 10%, var(--color-ink) 40%, var(--color-ink-soft) 100%);
+  }
+
+  /* Border beam container — must be relative + overflow-hidden */
+  .border-beam-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Hide scrollbar */
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

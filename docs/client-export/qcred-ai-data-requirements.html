@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred — The AI lender match: what data it needs</title>
+<style>
+  @page { size: A4; margin: 13mm 12mm 14mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --green:#068a3e; --green-50:#e8f6ee;
+    --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80; --line:#dbe3ee;
+    --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9.2pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3{margin:0;line-height:1.25} p{margin:0 0 5px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,thead{page-break-after:avoid} tr,.card,.lvl{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .hero{background:linear-gradient(150deg,var(--navy),var(--navy-dark) 70%,#061f42);color:#fff;
+        margin:-13mm -12mm 6mm;padding:12mm 12mm 9mm}
+  .hero img{height:13mm;filter:brightness(0) invert(1);margin-bottom:7mm}
+  .hero .k{font-size:8pt;letter-spacing:.2em;text-transform:uppercase;color:#9dc0ea}
+  .hero h1{margin-top:2.5mm;font-size:20pt;letter-spacing:-.4px}
+  .hero p{margin-top:3.5mm;color:#cbd5e1;font-size:9.4pt;max-width:158mm}
+
+  h2{font-size:12.5pt;color:var(--navy);margin:4.5mm 0 2.2mm}
+  table{width:100%;border-collapse:collapse;margin:2mm 0 3mm;font-size:8.5pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:2mm 2.6mm;font-size:8pt;font-weight:600;
+     border-right:1px solid rgba(255,255,255,.15)}
+  th:last-child{border-right:none}
+  td{padding:1.9mm 2.6mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8.2pt;background:var(--navy-50);
+       padding:.4mm 1.2mm;border-radius:2px;color:var(--navy-dark)}
+
+  .lvl{border:1px solid var(--line);border-radius:4px;margin:0 0 3.5mm;overflow:hidden}
+  .lvl .h{background:var(--navy-50);padding:2.4mm 3.4mm;display:flex;align-items:baseline;gap:2.5mm}
+  .lvl .h .n{font-size:12pt;font-weight:800;color:var(--navy)}
+  .lvl .h .t{font-weight:700;font-size:9.8pt;color:var(--navy)}
+  .lvl .h .w{margin-left:auto;font-size:7.8pt;font-weight:700;padding:.6mm 2.4mm;border-radius:8px}
+  .lvl .b{padding:2.6mm 3.4mm}
+  .ok{background:var(--green-50);color:var(--green)}
+  .wt{background:var(--amber-50);color:var(--amber)}
+  .card{border:1px solid var(--line);border-left:3px solid var(--green);background:var(--green-50);
+        padding:2.8mm 3.4mm;margin:2.5mm 0;border-radius:2px;font-size:8.8pt}
+  .card b.t{display:block;margin-bottom:1mm}
+  .foot{border-top:1px solid var(--line);margin-top:5mm;padding-top:2.5mm;font-size:7.6pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hero">
+    <img src="assets/logo-full.png" alt="QCred">
+    <div class="k">The AI lender match · data requirements · 4 August 2026</div>
+    <h1>&ldquo;Type the case, get the lender&rdquo; — what it needs</h1>
+    <p>You described it exactly: a simple narration in a text box (later a voice note) that throws
+    the best possible lender, based on the product library and past data. It is buildable, in
+    three levels — each one usable on its own, each unlocked by a specific piece of data. This
+    page says precisely what to send for each. The attached Excel (template v2) has a sheet for
+    every item.</p>
+  </div>
+
+  <div class="lvl">
+    <div class="h"><span class="n">1</span><span class="t">Narration box → best lender</span><span class="w ok">NO NEW DATA NEEDED</span></div>
+    <div class="b">
+      <p>Someone types: <i>&ldquo;LAP, self-employed manufacturer in Surat, needs 2 Cr against
+      industrial property worth 5 Cr, CIBIL around 720&rdquo;</i> — the system reads product,
+      amount, property, profile, location and CIBIL out of the sentence and runs the Best Match
+      engine that is already live. Ranked lenders, with reasons, from plain text.</p>
+      <p><b>Needs:</b> nothing beyond the programme library you&rsquo;re already filling. The
+      voice-note version is this plus speech-to-text on top — same engine.</p>
+    </div>
+  </div>
+
+  <div class="lvl">
+    <div class="h"><span class="n">2</span><span class="t">Rankings that reflect your commercials</span><span class="w wt">NEEDS: PAYOUT + CITY TIERS</span></div>
+    <div class="b">
+      <p>For the ranking to prefer what genuinely pays QCred best — and to apply the right loan
+      ceilings by location — it needs the two things you named tonight:</p>
+      <table>
+        <thead><tr><th style="width:44mm">Data</th><th style="width:38mm">Sheet in template v2</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><b>Payout per lender × product</b></td><td><code>Payout Grid</code></td>
+            <td>One row per combination, with bonus slabs. Since these change monthly with targets, send an updated sheet any time — it reloads in minutes.</td></tr>
+          <tr><td><b>City tiers per lender</b></td><td><code>City Tiers (per lender)</code></td>
+            <td>Each lender&rsquo;s own classification, one row per lender + city. Once loaded, entering the customer&rsquo;s city applies that lender&rsquo;s tier limits automatically.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="lvl">
+    <div class="h"><span class="n">3</span><span class="t">The learning model — &ldquo;based on past data&rdquo;</span><span class="w wt">NEEDS: FILE HISTORY</span></div>
+    <div class="b">
+      <p>This is where it becomes AI in the real sense: the model learns which lender actually
+      says yes — per product, profile, geography and ticket size — and starts predicting approval
+      likelihood, not just eligibility. For that it needs your <b>past files with outcomes</b>:</p>
+      <table>
+        <thead><tr><th style="width:52mm">Per past file</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td>Product · lender submitted to · amount · city</td><td>What the case was and where it went</td></tr>
+          <tr><td>Profile (Salaried / SEP / SENP) · CIBIL band · property type</td><td>What the lender was judging</td></tr>
+          <tr><td><b>Outcome</b> — Approved / Rejected / Disbursed / Withdrawn, + rejection reason</td><td>The thing the model learns from</td></tr>
+          <tr><td>Days to decision · disbursed amount</td><td>Lets it also rank by speed and slippage</td></tr>
+        </tbody>
+      </table>
+      <p><b>No customer names or numbers needed</b> — the model learns lender behaviour, not
+      identities. 6–12 months of files is ideal; even 200–300 rows gives a useful first model,
+      and it improves continuously because <b>every file processed in the CRM from now on records
+      these outcomes automatically</b>. The history you provide is the head start.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <b class="t">The practical sequence</b>
+    Send the <b>Payout Grid</b> and <b>City Tiers</b> sheets as the data exists — each loads
+    within a day of arriving. The <b>Past Files</b> sheet can come in parts, whenever your MIS can
+    export it. Level 1 (the narration box) we can build meanwhile, since it needs nothing new —
+    and Levels 2 and 3 switch on underneath it as the data lands, without changing how anyone
+    uses it.
+  </div>
+
+  <div class="foot"><span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span><span>AI data requirements · 4 Aug 2026</span></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QCred — Update on your feedback &amp; points to confirm</title>
+<style>
+  @page { size: A4; margin: 14mm 13mm 15mm; }
+  :root{
+    --navy:#0b3b78; --navy-dark:#082c5c; --navy-light:#17529c; --green:#068a3e;
+    --green-50:#e8f6ee; --navy-50:#eef4fb; --ink:#0f172a; --mute:#5b6b80;
+    --line:#dbe3ee; --amber:#b45309; --amber-50:#fef6e7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);
+       font-size:9.4pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2,h3,h4{margin:0;line-height:1.25} p{margin:0 0 4.5px}
+  .page{page-break-after:always} .page:last-child{page-break-after:auto}
+  h2,h3,h4,thead,.rule{page-break-after:avoid}
+  .card,tr{page-break-inside:avoid}
+  thead{display:table-header-group}
+
+  .cover{height:262mm;display:flex;flex-direction:column;justify-content:space-between;
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-dark) 62%,#061f42 100%);
+    color:#fff;margin:-14mm -13mm 0;padding:22mm 18mm 16mm}
+  .cover img{height:16mm;margin-bottom:12mm;filter:brightness(0) invert(1)}
+  .cover .k{font-size:8.4pt;letter-spacing:.22em;text-transform:uppercase;color:#9dc0ea;margin-bottom:7mm}
+  .cover h1{font-size:27pt;font-weight:700;letter-spacing:-.6px}
+  .cover h1 span{display:block;color:#7fd6a2;font-weight:400;font-size:16pt;margin-top:5mm}
+  .cover .lede{margin-top:8mm;max-width:122mm;color:#cfe0f5;font-size:9.8pt;line-height:1.6}
+  .cover .meta{display:flex;gap:14mm;border-top:1px solid rgba(255,255,255,.22);padding-top:7mm;font-size:8.6pt}
+  .cover .meta div span{display:block;color:#8fb4e0;font-size:7.4pt;letter-spacing:.13em;
+    text-transform:uppercase;margin-bottom:2.5mm}
+
+  .rule{border-bottom:2.5px solid var(--navy);padding-bottom:2.6mm;margin:0 0 4mm}
+  .rule .n{font-size:7.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:700}
+  .rule h2{font-size:15.5pt;color:var(--navy);margin-top:1.5mm;letter-spacing:-.3px}
+  h3{font-size:10.8pt;color:var(--navy);margin:3.2mm 0 1.6mm}
+  .sub{color:var(--mute);font-size:8.8pt;margin:-1mm 0 3mm}
+
+  table{width:100%;border-collapse:collapse;margin:2mm 0 3mm;font-size:8.4pt}
+  th{background:var(--navy);color:#fff;text-align:left;padding:2.2mm 2.6mm;font-weight:600;font-size:8pt;
+     border-right:1px solid rgba(255,255,255,.16)}
+  th:last-child{border-right:none}
+  td{padding:1.6mm 2.4mm;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#f7fafd}
+  .num{color:var(--mute);width:6mm}
+  .tick{color:var(--green);font-weight:700;white-space:nowrap}
+  code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8pt;background:var(--navy-50);
+       padding:.5mm 1.2mm;border-radius:2px;color:var(--navy-dark)}
+
+  .card{border:1px solid var(--line);border-left:3px solid var(--navy);background:#fbfcfe;
+        padding:2.3mm 3mm;margin:2mm 0;border-radius:2px}
+  .card.g{border-left-color:var(--green);background:var(--green-50)}
+  .card.a{border-left-color:var(--amber);background:var(--amber-50)}
+  .card h4{margin:0 0 1.5mm;font-size:9.2pt} .card p:last-child{margin-bottom:0}
+
+  .q{border-left:3px solid var(--amber);background:var(--amber-50);padding:2.3mm 3mm;
+     margin:0 0 2.6mm;border-radius:2px}
+  .q .qq{font-weight:700;font-size:9.4pt;color:var(--amber)}
+  .q p{margin:1.5mm 0 0;font-size:8.8pt}
+
+  ul{margin:0 0 6px;padding-left:4.5mm} li{margin-bottom:1.5mm}
+  .foot{border-top:1px solid var(--line);margin-top:4mm;padding-top:2.2mm;font-size:7.5pt;
+        color:var(--mute);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page">
+  <div class="cover">
+    <div>
+      <img src="assets/logo-full.png" alt="QCred">
+      <div class="k">Feedback update · 3 August 2026, evening</div>
+      <h1>All six of today&rsquo;s<br>points, actioned
+        <span>And five questions to lock before go-live</span>
+      </h1>
+      <p class="lede">
+        Your second round of feedback from this afternoon has been built, deployed and
+        tested — including the two pages that were failing for your RM. This document shows
+        what changed, explains one setting on your side, and lists the specific decisions
+        we need from you so nothing is built on a guess.
+      </p>
+    </div>
+    <div class="meta">
+      <div><span>Prepared for</span>QCred.in<br>Simply Insights LLP</div>
+      <div><span>Prepared by</span>24dev<br>Prabhas Raju</div>
+      <div><span>Date</span>3 August 2026</div>
+      <div><span>Live at</span>qcred-crm.vercel.app</div>
+    </div>
+  </div>
+</div>
+
+<!-- 01 STATUS -->
+<div class="page">
+  <div class="rule"><div class="n">Section 01</div><h2>Today&rsquo;s six points — status</h2></div>
+  <p class="sub">In the order they appear in your document (17:05 additions).</p>
+
+  <table>
+    <thead><tr><th class="num">#</th><th style="width:52mm">Your point</th><th style="width:16mm">Status</th><th>What was done</th></tr></thead>
+    <tbody>
+      <tr><td class="num">13</td><td>In hierarchy, one should see data belonging to their own team only</td><td class="tick">✓ Built</td>
+        <td>Every employee now carries a <b>&ldquo;Reports to&rdquo;</b> setting on the Employees screen. A role whose data access is set to <b>Team</b> sees records assigned to themselves and everyone below them in that reporting line — enforced inside the database query, so out-of-team records are never even sent to the browser.</td></tr>
+
+      <tr><td class="num">14</td><td>Indication that the app is working; should say &ldquo;Updated&rdquo;</td><td class="tick">✓ Built</td>
+        <td>Every save button across the CRM and partner portal now shows <b>&ldquo;Saving…&rdquo;</b> with a spinner while working and flashes <b>&ldquo;Updated ✓&rdquo;</b> when finished. Buttons also lock while saving, which prevents accidental double-submissions.</td></tr>
+
+      <tr><td class="num">15</td><td>New employee should go for approval — supervisor of the adder, or checker from corporate office</td><td class="tick">✓ Built</td>
+        <td>A newly added or invited employee <b>cannot sign in</b> until approved. Both routes you named work: the supervisor of whoever added them can approve, and so can anyone holding the new <i>employees — approve</i> permission (your Checker and corporate roles have it). Pending approvals appear in the approver&rsquo;s to-do the moment they log in. Everyone who already exists was marked approved, so no current login was affected.</td></tr>
+
+      <tr><td class="num">16</td><td>Similar screen for Partners as well <i>(with the Employees role grid attached)</i></td><td class="tick">✓ Built</td>
+        <td>The Partners screen now opens with the same <b>Access levels</b> grid: each partner login role with its permission count and how far it can see, plus your four field tiers with live counts. It also makes the key distinction visible — the <i>tier</i> places someone in the network, the <i>role</i> decides what their login can do.</td></tr>
+
+      <tr><td class="num">17</td><td>Active Partner page in RM section not working</td><td class="tick">✓ Fixed</td>
+        <td rowspan="2">Both were the same defect and it was ours. Dashboard cards were shown to every role even when the page behind them was restricted, and a restricted page crashed instead of explaining. Now: cards a role cannot open simply don&rsquo;t appear, and anyone reaching a restricted address gets a clear page — <i>&ldquo;access hasn&rsquo;t been granted to you, ask your administrator for [permission]&rdquo;</i> — instead of an error. <b>One note on your side:</b> see Section 2.</td></tr>
+      <tr><td class="num">18</td><td>Active Payout page in RM section not working</td><td class="tick">✓ Fixed</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Verification, same standard as before</h4>
+    <p>All changes were tested on the live deployment: 49 platform checks, 21 checks on the earlier
+    feedback round, 19 on the lender catalogue, 11 on your coding framework — plus a fresh crawl of
+    every screen under five different logins (admin, maker, checker, partner, pending connector)
+    looking for errors: <b>zero failures</b>. The employee-approval flow was tested end to end:
+    invited, blocked at login, visible in the approver&rsquo;s queue, approved, signed in.</p>
+  </div>
+
+  <div class="foot"><span>Feedback update — 3 August evening</span><span>Section 01</span></div>
+</div>
+
+<!-- 02 THE SETTING + QUESTIONS -->
+<div class="page">
+  <div class="rule"><div class="n">Section 02</div><h2>One setting on your side, and five questions</h2></div>
+
+  <div class="card a">
+    <h4>Why your RM couldn&rsquo;t see Partners — two causes, both now resolved</h4>
+    <p>The crash was our defect, fixed as above. But there was a second layer: the RM role&rsquo;s
+    <i>partners — view</i> permission had been switched off in Settings → Roles during
+    yesterday&rsquo;s exploration of the permission screens. That&rsquo;s easily done while trying
+    things out — the screen applies changes immediately. We have restored the RM role to its
+    original permission set, so your RM logins now see Partners again.</p>
+    <p style="margin-top:1.5mm">Worth knowing: every permission change is recorded in the audit
+    trail with who and when, so this is always reconstructable. If you&rsquo;d like, we can add a
+    confirmation step before role permissions change — say the word.</p>
+  </div>
+
+  <h3>Questions we need answered — so nothing is built on a guess</h3>
+  <p class="sub">Each of these changes real behaviour. One-line answers are enough.</p>
+
+  <div class="q"><span class="qq">1 · Which roles should see team-only data?</span>
+    <p>The machinery is live. Today: RM and Maker see <b>own records</b>, managerial roles see
+    <b>all</b>. Tell us which roles should switch to <b>team</b> (own + everyone reporting to them)
+    and we&rsquo;ll set them — or you can, in Settings → Roles, once you confirm the intent.</p>
+  </div>
+
+  <div class="q"><span class="qq">2 · Who counts as &ldquo;corporate office&rdquo; for employee approvals?</span>
+    <p>We&rsquo;ve granted approval rights to <b>Checker, National Business Head and Super Admin</b>.
+    Should anyone else hold it — Divisional Managers, for instance?</p>
+  </div>
+
+  <div class="q"><span class="qq">3 · Region for the lender catalogue — states, or zones?</span>
+    <p>The lender funnel currently narrows by <b>state</b> (Maharashtra, Karnataka…). If your team
+    thinks in <b>zones</b> (North / South / West / East), we&rsquo;ll switch the first step. With 100+
+    lenders coming this choice decides how useful the funnel is day-to-day.</p>
+  </div>
+
+  <div class="q"><span class="qq">4 · Bonus slabs — best slab, or stacking?</span>
+    <p>Target bonuses currently apply as <b>best-slab-wins</b> (reach ₹1 Cr, the whole month earns
+    the higher rate). If any of your lenders&rsquo; schemes <b>accumulate</b> tier by tier instead,
+    tell us which — it changes payout arithmetic and must be right before real money runs.</p>
+  </div>
+
+  <div class="q"><span class="qq">5 · Partner share and TDS percentages</span>
+    <p>Auto-calculated payouts currently use <b>60% partner share</b> and <b>5% TDS</b> as
+    placeholders. Please confirm your real figures — including whether share differs by tier
+    (Sub-DSA vs Connector).</p>
+  </div>
+
+  <h3>Still open from earlier rounds</h3>
+  <table>
+    <thead><tr><th style="width:52mm">Decision</th><th>Where it stands</th></tr></thead>
+    <tbody>
+      <tr><td><b>Domain</b> — e.g. <code>crm.qcred.in</code></td><td>Needed to complete &ldquo;live on your domain&rdquo;. One DNS entry on your side.</td></tr>
+      <tr><td><b>QCred-owned database &amp; storage</b></td><td>Your go-ahead to create them, so live customer data starts in your accounts.</td></tr>
+      <tr><td><b>BH or SH</b> in partner codes</td><td>Your framework uses both; we&rsquo;ve used BH. It&rsquo;s a setting — confirm before the network grows.</td></tr>
+      <tr><td><b>Training module scope</b></td><td>The §4 activation gate is live. Videos + tracked completion: to scope once screens are final.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card g">
+    <h4>Where this leaves us</h4>
+    <p>Both feedback rounds — nineteen numbered points — are fully actioned except the training
+    videos, which wait on your sign-off of the screens by design. The platform is stable across
+    every screen and role we can test. The five questions above and the domain are what stand
+    between here and your team using this on your own address.</p>
+  </div>
+
+  <div class="foot"><span>24dev · Prabhas Raju · prabhasraju1817@gmail.com</span><span>Section 02</span></div>
+</div>
+
+</body>
+</html>
